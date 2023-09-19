@@ -1,0 +1,458 @@
+<!DOCTYPE html>
+
+
+<html lang="en-us" data-theme="">
+<head>
+    
+        
+<meta charset="utf-8">
+<meta name="HandheldFriendly" content="True">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="referrer" content="no-referrer-when-downgrade">
+
+<title>Adventures with MacOS - goos.blog</title>
+
+<meta name="description" content="why not just install linux dude? I&rsquo;ve always liked OSX MacOS, dating back to when we had iMac G1s (and later G4s) in our school computer lab.
+Remember those? They were really nice. We should go back.
+Back when I was in uni I used some suuuuper sketchy patched installers to run Mavericks (iirc) on my FX-4350 based system. Back then documentation was nonexistent, you had to read through scammy-looking forums for answers, etc etc etc bullshit.">
+
+
+
+
+
+<link rel="icon" type="image/x-icon" href="https://goos.blog/favicon.ico">
+<link rel="apple-touch-icon-precomposed" href="https://goos.blog/favicon.png">
+
+
+<style>
+  body {
+    visibility: hidden;
+    opacity: 0;
+  }
+</style>
+
+<noscript>
+  <style>
+    body {
+      visibility: visible;
+      opacity: 1;
+    }
+  </style>
+</noscript>
+
+
+
+    
+
+
+
+
+
+    
+    
+        
+    
+    
+
+    
+        <link rel="stylesheet" href="https://goos.blog/css/style.min.13e9ee87c57d784d14fb842506c3eade9de10150a7f653bd19dacda241d60e0d.css" integrity="sha256-E&#43;nuh8V9eE0U&#43;4QlBsPq3p3hAVCn9lO9GdrNokHWDg0=">
+    
+
+
+
+
+
+    
+
+    
+
+
+
+
+
+    
+    
+        
+    
+    
+
+    
+        <script src="https://goos.blog/js/script.min.74bf1a3fcf1af396efa4acf3e660e876b61a2153ab9cbe1893ac24ea6d4f94ee.js" type="text/javascript" charset="utf-8" integrity="sha256-dL8aP88a85bvpKzz5mDodrYaIVOrnL4Yk6wk6m1PlO4="></script>
+    
+
+
+
+
+
+
+
+<meta property="og:title" content="Adventures with MacOS" />
+<meta property="og:description" content="why not just install linux dude? I&rsquo;ve always liked OSX MacOS, dating back to when we had iMac G1s (and later G4s) in our school computer lab.
+Remember those? They were really nice. We should go back.
+Back when I was in uni I used some suuuuper sketchy patched installers to run Mavericks (iirc) on my FX-4350 based system. Back then documentation was nonexistent, you had to read through scammy-looking forums for answers, etc etc etc bullshit." />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://goos.blog/2022/04/macos-adventures/" /><meta property="article:section" content="blog" />
+<meta property="article:published_time" content="2022-04-13T00:00:01-04:00" />
+<meta property="article:modified_time" content="2022-04-13T00:00:01-04:00" />
+
+<meta name="twitter:card" content="summary"/>
+<meta name="twitter:title" content="Adventures with MacOS"/>
+<meta name="twitter:description" content="why not just install linux dude? I&rsquo;ve always liked OSX MacOS, dating back to when we had iMac G1s (and later G4s) in our school computer lab.
+Remember those? They were really nice. We should go back.
+Back when I was in uni I used some suuuuper sketchy patched installers to run Mavericks (iirc) on my FX-4350 based system. Back then documentation was nonexistent, you had to read through scammy-looking forums for answers, etc etc etc bullshit."/>
+
+
+
+
+
+
+
+
+
+
+
+    
+</head>
+<body>
+    <a class="skip-main" href="#main">Skip to main content</a>
+    <div class="container">
+        <header class="common-header"> 
+            
+                <div class="header-top">
+    <h1 class="site-title">
+    <a href="/">goos.blog</a>
+</h1>
+    <ul class="social-icons">
+
+
+    
+        
+        
+        <li>
+            <a href="https://github.com/g-o-o-s" title="Github" rel="me">
+            <span class="inline-svg" >
+
+
+
+
+    
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 496 512"><path fill="currentColor" d="M165.9 397.4c0 2-2.3 3.6-5.2 3.6-3.3.3-5.6-1.3-5.6-3.6 0-2 2.3-3.6 5.2-3.6 3-.3 5.6 1.3 5.6 3.6zm-31.1-4.5c-.7 2 1.3 4.3 4.3 4.9 2.6 1 5.6 0 6.2-2s-1.3-4.3-4.3-5.2c-2.6-.7-5.5.3-6.2 2.3zm44.2-1.7c-2.9.7-4.9 2.6-4.6 4.9.3 2 2.9 3.3 5.9 2.6 2.9-.7 4.9-2.6 4.6-4.6-.3-1.9-3-3.2-5.9-2.9zM244.8 8C106.1 8 0 113.3 0 252c0 110.9 69.8 205.8 169.5 239.2 12.8 2.3 17.3-5.6 17.3-12.1 0-6.2-.3-40.4-.3-61.4 0 0-70 15-84.7-29.8 0 0-11.4-29.1-27.8-36.6 0 0-22.9-15.7 1.6-15.4 0 0 24.9 2 38.6 25.8 21.9 38.6 58.6 27.5 72.9 20.9 2.3-16 8.8-27.1 16-33.7-55.9-6.2-112.3-14.3-112.3-110.5 0-27.5 7.6-41.3 23.6-58.9-2.6-6.5-11.1-33.3 2.6-67.9 20.9-6.5 69 27 69 27 20-5.6 41.5-8.5 62.8-8.5s42.8 2.9 62.8 8.5c0 0 48.1-33.6 69-27 13.7 34.7 5.2 61.4 2.6 67.9 16 17.7 25.8 31.5 25.8 58.9 0 96.5-58.9 104.2-114.8 110.5 9.2 7.9 17 22.9 17 46.4 0 33.7-.3 75.4-.3 83.6 0 6.5 4.6 14.4 17.3 12.1C428.2 457.8 496 362.9 496 252 496 113.3 383.5 8 244.8 8zM97.2 352.9c-1.3 1-1 3.3.7 5.2 1.6 1.6 3.9 2.3 5.2 1 1.3-1 1-3.3-.7-5.2-1.6-1.6-3.9-2.3-5.2-1zm-10.8-8.1c-.7 1.3.3 2.9 2.3 3.9 1.6 1 3.6.7 4.3-.7.7-1.3-.3-2.9-2.3-3.9-2-.6-3.6-.3-4.3.7zm32.4 35.6c-1.6 1.3-1 4.3 1.3 6.2 2.3 2.3 5.2 2.6 6.5 1 1.3-1.3.7-4.3-1.3-6.2-2.2-2.3-5.2-2.6-6.5-1zm-11.4-14.7c-1.6 1-1.6 3.6 0 5.9 1.6 2.3 4.3 3.3 5.6 2.3 1.6-1.3 1.6-3.9 0-6.2-1.4-2.3-4-3.3-5.6-2z"/></svg>
+
+</span>
+
+            </a>
+        </li>
+    
+
+
+
+    <li>
+            <a href="https://goos.blog/index.xml" title="RSS" rel="me">
+            <span class="inline-svg" >
+
+
+
+
+    
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><path fill="currentColor" d="M128.081 415.959c0 35.369-28.672 64.041-64.041 64.041S0 451.328 0 415.959s28.672-64.041 64.041-64.041 64.04 28.673 64.04 64.041zm175.66 47.25c-8.354-154.6-132.185-278.587-286.95-286.95C7.656 175.765 0 183.105 0 192.253v48.069c0 8.415 6.49 15.472 14.887 16.018 111.832 7.284 201.473 96.702 208.772 208.772.547 8.397 7.604 14.887 16.018 14.887h48.069c9.149.001 16.489-7.655 15.995-16.79zm144.249.288C439.596 229.677 251.465 40.445 16.503 32.01 7.473 31.686 0 38.981 0 48.016v48.068c0 8.625 6.835 15.645 15.453 15.999 191.179 7.839 344.627 161.316 352.465 352.465.353 8.618 7.373 15.453 15.999 15.453h48.068c9.034-.001 16.329-7.474 16.005-16.504z"/></svg>
+
+</span>
+
+            </a>
+        </li>
+    
+
+</ul>
+</div>
+
+    <nav></nav>
+
+
+
+
+            
+        </header>
+        <main id="main" tabindex="-1"> 
+            
+    
+
+    <article class="post h-entry">
+        <div class="post-header">
+            <header>
+                <h1 class="p-name post-title">Adventures with MacOS</h1>
+
+                
+            </header>
+        </div>
+        <div class="content e-content">
+            <h4 id="why-not-just-install-linux-dude" ><em>why not just install linux dude?</em>
+<span>
+    <a href="#why-not-just-install-linux-dude">
+        <svg viewBox="0 0 28 23" height="100%" width="19" xmlns="http://www.w3.org/2000/svg"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71" fill="none" stroke-linecap="round" stroke-miterlimit="10" stroke-width="2"/><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71" fill="none" stroke-linecap="round" stroke-miterlimit="10" stroke-width="2"/></svg>
+    </a>
+</span>
+</h4><p>I&rsquo;ve always liked <del>OSX</del> MacOS, dating back to when we had iMac G1s (and later G4s) in our school computer lab.</p>
+<p><img src="/2022/04/macos_adventures/imac-g4-imac-g3-comparison.jpg" alt="iMac G1 in Aqua"></p>
+<p>Remember those? They were really nice. We should go back.</p>
+<p>Back when I was in uni I used some suuuuper sketchy patched installers to run Mavericks (iirc) on my FX-4350 based system.
+Back then documentation was nonexistent, you had to read through scammy-looking forums for answers, etc etc etc bullshit.
+But you know what? It worked. It worked surprisingly well. I even played quite a bit of Team Fortress 2 on it.
+For whatever reason I eventually I switched to Arch+KDE4 (remember tabbing together arbitrary windows?), but I&rsquo;ve always fondly remembered those osx days.</p>
+<p>I&rsquo;m not sure what inspired me to try running <del>OSX</del> MacOS this time around, but I&rsquo;m very happy to report that the situation has improved quite a bit.
+It&rsquo;s like adults have taken over the whole ecosystem. Most things are documented, everything is on Github instead of totally-not-a-virus.com, etc.</p>
+<p>My current build is a 5600x with an rx580 (wanna sell me something better at msrp?). I certainly didn&rsquo;t plan this build for macos, but I&rsquo;ll be damned if I can&rsquo;t get it working.
+After all, if I could do it when I was dumb enough to go to uni, I should be able to do it now, right?</p>
+<h3 id="the-starting-lineup" >The Starting Lineup
+<span>
+    <a href="#the-starting-lineup">
+        <svg viewBox="0 0 28 23" height="100%" width="19" xmlns="http://www.w3.org/2000/svg"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71" fill="none" stroke-linecap="round" stroke-miterlimit="10" stroke-width="2"/><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71" fill="none" stroke-linecap="round" stroke-miterlimit="10" stroke-width="2"/></svg>
+    </a>
+</span>
+</h3><p>First things first, take a careful inventory of your system, note down the exact hardware ids you have, blah blah blah.<br>
+Don&rsquo;t forget to read all 50000 pages of the <a href="https://dortania.github.io/OpenCore-Install-Guide/">OpenCore Documentation</a>.<br>
+After that you need to do this that and the other thing.</p>
+<p>Screw that, lets dive right in.</p>
+<h3 id="the-plan-initially" >The Plan (initially)
+<span>
+    <a href="#the-plan-initially">
+        <svg viewBox="0 0 28 23" height="100%" width="19" xmlns="http://www.w3.org/2000/svg"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71" fill="none" stroke-linecap="round" stroke-miterlimit="10" stroke-width="2"/><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71" fill="none" stroke-linecap="round" stroke-miterlimit="10" stroke-width="2"/></svg>
+    </a>
+</span>
+</h3><p>My plan at first was to install Monterey as a vm on <a href="https://www.proxmox.com/en/proxmox-ve">Proxmox VE</a>.
+I&rsquo;ve been using PVE for years both at work and on my personal iron, and I&rsquo;m no stranger to PCI passthrough, so I figured this would be a cinch.
+<a href="https://www.nicksherlock.com/2021/10/installing-macos-12-monterey-on-proxmox-7/">This guide</a> made it look pretty easy, and it was.</p>
+<p>GPU passthrough was straightforward. Enable iommu, setup some vfio stuff, and you&rsquo;re done.</p>
+<p>Emboldened by the almost effortless gpu passthough, I passed through the usb3 controllers. <em>&ldquo;There&rsquo;s no way this works, right?&rdquo;</em></p>
+<p>It did. It literally justwerked™, no kexts or device-id changes required.</p>
+<p>Apparently Apple likes AMD these days? Or maybe these usb3 controllers are uh, class compliant? Is that even a thing for things that live in the chipset?</p>
+<p>In the past I&rsquo;ve had good luck switching between different Windows and Linux vms, moving the gpu around in a digital game of hot potato.
+Knowing that I wouldn&rsquo;t really be able to game on MacOS no matter how stronk my hardware, I had this workflow pictured:</p>
+<ul>
+<li>Monterey, Windows, and Linux (possibly multiple, more below) vms on the same host</li>
+<li>Suspend-to-disk the current vm</li>
+<li>Switch to a different vm</li>
+<li>The gpu gets released by the old vm and picked up by the new one</li>
+<li>It all justwerks, I don&rsquo;t have to do a full reboot, and because I&rsquo;m suspending to disk, I don&rsquo;t even have to re-open all my programs!</li>
+</ul>
+<p>Of course, it&rsquo;s never quite as easy as you think it will be.
+In my case, it <em>almost</em> completely worked.
+Going from MacOS -&gt; (Linux, Windows) worked perfectly (after I installed the <a href="https://github.com/gnif/vendor-reset">Vendor Reset kernel module</a>).</p>
+<p>Going back to Monterey though&hellip; Didn&rsquo;t work. MacOS just wouldn&rsquo;t pick up and reactivate the gpu. Sadface.</p>
+<p>I was also faced with the vm not grabbing the gpu on first startup. I had to do this each time the host booted, and it was annoying:</p>
+<p><code>qm start 3001 &amp;&amp; sleep 5 &amp;&amp; qm stop 3001 &amp;&amp; sleep 5 &amp;&amp; qm start 3001</code></p>
+<p>I&rsquo;m sure someone could figure it all out, but I&rsquo;m not a hardware hacker by any means (the last time I wrote C was pen on paper in CS101).</p>
+<p>I had gotten a fresh taste of the MacOS life, and I wasn&rsquo;t going to settle for Windows or Open Sores on my desktop.
+It was time for a different plan.</p>
+<h3 id="the-plan-reality-check" >The Plan (reality check)
+<span>
+    <a href="#the-plan-reality-check">
+        <svg viewBox="0 0 28 23" height="100%" width="19" xmlns="http://www.w3.org/2000/svg"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71" fill="none" stroke-linecap="round" stroke-miterlimit="10" stroke-width="2"/><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71" fill="none" stroke-linecap="round" stroke-miterlimit="10" stroke-width="2"/></svg>
+    </a>
+</span>
+</h3><p>Knowing that I was getting pretty deep into the black magik voodoo tier of host/guest interaction, I decided to take a step back.</p>
+<p><em>&ldquo;It isn&rsquo;t that bad restarting programs, it&rsquo;s really just a few terminal windows and discord, I guess we can do a true multi-boot&hellip;
+Yeah performance inside the vm is okay, but I want native power management and stuff like that.
+Might as well install on iron.</em></p>
+<p>Reality checked, I did a quick <code>zfs send | ssh root@maelcum zfs recv</code> to save my Monterey vm on my nas just in case I had to go back, and started actually reading OpenCore&rsquo;s documentation.</p>
+<p>First things first, we need some install media for MacOS. The guide recommends starting with Big Sur or something old like that.
+Here at goos.blog, we don&rsquo;t use old software, ever. Hardware, sure, that&rsquo;s just cheaper. But all software is free (if you try hard enough), so why use old things?</p>
+<p>Remembering how long it took the macos netinstall to run from a minimal boot usb, I created a full one.
+It took well over three hours (a good hour longer than the netinstall took on the vm) to download and flash to a reasonably good usb3 thumbdrive from inside the vm. Second sadface.
+That was the easy part.</p>
+<p>Not that any of this was particularly hard, but that was the easy part.</p>
+<p>I&rsquo;ll spare you the boredom of going through the opencore configuration, if you&rsquo;re trying to do this you should be reading the documentation, not a blog post.
+I ended up booting a livecd on my laptop to run ProperTree because I still cba to figure out how to mount an esp on Windows.
+It didn&rsquo;t take much for me to get to a working installer, some kexts here, some patches there, about 10 roundtrips back into the vm to make edits, and here we go!
+Oh&hellip; Wait&hellip; Why aren&rsquo;t any of my disks showing up?</p>
+<p>Like always, I had forgotten something.
+This time around the &ldquo;something&rdquo; was an entire section of the documentation detailing how some sata controllers aren&rsquo;t supported and need an additional kernel extension.
+Easy fix, just annoying that I had glazed over yet another thing.</p>
+<p>At this point it was 5am (from the wrong direction). I went to bed.</p>
+<h3 id="the-aftermath" >The Aftermath
+<span>
+    <a href="#the-aftermath">
+        <svg viewBox="0 0 28 23" height="100%" width="19" xmlns="http://www.w3.org/2000/svg"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71" fill="none" stroke-linecap="round" stroke-miterlimit="10" stroke-width="2"/><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71" fill="none" stroke-linecap="round" stroke-miterlimit="10" stroke-width="2"/></svg>
+    </a>
+</span>
+</h3><p>I awoke at noon, somewhat refreshed, still buzzing on the &ldquo;did a cool thing&rdquo; high.</p>
+<p>Going into my office, I see that the desktop is in s3 sleep. <em>&ldquo;Huh, didn&rsquo;t think that&rsquo;d work out of the box&rdquo;</em></p>
+<p>I tap ctrl a few times and to my delight the system wakes up and I&rsquo;m presented with a login screen.</p>
+<p>It didn&rsquo;t take long to get things setup. Firefox, plex, vscode, my various email accounts (apple mail &gt; outlook / thunderbird), and I&rsquo;m good to go.
+I do most of my development and testing work in vms on armitage, my stronk dual socket system with lots of wam and ssd, so my actual dev envs are pretty portable.</p>
+<h3 id="the-current-state-of-things" >The Current State Of Things
+<span>
+    <a href="#the-current-state-of-things">
+        <svg viewBox="0 0 28 23" height="100%" width="19" xmlns="http://www.w3.org/2000/svg"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71" fill="none" stroke-linecap="round" stroke-miterlimit="10" stroke-width="2"/><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71" fill="none" stroke-linecap="round" stroke-miterlimit="10" stroke-width="2"/></svg>
+    </a>
+</span>
+</h3><p>As I type this on the Monterey side of my desktop <em>&hellip;tabs over to ebay tracking and hits refresh&hellip;</em>
+I&rsquo;m waiting on another RX580 to come in the mail. This one is going to go into armitage (dell t7910) and is going to be used for a <em><strong>GAMING SERVER</strong></em>
+(I&rsquo;ve been jealous of <a href="https://lo.calho.st/posts/gaming-vm/">tmick0&rsquo;s setup</a> ever since I pointed him in the right directions on it).
+Like him, I use a steam link on my teevee, and I&rsquo;ll also be able to stream games to my desktop.
+Once that&rsquo;s setup the only time I&rsquo;ll have to leave macos is for playing CS:GO - it <em>runs</em> on macos, but uh&hellip; shittily.
+I have grand ideas for a boot-to-csgo linux install, we&rsquo;ll see if I find a roundtuit for that project.</p>
+<p>Was it all worth it?</p>
+<p>Yes (even though I&rsquo;ve spent $700 in the past two days on more wam and a gpu for armitage).</p>
+<p>Could I have just stuck with winderp or installed a linux?</p>
+<p>Sure. But where&rsquo;s the fun in that?</p>
+<p><img src="/2022/04/macos_adventures/great_success.png" alt="Screenshot of &amp;ldquo;About this Mac&amp;rdquo; and &amp;ldquo;Neofetch&amp;rdquo;"></p>
+
+        </div>
+        
+
+    
+
+
+<div class="post-info">
+    
+        <div class="post-date dt-published">2022-04-13</div>
+    
+
+    <a class="post-hidden-url u-url" href="https://goos.blog/2022/04/macos-adventures/">https://goos.blog/2022/04/macos-adventures/</a>
+    <a href="https://goos.blog" class="p-name p-author post-hidden-author h-card" rel="me"></a>
+
+
+    <div class="post-taxonomies">
+        
+            
+    </div>
+</div>
+
+    </article>
+
+    
+        
+        
+    
+
+    
+
+    
+        
+
+
+
+
+
+
+
+    
+
+        </main>
+        
+            <footer class="common-footer">
+    
+    
+
+    <div class="common-footer-bottom">
+        
+        <div class="copyright">
+            <p>© 2023 <a href="mailto:honk@goos.blog">honk@goos.blog</a><br>
+            
+            </p>  
+        </div> 
+
+        
+
+    
+
+
+
+    <button class="theme-switcher">
+        Dark theme
+    </button>
+
+
+<script>
+const STORAGE_KEY = 'user-color-scheme'
+const defaultTheme = "dark"
+
+let currentTheme
+let switchButton
+let autoDefinedScheme = window.matchMedia('(prefers-color-scheme: dark)')
+
+const autoChangeScheme = e => {
+    currentTheme = e.matches ? 'dark' : 'light'
+    document.documentElement.setAttribute('data-theme', currentTheme)
+    changeButtonText()
+}
+
+document.addEventListener('DOMContentLoaded', function() {
+    switchButton = document.querySelector('.theme-switcher')
+    currentTheme = detectCurrentScheme()
+    if (currentTheme == 'dark') {
+        document.documentElement.setAttribute('data-theme', 'dark')
+    }
+    if (currentTheme == 'auto') {
+        autoChangeScheme(autoDefinedScheme);
+        autoDefinedScheme.addListener(autoChangeScheme);
+    }
+
+    if (switchButton) {
+        changeButtonText()
+        switchButton.addEventListener('click', switchTheme, false)
+    }
+  
+    showContent()
+})
+
+function detectCurrentScheme() {
+    if (localStorage.getItem(STORAGE_KEY)) {
+        return localStorage.getItem(STORAGE_KEY)
+    } 
+    if (defaultTheme) {
+        return defaultTheme
+    } 
+    if (!window.matchMedia) {
+        return 'light'
+    } 
+    if (window.matchMedia('(prefers-color-scheme: dark)').matches) {
+        return 'dark'
+    }
+    return 'light'
+}
+
+function changeButtonText()
+{   
+    if (switchButton) {
+        switchButton.textContent = currentTheme == 'dark' ?  "Light theme" : "Dark theme"
+    }
+}
+
+function switchTheme(e) {
+    if (currentTheme == 'dark') {
+        localStorage.setItem(STORAGE_KEY, 'light')
+        document.documentElement.setAttribute('data-theme', 'light')
+        currentTheme = 'light'
+    } else {
+        localStorage.setItem(STORAGE_KEY, 'dark')
+        document.documentElement.setAttribute('data-theme', 'dark')
+        currentTheme = 'dark'
+    }
+    changeButtonText()
+}
+
+function showContent() {
+    document.body.style.visibility = 'visible';
+    document.body.style.opacity = 1;
+}
+</script>   
+    </div>
+
+    <p class="h-card vcard">
+
+    <a href=https://goos.blog class="p-name u-url url fn" rel="me"></a> 
+
+     
+        /
+        <a class="p-email u-email email" rel="me" href="mailto:honk@goos.blog">honk@goos.blog</a>
+    
+
+    
+</p> 
+</footer>
+
+        
+    </div>
+</body>
+</html>

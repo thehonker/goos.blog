@@ -1,0 +1,31 @@
+baseURL: "https://goos.blog"
+languageCode: "en-us"
+title: "goos.blog"
+theme: "anubis"
+paginate: 10
+enableRobotsTXT: true
+
+permalinks:
+  blog: "/:year/:month/:slug/"
+
+params:
+  email: honk@goos.blog
+  avatar: ""
+  description: ""
+  dateFormat: "2006-01-02"
+  paginationSinglePost: false
+  style: dark
+  readMore: false # show read more button
+  readNextPosts: 5  # show 5 related posts, 0 by default
+  disableSummary: false
+  copyCodeButton: true # true by default
+  rssAsSocialIcon: true
+
+  social:
+  - id: github
+    name: g-o-o-s
+
+markup:
+  goldmark:
+    renderer:
+      unsafe: true # enable raw HTML in Markdown

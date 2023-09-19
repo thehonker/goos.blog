@@ -1,0 +1,453 @@
+<!DOCTYPE html>
+
+
+<html lang="en-us" data-theme="">
+<head>
+    
+        
+<meta charset="utf-8">
+<meta name="HandheldFriendly" content="True">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="referrer" content="no-referrer-when-downgrade">
+
+<title>Hammer VM (Or: How I Learned To Hate the Quadro k2000) - goos.blog</title>
+
+<meta name="description" content="so i just passthrough the quadro to another windows vm for hammer and stuff Sometimes I like making CS:GO Surf maps. I&rsquo;ve only released one, but I have grand ideas for several more.
+The need In order to support this now that I&rsquo;m running Monterey on my desktop, I needed a winderp env. I could combine this with the GAMING VM I have planned, but no, I don&rsquo;t want to. I have a halfway-decent quadro k2000, so passing it through to a vm on Armitage should be easy enough, right?">
+
+
+
+
+
+<link rel="icon" type="image/x-icon" href="https://goos.blog/favicon.ico">
+<link rel="apple-touch-icon-precomposed" href="https://goos.blog/favicon.png">
+
+
+<style>
+  body {
+    visibility: hidden;
+    opacity: 0;
+  }
+</style>
+
+<noscript>
+  <style>
+    body {
+      visibility: visible;
+      opacity: 1;
+    }
+  </style>
+</noscript>
+
+
+
+    
+
+
+
+
+
+    
+    
+        
+    
+    
+
+    
+        <link rel="stylesheet" href="https://goos.blog/css/style.min.13e9ee87c57d784d14fb842506c3eade9de10150a7f653bd19dacda241d60e0d.css" integrity="sha256-E&#43;nuh8V9eE0U&#43;4QlBsPq3p3hAVCn9lO9GdrNokHWDg0=">
+    
+
+
+
+
+
+    
+
+    
+
+
+
+
+
+    
+    
+        
+    
+    
+
+    
+        <script src="https://goos.blog/js/script.min.74bf1a3fcf1af396efa4acf3e660e876b61a2153ab9cbe1893ac24ea6d4f94ee.js" type="text/javascript" charset="utf-8" integrity="sha256-dL8aP88a85bvpKzz5mDodrYaIVOrnL4Yk6wk6m1PlO4="></script>
+    
+
+
+
+
+
+
+
+<meta property="og:title" content="Hammer VM (Or: How I Learned To Hate the Quadro k2000)" />
+<meta property="og:description" content="so i just passthrough the quadro to another windows vm for hammer and stuff Sometimes I like making CS:GO Surf maps. I&rsquo;ve only released one, but I have grand ideas for several more.
+The need In order to support this now that I&rsquo;m running Monterey on my desktop, I needed a winderp env. I could combine this with the GAMING VM I have planned, but no, I don&rsquo;t want to. I have a halfway-decent quadro k2000, so passing it through to a vm on Armitage should be easy enough, right?" />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://goos.blog/2022/04/hammer-time/" /><meta property="article:section" content="blog" />
+<meta property="article:published_time" content="2022-04-14T00:00:00-04:00" />
+<meta property="article:modified_time" content="2022-04-14T00:00:00-04:00" />
+
+<meta name="twitter:card" content="summary"/>
+<meta name="twitter:title" content="Hammer VM (Or: How I Learned To Hate the Quadro k2000)"/>
+<meta name="twitter:description" content="so i just passthrough the quadro to another windows vm for hammer and stuff Sometimes I like making CS:GO Surf maps. I&rsquo;ve only released one, but I have grand ideas for several more.
+The need In order to support this now that I&rsquo;m running Monterey on my desktop, I needed a winderp env. I could combine this with the GAMING VM I have planned, but no, I don&rsquo;t want to. I have a halfway-decent quadro k2000, so passing it through to a vm on Armitage should be easy enough, right?"/>
+
+
+
+
+
+
+
+
+
+
+
+    
+</head>
+<body>
+    <a class="skip-main" href="#main">Skip to main content</a>
+    <div class="container">
+        <header class="common-header"> 
+            
+                <div class="header-top">
+    <h1 class="site-title">
+    <a href="/">goos.blog</a>
+</h1>
+    <ul class="social-icons">
+
+
+    
+        
+        
+        <li>
+            <a href="https://github.com/g-o-o-s" title="Github" rel="me">
+            <span class="inline-svg" >
+
+
+
+
+    
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 496 512"><path fill="currentColor" d="M165.9 397.4c0 2-2.3 3.6-5.2 3.6-3.3.3-5.6-1.3-5.6-3.6 0-2 2.3-3.6 5.2-3.6 3-.3 5.6 1.3 5.6 3.6zm-31.1-4.5c-.7 2 1.3 4.3 4.3 4.9 2.6 1 5.6 0 6.2-2s-1.3-4.3-4.3-5.2c-2.6-.7-5.5.3-6.2 2.3zm44.2-1.7c-2.9.7-4.9 2.6-4.6 4.9.3 2 2.9 3.3 5.9 2.6 2.9-.7 4.9-2.6 4.6-4.6-.3-1.9-3-3.2-5.9-2.9zM244.8 8C106.1 8 0 113.3 0 252c0 110.9 69.8 205.8 169.5 239.2 12.8 2.3 17.3-5.6 17.3-12.1 0-6.2-.3-40.4-.3-61.4 0 0-70 15-84.7-29.8 0 0-11.4-29.1-27.8-36.6 0 0-22.9-15.7 1.6-15.4 0 0 24.9 2 38.6 25.8 21.9 38.6 58.6 27.5 72.9 20.9 2.3-16 8.8-27.1 16-33.7-55.9-6.2-112.3-14.3-112.3-110.5 0-27.5 7.6-41.3 23.6-58.9-2.6-6.5-11.1-33.3 2.6-67.9 20.9-6.5 69 27 69 27 20-5.6 41.5-8.5 62.8-8.5s42.8 2.9 62.8 8.5c0 0 48.1-33.6 69-27 13.7 34.7 5.2 61.4 2.6 67.9 16 17.7 25.8 31.5 25.8 58.9 0 96.5-58.9 104.2-114.8 110.5 9.2 7.9 17 22.9 17 46.4 0 33.7-.3 75.4-.3 83.6 0 6.5 4.6 14.4 17.3 12.1C428.2 457.8 496 362.9 496 252 496 113.3 383.5 8 244.8 8zM97.2 352.9c-1.3 1-1 3.3.7 5.2 1.6 1.6 3.9 2.3 5.2 1 1.3-1 1-3.3-.7-5.2-1.6-1.6-3.9-2.3-5.2-1zm-10.8-8.1c-.7 1.3.3 2.9 2.3 3.9 1.6 1 3.6.7 4.3-.7.7-1.3-.3-2.9-2.3-3.9-2-.6-3.6-.3-4.3.7zm32.4 35.6c-1.6 1.3-1 4.3 1.3 6.2 2.3 2.3 5.2 2.6 6.5 1 1.3-1.3.7-4.3-1.3-6.2-2.2-2.3-5.2-2.6-6.5-1zm-11.4-14.7c-1.6 1-1.6 3.6 0 5.9 1.6 2.3 4.3 3.3 5.6 2.3 1.6-1.3 1.6-3.9 0-6.2-1.4-2.3-4-3.3-5.6-2z"/></svg>
+
+</span>
+
+            </a>
+        </li>
+    
+
+
+
+    <li>
+            <a href="https://goos.blog/index.xml" title="RSS" rel="me">
+            <span class="inline-svg" >
+
+
+
+
+    
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><path fill="currentColor" d="M128.081 415.959c0 35.369-28.672 64.041-64.041 64.041S0 451.328 0 415.959s28.672-64.041 64.041-64.041 64.04 28.673 64.04 64.041zm175.66 47.25c-8.354-154.6-132.185-278.587-286.95-286.95C7.656 175.765 0 183.105 0 192.253v48.069c0 8.415 6.49 15.472 14.887 16.018 111.832 7.284 201.473 96.702 208.772 208.772.547 8.397 7.604 14.887 16.018 14.887h48.069c9.149.001 16.489-7.655 15.995-16.79zm144.249.288C439.596 229.677 251.465 40.445 16.503 32.01 7.473 31.686 0 38.981 0 48.016v48.068c0 8.625 6.835 15.645 15.453 15.999 191.179 7.839 344.627 161.316 352.465 352.465.353 8.618 7.373 15.453 15.999 15.453h48.068c9.034-.001 16.329-7.474 16.005-16.504z"/></svg>
+
+</span>
+
+            </a>
+        </li>
+    
+
+</ul>
+</div>
+
+    <nav></nav>
+
+
+
+
+            
+        </header>
+        <main id="main" tabindex="-1"> 
+            
+    
+
+    <article class="post h-entry">
+        <div class="post-header">
+            <header>
+                <h1 class="p-name post-title">Hammer VM (Or: How I Learned To Hate the Quadro k2000)</h1>
+
+                
+            </header>
+        </div>
+        <div class="content e-content">
+            <h3 id="so-i-just-passthrough-the-quadro-to-another-windows-vm-for-hammer-and-stuff" ><em>so i just passthrough the quadro to another windows vm for hammer and stuff</em>
+<span>
+    <a href="#so-i-just-passthrough-the-quadro-to-another-windows-vm-for-hammer-and-stuff">
+        <svg viewBox="0 0 28 23" height="100%" width="19" xmlns="http://www.w3.org/2000/svg"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71" fill="none" stroke-linecap="round" stroke-miterlimit="10" stroke-width="2"/><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71" fill="none" stroke-linecap="round" stroke-miterlimit="10" stroke-width="2"/></svg>
+    </a>
+</span>
+</h3><p>Sometimes I like making CS:GO Surf maps. I&rsquo;ve only released <a href="https://steamcommunity.com/sharedfiles/filedetails/?id=2404967658">one</a>, but I have grand ideas for several more.</p>
+<h2 id="the-need" >The need
+<span>
+    <a href="#the-need">
+        <svg viewBox="0 0 28 23" height="100%" width="19" xmlns="http://www.w3.org/2000/svg"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71" fill="none" stroke-linecap="round" stroke-miterlimit="10" stroke-width="2"/><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71" fill="none" stroke-linecap="round" stroke-miterlimit="10" stroke-width="2"/></svg>
+    </a>
+</span>
+</h2><p>In order to support this now that I&rsquo;m running Monterey on my desktop, I needed a winderp env.
+I could combine this with the <strong>GAMING VM</strong> I have planned, but no, I don&rsquo;t want to.
+I have a halfway-decent quadro k2000, so passing it through to a vm on Armitage should be easy enough, right?</p>
+<p>I&rsquo;ve passed this card through on this host before (albeit on cpu1 instead of cpu0), so I start out pretty confident. I click the buttons, add the pci device to the host config, make sure it&rsquo;s bound by vfio-pci, etc.</p>
+<h2 id="oh-no" >Oh No
+<span>
+    <a href="#oh-no">
+        <svg viewBox="0 0 28 23" height="100%" width="19" xmlns="http://www.w3.org/2000/svg"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71" fill="none" stroke-linecap="round" stroke-miterlimit="10" stroke-width="2"/><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71" fill="none" stroke-linecap="round" stroke-miterlimit="10" stroke-width="2"/></svg>
+    </a>
+</span>
+</h2><p>Except&hellip; The moment I start the vm, the host console is FLOODED with mcelog events, leading to an eventual panic and cpu reset.</p>
+<p>Not Good. Along with the kernel panic there was some amount of human panic. Was Armitage dying (right after I spent lossa money on new goodies for it)?</p>
+<p>The errors are logged to bios (this is a workstation with ecc after all), so I swap the stick of wam in question over to another slot.
+After doing that though, the system just crashed even faster, and didn&rsquo;t log the problem stick to bios. I pulled the plug and went to bed.</p>
+<h2 id="trying-again" >Trying again
+<span>
+    <a href="#trying-again">
+        <svg viewBox="0 0 28 23" height="100%" width="19" xmlns="http://www.w3.org/2000/svg"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71" fill="none" stroke-linecap="round" stroke-miterlimit="10" stroke-width="2"/><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71" fill="none" stroke-linecap="round" stroke-miterlimit="10" stroke-width="2"/></svg>
+    </a>
+</span>
+</h2><p>I wake up the next day with a clear head and some fresh ideas.
+First thing, I booted the vm without the quadro card attached. It came up just fine, and the host was happy.
+:thonking:</p>
+<p>I then created a vm that would allocate 126 of the 128gb of wam on the host. It came up just fine, and the host was still happy.</p>
+<p>Was I imagining the mce events? No, they&rsquo;re right there in the bios log still&hellip; Odd.
+I attached the quadro to the winderp vm and started it again. Instant mcepanic and reset.</p>
+<pre tabindex="0"><code class="language-none" data-lang="none">[  510.749751] DMAR: DRHD: handling fault status reg 2
+[  510.749757] DMAR: [DMA Read] Request device [03:00.0] PASID ffffffff fault addr fffffff000 [fault reason 06] PTE Read access is not set
+[  510.837379] DMAR: DRHD: handling fault status reg 102
+[  510.837384] DMAR: [DMA Read] Request device [03:00.0] PASID ffffffff fault addr fffffff000 [fault reason 06] PTE Read access is not set
+[  510.847689] DMAR: DRHD: handling fault status reg 202
+[  510.847693] DMAR: [DMA Read] Request device [03:00.0] PASID ffffffff fault addr fffffff000 [fault reason 06] PTE Read access is not set
+[  510.847720] DMAR: DRHD: handling fault status reg 302
+</code></pre><p>This fun stuff was logged at vm start and right before the mce explosion. It also logged whenever I did a reset of the gpu from inside the guest.
+It was starting to smell like a rom-bar type issue. I don&rsquo;t know what address that is referenced in those dma errors, but it sure smells like the guest is trying (and failing) to read the vbios.</p>
+<p>On a hunch, I swapped the quadro with the boot graphics. The quadro had been in the blue slot, which is probably the &ldquo;primary&rdquo; pcie slot.
+Now it was in a x4 slot, which in theory would restrict performance, but who cares, I just need it to drive some light opengl shit.</p>
+<p>I was no longer getting mcedeath each time I started the vm, but I was still getting error 43&rsquo;d in the guest. I tried with <code>rombar=0</code>, however that lead to a full host lockup.</p>
+<p>I <em>really</em> wish my pi-kvm was working. Hopefully that vga -&gt; hdmi adapter I ordered works. If not I guess I can try an inline edid emulator. More on that later though.</p>
+<p>I decided to try passing the vbios to the guest as a <code>romfile=</code> param. This didn&rsquo;t log any errors, but did rather quickly lead to a whole host lockup, probably right around the time the guest activated the gpu.</p>
+<h2 id="giving-up-for-now" >Giving up (for now)
+<span>
+    <a href="#giving-up-for-now">
+        <svg viewBox="0 0 28 23" height="100%" width="19" xmlns="http://www.w3.org/2000/svg"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71" fill="none" stroke-linecap="round" stroke-miterlimit="10" stroke-width="2"/><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71" fill="none" stroke-linecap="round" stroke-miterlimit="10" stroke-width="2"/></svg>
+    </a>
+</span>
+</h2><p>It was at this point I gave up and removed the quadro from Armitage.
+I&rsquo;m not sure if the card itself is bad, or if it just hates the pcie layout on the t7910.
+I can use spice/qxl and it should be enough.
+If not, I&rsquo;ll order a firepro or something. I&rsquo;m done with nvidia. At least for today.</p>
+<h2 id="virt-viewer-on-macos" >virt-viewer on macos
+<span>
+    <a href="#virt-viewer-on-macos">
+        <svg viewBox="0 0 28 23" height="100%" width="19" xmlns="http://www.w3.org/2000/svg"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71" fill="none" stroke-linecap="round" stroke-miterlimit="10" stroke-width="2"/><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71" fill="none" stroke-linecap="round" stroke-miterlimit="10" stroke-width="2"/></svg>
+    </a>
+</span>
+</h2><p>For the qxl driver, you really need a proper spice client.
+There&rsquo;s an official .app these days, but I wasn&rsquo;t able to get it to ingest the spice file that pve generated.
+Additionally, it wasn&rsquo;t providing the .vv extension with the download, so I couldn&rsquo;t associate it that way.
+I ended up installing virt-viewer via homebrew.
+I found <a href="https://gist.github.com/tomdaley92/789688fc68e77477d468f7b9e59af51c">this post</a>, and decided to setup an automator.app to launch it directly, instead of feeding it the downloaded .vv file from pve.
+I ended up hardcoding the vmid, as this is (for now) the only vm on armitage using qxl.
+If there are any more in the future I&rsquo;ll probably do the same, I like having direct shortcuts.</p>
+<h2 id="hammer-time-stop" >Hammer Time. Stop.
+<span>
+    <a href="#hammer-time-stop">
+        <svg viewBox="0 0 28 23" height="100%" width="19" xmlns="http://www.w3.org/2000/svg"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71" fill="none" stroke-linecap="round" stroke-miterlimit="10" stroke-width="2"/><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71" fill="none" stroke-linecap="round" stroke-miterlimit="10" stroke-width="2"/></svg>
+    </a>
+</span>
+</h2><p>Now that I had a working vm, I needed hammer and friends. I download steam and do the thing, then I copy over hammer++ (which is now available for csgo!).
+Small problem though: The mouse in the 3d preview&hellip; is kinda screwy.
+Even after dropping the sensitivity to the lowest, it&rsquo;s still basically unusable.
+I feel like this would be resolved with a gpu and using vnc or rdp. It would also probably allow me to run csgo to quickly test maps.</p>
+<p>Digging through the junk bins, I found two more gpus to try. A radeon 7570, and a nvidia gt1030.
+Given that the 1030 is several years newer than both the radeon and the quadro, I decided to try that first.
+The vm booted right up with nothing scary printed to host dmesg. That&rsquo;s a good start.
+After removing the quadro drivers and installing consumer ones, the gpu started right up.</p>
+<p>Hammer was much smoother and better behaved now.
+I could even play csgo at a good enough framerate for testing maps, if I could find a remote desktop setup that wasn&rsquo;t so latent.</p>
+<h2 id="remote-desktop-that-doesnt-suck" >Remote Desktop that Doesn&rsquo;t Suck
+<span>
+    <a href="#remote-desktop-that-doesnt-suck">
+        <svg viewBox="0 0 28 23" height="100%" width="19" xmlns="http://www.w3.org/2000/svg"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71" fill="none" stroke-linecap="round" stroke-miterlimit="10" stroke-width="2"/><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71" fill="none" stroke-linecap="round" stroke-miterlimit="10" stroke-width="2"/></svg>
+    </a>
+</span>
+</h2><p>Up until this point I&rsquo;ve been accessing the guest using vnc and rdp, both of which kinda suck for high-framerate things.
+Sadly, the GT1030 does <em>not</em> have nvenc or hardware encode of any sort. That nixes Parsec and Moonlight.
+Rainway worked, but it captured the mouse HARD and didn&rsquo;t let it go. That&rsquo;s no bueno for a remote desktop.
+Time to try the radeon card. (spoiler alert: it didn&rsquo;t work for parsec either).</p>
+<p>Given that the 1030 had given me usable framerates in csgo, I decided to swap that back in.
+After editing /etc/modprobe.d/vfio.conf for the 10,000th time today, the vm was back up and running with the 1030.</p>
+<p>I also tried out (and really liked) reemo for remote desktop. I think this is the winner.
+It has the option to switch between relative and absolute mouse modes, which I haven&rsquo;t seen before.
+This completely fixes my 3d preview issues in hammer, which is really nice.</p>
+<p>Now that I have hammer running in a dedicated environment, I feel motivated to work on maps again.
+I also have one less reason to ever reboot into my winderp install.</p>
+
+        </div>
+        
+
+    
+
+
+<div class="post-info">
+    
+        <div class="post-date dt-published">2022-04-14</div>
+    
+
+    <a class="post-hidden-url u-url" href="https://goos.blog/2022/04/hammer-time/">https://goos.blog/2022/04/hammer-time/</a>
+    <a href="https://goos.blog" class="p-name p-author post-hidden-author h-card" rel="me"></a>
+
+
+    <div class="post-taxonomies">
+        
+            
+    </div>
+</div>
+
+    </article>
+
+    
+        
+        
+    
+
+    
+
+    
+        
+
+
+
+
+
+
+
+    
+
+        </main>
+        
+            <footer class="common-footer">
+    
+    
+
+    <div class="common-footer-bottom">
+        
+        <div class="copyright">
+            <p>© 2023 <a href="mailto:honk@goos.blog">honk@goos.blog</a><br>
+            
+            </p>  
+        </div> 
+
+        
+
+    
+
+
+
+    <button class="theme-switcher">
+        Dark theme
+    </button>
+
+
+<script>
+const STORAGE_KEY = 'user-color-scheme'
+const defaultTheme = "dark"
+
+let currentTheme
+let switchButton
+let autoDefinedScheme = window.matchMedia('(prefers-color-scheme: dark)')
+
+const autoChangeScheme = e => {
+    currentTheme = e.matches ? 'dark' : 'light'
+    document.documentElement.setAttribute('data-theme', currentTheme)
+    changeButtonText()
+}
+
+document.addEventListener('DOMContentLoaded', function() {
+    switchButton = document.querySelector('.theme-switcher')
+    currentTheme = detectCurrentScheme()
+    if (currentTheme == 'dark') {
+        document.documentElement.setAttribute('data-theme', 'dark')
+    }
+    if (currentTheme == 'auto') {
+        autoChangeScheme(autoDefinedScheme);
+        autoDefinedScheme.addListener(autoChangeScheme);
+    }
+
+    if (switchButton) {
+        changeButtonText()
+        switchButton.addEventListener('click', switchTheme, false)
+    }
+  
+    showContent()
+})
+
+function detectCurrentScheme() {
+    if (localStorage.getItem(STORAGE_KEY)) {
+        return localStorage.getItem(STORAGE_KEY)
+    } 
+    if (defaultTheme) {
+        return defaultTheme
+    } 
+    if (!window.matchMedia) {
+        return 'light'
+    } 
+    if (window.matchMedia('(prefers-color-scheme: dark)').matches) {
+        return 'dark'
+    }
+    return 'light'
+}
+
+function changeButtonText()
+{   
+    if (switchButton) {
+        switchButton.textContent = currentTheme == 'dark' ?  "Light theme" : "Dark theme"
+    }
+}
+
+function switchTheme(e) {
+    if (currentTheme == 'dark') {
+        localStorage.setItem(STORAGE_KEY, 'light')
+        document.documentElement.setAttribute('data-theme', 'light')
+        currentTheme = 'light'
+    } else {
+        localStorage.setItem(STORAGE_KEY, 'dark')
+        document.documentElement.setAttribute('data-theme', 'dark')
+        currentTheme = 'dark'
+    }
+    changeButtonText()
+}
+
+function showContent() {
+    document.body.style.visibility = 'visible';
+    document.body.style.opacity = 1;
+}
+</script>   
+    </div>
+
+    <p class="h-card vcard">
+
+    <a href=https://goos.blog class="p-name u-url url fn" rel="me"></a> 
+
+     
+        /
+        <a class="p-email u-email email" rel="me" href="mailto:honk@goos.blog">honk@goos.blog</a>
+    
+
+    
+</p> 
+</footer>
+
+        
+    </div>
+</body>
+</html>

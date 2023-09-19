@@ -1,0 +1,1756 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>goos.blog</title>
+    <link>https://goos.blog/</link>
+    <description>goos.blog</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Sun, 18 Jun 2023 00:00:00 -0400</lastBuildDate>
+    
+    <atom:link href="https://goos.blog/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>I&#39;m doing Science and I&#39;m still alive</title>
+      <link>https://goos.blog/2023/06/still-alive/</link>
+      <pubDate>Sun, 18 Jun 2023 00:00:00 -0400</pubDate>
+      
+      <guid>https://goos.blog/2023/06/still-alive/</guid>
+      <description>&lt;h4 id=&#34;i-really-need-a-new-dayjob&#34; &gt;&lt;em&gt;I really need a new dayjob&lt;/em&gt;
+&lt;span&gt;
+    &lt;a href=&#34;#i-really-need-a-new-dayjob&#34;&gt;
+        &lt;svg viewBox=&#34;0 0 28 23&#34; height=&#34;100%&#34; width=&#34;19&#34; xmlns=&#34;http://www.w3.org/2000/svg&#34;&gt;&lt;path d=&#34;M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71&#34; fill=&#34;none&#34; stroke-linecap=&#34;round&#34; stroke-miterlimit=&#34;10&#34; stroke-width=&#34;2&#34;/&gt;&lt;path d=&#34;M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71&#34; fill=&#34;none&#34; stroke-linecap=&#34;round&#34; stroke-miterlimit=&#34;10&#34; stroke-width=&#34;2&#34;/&gt;&lt;/svg&gt;
+    &lt;/a&gt;
+&lt;/span&gt;
+&lt;/h4&gt;&lt;p&gt;Don&amp;rsquo;t worry, loyal blag-o-blag readers. &lt;br&gt;
+I haven&amp;rsquo;t forgotten about you.&lt;/p&gt;
+&lt;p&gt;I&amp;rsquo;ve just been. Not busy. Not not-busy. In busy limbo, I guess.&lt;/p&gt;
+&lt;p&gt;The na6 is running great and I&amp;rsquo;ve been installing all the dumb mods that you do to a miata:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;coolant reroute&lt;/li&gt;
+&lt;li&gt;oil filter relocate&lt;/li&gt;
+&lt;li&gt;clutch line&lt;/li&gt;
+&lt;li&gt;brake lines&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Both boats sit in the same place they started winter in. &lt;br&gt;
+Pretty sad, they&amp;rsquo;re going to get some love soon hopefully.&lt;/p&gt;
+&lt;p&gt;The job search has begun in earnest. The resume canon has been fired several times now. If you&amp;rsquo;re looking for a nerd to hire, drop me a line.&lt;/p&gt;
+&lt;p&gt;I&amp;rsquo;m writing blog posts again. &lt;br&gt;
+I&amp;rsquo;m finishing up one about that chromebook I bought, and I have a few others started.&lt;/p&gt;
+&lt;p&gt;Stay tuned, point your rss reader &lt;a href=&#34;https://goos.blog/index.xml&#34;&gt;here&lt;/a&gt;, and keep an eye on the skies.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>systemctl status goos.service</title>
+      <link>https://goos.blog/2022/11/systemctl-status/</link>
+      <pubDate>Sat, 26 Nov 2022 00:00:00 -0400</pubDate>
+      
+      <guid>https://goos.blog/2022/11/systemctl-status/</guid>
+      <description>&lt;h4 id=&#34;dont-quit-your-dayjob&#34; &gt;&lt;em&gt;don&amp;rsquo;t quit your dayjob&lt;/em&gt;
+&lt;span&gt;
+    &lt;a href=&#34;#dont-quit-your-dayjob&#34;&gt;
+        &lt;svg viewBox=&#34;0 0 28 23&#34; height=&#34;100%&#34; width=&#34;19&#34; xmlns=&#34;http://www.w3.org/2000/svg&#34;&gt;&lt;path d=&#34;M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71&#34; fill=&#34;none&#34; stroke-linecap=&#34;round&#34; stroke-miterlimit=&#34;10&#34; stroke-width=&#34;2&#34;/&gt;&lt;path d=&#34;M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71&#34; fill=&#34;none&#34; stroke-linecap=&#34;round&#34; stroke-miterlimit=&#34;10&#34; stroke-width=&#34;2&#34;/&gt;&lt;/svg&gt;
+    &lt;/a&gt;
+&lt;/span&gt;
+&lt;/h4&gt;&lt;p&gt;Some updates:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;I bought a 93 Miata, and was able to drive it for all of two weeks before the snow hit&lt;/li&gt;
+&lt;li&gt;I orderd an android based head unit for either the ranger or the miata&lt;/li&gt;
+&lt;li&gt;I bought hardware for a BLE app-drive camera shutter release / intervalometer&lt;/li&gt;
+&lt;li&gt;I was given a 2nd gen iPad to use for MagicMirror and had to do some fun things to get it working&lt;/li&gt;
+&lt;li&gt;I bought a chromebook, codename &lt;code&gt;kevin&lt;/code&gt;, and am writing build tools for it
+&lt;ul&gt;
+&lt;li&gt;Yes, Cadmium exists, and yes I did use it to build a working ubuntu image&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;I&amp;rsquo;m weeks if not days away from quitting my dayjob
+&lt;ul&gt;
+&lt;li&gt;I plan to take some time away from having a dayjob to work on projects&lt;/li&gt;
+&lt;li&gt;I have 1099 work to keep me solvent for now&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;tl;dw life goes on. Stay tuned, subscribe via RSS, etc.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>OPNsense on the NanoPi R4SE</title>
+      <link>https://goos.blog/2022/09/opnsense-nanopi-r4se/</link>
+      <pubDate>Sun, 25 Sep 2022 00:00:00 -0400</pubDate>
+      
+      <guid>https://goos.blog/2022/09/opnsense-nanopi-r4se/</guid>
+      <description>&lt;h4 id=&#34;tldr-s0x820000000x83000000-but-not-really&#34; &gt;&lt;em&gt;tl;dr s/0x82000000/0x83000000&amp;hellip; but not really&lt;/em&gt;
+&lt;span&gt;
+    &lt;a href=&#34;#tldr-s0x820000000x83000000-but-not-really&#34;&gt;
+        &lt;svg viewBox=&#34;0 0 28 23&#34; height=&#34;100%&#34; width=&#34;19&#34; xmlns=&#34;http://www.w3.org/2000/svg&#34;&gt;&lt;path d=&#34;M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71&#34; fill=&#34;none&#34; stroke-linecap=&#34;round&#34; stroke-miterlimit=&#34;10&#34; stroke-width=&#34;2&#34;/&gt;&lt;path d=&#34;M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71&#34; fill=&#34;none&#34; stroke-linecap=&#34;round&#34; stroke-miterlimit=&#34;10&#34; stroke-width=&#34;2&#34;/&gt;&lt;/svg&gt;
+    &lt;/a&gt;
+&lt;/span&gt;
+&lt;/h4&gt;&lt;p&gt;As I write this, I&amp;rsquo;m /still/ (48hr and counting) waiting for a freebsd/opnsense build to finish. &lt;br&gt;
+I&amp;rsquo;m not sure what it&amp;rsquo;s doing, looks like it&amp;rsquo;s building every damn package in the ports tree. &lt;br&gt;
+I&amp;rsquo;m impatient, so while we&amp;rsquo;re waiting for that to cook (I hope it caches them for later use), let&amp;rsquo;s get someone elses opnsense image working!&lt;/p&gt;
+&lt;h2 id=&#34;first-attempts&#34; &gt;first attempts
+&lt;span&gt;
+    &lt;a href=&#34;#first-attempts&#34;&gt;
+        &lt;svg viewBox=&#34;0 0 28 23&#34; height=&#34;100%&#34; width=&#34;19&#34; xmlns=&#34;http://www.w3.org/2000/svg&#34;&gt;&lt;path d=&#34;M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71&#34; fill=&#34;none&#34; stroke-linecap=&#34;round&#34; stroke-miterlimit=&#34;10&#34; stroke-width=&#34;2&#34;/&gt;&lt;path d=&#34;M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71&#34; fill=&#34;none&#34; stroke-linecap=&#34;round&#34; stroke-miterlimit=&#34;10&#34; stroke-width=&#34;2&#34;/&gt;&lt;/svg&gt;
+    &lt;/a&gt;
+&lt;/span&gt;
+&lt;/h2&gt;&lt;p&gt;A good amount of google brought me to the &lt;a href=&#34;https://opensource.rock-chips.com/wiki_Partitions&#34;&gt;rockchip partition table info&lt;/a&gt; which gave me the typical offsets that prebuilt images would look for. &lt;br&gt;
+&lt;a href=&#34;https://opensource.rock-chips.com/wiki_Boot_option&#34;&gt;This page&lt;/a&gt; helped as well.&lt;/p&gt;
+&lt;p&gt;I knew that I&amp;rsquo;d need a different DTB for this board to get emmc working. I figured the boards were similar enough that I could just copy the one for the R4S, change the model strings to match the new board, and rm the &amp;ldquo;disable emmc&amp;rdquo; section.&lt;/p&gt;
+&lt;p&gt;Spoiler alert&amp;hellip; This almost worked.&lt;/p&gt;
+&lt;h2 id=&#34;a-shot-in-the-dark&#34; &gt;a shot in the dark
+&lt;span&gt;
+    &lt;a href=&#34;#a-shot-in-the-dark&#34;&gt;
+        &lt;svg viewBox=&#34;0 0 28 23&#34; height=&#34;100%&#34; width=&#34;19&#34; xmlns=&#34;http://www.w3.org/2000/svg&#34;&gt;&lt;path d=&#34;M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71&#34; fill=&#34;none&#34; stroke-linecap=&#34;round&#34; stroke-miterlimit=&#34;10&#34; stroke-width=&#34;2&#34;/&gt;&lt;path d=&#34;M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71&#34; fill=&#34;none&#34; stroke-linecap=&#34;round&#34; stroke-miterlimit=&#34;10&#34; stroke-width=&#34;2&#34;/&gt;&lt;/svg&gt;
+    &lt;/a&gt;
+&lt;/span&gt;
+&lt;/h2&gt;&lt;p&gt;I don&amp;rsquo;t remember how many combinations and permutations of partition layout, vendor uboot vs freebsd uboot, trying to load in my own dtb via the freebsd bootloader shell, etc screwball things I tried. &lt;br&gt;
+At one point I was combining the uboot provided by friendlyelec alongside the openwrt image with an opnsense 22.1.10 image. &lt;br&gt;
+This got me into useland but there were other issues - if I let it go all the way to freebsd&amp;rsquo;s multiuser runlevel it would kernel panic when the &amp;ldquo;device manager&amp;rdquo; was started. &lt;br&gt;
+I could boot into singleuser mode without a panic but eth1 was missing. &lt;br&gt;
+I dove into friendlyelec&amp;rsquo;s horribly disorganized sources looking for the dts for the r4se. Didn&amp;rsquo;t find it anywhere. &lt;br&gt;
+&lt;del&gt;If you&amp;rsquo;re able to find the one they use, send me an email.&lt;/del&gt; nvm I found it &lt;br&gt;
+I eventually found and started using &lt;a href=&#34;https://raw.githubusercontent.com/DHDAXCW/lede-rockchip/22da83e80131a9883714f747e13b6f4d4cc343c9/package/boot/uboot-rockchip/src/arch/arm/dts/rk3399-nanopi-r4se.dts&#34;&gt;this dts&lt;/a&gt;, but it hasn&amp;rsquo;t gotten me any further.&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://goos.blog/2022/09/opnsense-nanopi-r4se/rkdevtool.PNG&#34; alt=&#34;rkdevtool screenshot&#34;&gt;&lt;/p&gt;
+&lt;p&gt;Gah.&lt;/p&gt;
+&lt;h2 id=&#34;do-the-easy-things-last&#34; &gt;do the easy things last
+&lt;span&gt;
+    &lt;a href=&#34;#do-the-easy-things-last&#34;&gt;
+        &lt;svg viewBox=&#34;0 0 28 23&#34; height=&#34;100%&#34; width=&#34;19&#34; xmlns=&#34;http://www.w3.org/2000/svg&#34;&gt;&lt;path d=&#34;M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71&#34; fill=&#34;none&#34; stroke-linecap=&#34;round&#34; stroke-miterlimit=&#34;10&#34; stroke-width=&#34;2&#34;/&gt;&lt;path d=&#34;M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71&#34; fill=&#34;none&#34; stroke-linecap=&#34;round&#34; stroke-miterlimit=&#34;10&#34; stroke-width=&#34;2&#34;/&gt;&lt;/svg&gt;
+    &lt;/a&gt;
+&lt;/span&gt;
+&lt;/h2&gt;&lt;p&gt;I spent way too much time trying lots of stupid things before i finally just did &lt;code&gt;git clone uboot&lt;/code&gt;. &lt;br&gt;
+I got further and learned more in the hour after that than the 6 before.&lt;/p&gt;
+&lt;p&gt;After poking around the uboot sources I had a shaky grasp on how things worked. &lt;br&gt;
+I copied in my dtb and hit the build button. &lt;br&gt;
+After gcc did its thing and copying the output to my rkdevtool directory, I hit the maskrom button for what feels like the 10000000th time today. &lt;br&gt;
+A few minutes later and I&amp;rsquo;m back into singleuser mode, this time without having to shuffle baudrates 4 times and manually load the dtb at the loader prompt.&lt;/p&gt;
+&lt;pre tabindex=&#34;0&#34;&gt;&lt;code class=&#34;language-none&#34; data-lang=&#34;none&#34;&gt;root@:/ # dmesg | grep pci
+rk_pcie_phy0: &amp;lt;Rockchip RK3399 PCIe PHY&amp;gt; mem 0-0xff76ffff,0-0xffff on rk_grf1
+pcib0: &amp;lt;Rockchip PCIe controller&amp;gt; mem 0xf8000000-0xf9ffffff,0xfd000000-0xfdffffff irq 6,7,8 on ofwbus0
+pcib0:  At least memory range should be defined in DT.
+device_attach: pcib0 attach returned 6
+&lt;/code&gt;&lt;/pre&gt;&lt;blockquote&gt;
+&lt;p&gt;sussy af. someone go hit the emergency meeting button&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;2am. Time to make this a tomorrow thing.&lt;/p&gt;
+&lt;p&gt;After figuring out the freebsd equiv of &lt;code&gt;lsmod&lt;/code&gt; (it&amp;rsquo;s &lt;code&gt;kldstat&lt;/code&gt;), I noticed that the re module wasn&amp;rsquo;t even loaded. Device won&amp;rsquo;t show up if the kmod isn&amp;rsquo;t there, derp. &lt;br&gt;
+Another trip through the workflow to get a force load added to loader.conf and&amp;hellip;.&lt;/p&gt;
+&lt;p&gt;It still panic&amp;rsquo;ed. But. BUT. Different error!&lt;/p&gt;
+&lt;pre tabindex=&#34;0&#34;&gt;&lt;code class=&#34;language-none&#34; data-lang=&#34;none&#34;&gt;Launching the init system...done.
+Initializing...........done.
+Starting device manager...Fatal data abort:
+  x0:                0
+  x1: ffffa00006358580
+  x2:                3
+  x3: ffff0000d994f650 (re_netmap_txsync.__cnt + d866d4dc)
+  x4: ffff0000d994f5d8 (re_netmap_txsync.__cnt + d866d464)
+  x5:                0
+  x6:                0
+  x7: ffff0000d994faa0 (re_netmap_txsync.__cnt + d866d92c)
+  &amp;lt;snip&amp;gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;Before it was a generic vmem abort. Now I have some confirmation that it is indeed the pcie nic causing issues. &lt;br&gt;
+I went digging into the friendlyelec uboot repo. It /had/ to be a device tree fuckup. &lt;br&gt;
+Finally, after checking 4 different branches, I found the vendor dtb sources.&lt;/p&gt;
+&lt;h2 id=&#34;well-defined-spaghetti&#34; &gt;well-defined spaghetti
+&lt;span&gt;
+    &lt;a href=&#34;#well-defined-spaghetti&#34;&gt;
+        &lt;svg viewBox=&#34;0 0 28 23&#34; height=&#34;100%&#34; width=&#34;19&#34; xmlns=&#34;http://www.w3.org/2000/svg&#34;&gt;&lt;path d=&#34;M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71&#34; fill=&#34;none&#34; stroke-linecap=&#34;round&#34; stroke-miterlimit=&#34;10&#34; stroke-width=&#34;2&#34;/&gt;&lt;path d=&#34;M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71&#34; fill=&#34;none&#34; stroke-linecap=&#34;round&#34; stroke-miterlimit=&#34;10&#34; stroke-width=&#34;2&#34;/&gt;&lt;/svg&gt;
+    &lt;/a&gt;
+&lt;/span&gt;
+&lt;/h2&gt;&lt;p&gt;Immediately I found my smoking gun (I thought&amp;hellip;):&lt;/p&gt;
+&lt;pre tabindex=&#34;0&#34;&gt;&lt;code class=&#34;language-none&#34; data-lang=&#34;none&#34;&gt;&amp;amp;pcie0 {
+    max-link-speed = &amp;lt;1&amp;gt;;
+    num-lanes = &amp;lt;1&amp;gt;;
+    vpcie3v3-supply = &amp;lt;&amp;amp;vcc3v3_sys&amp;gt;;
+
+    pcie@0 {
+        reg = &amp;lt;0x00000000 0 0 0 0&amp;gt;;
+        #address-cells = &amp;lt;3&amp;gt;;
+        #size-cells = &amp;lt;2&amp;gt;;
+
+        r8169: pcie@0,0 {
+            reg = &amp;lt;0x000000 0 0 0 0&amp;gt;;
+            local-mac-address = [ 00 00 00 00 00 00 ];
+        };
+    };
+};
+&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;Up until now I had this in that section:&lt;/p&gt;
+&lt;pre tabindex=&#34;0&#34;&gt;&lt;code class=&#34;language-none&#34; data-lang=&#34;none&#34;&gt;&amp;amp;pcie0 {
+    max-link-speed = &amp;lt;1&amp;gt;;
+    num-lanes = &amp;lt;1&amp;gt;;
+    vpcie3v3-supply = &amp;lt;&amp;amp;vcc3v3_sys&amp;gt;;
+};
+&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;The rest of that must be defining that there&amp;rsquo;s actually a device there. &lt;br&gt;
+Yet another trip through the workflow and&amp;hellip;. Nothing. &lt;br&gt;
+I forgot to set the model string on the latest ^c^v&amp;rsquo;ing of the dts. &lt;br&gt;
+Fixed that, reflashed yet again, reset the board, waited for it to boot, and&amp;hellip;.&lt;/p&gt;
+&lt;p&gt;Kernel panic.&lt;/p&gt;
+&lt;p&gt;Kernel panic.&lt;/p&gt;
+&lt;p&gt;Kernel panic.&lt;/p&gt;
+&lt;p&gt;Finally googled the right thing.&lt;/p&gt;
+&lt;pre tabindex=&#34;0&#34;&gt;&lt;code class=&#34;language-none&#34; data-lang=&#34;none&#34;&gt;handle_el0_sync()
+&lt;/code&gt;&lt;/pre&gt;&lt;h2 id=&#34;closing-unable-to-tie-cause-to-effect&#34; &gt;closing: unable to tie cause to effect
+&lt;span&gt;
+    &lt;a href=&#34;#closing-unable-to-tie-cause-to-effect&#34;&gt;
+        &lt;svg viewBox=&#34;0 0 28 23&#34; height=&#34;100%&#34; width=&#34;19&#34; xmlns=&#34;http://www.w3.org/2000/svg&#34;&gt;&lt;path d=&#34;M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71&#34; fill=&#34;none&#34; stroke-linecap=&#34;round&#34; stroke-miterlimit=&#34;10&#34; stroke-width=&#34;2&#34;/&gt;&lt;path d=&#34;M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71&#34; fill=&#34;none&#34; stroke-linecap=&#34;round&#34; stroke-miterlimit=&#34;10&#34; stroke-width=&#34;2&#34;/&gt;&lt;/svg&gt;
+    &lt;/a&gt;
+&lt;/span&gt;
+&lt;/h2&gt;&lt;p&gt;That brought me to an old forum thread saying that &lt;code&gt;if_bridge&lt;/code&gt; causes panics if &lt;code&gt;VNET&lt;/code&gt; is enabled in the kernel. &lt;br&gt;
+So like, I&amp;rsquo;ll blocklist the bridge module, and it&amp;rsquo;ll justwerk, right?&lt;/p&gt;
+&lt;p&gt;Turns out there is no freebsd equiv of the &lt;code&gt;blacklist some_module&lt;/code&gt; directive that exists in linux.&lt;/p&gt;
+&lt;p&gt;At this point I wanted to see what was going on with the R4S (non-emmc) images I had. &lt;br&gt;
+I burned the 22.1.9 image from personalbsd and booted it up. &lt;br&gt;
+Immediately I noticed this:&lt;/p&gt;
+&lt;pre tabindex=&#34;0&#34;&gt;&lt;code class=&#34;language-none&#34; data-lang=&#34;none&#34;&gt;pcib0: &amp;lt;Rockchip PCIe controller&amp;gt; mem 0xf8000000-0xf9ffffff,0xfd000000-0xfdffffff irq 6,7,8 on ofwbus0
+pci0: &amp;lt;PCI bus&amp;gt; on pcib0
+pcib1: &amp;lt;PCI-PCI bridge&amp;gt; at device 0.0 on pci0
+pcib0: failed to reserve resource for pcib1
+pcib1: failed to allocate initial memory window: 0-0xfffff
+pci1: &amp;lt;PCI bus&amp;gt; on pcib1
+re0: &amp;lt;RealTek 8168/8111 B/C/CP/D/DP/E/F/G PCIe Gigabit Ethernet&amp;gt; at device 0.0 on pci1
+re0: Using 1 MSI-X message
+re0: turning off MSI enable bit.
+re0: Chip rev. 0x54000000
+re0: MAC rev. 0x00100000
+&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;There&amp;rsquo;s a bridge. There&amp;rsquo;s a pcie bridge at node 0. Back to the dts for the R4SE.&lt;/p&gt;
+&lt;p&gt;But first, let&amp;rsquo;s do a quick sanity check. I flashed the vendor openwrt image and&amp;hellip;. no eth1 &lt;br&gt;
+?!?!?!?! &lt;br&gt;
+Did I burn out the nic on this poor little guy? &lt;br&gt;
+I&amp;rsquo;m using the other emmc one as my firewall at this moment&amp;hellip;. &lt;br&gt;
+Time to setup the non-emmc with opnsense so I can use that as the firewall for now.&lt;/p&gt;
+&lt;p&gt;It works. But having to shuffle my console baudrate is annoying. &lt;br&gt;
+Mainline u-boot has it set to 1500000bps for some reason. &lt;br&gt;
+I dd the new uboot onto the sdcard with a working opnsense install, popped it into the R4S, and&amp;hellip;..&lt;/p&gt;
+&lt;p&gt;Kernel panic.&lt;/p&gt;
+&lt;p&gt;This is with mainline u-boot dtb sources. I&amp;rsquo;m starting to question my own sanity. &lt;br&gt;
+What dts are other people using??? I fired off a fourm post asking for help, then I found &lt;a href=&#34;https://github.com/S199pWa1k9r/ports/tree/master/sysutils/u-boot-nanopi-r4s-2020.07/files&#34;&gt;the repo&lt;/a&gt; with the dtb sources for the opnsense images I&amp;rsquo;ve been working with.&lt;/p&gt;
+&lt;p&gt;They were. The same. As. The. Vendor. Sources. (they weren&amp;rsquo;t)&lt;/p&gt;
+&lt;p&gt;4am this time. I&amp;rsquo;m just now thinking &amp;ldquo;what if I could pull the live device tree from a working openwrt install on a r4se, decompile that shit, and cherrypick out what we need to make this work?&amp;rdquo;&lt;/p&gt;
+&lt;p&gt;Turns out that&amp;rsquo;s a 1-liner:&lt;/p&gt;
+&lt;pre tabindex=&#34;0&#34;&gt;&lt;code class=&#34;language-none&#34; data-lang=&#34;none&#34;&gt;dtc -I dtb -O dts /sys/firmware/fdt -o r4se.dts
+&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;On a hunch I decompiled the compiled dtb that I was trying to use and compared the two. &lt;br&gt;
+Immediately I saw two things:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;Address ranges on vendor start at 0x82000000, whereas mine is starting at 0x83000000&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;sus af&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&amp;ldquo;compatible&amp;rdquo; field set to &lt;code&gt;nanopi-r4s&lt;/code&gt;. I have been using &lt;code&gt;nanopi-r4se&lt;/code&gt;&amp;hellip;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;super sus, especially as the dtb would not load when I had forgotten to add the E&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Anyway. Back to the R4SE. I rebuild uboot again without any changes to have a baseline, and&amp;hellip;&lt;/p&gt;
+&lt;h2 id=&#34;oh-no&#34; &gt;oh no
+&lt;span&gt;
+    &lt;a href=&#34;#oh-no&#34;&gt;
+        &lt;svg viewBox=&#34;0 0 28 23&#34; height=&#34;100%&#34; width=&#34;19&#34; xmlns=&#34;http://www.w3.org/2000/svg&#34;&gt;&lt;path d=&#34;M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71&#34; fill=&#34;none&#34; stroke-linecap=&#34;round&#34; stroke-miterlimit=&#34;10&#34; stroke-width=&#34;2&#34;/&gt;&lt;path d=&#34;M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71&#34; fill=&#34;none&#34; stroke-linecap=&#34;round&#34; stroke-miterlimit=&#34;10&#34; stroke-width=&#34;2&#34;/&gt;&lt;/svg&gt;
+    &lt;/a&gt;
+&lt;/span&gt;
+&lt;/h2&gt;&lt;p&gt;&lt;del&gt;Kernel Panic&lt;/del&gt;&lt;/p&gt;
+&lt;p&gt;Just kidding, although I wish I wasn&amp;rsquo;t:&lt;/p&gt;
+&lt;pre tabindex=&#34;0&#34;&gt;&lt;code class=&#34;language-none&#34; data-lang=&#34;none&#34;&gt;GUID Partition Table Header signature is wrong: 0x0 != 0x5452415020494645
+find_valid_gpt: *** ERROR: Invalid Backup GPT ***
+GUID Partition Table Entry Array CRC is wrong: 0x307a16bd != 0xbae994fc
+find_valid_gpt: *** ERROR: Invalid GPT ***
+GUID Partition Table Header signature is wrong: 0x0 != 0x5452415020494645
+find_valid_gpt: *** ERROR: Invalid Backup GPT ***
+GUID Partition Table Entry Array CRC is wrong: 0x307a16bd != 0xbae994fc
+find_valid_gpt: *** ERROR: Invalid GPT ***
+&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;I tried a few things, did a few googles, didn&amp;rsquo;t find much info about anything. &lt;br&gt;
+Time for a sanity check.&lt;/p&gt;
+&lt;p&gt;I flashed vendor openwrt and it booted right up. EMMC is fine. Yay! &lt;br&gt;
+But why won&amp;rsquo;t it boot my image anymore??? &lt;br&gt;
+On a hunch I flashed first the image, then my u-boot over it.&lt;/p&gt;
+&lt;p&gt;Kernel panic.&lt;/p&gt;
+&lt;p&gt;Okay, at least I can get back to that state again.&lt;/p&gt;
+&lt;p&gt;I don&amp;rsquo;t know why but I tried removing the &amp;rsquo;e&amp;rsquo; from &amp;lsquo;r4se&amp;rsquo; in the &lt;code&gt;compatible&lt;/code&gt; field in the dts.&lt;/p&gt;
+&lt;p&gt;The board booted.&lt;/p&gt;
+&lt;p&gt;No kernel panic.&lt;/p&gt;
+&lt;p&gt;I noted that I was using vendor dts. Switched to mainline. Kernel panic.&lt;/p&gt;
+&lt;h2 id=&#34;vindication&#34; &gt;vindication
+&lt;span&gt;
+    &lt;a href=&#34;#vindication&#34;&gt;
+        &lt;svg viewBox=&#34;0 0 28 23&#34; height=&#34;100%&#34; width=&#34;19&#34; xmlns=&#34;http://www.w3.org/2000/svg&#34;&gt;&lt;path d=&#34;M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71&#34; fill=&#34;none&#34; stroke-linecap=&#34;round&#34; stroke-miterlimit=&#34;10&#34; stroke-width=&#34;2&#34;/&gt;&lt;path d=&#34;M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71&#34; fill=&#34;none&#34; stroke-linecap=&#34;round&#34; stroke-miterlimit=&#34;10&#34; stroke-width=&#34;2&#34;/&gt;&lt;/svg&gt;
+    &lt;/a&gt;
+&lt;/span&gt;
+&lt;/h2&gt;&lt;p&gt;Then I saw it:&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://goos.blog/2022/09/opnsense-nanopi-r4se/diff.png&#34; alt=&#34;theres_yar_problem&#34;&gt;&lt;/p&gt;
+&lt;p&gt;See it there? Open up the image in a new tab if you need to. &lt;br&gt;
+&lt;del&gt;Someone fatfingered the address range when they were rewriting the dts (why did they do that? vendor dts is fine?)&lt;/del&gt;&lt;/p&gt;
+&lt;p&gt;I had just spent more time than I&amp;rsquo;d care to admit trying all manner of different things. &lt;br&gt;
+And it came down to this. PCIe address ranges. &lt;br&gt;
+Wasn&amp;rsquo;t the model string (derp), wasn&amp;rsquo;t the finer grained pcie stanzas in the toplevel dts, wasn&amp;rsquo;t busted emmc or chipsets. &lt;br&gt;
+Address. Ranges.&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;https://github.com/friendlyarm/kernel-rockchip/commit/8efe01b4386ab38a36b99cfdc1dc02c38a8898c3&#34;&gt;This commit&lt;/a&gt; validated my experiences of the past 2 days. Apparently this was an issue in linux with some nvme disks? &lt;br&gt;
+It&amp;rsquo;s clearly a Big Issue in freebsd.&lt;/p&gt;
+&lt;p&gt;Because of the way freebsd set things up, someone needs to update binaries in the ports tree (you heard me) with this fixed.&lt;/p&gt;
+&lt;h2 id=&#34;a-new-lost-hope&#34; &gt;a &lt;del&gt;new&lt;/del&gt; lost hope
+&lt;span&gt;
+    &lt;a href=&#34;#a-new-lost-hope&#34;&gt;
+        &lt;svg viewBox=&#34;0 0 28 23&#34; height=&#34;100%&#34; width=&#34;19&#34; xmlns=&#34;http://www.w3.org/2000/svg&#34;&gt;&lt;path d=&#34;M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71&#34; fill=&#34;none&#34; stroke-linecap=&#34;round&#34; stroke-miterlimit=&#34;10&#34; stroke-width=&#34;2&#34;/&gt;&lt;path d=&#34;M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71&#34; fill=&#34;none&#34; stroke-linecap=&#34;round&#34; stroke-miterlimit=&#34;10&#34; stroke-width=&#34;2&#34;/&gt;&lt;/svg&gt;
+    &lt;/a&gt;
+&lt;/span&gt;
+&lt;/h2&gt;&lt;p&gt;After a lot of fucking around and a little bit of finding out, I went back to the non-emmc R4S. &lt;br&gt;
+I wanted opnsense at home. Really bad. &lt;br&gt;
+Thankfully it boots right up. I do the thing and configure it. The way I have my network laid out physically lends itself well to warm-swapping firewalls.&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://goos.blog/2022/09/opnsense-nanopi-r4se/IMG_3416.jpg&#34; alt=&#34;the board of networking&#34;&gt;&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;A dumbswitch + mac spoofing on wan means my v4 doesn&amp;rsquo;t change that often. &lt;br&gt;
+Although whenever I want a new one verizon will just shit one out. &lt;br&gt;
+&amp;hellip;on a whole new subnet most of the time. Kinda annoying actually.&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;30 seconds or so of downtime as arp/fdb tables clear/refresh and I&amp;rsquo;m back online.&lt;/p&gt;
+&lt;p&gt;Within 5 minutes I was experiencing the infamous re driver watchdog timeouts. &lt;br&gt;
+I tried a few combinations of offload on/off, etc. &lt;br&gt;
+Tried the realtek provided driver too - that instapaniced when the config manager added vlan interfaces. &lt;br&gt;
+Woo. &lt;br&gt;
+No matter what I did I couldn&amp;rsquo;t get it to be stable for more than a few minutes at a time. &lt;br&gt;
+That&amp;rsquo;s&amp;hellip; Unacceptable. And a big sad. I really wanted HA at home, and there&amp;rsquo;s nothing like pfsync (yet).&lt;/p&gt;
+&lt;h2 id=&#34;back-to-linux-where-i-belong&#34; &gt;back to linux, where I belong
+&lt;span&gt;
+    &lt;a href=&#34;#back-to-linux-where-i-belong&#34;&gt;
+        &lt;svg viewBox=&#34;0 0 28 23&#34; height=&#34;100%&#34; width=&#34;19&#34; xmlns=&#34;http://www.w3.org/2000/svg&#34;&gt;&lt;path d=&#34;M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71&#34; fill=&#34;none&#34; stroke-linecap=&#34;round&#34; stroke-miterlimit=&#34;10&#34; stroke-width=&#34;2&#34;/&gt;&lt;path d=&#34;M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71&#34; fill=&#34;none&#34; stroke-linecap=&#34;round&#34; stroke-miterlimit=&#34;10&#34; stroke-width=&#34;2&#34;/&gt;&lt;/svg&gt;
+    &lt;/a&gt;
+&lt;/span&gt;
+&lt;/h2&gt;&lt;p&gt;At this point I accepted that freebsd/openwrt on these guys in my configuration was basically a lost cause. &lt;br&gt;
+Maybe if I wasn&amp;rsquo;t running vlans it&amp;rsquo;d be okay. It certainly seemed that way in my initial testing.&lt;/p&gt;
+&lt;p&gt;My next step from here is to get a decent build of openwrt going for my own use. &lt;br&gt;
+Then, I need to redirect this effort into plonkfw. The world deserves better.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>NanoPi R4SE</title>
+      <link>https://goos.blog/2022/08/nanopi-r4se/</link>
+      <pubDate>Tue, 30 Aug 2022 00:00:00 -0400</pubDate>
+      
+      <guid>https://goos.blog/2022/08/nanopi-r4se/</guid>
+      <description>&lt;h4 id=&#34;adorable-just-adorable-but-also-i-hate-you&#34; &gt;&lt;em&gt;adorable. just. adorable. but also I hate you.&lt;/em&gt;
+&lt;span&gt;
+    &lt;a href=&#34;#adorable-just-adorable-but-also-i-hate-you&#34;&gt;
+        &lt;svg viewBox=&#34;0 0 28 23&#34; height=&#34;100%&#34; width=&#34;19&#34; xmlns=&#34;http://www.w3.org/2000/svg&#34;&gt;&lt;path d=&#34;M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71&#34; fill=&#34;none&#34; stroke-linecap=&#34;round&#34; stroke-miterlimit=&#34;10&#34; stroke-width=&#34;2&#34;/&gt;&lt;path d=&#34;M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71&#34; fill=&#34;none&#34; stroke-linecap=&#34;round&#34; stroke-miterlimit=&#34;10&#34; stroke-width=&#34;2&#34;/&gt;&lt;/svg&gt;
+    &lt;/a&gt;
+&lt;/span&gt;
+&lt;/h4&gt;&lt;p&gt;About a month ago I ordered both the &lt;a href=&#34;https://wiki.friendlyelec.com/wiki/index.php/NanoPi_R4S&#34;&gt;r4s&lt;/a&gt; and &lt;a href=&#34;https://wiki.friendlyelec.com/wiki/index.php/NanoPi_R5S&#34;&gt;r5s&lt;/a&gt; from nanopi. &lt;br&gt;
+Then a week or two after that they released the &lt;a href=&#34;https://wiki.friendlyelec.com/wiki/index.php/NanoPi_R4SE&#34;&gt;r4se&lt;/a&gt;, which is the same platform as the r4s but with 32gb of emmc onboard. &lt;br&gt;
+I ordered two of those. &lt;br&gt;
+This post is about openwrt on the r4se. I&amp;rsquo;m also playing around with opnsense on the r4s, there&amp;rsquo;ll be posts about that later.&lt;/p&gt;
+&lt;h2 id=&#34;initial-thoughts&#34; &gt;Initial thoughts
+&lt;span&gt;
+    &lt;a href=&#34;#initial-thoughts&#34;&gt;
+        &lt;svg viewBox=&#34;0 0 28 23&#34; height=&#34;100%&#34; width=&#34;19&#34; xmlns=&#34;http://www.w3.org/2000/svg&#34;&gt;&lt;path d=&#34;M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71&#34; fill=&#34;none&#34; stroke-linecap=&#34;round&#34; stroke-miterlimit=&#34;10&#34; stroke-width=&#34;2&#34;/&gt;&lt;path d=&#34;M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71&#34; fill=&#34;none&#34; stroke-linecap=&#34;round&#34; stroke-miterlimit=&#34;10&#34; stroke-width=&#34;2&#34;/&gt;&lt;/svg&gt;
+    &lt;/a&gt;
+&lt;/span&gt;
+&lt;/h2&gt;&lt;p&gt;&lt;img src=&#34;https://goos.blog/2022/08/nanopi-r4se/IMG_3343.jpg&#34; alt=&#34;two nanopie r4se units&#34;&gt;&lt;/p&gt;
+&lt;p&gt;This thing is is heavy, chunky, and very solid feeling. Build quality is excellent, all the ports line up perfectly with their openings. &lt;br&gt;
+The silkscreened labels line up perfectly with their respective openings/lights. &lt;br&gt;
+Overall a very nice unit.&lt;/p&gt;
+&lt;p&gt;The power supply they bundled isn&amp;rsquo;t the best looking thing, but it doesn&amp;rsquo;t get hot under load and it&amp;rsquo;s rated for 4 amps (r4s rated draw is 3a), so I&amp;rsquo;m happy with it.&lt;/p&gt;
+&lt;h2 id=&#34;the-firmware&#34; &gt;The Firmware
+&lt;span&gt;
+    &lt;a href=&#34;#the-firmware&#34;&gt;
+        &lt;svg viewBox=&#34;0 0 28 23&#34; height=&#34;100%&#34; width=&#34;19&#34; xmlns=&#34;http://www.w3.org/2000/svg&#34;&gt;&lt;path d=&#34;M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71&#34; fill=&#34;none&#34; stroke-linecap=&#34;round&#34; stroke-miterlimit=&#34;10&#34; stroke-width=&#34;2&#34;/&gt;&lt;path d=&#34;M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71&#34; fill=&#34;none&#34; stroke-linecap=&#34;round&#34; stroke-miterlimit=&#34;10&#34; stroke-width=&#34;2&#34;/&gt;&lt;/svg&gt;
+    &lt;/a&gt;
+&lt;/span&gt;
+&lt;/h2&gt;&lt;p&gt;The newest official firmware from friendlyelec is based on openwrt 21.02. &lt;br&gt;
+That&amp;rsquo;s a little old for my liking, thankfully they have a testing image based on 22.03. &lt;br&gt;
+Flashing the firmware to the emmc using rkdevtool took a bit of brain-ing to figure out, but I got there.&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://goos.blog/2022/08/nanopi-r4se/rkdevtool.png&#34; alt=&#34;rkdevtool&#34;&gt;&lt;/p&gt;
+&lt;h2 id=&#34;setting-up&#34; &gt;Setting up
+&lt;span&gt;
+    &lt;a href=&#34;#setting-up&#34;&gt;
+        &lt;svg viewBox=&#34;0 0 28 23&#34; height=&#34;100%&#34; width=&#34;19&#34; xmlns=&#34;http://www.w3.org/2000/svg&#34;&gt;&lt;path d=&#34;M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71&#34; fill=&#34;none&#34; stroke-linecap=&#34;round&#34; stroke-miterlimit=&#34;10&#34; stroke-width=&#34;2&#34;/&gt;&lt;path d=&#34;M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71&#34; fill=&#34;none&#34; stroke-linecap=&#34;round&#34; stroke-miterlimit=&#34;10&#34; stroke-width=&#34;2&#34;/&gt;&lt;/svg&gt;
+    &lt;/a&gt;
+&lt;/span&gt;
+&lt;/h2&gt;&lt;p&gt;First thing I did was add allow rules for tcp/80 and tcp/22 on the wan interface so I can access the DUT from my desktop. &lt;br&gt;
+After that I edited &lt;code&gt;/etc/hotplug.d/net/40-net-smp-affinity&lt;/code&gt; to pin the rps for each interface to the fast a72 cores.&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;friendlyelec,nanopi-r4s&lt;span style=&#34;color:#f92672&#34;&gt;)&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;        set_interface_core &lt;span style=&#34;color:#ae81ff&#34;&gt;10&lt;/span&gt; &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;eth0&amp;#34;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;        echo &lt;span style=&#34;color:#ae81ff&#34;&gt;10&lt;/span&gt; &amp;gt; /sys/class/net/eth0/queues/rx-0/rps_cpus  &lt;span style=&#34;color:#75715e&#34;&gt;# was 3f&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;        set_interface_core &lt;span style=&#34;color:#ae81ff&#34;&gt;20&lt;/span&gt; &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;eth1&amp;#34;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;        echo &lt;span style=&#34;color:#ae81ff&#34;&gt;20&lt;/span&gt; &amp;gt; /sys/class/net/eth1/queues/rx-0/rps_cpus  &lt;span style=&#34;color:#75715e&#34;&gt;# was 3f&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;        ;;
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;For some reason they were spread across all cores by default, even though they were pinning the irqs to the a72&amp;rsquo;s. &lt;br&gt;
+Finally I set the cpu gov. to performance in the webui. This only affected the a53 cores for some reason, so I put this in &lt;code&gt;/etc/rc.local&lt;/code&gt; to force the cpu freq to max.&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;echo &lt;span style=&#34;color:#ae81ff&#34;&gt;1512000&lt;/span&gt; &amp;gt; /sys/devices/system/cpu/cpu0/cpufreq/scaling_min_freq
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;echo &lt;span style=&#34;color:#ae81ff&#34;&gt;1512000&lt;/span&gt; &amp;gt; /sys/devices/system/cpu/cpu1/cpufreq/scaling_min_freq
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;echo &lt;span style=&#34;color:#ae81ff&#34;&gt;1512000&lt;/span&gt; &amp;gt; /sys/devices/system/cpu/cpu2/cpufreq/scaling_min_freq
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;echo &lt;span style=&#34;color:#ae81ff&#34;&gt;1512000&lt;/span&gt; &amp;gt; /sys/devices/system/cpu/cpu3/cpufreq/scaling_min_freq
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;echo &lt;span style=&#34;color:#ae81ff&#34;&gt;2016000&lt;/span&gt; &amp;gt; /sys/devices/system/cpu/cpu4/cpufreq/scaling_min_freq
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;echo &lt;span style=&#34;color:#ae81ff&#34;&gt;2016000&lt;/span&gt; &amp;gt; /sys/devices/system/cpu/cpu5/cpufreq/scaling_min_freq
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;Worth noting is that on the 21.x series, the max configurable frequency of the a72&amp;rsquo;s is lower, 19xx-something vs 2016000 on 22.x.&lt;/p&gt;
+&lt;h2 id=&#34;wheres-my-eth1&#34; &gt;Where&amp;rsquo;s my eth1?
+&lt;span&gt;
+    &lt;a href=&#34;#wheres-my-eth1&#34;&gt;
+        &lt;svg viewBox=&#34;0 0 28 23&#34; height=&#34;100%&#34; width=&#34;19&#34; xmlns=&#34;http://www.w3.org/2000/svg&#34;&gt;&lt;path d=&#34;M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71&#34; fill=&#34;none&#34; stroke-linecap=&#34;round&#34; stroke-miterlimit=&#34;10&#34; stroke-width=&#34;2&#34;/&gt;&lt;path d=&#34;M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71&#34; fill=&#34;none&#34; stroke-linecap=&#34;round&#34; stroke-miterlimit=&#34;10&#34; stroke-width=&#34;2&#34;/&gt;&lt;/svg&gt;
+    &lt;/a&gt;
+&lt;/span&gt;
+&lt;/h2&gt;&lt;p&gt;After a soft retoot, eth1 had disappeared! Smells like typical realtek shit. I wish they had spent the extra 5 bucks on intel chipsets. &lt;br&gt;
+Makes me wanna design my own tiny router&amp;hellip;. not that I&amp;rsquo;ll ever do that. &lt;br&gt;
+A hard powercycle brought it back. :thonk: &lt;br&gt;
+I rebooted a bunch more times, and eth1 disappeared about 1/5 of the time. &lt;br&gt;
+That&amp;rsquo;s acceptable for use at my home, but it means I wouldn&amp;rsquo;t really trust it anywhere remote. &lt;br&gt;
+But yeah. Imagine like. A really fast arm cpu with a lot of ddr4 memory. Dual nvme slots so you can raid 1. Good intel nics, like the i350 for four ports. &lt;br&gt;
+Sure, such a thing would have to be a bit bigger. And more expensive. But still. It&amp;rsquo;d be nice. &lt;br&gt;
+Maybe we&amp;rsquo;ll start seeing arm thin clients with pcie slots. That&amp;rsquo;d be almost perfect.&lt;/p&gt;
+&lt;h2 id=&#34;list-of-benchmarks-to-run&#34; &gt;List of benchmarks to run:
+&lt;span&gt;
+    &lt;a href=&#34;#list-of-benchmarks-to-run&#34;&gt;
+        &lt;svg viewBox=&#34;0 0 28 23&#34; height=&#34;100%&#34; width=&#34;19&#34; xmlns=&#34;http://www.w3.org/2000/svg&#34;&gt;&lt;path d=&#34;M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71&#34; fill=&#34;none&#34; stroke-linecap=&#34;round&#34; stroke-miterlimit=&#34;10&#34; stroke-width=&#34;2&#34;/&gt;&lt;path d=&#34;M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71&#34; fill=&#34;none&#34; stroke-linecap=&#34;round&#34; stroke-miterlimit=&#34;10&#34; stroke-width=&#34;2&#34;/&gt;&lt;/svg&gt;
+    &lt;/a&gt;
+&lt;/span&gt;
+&lt;/h2&gt;&lt;pre tabindex=&#34;0&#34;&gt;&lt;code class=&#34;language-none&#34; data-lang=&#34;none&#34;&gt;// Typical home network traffic
+lan &amp;lt;-&amp;gt; wan outbound nat
+
+// Inbound port forwards
+wan &amp;lt;-&amp;gt; lan inbound nat
+
+// LAN to the device itself - NAS, etc
+lan/wan &amp;lt;-&amp;gt; r4s
+
+// We&amp;#39;ll run these later on (probably in a different post)
+// Openvpn
+wan (openvpn client) &amp;lt;-&amp;gt; lan
+
+// Wireguard
+wan (wireguard client) &amp;lt;-&amp;gt; lan
+&lt;/code&gt;&lt;/pre&gt;&lt;h2 id=&#34;testing-methodology&#34; &gt;Testing methodology:
+&lt;span&gt;
+    &lt;a href=&#34;#testing-methodology&#34;&gt;
+        &lt;svg viewBox=&#34;0 0 28 23&#34; height=&#34;100%&#34; width=&#34;19&#34; xmlns=&#34;http://www.w3.org/2000/svg&#34;&gt;&lt;path d=&#34;M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71&#34; fill=&#34;none&#34; stroke-linecap=&#34;round&#34; stroke-miterlimit=&#34;10&#34; stroke-width=&#34;2&#34;/&gt;&lt;path d=&#34;M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71&#34; fill=&#34;none&#34; stroke-linecap=&#34;round&#34; stroke-miterlimit=&#34;10&#34; stroke-width=&#34;2&#34;/&gt;&lt;/svg&gt;
+    &lt;/a&gt;
+&lt;/span&gt;
+&lt;/h2&gt;&lt;p&gt;We&amp;rsquo;ll run our tests using iperf3 and T-Rex.&lt;/p&gt;
+&lt;p&gt;If you&amp;rsquo;ve been reading my posts about T-Rex, you already know about our traffic generator. &lt;br&gt;
+It&amp;rsquo;s a dell optiplex 7040 with an i7 and a x710-DA2. &lt;br&gt;
+We already know that it can generate 10gig line rate at 64b on-frame, far more than our DUT can do.&lt;/p&gt;
+&lt;h2 id=&#34;cursory-speedtestnet-testing&#34; &gt;Cursory speedtest.net testing
+&lt;span&gt;
+    &lt;a href=&#34;#cursory-speedtestnet-testing&#34;&gt;
+        &lt;svg viewBox=&#34;0 0 28 23&#34; height=&#34;100%&#34; width=&#34;19&#34; xmlns=&#34;http://www.w3.org/2000/svg&#34;&gt;&lt;path d=&#34;M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71&#34; fill=&#34;none&#34; stroke-linecap=&#34;round&#34; stroke-miterlimit=&#34;10&#34; stroke-width=&#34;2&#34;/&gt;&lt;path d=&#34;M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71&#34; fill=&#34;none&#34; stroke-linecap=&#34;round&#34; stroke-miterlimit=&#34;10&#34; stroke-width=&#34;2&#34;/&gt;&lt;/svg&gt;
+    &lt;/a&gt;
+&lt;/span&gt;
+&lt;/h2&gt;&lt;p&gt;speedtest-cli from my laptop on the lan port shows about 300/300, which is about what I get here (yay fios). &lt;br&gt;
+So we know the r4s can NAT at least that much.&lt;/p&gt;
+&lt;h2 id=&#34;benchmark-the-first-lan---wan-w-nat&#34; &gt;Benchmark the first: LAN &amp;lt;-&amp;gt; WAN w/ NAT
+&lt;span&gt;
+    &lt;a href=&#34;#benchmark-the-first-lan---wan-w-nat&#34;&gt;
+        &lt;svg viewBox=&#34;0 0 28 23&#34; height=&#34;100%&#34; width=&#34;19&#34; xmlns=&#34;http://www.w3.org/2000/svg&#34;&gt;&lt;path d=&#34;M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71&#34; fill=&#34;none&#34; stroke-linecap=&#34;round&#34; stroke-miterlimit=&#34;10&#34; stroke-width=&#34;2&#34;/&gt;&lt;path d=&#34;M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71&#34; fill=&#34;none&#34; stroke-linecap=&#34;round&#34; stroke-miterlimit=&#34;10&#34; stroke-width=&#34;2&#34;/&gt;&lt;/svg&gt;
+    &lt;/a&gt;
+&lt;/span&gt;
+&lt;/h2&gt;&lt;p&gt;Some cursory benchmarking with T-Rex in stateless mode yielded some&amp;hellip; Interesting results:&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://goos.blog/2022/08/nanopi-r4se/mult1-dur80-2022-08-29T18-42-45.890Z-bits.png&#34; alt=&#34;a graph showing odd traffic patterns&#34;&gt;&lt;/p&gt;
+&lt;p&gt;This was very repeatable with stateless profiles and scaled with load. I&amp;rsquo;d get a few seconds of about 30% drop, and then it&amp;rsquo;d go to near 100% drop.&lt;/p&gt;
+&lt;h2 id=&#34;why-you-do-that&#34; &gt;Why you do that?
+&lt;span&gt;
+    &lt;a href=&#34;#why-you-do-that&#34;&gt;
+        &lt;svg viewBox=&#34;0 0 28 23&#34; height=&#34;100%&#34; width=&#34;19&#34; xmlns=&#34;http://www.w3.org/2000/svg&#34;&gt;&lt;path d=&#34;M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71&#34; fill=&#34;none&#34; stroke-linecap=&#34;round&#34; stroke-miterlimit=&#34;10&#34; stroke-width=&#34;2&#34;/&gt;&lt;path d=&#34;M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71&#34; fill=&#34;none&#34; stroke-linecap=&#34;round&#34; stroke-miterlimit=&#34;10&#34; stroke-width=&#34;2&#34;/&gt;&lt;/svg&gt;
+    &lt;/a&gt;
+&lt;/span&gt;
+&lt;/h2&gt;&lt;p&gt;I started by examining my test setup. My thought was that some weirdness was happening with buffers. &lt;br&gt;
+If not there then maybe something at layer4 or higher&amp;hellip;&lt;/p&gt;
+&lt;p&gt;First i looked at the network buffers and some other maximums on the DUT:&lt;/p&gt;
+&lt;pre tabindex=&#34;0&#34;&gt;&lt;code class=&#34;language-none&#34; data-lang=&#34;none&#34;&gt;root@FriendlyWrt:~# cat /proc/sys/net/netfilter/nf_conntrack_max
+65535
+
+root@FriendlyWrt:~# sysctl net.ipv4.tcp_rmem
+net.ipv4.tcp_rmem = 8192        262144  67108864
+
+root@FriendlyWrt:~#  sysctl net.ipv4.tcp_wmem
+net.ipv4.tcp_wmem = 8192        262144  67108864
+
+root@FriendlyWrt:~#  sysctl net.core.rmem_max
+net.core.rmem_max = 67108864
+
+root@FriendlyWrt:~#  sysctl net.core.wmem_max
+net.core.wmem_max = 67108864
+&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;Those look reasonable to me. So why it do that?&lt;/p&gt;
+&lt;h2 id=&#34;wireshark-time&#34; &gt;Wireshark time
+&lt;span&gt;
+    &lt;a href=&#34;#wireshark-time&#34;&gt;
+        &lt;svg viewBox=&#34;0 0 28 23&#34; height=&#34;100%&#34; width=&#34;19&#34; xmlns=&#34;http://www.w3.org/2000/svg&#34;&gt;&lt;path d=&#34;M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71&#34; fill=&#34;none&#34; stroke-linecap=&#34;round&#34; stroke-miterlimit=&#34;10&#34; stroke-width=&#34;2&#34;/&gt;&lt;path d=&#34;M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71&#34; fill=&#34;none&#34; stroke-linecap=&#34;round&#34; stroke-miterlimit=&#34;10&#34; stroke-width=&#34;2&#34;/&gt;&lt;/svg&gt;
+    &lt;/a&gt;
+&lt;/span&gt;
+&lt;/h2&gt;&lt;p&gt;Spoiler alert - this didn&amp;rsquo;t tell me shit other than confirming that:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;my packets are the size on-wire that I thought they were (yay, no more math!)&lt;/li&gt;
+&lt;li&gt;the DUT was properly doing nat&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Had I been a bit more observant here, I would have saved some time. But let&amp;rsquo;s not spoil the surprise.&lt;/p&gt;
+&lt;p&gt;This is getting into weird territory. I&amp;rsquo;m going to get opnsense working on the r4s (non-emmc) and see how it handles these tests.&lt;/p&gt;
+&lt;p&gt;But first&amp;hellip;&lt;/p&gt;
+&lt;h2 id=&#34;lets-try-astf&#34; &gt;Let&amp;rsquo;s try ASTF
+&lt;span&gt;
+    &lt;a href=&#34;#lets-try-astf&#34;&gt;
+        &lt;svg viewBox=&#34;0 0 28 23&#34; height=&#34;100%&#34; width=&#34;19&#34; xmlns=&#34;http://www.w3.org/2000/svg&#34;&gt;&lt;path d=&#34;M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71&#34; fill=&#34;none&#34; stroke-linecap=&#34;round&#34; stroke-miterlimit=&#34;10&#34; stroke-width=&#34;2&#34;/&gt;&lt;path d=&#34;M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71&#34; fill=&#34;none&#34; stroke-linecap=&#34;round&#34; stroke-miterlimit=&#34;10&#34; stroke-width=&#34;2&#34;/&gt;&lt;/svg&gt;
+    &lt;/a&gt;
+&lt;/span&gt;
+&lt;/h2&gt;&lt;p&gt;I mean, that&amp;rsquo;s what we&amp;rsquo;re supposed to be using, given that this lil guy is doing NAT. &lt;br&gt;
+Here&amp;rsquo;s a run of 64b on-wire frames. I think I&amp;rsquo;m near the limits of what this DUT can handle at this packet size.&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://goos.blog/2022/08/nanopi-r4se/mult100000-dur60-2022-08-30T12-07-32.043Z-bits.png&#34; alt=&#34;bps graph of astf profile&#34;&gt;
+&lt;img src=&#34;https://goos.blog/2022/08/nanopi-r4se/mult100000-dur60-2022-08-30T12-07-32.043Z-packets.png&#34; alt=&#34;pps graph of astf profile&#34;&gt;&lt;/p&gt;
+&lt;h2 id=&#34;its-always-dns-arp&#34; &gt;It&amp;rsquo;s always &lt;del&gt;DNS&lt;/del&gt; ARP
+&lt;span&gt;
+    &lt;a href=&#34;#its-always-dns-arp&#34;&gt;
+        &lt;svg viewBox=&#34;0 0 28 23&#34; height=&#34;100%&#34; width=&#34;19&#34; xmlns=&#34;http://www.w3.org/2000/svg&#34;&gt;&lt;path d=&#34;M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71&#34; fill=&#34;none&#34; stroke-linecap=&#34;round&#34; stroke-miterlimit=&#34;10&#34; stroke-width=&#34;2&#34;/&gt;&lt;path d=&#34;M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71&#34; fill=&#34;none&#34; stroke-linecap=&#34;round&#34; stroke-miterlimit=&#34;10&#34; stroke-width=&#34;2&#34;/&gt;&lt;/svg&gt;
+    &lt;/a&gt;
+&lt;/span&gt;
+&lt;/h2&gt;&lt;p&gt;So with ASTF profiles looking normal-ish, let&amp;rsquo;s go back to STL and see why that&amp;rsquo;s doing what it does. &lt;br&gt;
+I started doing a google for anything network io cache or timeout related. &lt;br&gt;
+On a hunch, I started this on the DUT: &lt;code&gt;while true; do clear; ip neigh; sleep 0.5; done&lt;/code&gt; , fired off a STL profile and waited.&lt;/p&gt;
+&lt;pre tabindex=&#34;0&#34;&gt;&lt;code class=&#34;language-none&#34; data-lang=&#34;none&#34;&gt;11.11.11.2 dev eth1 lladdr 3c:fd:fe:c6:06:10 STALE
+10.15.41.1 dev eth0 lladdr a0:36:9f:83:b5:58 REACHABLE
+12.12.12.2 dev eth0  INCOMPLETE
+&lt;/code&gt;&lt;/pre&gt;&lt;h2 id=&#34;wait-what&#34; &gt;Wait, what?
+&lt;span&gt;
+    &lt;a href=&#34;#wait-what&#34;&gt;
+        &lt;svg viewBox=&#34;0 0 28 23&#34; height=&#34;100%&#34; width=&#34;19&#34; xmlns=&#34;http://www.w3.org/2000/svg&#34;&gt;&lt;path d=&#34;M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71&#34; fill=&#34;none&#34; stroke-linecap=&#34;round&#34; stroke-miterlimit=&#34;10&#34; stroke-width=&#34;2&#34;/&gt;&lt;path d=&#34;M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71&#34; fill=&#34;none&#34; stroke-linecap=&#34;round&#34; stroke-miterlimit=&#34;10&#34; stroke-width=&#34;2&#34;/&gt;&lt;/svg&gt;
+    &lt;/a&gt;
+&lt;/span&gt;
+&lt;/h2&gt;&lt;p&gt;Our configuration for t-rex itself looks like this:&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-yaml&#34; data-lang=&#34;yaml&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;- &lt;span style=&#34;color:#f92672&#34;&gt;version&lt;/span&gt;: &lt;span style=&#34;color:#ae81ff&#34;&gt;2&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;  &lt;span style=&#34;color:#f92672&#34;&gt;interfaces&lt;/span&gt;: [&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#39;01:00.0&amp;#39;&lt;/span&gt;, &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#39;01:00.1&amp;#39;&lt;/span&gt;]
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;  &lt;span style=&#34;color:#f92672&#34;&gt;port_info&lt;/span&gt;: &lt;span style=&#34;color:#75715e&#34;&gt;# 0 = client, right, 1 = server, left&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;      - &lt;span style=&#34;color:#f92672&#34;&gt;ip&lt;/span&gt;: &lt;span style=&#34;color:#ae81ff&#34;&gt;11.11.11.2&lt;/span&gt; &lt;span style=&#34;color:#75715e&#34;&gt;# phy port 0, client subnet is routed through this address&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;        &lt;span style=&#34;color:#f92672&#34;&gt;default_gw&lt;/span&gt;: &lt;span style=&#34;color:#ae81ff&#34;&gt;11.11.11.1&lt;/span&gt; &lt;span style=&#34;color:#75715e&#34;&gt;# r4s lan port&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;      - &lt;span style=&#34;color:#f92672&#34;&gt;ip&lt;/span&gt;: &lt;span style=&#34;color:#ae81ff&#34;&gt;12.12.12.2&lt;/span&gt; &lt;span style=&#34;color:#75715e&#34;&gt;# phy port 1, server subnet is routed through this address&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;        &lt;span style=&#34;color:#f92672&#34;&gt;default_gw&lt;/span&gt;: &lt;span style=&#34;color:#ae81ff&#34;&gt;12.12.12.1&lt;/span&gt; &lt;span style=&#34;color:#75715e&#34;&gt;# r4s wan port&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;On the DUT we have secondary addresses configured on &amp;ldquo;WAN&amp;rdquo; and &amp;ldquo;LAN&amp;rdquo; of 12.12.12.1/30 and 11.11.11.1/30 respectively. &lt;br&gt;
+Then we have routes:&lt;/p&gt;
+&lt;pre tabindex=&#34;0&#34;&gt;&lt;code class=&#34;language-none&#34; data-lang=&#34;none&#34;&gt;16.0.0.0/8 via 11.11.11.2
+48.0.0.0/8 via 12.12.12.2
+&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;So when the stateless profile starts:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;t-rex sends out a garp for 11.11.11.2 and 12.12.12.2&lt;/li&gt;
+&lt;li&gt;openwrt sees this and installs the neighbor entry&lt;/li&gt;
+&lt;li&gt;traffic flows for a while&lt;/li&gt;
+&lt;li&gt;t-rex hasn&amp;rsquo;t sent another garp and isn&amp;rsquo;t responding to arp&lt;/li&gt;
+&lt;li&gt;openwrt ages out the arp entry&lt;/li&gt;
+&lt;li&gt;traffic dies off&lt;/li&gt;
+&lt;li&gt;goos is confused&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;My googling brought me to many interesting pages including some functions in the python library that I can&amp;rsquo;t figure out how to replicate, &lt;br&gt;
+including one &lt;code&gt;c.arp()&lt;/code&gt; which appears to send a garp on demand.&lt;/p&gt;
+&lt;h2 id=&#34;so-how-do-we-fix-it&#34; &gt;So how do we fix it?
+&lt;span&gt;
+    &lt;a href=&#34;#so-how-do-we-fix-it&#34;&gt;
+        &lt;svg viewBox=&#34;0 0 28 23&#34; height=&#34;100%&#34; width=&#34;19&#34; xmlns=&#34;http://www.w3.org/2000/svg&#34;&gt;&lt;path d=&#34;M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71&#34; fill=&#34;none&#34; stroke-linecap=&#34;round&#34; stroke-miterlimit=&#34;10&#34; stroke-width=&#34;2&#34;/&gt;&lt;path d=&#34;M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71&#34; fill=&#34;none&#34; stroke-linecap=&#34;round&#34; stroke-miterlimit=&#34;10&#34; stroke-width=&#34;2&#34;/&gt;&lt;/svg&gt;
+    &lt;/a&gt;
+&lt;/span&gt;
+&lt;/h2&gt;&lt;p&gt;We go back to the old ways and set static neighbor entries.&lt;/p&gt;
+&lt;pre tabindex=&#34;0&#34;&gt;&lt;code class=&#34;language-none&#34; data-lang=&#34;none&#34;&gt;ip neigh add 11.11.11.2 lladdr 3c:fd:fe:c6:06:10 dev eth1 nud permanent
+ip neigh add 12.12.12.2 lladdr 3c:fd:fe:c6:06:11 dev eth0 nud permanent
+&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;&lt;img src=&#34;https://goos.blog/2022/08/nanopi-r4se/mult1-dur60-2022-08-30T19-23-31.191Z-bits.png&#34; alt=&#34;bps graph of stl profile&#34;&gt;
+&lt;img src=&#34;https://goos.blog/2022/08/nanopi-r4se/mult1-dur60-2022-08-30T19-23-31.191Z-packets.png&#34; alt=&#34;pps graph of stl profile&#34;&gt;&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;64b packets hurt, but it&amp;rsquo;s like. working now.&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;h2 id=&#34;still-reading&#34; &gt;Still reading?
+&lt;span&gt;
+    &lt;a href=&#34;#still-reading&#34;&gt;
+        &lt;svg viewBox=&#34;0 0 28 23&#34; height=&#34;100%&#34; width=&#34;19&#34; xmlns=&#34;http://www.w3.org/2000/svg&#34;&gt;&lt;path d=&#34;M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71&#34; fill=&#34;none&#34; stroke-linecap=&#34;round&#34; stroke-miterlimit=&#34;10&#34; stroke-width=&#34;2&#34;/&gt;&lt;path d=&#34;M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71&#34; fill=&#34;none&#34; stroke-linecap=&#34;round&#34; stroke-miterlimit=&#34;10&#34; stroke-width=&#34;2&#34;/&gt;&lt;/svg&gt;
+    &lt;/a&gt;
+&lt;/span&gt;
+&lt;/h2&gt;&lt;p&gt;This is getting pretty long, and I haven&amp;rsquo;t done 10% of what I wanted to. &lt;br&gt;
+I&amp;rsquo;ll leave you with this: &lt;br&gt;
+Whenever you have connectivity problems. Check address resolution first. &lt;br&gt;
+If that&amp;rsquo;s DNS, ARP, some service discovery like consul, whatever. &lt;br&gt;
+Check that things know where things are before doing a deep dive.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Cisco T-Rex: Further down the rabbit hole...</title>
+      <link>https://goos.blog/2022/08/trex-down-the-rabbit-hole/</link>
+      <pubDate>Thu, 25 Aug 2022 00:00:00 -0400</pubDate>
+      
+      <guid>https://goos.blog/2022/08/trex-down-the-rabbit-hole/</guid>
+      <description>&lt;h4 id=&#34;why-not-just-learn-python-dude&#34; &gt;&lt;em&gt;why not just learn python dude&amp;hellip;.&lt;/em&gt;
+&lt;span&gt;
+    &lt;a href=&#34;#why-not-just-learn-python-dude&#34;&gt;
+        &lt;svg viewBox=&#34;0 0 28 23&#34; height=&#34;100%&#34; width=&#34;19&#34; xmlns=&#34;http://www.w3.org/2000/svg&#34;&gt;&lt;path d=&#34;M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71&#34; fill=&#34;none&#34; stroke-linecap=&#34;round&#34; stroke-miterlimit=&#34;10&#34; stroke-width=&#34;2&#34;/&gt;&lt;path d=&#34;M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71&#34; fill=&#34;none&#34; stroke-linecap=&#34;round&#34; stroke-miterlimit=&#34;10&#34; stroke-width=&#34;2&#34;/&gt;&lt;/svg&gt;
+    &lt;/a&gt;
+&lt;/span&gt;
+&lt;/h4&gt;&lt;p&gt;Because I can&amp;rsquo;t stand it, that&amp;rsquo;s why. &lt;br&gt;
+Plus I really do like nodejs. &lt;br&gt;
+Plus everything Cisco has provided is an absolute mess.&lt;/p&gt;
+&lt;p&gt;I&amp;rsquo;m already doing my graphing and analysis in js, and I&amp;rsquo;m thinking now it&amp;rsquo;d be Really Cool to have a webui of some sort in the future. &lt;br&gt;
+&lt;a href=&#34;https://trex-tgn.cisco.com/trex/doc/trex_rpc_server_spec.html&#34;&gt;The zmq rpc documetation&lt;/a&gt; is pretty accurate. There&amp;rsquo;s a few gaps but nothing too horrible.&lt;/p&gt;
+&lt;h2 id=&#34;the-library&#34; &gt;the library
+&lt;span&gt;
+    &lt;a href=&#34;#the-library&#34;&gt;
+        &lt;svg viewBox=&#34;0 0 28 23&#34; height=&#34;100%&#34; width=&#34;19&#34; xmlns=&#34;http://www.w3.org/2000/svg&#34;&gt;&lt;path d=&#34;M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71&#34; fill=&#34;none&#34; stroke-linecap=&#34;round&#34; stroke-miterlimit=&#34;10&#34; stroke-width=&#34;2&#34;/&gt;&lt;path d=&#34;M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71&#34; fill=&#34;none&#34; stroke-linecap=&#34;round&#34; stroke-miterlimit=&#34;10&#34; stroke-width=&#34;2&#34;/&gt;&lt;/svg&gt;
+    &lt;/a&gt;
+&lt;/span&gt;
+&lt;/h2&gt;&lt;p&gt;&lt;a href=&#34;https://github.com/velocipacktor/jsrex&#34;&gt;https://github.com/velocipacktor/jsrex&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;Here&amp;rsquo;s the node lib for the t-rex zmq server. There&amp;rsquo;s a few examples under the &lt;code&gt;examples/&lt;/code&gt; directory, &lt;br&gt;
+I&amp;rsquo;m going to move them into their own repo soon though (will updoot this post with a link).&lt;/p&gt;
+&lt;h2 id=&#34;the-conversion-tool&#34; &gt;the conversion tool
+&lt;span&gt;
+    &lt;a href=&#34;#the-conversion-tool&#34;&gt;
+        &lt;svg viewBox=&#34;0 0 28 23&#34; height=&#34;100%&#34; width=&#34;19&#34; xmlns=&#34;http://www.w3.org/2000/svg&#34;&gt;&lt;path d=&#34;M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71&#34; fill=&#34;none&#34; stroke-linecap=&#34;round&#34; stroke-miterlimit=&#34;10&#34; stroke-width=&#34;2&#34;/&gt;&lt;path d=&#34;M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71&#34; fill=&#34;none&#34; stroke-linecap=&#34;round&#34; stroke-miterlimit=&#34;10&#34; stroke-width=&#34;2&#34;/&gt;&lt;/svg&gt;
+    &lt;/a&gt;
+&lt;/span&gt;
+&lt;/h2&gt;&lt;p&gt;All the sample ASTF profiles that Cisco provides are in python. This is great and all because the JSON format is pure aids to read, but I do need the profile in json format in order to run it with my js tooling.&lt;/p&gt;
+&lt;p&gt;The python lib &amp;ldquo;compiles&amp;rdquo; the profile template into json before submitting it to the t-rex server. &lt;br&gt;
+The bad news here is that replicating the json conversion ourselves would be a Lot of work.&lt;/p&gt;
+&lt;p&gt;Thankfully the &lt;code&gt;ASTFTemplate&lt;/code&gt; class in the python lib actually exposes a &lt;a href=&#34;https://github.com/cisco-system-traffic-generator/trex-core/blob/master/scripts/automation/trex_control_plane/interactive/trex/astf/trex_astf_profile.py#L1921&#34;&gt;to_json_str()&lt;/a&gt; function that we can just call.&lt;/p&gt;
+&lt;p&gt;It took some googling and playing around but I was able to get it working in a reasonable amount of time.&lt;/p&gt;
+&lt;p&gt;The resulting conversion ended up looking like this:&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-python&#34; data-lang=&#34;python&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;module &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; importlib&lt;span style=&#34;color:#f92672&#34;&gt;.&lt;/span&gt;import_module(file, package&lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#39;./&amp;#39;&lt;/span&gt;)
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;profile &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; module&lt;span style=&#34;color:#f92672&#34;&gt;.&lt;/span&gt;register()&lt;span style=&#34;color:#f92672&#34;&gt;.&lt;/span&gt;get_profile(&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#39;&amp;#39;&lt;/span&gt;)
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;profile&lt;span style=&#34;color:#f92672&#34;&gt;.&lt;/span&gt;to_json_str()
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;There&amp;rsquo;s a howto in &lt;a href=&#34;https://github.com/velocipacktor/pyastf-json-convertor&#34;&gt;the repo&lt;/a&gt;&lt;/p&gt;
+&lt;h2 id=&#34;making-some-graphs&#34; &gt;making some graphs
+&lt;span&gt;
+    &lt;a href=&#34;#making-some-graphs&#34;&gt;
+        &lt;svg viewBox=&#34;0 0 28 23&#34; height=&#34;100%&#34; width=&#34;19&#34; xmlns=&#34;http://www.w3.org/2000/svg&#34;&gt;&lt;path d=&#34;M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71&#34; fill=&#34;none&#34; stroke-linecap=&#34;round&#34; stroke-miterlimit=&#34;10&#34; stroke-width=&#34;2&#34;/&gt;&lt;path d=&#34;M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71&#34; fill=&#34;none&#34; stroke-linecap=&#34;round&#34; stroke-miterlimit=&#34;10&#34; stroke-width=&#34;2&#34;/&gt;&lt;/svg&gt;
+    &lt;/a&gt;
+&lt;/span&gt;
+&lt;/h2&gt;&lt;p&gt;It was easier to capture data now that everything was being done in one process. &lt;br&gt;
+I started to rewrite my benchmark sequencer to make use of jsrex. &lt;br&gt;
+I added the ability to load profile templates as es6 imports, native t-rex json, and as python templates. &lt;br&gt;
+That last one was important as there are a lot of sample templates provided by Cisco that I want to be able to easily use. &lt;br&gt;
+In the short/mid term it&amp;rsquo;ll also be easier for me to cook my own profiles in python - the python lib has a lot of helper functions to build the profile.&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;&lt;a href=&#34;https://github.com/velocipacktor/trex-benchmark-sequence/blob/main/profiles/stl/udp_linerate_4_streams.py&#34;&gt;udp_linerate_4_streams.py&lt;/a&gt;:&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-python&#34; data-lang=&#34;python&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;from&lt;/span&gt; trex_stl_lib.api &lt;span style=&#34;color:#f92672&#34;&gt;import&lt;/span&gt; &lt;span style=&#34;color:#f92672&#34;&gt;*&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;import&lt;/span&gt; argparse
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#66d9ef&#34;&gt;class&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;STLS1&lt;/span&gt;(object):
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;  &lt;span style=&#34;color:#66d9ef&#34;&gt;def&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;create_stream&lt;/span&gt; (self, src_addr, dst_addr, size, load):
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;    &lt;span style=&#34;color:#66d9ef&#34;&gt;return&lt;/span&gt; STLStream(
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;      packet &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; 
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;          STLPktBuilder(
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;            pkt &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; Ether()&lt;span style=&#34;color:#f92672&#34;&gt;/&lt;/span&gt;IP(src&lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt;src_addr,dst&lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt;dst_addr)&lt;span style=&#34;color:#f92672&#34;&gt;/&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;                UDP(dport&lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt;&lt;span style=&#34;color:#ae81ff&#34;&gt;12&lt;/span&gt;,sport&lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt;&lt;span style=&#34;color:#ae81ff&#34;&gt;1025&lt;/span&gt;)&lt;span style=&#34;color:#f92672&#34;&gt;/&lt;/span&gt;(size&lt;span style=&#34;color:#f92672&#34;&gt;*&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#39;x&amp;#39;&lt;/span&gt;) &lt;span style=&#34;color:#75715e&#34;&gt;# build packets filled with &amp;#39;size * x&amp;#39; &lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;          ),
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;      &lt;span style=&#34;color:#75715e&#34;&gt;# fill the pipe&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;       mode &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; STLTXCont( percentage &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; load &lt;span style=&#34;color:#f92672&#34;&gt;/&lt;/span&gt; &lt;span style=&#34;color:#ae81ff&#34;&gt;4&lt;/span&gt; ))
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;  &lt;span style=&#34;color:#66d9ef&#34;&gt;def&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;get_streams&lt;/span&gt; (self, tunables, &lt;span style=&#34;color:#f92672&#34;&gt;**&lt;/span&gt;kwargs):
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;    parser &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; argparse&lt;span style=&#34;color:#f92672&#34;&gt;.&lt;/span&gt;ArgumentParser(description&lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#39;Argparser for &lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;{}&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#39;&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;.&lt;/span&gt;format(os&lt;span style=&#34;color:#f92672&#34;&gt;.&lt;/span&gt;path&lt;span style=&#34;color:#f92672&#34;&gt;.&lt;/span&gt;basename(__file__)), 
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;                     formatter_class&lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt;argparse&lt;span style=&#34;color:#f92672&#34;&gt;.&lt;/span&gt;ArgumentDefaultsHelpFormatter)
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;    parser&lt;span style=&#34;color:#f92672&#34;&gt;.&lt;/span&gt;add_argument(&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#39;--load&amp;#39;&lt;/span&gt;,
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;              type&lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt;int,
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;              default&lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt;&lt;span style=&#34;color:#ae81ff&#34;&gt;64&lt;/span&gt;,
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;              help&lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;&amp;#34;&amp;#34;define how much to load the link.&amp;#34;&amp;#34;&amp;#34;&lt;/span&gt;)
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;    parser&lt;span style=&#34;color:#f92672&#34;&gt;.&lt;/span&gt;add_argument(&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#39;--size&amp;#39;&lt;/span&gt;,
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;              type&lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt;int,
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;              default&lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt;&lt;span style=&#34;color:#ae81ff&#34;&gt;64&lt;/span&gt;,
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;              help&lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;&amp;#34;&amp;#34;define the packet&amp;#39;s size in the stream.&amp;#34;&amp;#34;&amp;#34;&lt;/span&gt;)
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;    args &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; parser&lt;span style=&#34;color:#f92672&#34;&gt;.&lt;/span&gt;parse_args(tunables)
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;    &lt;span style=&#34;color:#75715e&#34;&gt;# create 4 streams&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;    &lt;span style=&#34;color:#66d9ef&#34;&gt;return&lt;/span&gt; [ 
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;      self&lt;span style=&#34;color:#f92672&#34;&gt;.&lt;/span&gt;create_stream(&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;16.0.0.1&amp;#34;&lt;/span&gt;, &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;48.0.0.1&amp;#34;&lt;/span&gt;, args&lt;span style=&#34;color:#f92672&#34;&gt;.&lt;/span&gt;size, args&lt;span style=&#34;color:#f92672&#34;&gt;.&lt;/span&gt;load),
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;      self&lt;span style=&#34;color:#f92672&#34;&gt;.&lt;/span&gt;create_stream(&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;16.0.0.2&amp;#34;&lt;/span&gt;, &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;48.0.0.2&amp;#34;&lt;/span&gt;, args&lt;span style=&#34;color:#f92672&#34;&gt;.&lt;/span&gt;size, args&lt;span style=&#34;color:#f92672&#34;&gt;.&lt;/span&gt;load),
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;      self&lt;span style=&#34;color:#f92672&#34;&gt;.&lt;/span&gt;create_stream(&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;16.0.0.3&amp;#34;&lt;/span&gt;, &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;48.0.0.3&amp;#34;&lt;/span&gt;, args&lt;span style=&#34;color:#f92672&#34;&gt;.&lt;/span&gt;size, args&lt;span style=&#34;color:#f92672&#34;&gt;.&lt;/span&gt;load),
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;      self&lt;span style=&#34;color:#f92672&#34;&gt;.&lt;/span&gt;create_stream(&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;16.0.0.4&amp;#34;&lt;/span&gt;, &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;48.0.0.4&amp;#34;&lt;/span&gt;, args&lt;span style=&#34;color:#f92672&#34;&gt;.&lt;/span&gt;size, args&lt;span style=&#34;color:#f92672&#34;&gt;.&lt;/span&gt;load),
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;    ]
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#75715e&#34;&gt;# dynamic load - used for trex console or simulator&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#66d9ef&#34;&gt;def&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;register&lt;/span&gt;():
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;  &lt;span style=&#34;color:#66d9ef&#34;&gt;return&lt;/span&gt; STLS1()
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;h2 id=&#34;nice-documentation&#34; &gt;nice documentation
+&lt;span&gt;
+    &lt;a href=&#34;#nice-documentation&#34;&gt;
+        &lt;svg viewBox=&#34;0 0 28 23&#34; height=&#34;100%&#34; width=&#34;19&#34; xmlns=&#34;http://www.w3.org/2000/svg&#34;&gt;&lt;path d=&#34;M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71&#34; fill=&#34;none&#34; stroke-linecap=&#34;round&#34; stroke-miterlimit=&#34;10&#34; stroke-width=&#34;2&#34;/&gt;&lt;path d=&#34;M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71&#34; fill=&#34;none&#34; stroke-linecap=&#34;round&#34; stroke-miterlimit=&#34;10&#34; stroke-width=&#34;2&#34;/&gt;&lt;/svg&gt;
+    &lt;/a&gt;
+&lt;/span&gt;
+&lt;/h2&gt;&lt;p&gt;I then discovered some documentation on how the simulation tools can just. Print the json for me. &lt;br&gt;
+&lt;a href=&#34;https://trex-tgn.cisco.com/trex/doc/trex_astf.html&#34;&gt;^f &amp;ldquo;Adding &amp;ndash;json displays the details of the JSON profile&amp;rdquo;&lt;/a&gt; &lt;br&gt;
+&lt;a href=&#34;https://trex-tgn.cisco.com/trex/doc/trex_stateless.html&#34;&gt;^f &amp;ldquo;Adding &amp;ndash;json displays the details of the JSON command for adding a stream&amp;rdquo;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;So. Cool. Glad I found that just now. Glad I spent the time digging into the python api figuring out how to print the json from a py profile. &lt;br&gt;
+Guess I can archive the pyastf-json-convertor repo and just call those commands from my benchmarking tools. &lt;br&gt;
+Doing this proved somewhat problematic, I ended up needing to use &lt;code&gt;node-pty&lt;/code&gt;&amp;hellip; Might rewrite to pipe the convertor stdout to readline. &lt;br&gt;
+Keep an eye on &lt;a href=&#34;https://github.com/velocipacktor/trex-benchmark-sequence&#34;&gt;this repo&lt;/a&gt;.&lt;/p&gt;
+&lt;h2 id=&#34;digging-myself-in-even-deeper&#34; &gt;digging myself in even deeper
+&lt;span&gt;
+    &lt;a href=&#34;#digging-myself-in-even-deeper&#34;&gt;
+        &lt;svg viewBox=&#34;0 0 28 23&#34; height=&#34;100%&#34; width=&#34;19&#34; xmlns=&#34;http://www.w3.org/2000/svg&#34;&gt;&lt;path d=&#34;M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71&#34; fill=&#34;none&#34; stroke-linecap=&#34;round&#34; stroke-miterlimit=&#34;10&#34; stroke-width=&#34;2&#34;/&gt;&lt;path d=&#34;M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71&#34; fill=&#34;none&#34; stroke-linecap=&#34;round&#34; stroke-miterlimit=&#34;10&#34; stroke-width=&#34;2&#34;/&gt;&lt;/svg&gt;
+    &lt;/a&gt;
+&lt;/span&gt;
+&lt;/h2&gt;&lt;p&gt;The thought hit me - browsers can&amp;rsquo;t zmq. So I need a http gateway to t-rex if I want a webui. Fun. &lt;br&gt;
+Enter stage left: &lt;a href=&#34;https://github.com/velocipacktor/velocipacktor&#34;&gt;velocipacktor&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;What is it? Right now it&amp;rsquo;s a very minimal http control interface for t-rex. &lt;br&gt;
+It can:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Start t-rex in stl or astf mode&lt;/li&gt;
+&lt;li&gt;Stop t-rex&lt;/li&gt;
+&lt;li&gt;See if t-rex is running&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;In the future, I hope it can:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;provide a feature complete api for the t-rex zmq api&lt;/li&gt;
+&lt;li&gt;have websocket endpoints for streaming realtime stats&lt;/li&gt;
+&lt;li&gt;expose a webui with live graphs&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Writing a http gateway does make sense though. It&amp;rsquo;s easier to proxy and authenticate http/s than zmq, for one thing. &lt;br&gt;
+Dockerizing the whole stack and having a cute webui will lower the barrier to entry of t-rex (it&amp;rsquo;s a good thing).&lt;/p&gt;
+&lt;h2 id=&#34;how-fast-is-fast-enough&#34; &gt;how fast is fast enough?
+&lt;span&gt;
+    &lt;a href=&#34;#how-fast-is-fast-enough&#34;&gt;
+        &lt;svg viewBox=&#34;0 0 28 23&#34; height=&#34;100%&#34; width=&#34;19&#34; xmlns=&#34;http://www.w3.org/2000/svg&#34;&gt;&lt;path d=&#34;M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71&#34; fill=&#34;none&#34; stroke-linecap=&#34;round&#34; stroke-miterlimit=&#34;10&#34; stroke-width=&#34;2&#34;/&gt;&lt;path d=&#34;M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71&#34; fill=&#34;none&#34; stroke-linecap=&#34;round&#34; stroke-miterlimit=&#34;10&#34; stroke-width=&#34;2&#34;/&gt;&lt;/svg&gt;
+    &lt;/a&gt;
+&lt;/span&gt;
+&lt;/h2&gt;&lt;p&gt;I have a lot of work to do on velocipacktor still. But, in its current state, I can generate repeatable benchmarks and graphs and such. &lt;br&gt;
+I now need to see what my test bench hardware is capable of. &lt;br&gt;
+Hardware:&lt;/p&gt;
+&lt;pre tabindex=&#34;0&#34;&gt;&lt;code class=&#34;language-none&#34; data-lang=&#34;none&#34;&gt;- Chassis:    Dell Optiplex 7040
+- CPU:        Intel i7-6700k
+- RAM:        8GB DDR4 2133
+- NIC:        Intel X710-DA2 (yep, I got the one that goes to 11)
+- DUT:        6in twinax sfp+ DAC (loopback between the two ports)
+&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;Using &lt;a href=&#34;https://github.com/velocipacktor/trex-benchmark-sequence/blob/main/profiles/stl/udp_linerate_4_streams.py&#34;&gt;udp_linerate_4_streams.py&lt;/a&gt;, I am able to saturate the interface with ease at any packet size.&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;https://www.fmad.io/blog/what-is-10g-line-rate&#34;&gt;This post&lt;/a&gt; goes into detail on the math behind what &amp;ldquo;line rate&amp;rdquo; actually is. &lt;br&gt;
+I can say with some confidence that this card in this system is capable of doing line rate with 64b on-wire packets:&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://goos.blog/2022/08/trex-down-the-rabbit-hole/mult1-dur30-2022-08-25T04-51-39.531Z-packets.png&#34; alt=&#34;packets per second graph at 64byte packet size&#34;&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://goos.blog/2022/08/trex-down-the-rabbit-hole/mult1-dur30-2022-08-25T04-51-39.531Z-bits.png&#34; alt=&#34;bits per second graph at 64byte packet size&#34;&gt;&lt;/p&gt;
+&lt;p&gt;Given that all my current DUTs are 1gig and 2.5gig that&amp;rsquo;s more than good enough. &lt;br&gt;
+I haven&amp;rsquo;t tested the rj45 sfp+ modules yet, but I don&amp;rsquo;t forsee any issues with them.&lt;/p&gt;
+&lt;p&gt;And that&amp;rsquo;s where I&amp;rsquo;ll leave this one off for now. &lt;br&gt;
+Stay tuned, there will be more.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Cisco T-Rex</title>
+      <link>https://goos.blog/2022/08/learning-trex/</link>
+      <pubDate>Wed, 10 Aug 2022 00:00:00 -0400</pubDate>
+      
+      <guid>https://goos.blog/2022/08/learning-trex/</guid>
+      <description>&lt;h4 id=&#34;yet-another-wonderful-cisco-product&#34; &gt;&lt;em&gt;yet another wonderful cisco product&lt;/em&gt;
+&lt;span&gt;
+    &lt;a href=&#34;#yet-another-wonderful-cisco-product&#34;&gt;
+        &lt;svg viewBox=&#34;0 0 28 23&#34; height=&#34;100%&#34; width=&#34;19&#34; xmlns=&#34;http://www.w3.org/2000/svg&#34;&gt;&lt;path d=&#34;M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71&#34; fill=&#34;none&#34; stroke-linecap=&#34;round&#34; stroke-miterlimit=&#34;10&#34; stroke-width=&#34;2&#34;/&gt;&lt;path d=&#34;M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71&#34; fill=&#34;none&#34; stroke-linecap=&#34;round&#34; stroke-miterlimit=&#34;10&#34; stroke-width=&#34;2&#34;/&gt;&lt;/svg&gt;
+    &lt;/a&gt;
+&lt;/span&gt;
+&lt;/h4&gt;&lt;p&gt;I kid. &lt;a href=&#34;https://trex-tgn.cisco.com/&#34;&gt;T-Rex&lt;/a&gt; is actually pretty cool.&lt;/p&gt;
+&lt;p&gt;I&amp;rsquo;m writing a post right now about the &lt;a href=&#34;https://wiki.friendlyelec.com/wiki/index.php/NanoPi_R5S&#34;&gt;NanoPi R5S&lt;/a&gt;.
+All the other reviews / benchmarks (including those from friendlyelec) I&amp;rsquo;ve seen on these have been uh&amp;hellip; Kinda useless (no offense to those authors). &lt;br&gt;
+They&amp;rsquo;re routers, we care about how much traffic they can &lt;em&gt;&lt;strong&gt;pass&lt;/strong&gt;&lt;/em&gt;, not how much they can ingest/generate.&lt;/p&gt;
+&lt;p&gt;Anyway, getting off topic, back to t-rex itself.&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://goos.blog/2022/08/learning-trex/trex-logo.png&#34; alt=&#34;trex logo&#34;&gt;&lt;/p&gt;
+&lt;p&gt;So. T-Rex is a pretty cool suite.
+Out of the box it has several traffic profiles which cover most of what I want to test on these little guys. &lt;br&gt;
+I might cook some profiles of my own, cs:go gameserver traffic would be interesting to test. &lt;br&gt;
+Profiles are basically pcaps to replay and a yaml to define how they&amp;rsquo;re replayed. Pretty simple.&lt;/p&gt;
+&lt;h2 id=&#34;dpdk-pain&#34; &gt;dpdk pain
+&lt;span&gt;
+    &lt;a href=&#34;#dpdk-pain&#34;&gt;
+        &lt;svg viewBox=&#34;0 0 28 23&#34; height=&#34;100%&#34; width=&#34;19&#34; xmlns=&#34;http://www.w3.org/2000/svg&#34;&gt;&lt;path d=&#34;M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71&#34; fill=&#34;none&#34; stroke-linecap=&#34;round&#34; stroke-miterlimit=&#34;10&#34; stroke-width=&#34;2&#34;/&gt;&lt;path d=&#34;M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71&#34; fill=&#34;none&#34; stroke-linecap=&#34;round&#34; stroke-miterlimit=&#34;10&#34; stroke-width=&#34;2&#34;/&gt;&lt;/svg&gt;
+    &lt;/a&gt;
+&lt;/span&gt;
+&lt;/h2&gt;&lt;p&gt;My hardware is an Optiplex 7040 with a 4-port Intel i350 card.
+The chipset is listed on the supported list for t-rex, so I thought it&amp;rsquo;d all be good.
+I load up derpbian, download the thing, install the deps, and try to run it&amp;hellip;. &lt;br&gt;
+Only&amp;hellip; no traffic is actually passed over the loopback&amp;hellip; dmesg is flooded with dmar errors&amp;hellip; &lt;em&gt;sigh&lt;/em&gt; &lt;br&gt;
+I tried a few iommu kernel params that had resolved dmar errors in the past without much luck. It looked like this was a versioning problem with dpdk stuff. RIP me.&lt;/p&gt;
+&lt;h2 id=&#34;striking-a-deal-with-the-devil&#34; &gt;striking a deal with the devil
+&lt;span&gt;
+    &lt;a href=&#34;#striking-a-deal-with-the-devil&#34;&gt;
+        &lt;svg viewBox=&#34;0 0 28 23&#34; height=&#34;100%&#34; width=&#34;19&#34; xmlns=&#34;http://www.w3.org/2000/svg&#34;&gt;&lt;path d=&#34;M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71&#34; fill=&#34;none&#34; stroke-linecap=&#34;round&#34; stroke-miterlimit=&#34;10&#34; stroke-width=&#34;2&#34;/&gt;&lt;path d=&#34;M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71&#34; fill=&#34;none&#34; stroke-linecap=&#34;round&#34; stroke-miterlimit=&#34;10&#34; stroke-width=&#34;2&#34;/&gt;&lt;/svg&gt;
+    &lt;/a&gt;
+&lt;/span&gt;
+&lt;/h2&gt;&lt;p&gt;Centos it is. I find a 7.6 iso at vault.centos.org and install that. &lt;br&gt;
+Now it works, and I spent some time messing around with the many parameters of trex. &lt;br&gt;
+At this point I&amp;rsquo;m working with a hardware loopback (port 0 is connected to port 2 with a short patch cable).&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://goos.blog/2022/08/learning-trex/trex-screenshot-01.png&#34; alt=&#34;trex-screenshot-01&#34;&gt;&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;&lt;code&gt;./t-rex-64 -f cap2/https.yaml -m 1000 -d 30&lt;/code&gt; &lt;br&gt;
+I think I&amp;rsquo;m doing this right&amp;hellip;&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;h2 id=&#34;must-go-faster&#34; &gt;must. go. faster.
+&lt;span&gt;
+    &lt;a href=&#34;#must-go-faster&#34;&gt;
+        &lt;svg viewBox=&#34;0 0 28 23&#34; height=&#34;100%&#34; width=&#34;19&#34; xmlns=&#34;http://www.w3.org/2000/svg&#34;&gt;&lt;path d=&#34;M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71&#34; fill=&#34;none&#34; stroke-linecap=&#34;round&#34; stroke-miterlimit=&#34;10&#34; stroke-width=&#34;2&#34;/&gt;&lt;path d=&#34;M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71&#34; fill=&#34;none&#34; stroke-linecap=&#34;round&#34; stroke-miterlimit=&#34;10&#34; stroke-width=&#34;2&#34;/&gt;&lt;/svg&gt;
+    &lt;/a&gt;
+&lt;/span&gt;
+&lt;/h2&gt;&lt;p&gt;I am able to run a number of tests that saturate the phy bandwidth, but some others are cpu bottlenecked (smol packets, lots of simulated client/servers, etc). &lt;br&gt;
+Given that this box has some i5 in it with 4c/4t, a cpu upgrade felt natural. &lt;br&gt;
+Some googling told me that the i7-6700K would work on my 7040. It has 4c/8t at 4.0 ~ 4.2ghz. &lt;br&gt;
+Not bad. &lt;br&gt;
+While I wait for that to show up let&amp;rsquo;s play with trex more and see if I can get some graphable output from it.&lt;/p&gt;
+&lt;p&gt;It was at this point I discovered that &amp;ldquo;stateful&amp;rdquo; mode was basically deprech, and I should be using &amp;ldquo;ASTF&amp;rdquo; mode instead. &lt;br&gt;
+ASTF is basically stateful but instead of yaml and local running, you run a daemon in astf mode and connect to it over zmq. &lt;br&gt;
+There&amp;rsquo;s only one library to make this sane&amp;hellip; And it&amp;rsquo;s in python. &lt;br&gt;
+This however turned out to be not too horrible in the end.&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://goos.blog/2022/08/learning-trex/trex-screenshot-02.png&#34; alt=&#34;trex-screenshot-02&#34;&gt;&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;trex-console has a cute tui mode&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;h2 id=&#34;down-the-rabbit-hole-we-go&#34; &gt;down the rabbit hole we go
+&lt;span&gt;
+    &lt;a href=&#34;#down-the-rabbit-hole-we-go&#34;&gt;
+        &lt;svg viewBox=&#34;0 0 28 23&#34; height=&#34;100%&#34; width=&#34;19&#34; xmlns=&#34;http://www.w3.org/2000/svg&#34;&gt;&lt;path d=&#34;M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71&#34; fill=&#34;none&#34; stroke-linecap=&#34;round&#34; stroke-miterlimit=&#34;10&#34; stroke-width=&#34;2&#34;/&gt;&lt;path d=&#34;M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71&#34; fill=&#34;none&#34; stroke-linecap=&#34;round&#34; stroke-miterlimit=&#34;10&#34; stroke-width=&#34;2&#34;/&gt;&lt;/svg&gt;
+    &lt;/a&gt;
+&lt;/span&gt;
+&lt;/h2&gt;&lt;p&gt;Bit more googling lead me to this:
+&lt;a href=&#34;https://github.com/cisco-system-traffic-generator/trex-core/blob/master/scripts/automation/trex_control_plane/interactive/trex/examples/astf/astf_example.py&#34;&gt;astf_example.py&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;I can kinda work with this.
+If I can get those stats on some interval&amp;hellip;&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-python&#34; data-lang=&#34;python&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#66d9ef&#34;&gt;while&lt;/span&gt; c&lt;span style=&#34;color:#f92672&#34;&gt;.&lt;/span&gt;is_traffic_active():
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;      stats &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; c&lt;span style=&#34;color:#f92672&#34;&gt;.&lt;/span&gt;get_stats()
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;      timestamp &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; time&lt;span style=&#34;color:#f92672&#34;&gt;.&lt;/span&gt;mktime(datetime&lt;span style=&#34;color:#f92672&#34;&gt;.&lt;/span&gt;datetime&lt;span style=&#34;color:#f92672&#34;&gt;.&lt;/span&gt;now()&lt;span style=&#34;color:#f92672&#34;&gt;.&lt;/span&gt;timetuple()) &lt;span style=&#34;color:#f92672&#34;&gt;*&lt;/span&gt; &lt;span style=&#34;color:#ae81ff&#34;&gt;1000&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;      statsArray&lt;span style=&#34;color:#f92672&#34;&gt;.&lt;/span&gt;append(JsonOutput(timestamp, stats))
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;      time&lt;span style=&#34;color:#f92672&#34;&gt;.&lt;/span&gt;sleep(&lt;span style=&#34;color:#ae81ff&#34;&gt;0.5&lt;/span&gt;)
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;outputFile &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; open(outputPath, &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;w&amp;#34;&lt;/span&gt;)
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;outputFile&lt;span style=&#34;color:#f92672&#34;&gt;.&lt;/span&gt;write(json&lt;span style=&#34;color:#f92672&#34;&gt;.&lt;/span&gt;dumps(statsArray, default&lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt;vars))
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;blockquote&gt;
+&lt;p&gt;:neat: &lt;br&gt;
+Don&amp;rsquo;t judge my dogshit python abilities &lt;br&gt;
+I &lt;em&gt;think&lt;/em&gt; I got the math right when I modified that function&amp;hellip; &lt;br&gt;
+It ain&amp;rsquo;t matter though b/c that&amp;rsquo;s just for my human-readable while the test is running&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;h2 id=&#34;time-to-make-it-clean&#34; &gt;time to make it clean
+&lt;span&gt;
+    &lt;a href=&#34;#time-to-make-it-clean&#34;&gt;
+        &lt;svg viewBox=&#34;0 0 28 23&#34; height=&#34;100%&#34; width=&#34;19&#34; xmlns=&#34;http://www.w3.org/2000/svg&#34;&gt;&lt;path d=&#34;M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71&#34; fill=&#34;none&#34; stroke-linecap=&#34;round&#34; stroke-miterlimit=&#34;10&#34; stroke-width=&#34;2&#34;/&gt;&lt;path d=&#34;M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71&#34; fill=&#34;none&#34; stroke-linecap=&#34;round&#34; stroke-miterlimit=&#34;10&#34; stroke-width=&#34;2&#34;/&gt;&lt;/svg&gt;
+    &lt;/a&gt;
+&lt;/span&gt;
+&lt;/h2&gt;&lt;p&gt;Before making graphs I wanted to isolate and repo-ize my work so far. &lt;br&gt;
+This ended up being a lot harder than it should have been. &lt;br&gt;
+I&amp;rsquo;m probably violating licenses, but whatever, this is nonprofit.&lt;/p&gt;
+&lt;h2 id=&#34;graphs-glorious-graphs&#34; &gt;graphs, glorious graphs
+&lt;span&gt;
+    &lt;a href=&#34;#graphs-glorious-graphs&#34;&gt;
+        &lt;svg viewBox=&#34;0 0 28 23&#34; height=&#34;100%&#34; width=&#34;19&#34; xmlns=&#34;http://www.w3.org/2000/svg&#34;&gt;&lt;path d=&#34;M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71&#34; fill=&#34;none&#34; stroke-linecap=&#34;round&#34; stroke-miterlimit=&#34;10&#34; stroke-width=&#34;2&#34;/&gt;&lt;path d=&#34;M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71&#34; fill=&#34;none&#34; stroke-linecap=&#34;round&#34; stroke-miterlimit=&#34;10&#34; stroke-width=&#34;2&#34;/&gt;&lt;/svg&gt;
+    &lt;/a&gt;
+&lt;/span&gt;
+&lt;/h2&gt;&lt;p&gt;Now to figure out how to make pretty graphs with all this data. &lt;br&gt;
+It didn&amp;rsquo;t take too long to get something with chart.js and canvas working.&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://goos.blog/2022/08/learning-trex/trex-test-graph-01.png&#34; alt=&#34;trex-test-graph-01&#34;&gt;&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;Ugly, for now.&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;After a fair amount of farting around with graph params and other small things, I had myself a lil nodejs (yes, js. yes, the actual api is in python. no I will not be answering your questions at this time.) blob that would take a hjson file of profiles and settings to run and generate graphs for, and like, run it. &lt;br&gt;
+The way I ended up doing it was gross at every step. But. It works. &lt;br&gt;
+Feelsgood.&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://goos.blog/2022/08/learning-trex/emix2-mult_400-dur_600-1660148778698.png&#34; alt=&#34;prettier trex graph&#34;&gt;&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;The &lt;a href=&#34;https://github.com/cisco-system-traffic-generator/trex-core/blob/master/scripts/astf/emix2.py&#34;&gt;emix2 profile&lt;/a&gt;
+is killer. &lt;br&gt;
+&lt;a href=&#34;https://goos.blog/2022/08/learning-trex/json/emix2-mult_400-dur_600-1660148778698.json&#34;&gt;full json stats here&lt;/a&gt;&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;As you can see (I&amp;rsquo;m assuming you clicked the json link), there&amp;rsquo;s plenty of stats that I&amp;rsquo;m not even looking at yet.&lt;/p&gt;
+&lt;h2 id=&#34;next-steps&#34; &gt;next steps
+&lt;span&gt;
+    &lt;a href=&#34;#next-steps&#34;&gt;
+        &lt;svg viewBox=&#34;0 0 28 23&#34; height=&#34;100%&#34; width=&#34;19&#34; xmlns=&#34;http://www.w3.org/2000/svg&#34;&gt;&lt;path d=&#34;M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71&#34; fill=&#34;none&#34; stroke-linecap=&#34;round&#34; stroke-miterlimit=&#34;10&#34; stroke-width=&#34;2&#34;/&gt;&lt;path d=&#34;M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71&#34; fill=&#34;none&#34; stroke-linecap=&#34;round&#34; stroke-miterlimit=&#34;10&#34; stroke-width=&#34;2&#34;/&gt;&lt;/svg&gt;
+    &lt;/a&gt;
+&lt;/span&gt;
+&lt;/h2&gt;&lt;p&gt;I&amp;rsquo;ve bundled up all the code used in this post &lt;a href=&#34;https://github.com/velocipacktor/trex-benchmark-sequence&#34;&gt;in this repo&lt;/a&gt;. &lt;br&gt;
+Do with it what you will. I only ask that if you use this in a commercial product, you give me a free copy. Otherwise I&amp;rsquo;m going to pirate it.&lt;/p&gt;
+&lt;p&gt;I still need to run a suite of profiles through loopback to determine the &amp;ldquo;best&amp;rdquo; parameters for each given my test hardware. &lt;br&gt;
+After that I can actually run some repeatable tests on a real device!&lt;/p&gt;
+&lt;p&gt;It&amp;rsquo;d be neat to add a realtime graph in the cli, test duration progress bars, etc. &lt;br&gt;
+Maybe I&amp;rsquo;ll do that later today&amp;hellip; Keep an eye on that repo for changes.&lt;/p&gt;
+&lt;p&gt;Oh, and I have that new cpu on the way! &lt;br&gt;
+I&amp;rsquo;ll probably do a part 2 with finalized benchmark sets when that comes in.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>On A Dime - Part 1</title>
+      <link>https://goos.blog/2022/05/on-a-dime-pt-1/</link>
+      <pubDate>Mon, 30 May 2022 00:00:00 -0400</pubDate>
+      
+      <guid>https://goos.blog/2022/05/on-a-dime-pt-1/</guid>
+      <description>&lt;h4 id=&#34;why-not-just-make-it-out-of-fiberglass-dude&#34; &gt;&lt;em&gt;why not just make it out of fiberglass dude?&lt;/em&gt;
+&lt;span&gt;
+    &lt;a href=&#34;#why-not-just-make-it-out-of-fiberglass-dude&#34;&gt;
+        &lt;svg viewBox=&#34;0 0 28 23&#34; height=&#34;100%&#34; width=&#34;19&#34; xmlns=&#34;http://www.w3.org/2000/svg&#34;&gt;&lt;path d=&#34;M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71&#34; fill=&#34;none&#34; stroke-linecap=&#34;round&#34; stroke-miterlimit=&#34;10&#34; stroke-width=&#34;2&#34;/&gt;&lt;path d=&#34;M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71&#34; fill=&#34;none&#34; stroke-linecap=&#34;round&#34; stroke-miterlimit=&#34;10&#34; stroke-width=&#34;2&#34;/&gt;&lt;/svg&gt;
+    &lt;/a&gt;
+&lt;/span&gt;
+&lt;/h4&gt;&lt;p&gt;Over the past few &lt;del&gt;weeks&lt;/del&gt; months I&amp;rsquo;ve been working to get Arcadia (Slipper 17 by Starboard Yachts) ready for the water.&lt;/p&gt;
+&lt;p&gt;I&amp;rsquo;ve only owned the boat for a year now, and was only able to take it out twice last season. Haven&amp;rsquo;t even gone on a proper shakedown cruise yet.&lt;/p&gt;
+&lt;p&gt;When I first bought the boat, I noticed a small shallow crack in the rudder neck.
+I figured I could V it out later and fill it with epoxy, so I didn&amp;rsquo;t think much of it at the time.&lt;/p&gt;
+&lt;p&gt;Winter had other ideas though.&lt;/p&gt;
+&lt;p&gt;I was getting ready to polish/wax the stern, so I dismounted the rudder and set it aside.
+Taking the time to examine the crack, I found some Bad News - the crack had grown.
+A lot. Water probably got in there and froze over the winter.&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://goos.blog/2022/05/on-a-dime-pt-1/IMG_2932.jpeg&#34; alt=&#34;Big Crack&#34;&gt;&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;Not the best place for it to nearly break half in two&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;Lots of googling and forum reading told me three things&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;The airfoil shape of the rudder blade is somewhat critical to good performance&lt;/li&gt;
+&lt;li&gt;I should make a foam or balsa core and then fiberglass over it&lt;/li&gt;
+&lt;li&gt;Another option would be to laminate cedar strips into a thiq blank and cut the rudder from that.&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;Some more googling brought me to &lt;a href=&#34;http://airfoiltools.com/plotter/index&#34;&gt;this tool&lt;/a&gt; which worked very well to select and plot and print out a profile curve.&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://goos.blog/2022/05/on-a-dime-pt-1/profile_settings.PNG&#34; alt=&#34;profile settings&#34;&gt;&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;This is what I ended up with, approx 3&amp;quot; thick at the widest&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;Now, I don&amp;rsquo;t know fiberglass that well.
+I&amp;rsquo;ve never really worked with it before, and I didn&amp;rsquo;t really want to start now.
+I&amp;rsquo;ve never really undertaken any big wood projects either, but the material is much more forgiving.&lt;/p&gt;
+&lt;p&gt;I had the beginnings of a plan at this point:&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;Form a blank out of cedar 2x4&amp;rsquo;s&lt;/li&gt;
+&lt;li&gt;Somehow cut the profile out&lt;/li&gt;
+&lt;li&gt;Soak it in penetrating epoxy&lt;/li&gt;
+&lt;li&gt;Coat it in regular epoxy&lt;/li&gt;
+&lt;li&gt;Coat it in spar varnish for UV protection&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;Step 1 was easy enough:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Acquire lumber (ouch my wallet!)&lt;/li&gt;
+&lt;li&gt;Chop it up&lt;/li&gt;
+&lt;li&gt;Glue it together&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;&lt;img src=&#34;https://goos.blog/2022/05/on-a-dime-pt-1/IMG_2954.jpeg&#34; alt=&#34;glued and clamped&#34;&gt;&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;Not as much squeezeout as I&amp;rsquo;d have liked to see but we&amp;rsquo;re drowning it in epoxy later on ¯\&lt;em&gt;(ツ)&lt;/em&gt;/¯&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;Step 2 was a little daunting, but after a good sit &amp;rsquo;n stink about it I had an idea.
+With a set of profile guides, I could use bar clamps as rails for a router to slide across the long axis of the blank.
+This would get me pretty close, and then the rest of it could be sanded / planed away.&lt;/p&gt;
+&lt;p&gt;First I drew up the fixturing in cad. This proved extremely valuable as I could reference dimensions live as I built the fixture.
+(It didn&amp;rsquo;t come to me until halfway through that I would need to mirror the fixture angle to do the other side&amp;hellip; I would have designed it a little differently had I realized that.)&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://goos.blog/2022/05/on-a-dime-pt-1/onshape.PNG&#34; alt=&#34;onshape&#34;&gt;&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;Onshape is like solidworks lite, I really like it&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;After building the fixture I was ready to start router-ing away the bulk of the material to remove.
+The first few passes were really light, but pretty quickly I was taking very heavy passes.
+To its credit, the &amp;lsquo;ol Craftsman router did very well.&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://goos.blog/2022/05/on-a-dime-pt-1/IMG_3006.jpeg&#34; alt=&#34;in progress&#34;&gt;&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;5/8&amp;quot; round nose top bearing carbide bit, 1/2&amp;quot; stepover. Cedar is wonderful to work with.&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;Some work with the power hand planer brought us to this:&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://goos.blog/2022/05/on-a-dime-pt-1/IMG_3016.jpeg&#34; alt=&#34;rough form completed&#34;&gt;&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;outline of old rudder traced on, will probably make the back edge less swoop-ey&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;And that&amp;rsquo;s where I leave you for today.&lt;/p&gt;
+&lt;p&gt;I still need to finish sanding it to final form.
+After that comes epoxy.&lt;/p&gt;
+&lt;p&gt;Lots of epoxy.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>The gaming server</title>
+      <link>https://goos.blog/2022/04/gaming-vm/</link>
+      <pubDate>Mon, 18 Apr 2022 11:24:00 -0400</pubDate>
+      
+      <guid>https://goos.blog/2022/04/gaming-vm/</guid>
+      <description>&lt;h3 id=&#34;a-somewhat-elegant-solution-to-a-nonexistant-problem&#34; &gt;&lt;em&gt;a somewhat elegant solution to a nonexistant problem&lt;/em&gt;
+&lt;span&gt;
+    &lt;a href=&#34;#a-somewhat-elegant-solution-to-a-nonexistant-problem&#34;&gt;
+        &lt;svg viewBox=&#34;0 0 28 23&#34; height=&#34;100%&#34; width=&#34;19&#34; xmlns=&#34;http://www.w3.org/2000/svg&#34;&gt;&lt;path d=&#34;M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71&#34; fill=&#34;none&#34; stroke-linecap=&#34;round&#34; stroke-miterlimit=&#34;10&#34; stroke-width=&#34;2&#34;/&gt;&lt;path d=&#34;M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71&#34; fill=&#34;none&#34; stroke-linecap=&#34;round&#34; stroke-miterlimit=&#34;10&#34; stroke-width=&#34;2&#34;/&gt;&lt;/svg&gt;
+    &lt;/a&gt;
+&lt;/span&gt;
+&lt;/h3&gt;&lt;p&gt;MacOS is nice. Really nice. Really good. At most things&amp;hellip;&lt;/p&gt;
+&lt;p&gt;Gaming, not so much. Windows still leads that pack (duh), with linux trailing closely behind these days.
+So what does a man with a hackintosh on the desktop and some big iron in the closet do?
+Slap a gpu in the iron and stream all the games to both the desktop and a steam link on the teevee!&lt;/p&gt;
+&lt;h3 id=&#34;so-many-games-so-little-time&#34; &gt;so many games, so little time
+&lt;span&gt;
+    &lt;a href=&#34;#so-many-games-so-little-time&#34;&gt;
+        &lt;svg viewBox=&#34;0 0 28 23&#34; height=&#34;100%&#34; width=&#34;19&#34; xmlns=&#34;http://www.w3.org/2000/svg&#34;&gt;&lt;path d=&#34;M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71&#34; fill=&#34;none&#34; stroke-linecap=&#34;round&#34; stroke-miterlimit=&#34;10&#34; stroke-width=&#34;2&#34;/&gt;&lt;path d=&#34;M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71&#34; fill=&#34;none&#34; stroke-linecap=&#34;round&#34; stroke-miterlimit=&#34;10&#34; stroke-width=&#34;2&#34;/&gt;&lt;/svg&gt;
+    &lt;/a&gt;
+&lt;/span&gt;
+&lt;/h3&gt;&lt;p&gt;After the rx580 came in and was installed last night, I was ready to setup the vm that would consume it.
+First I isolate the vm with vfio. tl;dr &lt;code&gt;vfio-pci.ids=1002:67df,1002:aaf0&lt;/code&gt; is all you need on modern kernels.
+Then a standard winderp install, q35, omvf, etc. Fight my way through the horrible oobe and I&amp;rsquo;m finally at the desktop.
+Attach the gpu, detach the qemu display, and I&amp;rsquo;m done&amp;hellip; Kinda.&lt;/p&gt;
+&lt;p&gt;This gpu has hardware encode (unlike my 1030), so I could use parsec for remote desktop while setting it up.
+It&amp;rsquo;s a bit nicer than reemo overall. I like the h265 support and 2fa.
+I don&amp;rsquo;t really like how it signed me out of the client between last night and today.
+I get steam setup and click install on a bunch of games in my &amp;ldquo;play eventually&amp;rdquo; collection.&lt;/p&gt;
+&lt;h3 id=&#34;a-mostly-uneventful-process&#34; &gt;a mostly uneventful process
+&lt;span&gt;
+    &lt;a href=&#34;#a-mostly-uneventful-process&#34;&gt;
+        &lt;svg viewBox=&#34;0 0 28 23&#34; height=&#34;100%&#34; width=&#34;19&#34; xmlns=&#34;http://www.w3.org/2000/svg&#34;&gt;&lt;path d=&#34;M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71&#34; fill=&#34;none&#34; stroke-linecap=&#34;round&#34; stroke-miterlimit=&#34;10&#34; stroke-width=&#34;2&#34;/&gt;&lt;path d=&#34;M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71&#34; fill=&#34;none&#34; stroke-linecap=&#34;round&#34; stroke-miterlimit=&#34;10&#34; stroke-width=&#34;2&#34;/&gt;&lt;/svg&gt;
+    &lt;/a&gt;
+&lt;/span&gt;
+&lt;/h3&gt;&lt;p&gt;After a few games finished downloading on the vm, I fired up steam on my desktop for a quick test.
+I plug in my dualshock3, run &lt;a href=&#34;https://github.com/libsdl-org/SDL/issues/4923#issuecomment-966722634&#34;&gt;ds3activate&lt;/a&gt; (thanks apple for dropping support for it in Monterey&amp;hellip;), and launch one of my favorite kill-5-minutes games, The Ramp.
+Unsurprisingly, it fires right up and justwerks. Thanks valve!&lt;/p&gt;
+&lt;h3 id=&#34;what-about-that-300gb-of-emulator-games-tho&#34; &gt;what about that 300gb of emulator games tho?
+&lt;span&gt;
+    &lt;a href=&#34;#what-about-that-300gb-of-emulator-games-tho&#34;&gt;
+        &lt;svg viewBox=&#34;0 0 28 23&#34; height=&#34;100%&#34; width=&#34;19&#34; xmlns=&#34;http://www.w3.org/2000/svg&#34;&gt;&lt;path d=&#34;M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71&#34; fill=&#34;none&#34; stroke-linecap=&#34;round&#34; stroke-miterlimit=&#34;10&#34; stroke-width=&#34;2&#34;/&gt;&lt;path d=&#34;M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71&#34; fill=&#34;none&#34; stroke-linecap=&#34;round&#34; stroke-miterlimit=&#34;10&#34; stroke-width=&#34;2&#34;/&gt;&lt;/svg&gt;
+    &lt;/a&gt;
+&lt;/span&gt;
+&lt;/h3&gt;&lt;p&gt;Over time I&amp;rsquo;ve built up quite a few emulator games. Sure, 200 of that 300gb is taken up by like four ps3 games, but there&amp;rsquo;s quite a few retro, ngc, wii, etc games as well.&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;https://github.com/SteamGridDB/steam-rom-manager&#34;&gt;Steam-rom-manager&lt;/a&gt; helps a &lt;em&gt;&lt;strong&gt;lot&lt;/strong&gt;&lt;/em&gt; with managing that.&lt;/p&gt;
+&lt;p&gt;It needs some manual overrides and massaging, but in the end I get a nice list of steam custom shortcuts for all my emul games.&lt;/p&gt;
+&lt;p&gt;&amp;ldquo;Ready to play&amp;rdquo; was looking pretty gross at this point:&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://goos.blog/2022/04/gaming-vm/so_many_games.png&#34; alt=&#34;steam game list&#34;&gt;&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;I think I&amp;rsquo;m going to remove a lot of these roms that I don&amp;rsquo;t actually play.&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;I&amp;rsquo;m considering trying to make a collection manager, so I can have a collection that&amp;rsquo;s &lt;code&gt;not emulated&lt;/code&gt;.
+Or, valve could add the NOT operator to dynamic collections. That&amp;rsquo;d be cool too.&lt;/p&gt;
+&lt;p&gt;Another annoyance - categories for non-steam applications don&amp;rsquo;t carry between computers&amp;hellip; Although they do show up on the steam link (as you&amp;rsquo;d expect).&lt;/p&gt;
+&lt;p&gt;So instead of having this nice organization structure, I have this mess:&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://goos.blog/2022/04/gaming-vm/collections.png&#34; alt=&#34;steam filters&#34;&gt;&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;vm on left, desktop on right (I rm&amp;rsquo;d some of the roms I was never going to play)&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;From what I&amp;rsquo;ve read online, collections are stored &lt;em&gt;&lt;strong&gt;in the cloud&lt;/strong&gt;&lt;/em&gt;, not a local vdf file like shortcuts.
+Probably have to interact with the api to copy them, but a quick search on valvo&amp;rsquo;s documentation page didn&amp;rsquo;t show any publicly documented endpoints.
+Oh well. At least I have search on my desktop.&lt;/p&gt;
+&lt;p&gt;A thought - what if there was a desktop steam link client?&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://goos.blog/2022/04/gaming-vm/ouchie.png&#34; alt=&#34;steam message&#34;&gt;&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;&lt;a href=&#34;https://store.steampowered.com/app/353380/Steam_Link/&#34;&gt;Turns out there is&amp;hellip; Rather was&lt;/a&gt;&amp;hellip; &lt;a href=&#34;https://steamcommunity.com/app/353380/discussions/9/3108017414028756807/&#34;&gt;But maybe there&amp;rsquo;s hope?&lt;/a&gt;&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;With apple dropping i386 support back in catalina, I&amp;rsquo;m SOL. Again. Woo.&lt;/p&gt;
+&lt;p&gt;Yeah yeah I can just remote in with parsec and browse/play that way - and I might end up with that workflow.
+I&amp;rsquo;ll try both and see how it goes.&lt;/p&gt;
+&lt;h3 id=&#34;a-new-hope&#34; &gt;a new hope
+&lt;span&gt;
+    &lt;a href=&#34;#a-new-hope&#34;&gt;
+        &lt;svg viewBox=&#34;0 0 28 23&#34; height=&#34;100%&#34; width=&#34;19&#34; xmlns=&#34;http://www.w3.org/2000/svg&#34;&gt;&lt;path d=&#34;M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71&#34; fill=&#34;none&#34; stroke-linecap=&#34;round&#34; stroke-miterlimit=&#34;10&#34; stroke-width=&#34;2&#34;/&gt;&lt;path d=&#34;M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71&#34; fill=&#34;none&#34; stroke-linecap=&#34;round&#34; stroke-miterlimit=&#34;10&#34; stroke-width=&#34;2&#34;/&gt;&lt;/svg&gt;
+    &lt;/a&gt;
+&lt;/span&gt;
+&lt;/h3&gt;&lt;p&gt;Some time passes. I cook dinner, feed the cats, take out the trash.&lt;/p&gt;
+&lt;p&gt;Then I think &lt;em&gt;&amp;ldquo;I never checked the actual apple app store, did I?&amp;rdquo;&lt;/em&gt;&lt;/p&gt;
+&lt;p&gt;Sure enough:
+&lt;img src=&#34;https://goos.blog/2022/04/gaming-vm/oh_look.png&#34; alt=&#34;apple app store&#34;&gt;&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;There it is!&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;This is perfect for my needs. Thanks valve!&lt;/p&gt;
+&lt;h3 id=&#34;cpu--node-pinning&#34; &gt;cpu / node pinning
+&lt;span&gt;
+    &lt;a href=&#34;#cpu--node-pinning&#34;&gt;
+        &lt;svg viewBox=&#34;0 0 28 23&#34; height=&#34;100%&#34; width=&#34;19&#34; xmlns=&#34;http://www.w3.org/2000/svg&#34;&gt;&lt;path d=&#34;M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71&#34; fill=&#34;none&#34; stroke-linecap=&#34;round&#34; stroke-miterlimit=&#34;10&#34; stroke-width=&#34;2&#34;/&gt;&lt;path d=&#34;M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71&#34; fill=&#34;none&#34; stroke-linecap=&#34;round&#34; stroke-miterlimit=&#34;10&#34; stroke-width=&#34;2&#34;/&gt;&lt;/svg&gt;
+    &lt;/a&gt;
+&lt;/span&gt;
+&lt;/h3&gt;&lt;p&gt;I should probably pin this vm to cpu0/node0.&lt;/p&gt;
+&lt;p&gt;A few &lt;code&gt;numactl&lt;/code&gt; commands to see how my iron is laid out and I&amp;rsquo;m ready to ^c^v his hook script and config entries.
+As I turn my dev vms back on, I&amp;rsquo;ll want to pin them to cpu1, so i create both a &lt;code&gt;pin-numa0.sh&lt;/code&gt; and &lt;code&gt;pin-numa1.sh&lt;/code&gt;&lt;/p&gt;
+&lt;p&gt;This didn&amp;rsquo;t quite work though.
+The cpu pinning script was working (albeit with one failure call to taskset failing, not sure why yet), but the memory pinning wasn&amp;rsquo;t.
+Additionally, the &lt;code&gt;qm start&lt;/code&gt; command was timing out every now and then. There is a &lt;code&gt;--timeout&lt;/code&gt; flag, but it&amp;rsquo;d be nice if this was in the vm config instead so the webui would reflect this too.&lt;/p&gt;
+&lt;p&gt;Tossing this in the hookscript fixed the memory pinning. Yeah, kinda gross to flush page cache every time I start a pinned vm, but whatever:&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#66d9ef&#34;&gt;if&lt;/span&gt; &lt;span style=&#34;color:#f92672&#34;&gt;[[&lt;/span&gt; &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;&lt;/span&gt;$2&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;&lt;/span&gt; &lt;span style=&#34;color:#f92672&#34;&gt;==&lt;/span&gt; &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;pre-start&amp;#34;&lt;/span&gt; &lt;span style=&#34;color:#f92672&#34;&gt;]]&lt;/span&gt;; &lt;span style=&#34;color:#66d9ef&#34;&gt;then&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;  echo &lt;span style=&#34;color:#ae81ff&#34;&gt;1&lt;/span&gt; &amp;gt; /proc/sys/vm/drop_caches
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#66d9ef&#34;&gt;fi&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;h3 id=&#34;final-thoughts&#34; &gt;final thoughts
+&lt;span&gt;
+    &lt;a href=&#34;#final-thoughts&#34;&gt;
+        &lt;svg viewBox=&#34;0 0 28 23&#34; height=&#34;100%&#34; width=&#34;19&#34; xmlns=&#34;http://www.w3.org/2000/svg&#34;&gt;&lt;path d=&#34;M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71&#34; fill=&#34;none&#34; stroke-linecap=&#34;round&#34; stroke-miterlimit=&#34;10&#34; stroke-width=&#34;2&#34;/&gt;&lt;path d=&#34;M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71&#34; fill=&#34;none&#34; stroke-linecap=&#34;round&#34; stroke-miterlimit=&#34;10&#34; stroke-width=&#34;2&#34;/&gt;&lt;/svg&gt;
+    &lt;/a&gt;
+&lt;/span&gt;
+&lt;/h3&gt;&lt;p&gt;Should you do something like this? Well, maybe.
+If you have the extra hardware and the use case, go for it.
+It&amp;rsquo;s not that hard anymore, and the bennies are pretty nice.
+I don&amp;rsquo;t have to tie up a desktop for the steam link anymore, and I don&amp;rsquo;t need to boot to windows for casual gaming.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Armitage upgrades - gpu, nvme, blikvm</title>
+      <link>https://goos.blog/2022/04/updoots-part-1/</link>
+      <pubDate>Sun, 17 Apr 2022 06:00:00 -0400</pubDate>
+      
+      <guid>https://goos.blog/2022/04/updoots-part-1/</guid>
+      <description>&lt;h3 id=&#34;when-packing-this-order-to-ship-our-inventory-was-off-on-these-we-have-4-of-the-8-sticks-we-can-refund-you-for-4-and-send-out-the-other-4-or-we-can-cancel-the-whole-order-sorry-for-the-mix-up&#34; &gt;&lt;em&gt;When packing this order to ship our inventory was off on these, we have 4 of the 8 sticks. We can refund you for 4 and send out the other 4, or we can cancel the whole order. Sorry for the mix-up.&lt;/em&gt;
+&lt;span&gt;
+    &lt;a href=&#34;#when-packing-this-order-to-ship-our-inventory-was-off-on-these-we-have-4-of-the-8-sticks-we-can-refund-you-for-4-and-send-out-the-other-4-or-we-can-cancel-the-whole-order-sorry-for-the-mix-up&#34;&gt;
+        &lt;svg viewBox=&#34;0 0 28 23&#34; height=&#34;100%&#34; width=&#34;19&#34; xmlns=&#34;http://www.w3.org/2000/svg&#34;&gt;&lt;path d=&#34;M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71&#34; fill=&#34;none&#34; stroke-linecap=&#34;round&#34; stroke-miterlimit=&#34;10&#34; stroke-width=&#34;2&#34;/&gt;&lt;path d=&#34;M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71&#34; fill=&#34;none&#34; stroke-linecap=&#34;round&#34; stroke-miterlimit=&#34;10&#34; stroke-width=&#34;2&#34;/&gt;&lt;/svg&gt;
+    &lt;/a&gt;
+&lt;/span&gt;
+&lt;/h3&gt;&lt;p&gt;&lt;img src=&#34;https://goos.blog/2022/04/updoots-part-1/nerd_shit.jpg&#34; alt=&#34;packages&#34;&gt;&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;I arrived home to four bits of nerd shit in my mailbox&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;I have several upgrades in mind for my lab box.&lt;/p&gt;
+&lt;h3 id=&#34;blikvm&#34; &gt;blikvm
+&lt;span&gt;
+    &lt;a href=&#34;#blikvm&#34;&gt;
+        &lt;svg viewBox=&#34;0 0 28 23&#34; height=&#34;100%&#34; width=&#34;19&#34; xmlns=&#34;http://www.w3.org/2000/svg&#34;&gt;&lt;path d=&#34;M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71&#34; fill=&#34;none&#34; stroke-linecap=&#34;round&#34; stroke-miterlimit=&#34;10&#34; stroke-width=&#34;2&#34;/&gt;&lt;path d=&#34;M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71&#34; fill=&#34;none&#34; stroke-linecap=&#34;round&#34; stroke-miterlimit=&#34;10&#34; stroke-width=&#34;2&#34;/&gt;&lt;/svg&gt;
+    &lt;/a&gt;
+&lt;/span&gt;
+&lt;/h3&gt;&lt;p&gt;A while back I ordered a blikvm (I liked the board layout more than the pi-kvm, and that it uses a cm4) for this box, but I was unable to get video capture working at all.
+I messed around with edid settings on the capture device for days with no joy. Tried several cables, different gpus even. Nothing.
+&lt;code&gt;/sys/class/drm/whatever&lt;/code&gt; showed disconnected on the output each time.
+Feeling somewhat desperate, I ordered a vga -&amp;gt; hdmi adapter. Spoiler alert, it kinda works. I have video in bios, grub, and initramfs, but after that&amp;hellip; nothing.
+I&amp;rsquo;ll have to play with edid settings again now that I have the adapter in play.
+I&amp;rsquo;m probably going to order an inline hdmi edid emulator to see if that works better, as a bonus it&amp;rsquo;ll be more compact.&lt;/p&gt;
+&lt;p&gt;I also found a remote power switch header on the board (thanks dell!) so I even have power button control. That&amp;rsquo;ll be handy, I&amp;rsquo;m sure.&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://goos.blog/2022/04/updoots-part-1/pikvm_webui.png&#34; alt=&#34;pikvm webui&#34;&gt;&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;INTEL (R) CPU 0000&lt;br&gt;
+that&amp;rsquo;s what you get for buying qa samples I guess&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;h3 id=&#34;gpu&#34; &gt;gpu
+&lt;span&gt;
+    &lt;a href=&#34;#gpu&#34;&gt;
+        &lt;svg viewBox=&#34;0 0 28 23&#34; height=&#34;100%&#34; width=&#34;19&#34; xmlns=&#34;http://www.w3.org/2000/svg&#34;&gt;&lt;path d=&#34;M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71&#34; fill=&#34;none&#34; stroke-linecap=&#34;round&#34; stroke-miterlimit=&#34;10&#34; stroke-width=&#34;2&#34;/&gt;&lt;path d=&#34;M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71&#34; fill=&#34;none&#34; stroke-linecap=&#34;round&#34; stroke-miterlimit=&#34;10&#34; stroke-width=&#34;2&#34;/&gt;&lt;/svg&gt;
+    &lt;/a&gt;
+&lt;/span&gt;
+&lt;/h3&gt;&lt;p&gt;With kvm access finally working, I moved on to the gpu - a sexy dell rx580 with 8gb of vwam. Why dell / reference blower layout?
+There&amp;rsquo;s only about a half inch of space above the top of the pcie slots. Thanks dell&amp;hellip; When I first got this box, I had to cut some supports out of the lid to fix my 660 in there.
+This gpu will be passed through to my &lt;em&gt;&lt;strong&gt;GAMING VM&lt;/strong&gt;&lt;/em&gt;, which will be covered in a future post.&lt;/p&gt;
+&lt;h3 id=&#34;nvme&#34; &gt;nvme
+&lt;span&gt;
+    &lt;a href=&#34;#nvme&#34;&gt;
+        &lt;svg viewBox=&#34;0 0 28 23&#34; height=&#34;100%&#34; width=&#34;19&#34; xmlns=&#34;http://www.w3.org/2000/svg&#34;&gt;&lt;path d=&#34;M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71&#34; fill=&#34;none&#34; stroke-linecap=&#34;round&#34; stroke-miterlimit=&#34;10&#34; stroke-width=&#34;2&#34;/&gt;&lt;path d=&#34;M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71&#34; fill=&#34;none&#34; stroke-linecap=&#34;round&#34; stroke-miterlimit=&#34;10&#34; stroke-width=&#34;2&#34;/&gt;&lt;/svg&gt;
+    &lt;/a&gt;
+&lt;/span&gt;
+&lt;/h3&gt;&lt;p&gt;A few years back I acquired 4x 1tb intel nvme without realizing it was in 22110 form factor. Whoops, that won&amp;rsquo;t fit in anything.
+I was too lazy to return it, so into the parts bin it went.
+Until one day, I was quoting a new (to us) server for work, and I saw this card was a thing that existed:&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://goos.blog/2022/04/updoots-part-1/0NTRCY.jpg&#34; alt=&#34;dell 0NTRCY&#34;&gt;&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;dell p/n 0NTRCY&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;It takes 2x 22110 (or smaller) nvme bois and lets you plug them into a x8 slot - although you do require bifurcation support as there is no plx chip.
+I only ordered one of the two that I&amp;rsquo;ll need because I am unsure if armitage even supports bifurcation - there&amp;rsquo;s nothing in the bios, but I&amp;rsquo;ve seen automagic bifurcation in the past.&lt;/p&gt;
+&lt;p&gt;Does it work? I&amp;rsquo;m about to find out! &lt;em&gt;hits enter on grub2&lt;/em&gt;&lt;/p&gt;
+&lt;p&gt;It sure does!&lt;/p&gt;
+&lt;pre tabindex=&#34;0&#34;&gt;&lt;code class=&#34;language-none&#34; data-lang=&#34;none&#34;&gt;root@armitage:~# lsblk | grep nvme
+nvme0n1   259:0    0 931.5G  0 disk 
+nvme1n1   259:1    0 931.5G  0 disk
+&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;So now I just need to create a zfs pool for this and start setting up vms on it.&lt;/p&gt;
+&lt;h3 id=&#34;fan-controller&#34; &gt;fan controller
+&lt;span&gt;
+    &lt;a href=&#34;#fan-controller&#34;&gt;
+        &lt;svg viewBox=&#34;0 0 28 23&#34; height=&#34;100%&#34; width=&#34;19&#34; xmlns=&#34;http://www.w3.org/2000/svg&#34;&gt;&lt;path d=&#34;M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71&#34; fill=&#34;none&#34; stroke-linecap=&#34;round&#34; stroke-miterlimit=&#34;10&#34; stroke-width=&#34;2&#34;/&gt;&lt;path d=&#34;M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71&#34; fill=&#34;none&#34; stroke-linecap=&#34;round&#34; stroke-miterlimit=&#34;10&#34; stroke-width=&#34;2&#34;/&gt;&lt;/svg&gt;
+    &lt;/a&gt;
+&lt;/span&gt;
+&lt;/h3&gt;&lt;p&gt;This is a simple one that I&amp;rsquo;d recommend for any dell workstation.
+Apparently exhaust fans aren&amp;rsquo;t required on a dual socket workstation.
+HP has a different opinion on this, as do I.
+So I added some exhaust fans. 2x 80mm delta somethings.
+At full 12v, they&amp;rsquo;re rather loud. They&amp;rsquo;re the loudest fans in this system, by a noticeable margin.
+$5 fan controller kit fixes that. Not much more to say about it.&lt;/p&gt;
+&lt;h3 id=&#34;up-next&#34; &gt;up next
+&lt;span&gt;
+    &lt;a href=&#34;#up-next&#34;&gt;
+        &lt;svg viewBox=&#34;0 0 28 23&#34; height=&#34;100%&#34; width=&#34;19&#34; xmlns=&#34;http://www.w3.org/2000/svg&#34;&gt;&lt;path d=&#34;M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71&#34; fill=&#34;none&#34; stroke-linecap=&#34;round&#34; stroke-miterlimit=&#34;10&#34; stroke-width=&#34;2&#34;/&gt;&lt;path d=&#34;M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71&#34; fill=&#34;none&#34; stroke-linecap=&#34;round&#34; stroke-miterlimit=&#34;10&#34; stroke-width=&#34;2&#34;/&gt;&lt;/svg&gt;
+    &lt;/a&gt;
+&lt;/span&gt;
+&lt;/h3&gt;&lt;p&gt;I need to order another of those dell carrier cards, and the balance of the ram.
+The ram seller messaged me saying they only had 4 of the 8 sticks I wanted.
+Giant sadface, now I need to buy from 3 different vendors to get the remaining 4 sticks.
+After that, I think I&amp;rsquo;ll be done upgrading armitage for a while.
+The only other thing I really want to do is to trade the 4x2.5 bay for a 6x2.5, and run boot/root off full size satabois.
+Right now it boots from a pair of msata cards on a startech.com carrier.
+It&amp;rsquo;s&amp;hellip;. acceptable. Not performant by any measure. dist-upgrades are pretty painful.&lt;/p&gt;
+&lt;h3 id=&#34;edit---oops&#34; &gt;edit - oops
+&lt;span&gt;
+    &lt;a href=&#34;#edit---oops&#34;&gt;
+        &lt;svg viewBox=&#34;0 0 28 23&#34; height=&#34;100%&#34; width=&#34;19&#34; xmlns=&#34;http://www.w3.org/2000/svg&#34;&gt;&lt;path d=&#34;M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71&#34; fill=&#34;none&#34; stroke-linecap=&#34;round&#34; stroke-miterlimit=&#34;10&#34; stroke-width=&#34;2&#34;/&gt;&lt;path d=&#34;M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71&#34; fill=&#34;none&#34; stroke-linecap=&#34;round&#34; stroke-miterlimit=&#34;10&#34; stroke-width=&#34;2&#34;/&gt;&lt;/svg&gt;
+    &lt;/a&gt;
+&lt;/span&gt;
+&lt;/h3&gt;&lt;p&gt;Got tired of not having hardware encode on the 1030 for the hammer vm. That can live inside a dell business desktop I have anyway.
+So I did this:&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://goos.blog/2022/04/updoots-part-1/oops.png&#34; alt=&#34;rx 550 order page&#34;&gt;&lt;/p&gt;
+&lt;p&gt;Amd cards are easier to passthrough anyway.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Hammer VM (Or: How I Learned To Hate the Quadro k2000)</title>
+      <link>https://goos.blog/2022/04/hammer-time/</link>
+      <pubDate>Thu, 14 Apr 2022 00:00:00 -0400</pubDate>
+      
+      <guid>https://goos.blog/2022/04/hammer-time/</guid>
+      <description>&lt;h3 id=&#34;so-i-just-passthrough-the-quadro-to-another-windows-vm-for-hammer-and-stuff&#34; &gt;&lt;em&gt;so i just passthrough the quadro to another windows vm for hammer and stuff&lt;/em&gt;
+&lt;span&gt;
+    &lt;a href=&#34;#so-i-just-passthrough-the-quadro-to-another-windows-vm-for-hammer-and-stuff&#34;&gt;
+        &lt;svg viewBox=&#34;0 0 28 23&#34; height=&#34;100%&#34; width=&#34;19&#34; xmlns=&#34;http://www.w3.org/2000/svg&#34;&gt;&lt;path d=&#34;M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71&#34; fill=&#34;none&#34; stroke-linecap=&#34;round&#34; stroke-miterlimit=&#34;10&#34; stroke-width=&#34;2&#34;/&gt;&lt;path d=&#34;M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71&#34; fill=&#34;none&#34; stroke-linecap=&#34;round&#34; stroke-miterlimit=&#34;10&#34; stroke-width=&#34;2&#34;/&gt;&lt;/svg&gt;
+    &lt;/a&gt;
+&lt;/span&gt;
+&lt;/h3&gt;&lt;p&gt;Sometimes I like making CS:GO Surf maps. I&amp;rsquo;ve only released &lt;a href=&#34;https://steamcommunity.com/sharedfiles/filedetails/?id=2404967658&#34;&gt;one&lt;/a&gt;, but I have grand ideas for several more.&lt;/p&gt;
+&lt;h2 id=&#34;the-need&#34; &gt;The need
+&lt;span&gt;
+    &lt;a href=&#34;#the-need&#34;&gt;
+        &lt;svg viewBox=&#34;0 0 28 23&#34; height=&#34;100%&#34; width=&#34;19&#34; xmlns=&#34;http://www.w3.org/2000/svg&#34;&gt;&lt;path d=&#34;M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71&#34; fill=&#34;none&#34; stroke-linecap=&#34;round&#34; stroke-miterlimit=&#34;10&#34; stroke-width=&#34;2&#34;/&gt;&lt;path d=&#34;M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71&#34; fill=&#34;none&#34; stroke-linecap=&#34;round&#34; stroke-miterlimit=&#34;10&#34; stroke-width=&#34;2&#34;/&gt;&lt;/svg&gt;
+    &lt;/a&gt;
+&lt;/span&gt;
+&lt;/h2&gt;&lt;p&gt;In order to support this now that I&amp;rsquo;m running Monterey on my desktop, I needed a winderp env.
+I could combine this with the &lt;strong&gt;GAMING VM&lt;/strong&gt; I have planned, but no, I don&amp;rsquo;t want to.
+I have a halfway-decent quadro k2000, so passing it through to a vm on Armitage should be easy enough, right?&lt;/p&gt;
+&lt;p&gt;I&amp;rsquo;ve passed this card through on this host before (albeit on cpu1 instead of cpu0), so I start out pretty confident. I click the buttons, add the pci device to the host config, make sure it&amp;rsquo;s bound by vfio-pci, etc.&lt;/p&gt;
+&lt;h2 id=&#34;oh-no&#34; &gt;Oh No
+&lt;span&gt;
+    &lt;a href=&#34;#oh-no&#34;&gt;
+        &lt;svg viewBox=&#34;0 0 28 23&#34; height=&#34;100%&#34; width=&#34;19&#34; xmlns=&#34;http://www.w3.org/2000/svg&#34;&gt;&lt;path d=&#34;M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71&#34; fill=&#34;none&#34; stroke-linecap=&#34;round&#34; stroke-miterlimit=&#34;10&#34; stroke-width=&#34;2&#34;/&gt;&lt;path d=&#34;M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71&#34; fill=&#34;none&#34; stroke-linecap=&#34;round&#34; stroke-miterlimit=&#34;10&#34; stroke-width=&#34;2&#34;/&gt;&lt;/svg&gt;
+    &lt;/a&gt;
+&lt;/span&gt;
+&lt;/h2&gt;&lt;p&gt;Except&amp;hellip; The moment I start the vm, the host console is FLOODED with mcelog events, leading to an eventual panic and cpu reset.&lt;/p&gt;
+&lt;p&gt;Not Good. Along with the kernel panic there was some amount of human panic. Was Armitage dying (right after I spent lossa money on new goodies for it)?&lt;/p&gt;
+&lt;p&gt;The errors are logged to bios (this is a workstation with ecc after all), so I swap the stick of wam in question over to another slot.
+After doing that though, the system just crashed even faster, and didn&amp;rsquo;t log the problem stick to bios. I pulled the plug and went to bed.&lt;/p&gt;
+&lt;h2 id=&#34;trying-again&#34; &gt;Trying again
+&lt;span&gt;
+    &lt;a href=&#34;#trying-again&#34;&gt;
+        &lt;svg viewBox=&#34;0 0 28 23&#34; height=&#34;100%&#34; width=&#34;19&#34; xmlns=&#34;http://www.w3.org/2000/svg&#34;&gt;&lt;path d=&#34;M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71&#34; fill=&#34;none&#34; stroke-linecap=&#34;round&#34; stroke-miterlimit=&#34;10&#34; stroke-width=&#34;2&#34;/&gt;&lt;path d=&#34;M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71&#34; fill=&#34;none&#34; stroke-linecap=&#34;round&#34; stroke-miterlimit=&#34;10&#34; stroke-width=&#34;2&#34;/&gt;&lt;/svg&gt;
+    &lt;/a&gt;
+&lt;/span&gt;
+&lt;/h2&gt;&lt;p&gt;I wake up the next day with a clear head and some fresh ideas.
+First thing, I booted the vm without the quadro card attached. It came up just fine, and the host was happy.
+:thonking:&lt;/p&gt;
+&lt;p&gt;I then created a vm that would allocate 126 of the 128gb of wam on the host. It came up just fine, and the host was still happy.&lt;/p&gt;
+&lt;p&gt;Was I imagining the mce events? No, they&amp;rsquo;re right there in the bios log still&amp;hellip; Odd.
+I attached the quadro to the winderp vm and started it again. Instant mcepanic and reset.&lt;/p&gt;
+&lt;pre tabindex=&#34;0&#34;&gt;&lt;code class=&#34;language-none&#34; data-lang=&#34;none&#34;&gt;[  510.749751] DMAR: DRHD: handling fault status reg 2
+[  510.749757] DMAR: [DMA Read] Request device [03:00.0] PASID ffffffff fault addr fffffff000 [fault reason 06] PTE Read access is not set
+[  510.837379] DMAR: DRHD: handling fault status reg 102
+[  510.837384] DMAR: [DMA Read] Request device [03:00.0] PASID ffffffff fault addr fffffff000 [fault reason 06] PTE Read access is not set
+[  510.847689] DMAR: DRHD: handling fault status reg 202
+[  510.847693] DMAR: [DMA Read] Request device [03:00.0] PASID ffffffff fault addr fffffff000 [fault reason 06] PTE Read access is not set
+[  510.847720] DMAR: DRHD: handling fault status reg 302
+&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;This fun stuff was logged at vm start and right before the mce explosion. It also logged whenever I did a reset of the gpu from inside the guest.
+It was starting to smell like a rom-bar type issue. I don&amp;rsquo;t know what address that is referenced in those dma errors, but it sure smells like the guest is trying (and failing) to read the vbios.&lt;/p&gt;
+&lt;p&gt;On a hunch, I swapped the quadro with the boot graphics. The quadro had been in the blue slot, which is probably the &amp;ldquo;primary&amp;rdquo; pcie slot.
+Now it was in a x4 slot, which in theory would restrict performance, but who cares, I just need it to drive some light opengl shit.&lt;/p&gt;
+&lt;p&gt;I was no longer getting mcedeath each time I started the vm, but I was still getting error 43&amp;rsquo;d in the guest. I tried with &lt;code&gt;rombar=0&lt;/code&gt;, however that lead to a full host lockup.&lt;/p&gt;
+&lt;p&gt;I &lt;em&gt;really&lt;/em&gt; wish my pi-kvm was working. Hopefully that vga -&amp;gt; hdmi adapter I ordered works. If not I guess I can try an inline edid emulator. More on that later though.&lt;/p&gt;
+&lt;p&gt;I decided to try passing the vbios to the guest as a &lt;code&gt;romfile=&lt;/code&gt; param. This didn&amp;rsquo;t log any errors, but did rather quickly lead to a whole host lockup, probably right around the time the guest activated the gpu.&lt;/p&gt;
+&lt;h2 id=&#34;giving-up-for-now&#34; &gt;Giving up (for now)
+&lt;span&gt;
+    &lt;a href=&#34;#giving-up-for-now&#34;&gt;
+        &lt;svg viewBox=&#34;0 0 28 23&#34; height=&#34;100%&#34; width=&#34;19&#34; xmlns=&#34;http://www.w3.org/2000/svg&#34;&gt;&lt;path d=&#34;M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71&#34; fill=&#34;none&#34; stroke-linecap=&#34;round&#34; stroke-miterlimit=&#34;10&#34; stroke-width=&#34;2&#34;/&gt;&lt;path d=&#34;M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71&#34; fill=&#34;none&#34; stroke-linecap=&#34;round&#34; stroke-miterlimit=&#34;10&#34; stroke-width=&#34;2&#34;/&gt;&lt;/svg&gt;
+    &lt;/a&gt;
+&lt;/span&gt;
+&lt;/h2&gt;&lt;p&gt;It was at this point I gave up and removed the quadro from Armitage.
+I&amp;rsquo;m not sure if the card itself is bad, or if it just hates the pcie layout on the t7910.
+I can use spice/qxl and it should be enough.
+If not, I&amp;rsquo;ll order a firepro or something. I&amp;rsquo;m done with nvidia. At least for today.&lt;/p&gt;
+&lt;h2 id=&#34;virt-viewer-on-macos&#34; &gt;virt-viewer on macos
+&lt;span&gt;
+    &lt;a href=&#34;#virt-viewer-on-macos&#34;&gt;
+        &lt;svg viewBox=&#34;0 0 28 23&#34; height=&#34;100%&#34; width=&#34;19&#34; xmlns=&#34;http://www.w3.org/2000/svg&#34;&gt;&lt;path d=&#34;M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71&#34; fill=&#34;none&#34; stroke-linecap=&#34;round&#34; stroke-miterlimit=&#34;10&#34; stroke-width=&#34;2&#34;/&gt;&lt;path d=&#34;M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71&#34; fill=&#34;none&#34; stroke-linecap=&#34;round&#34; stroke-miterlimit=&#34;10&#34; stroke-width=&#34;2&#34;/&gt;&lt;/svg&gt;
+    &lt;/a&gt;
+&lt;/span&gt;
+&lt;/h2&gt;&lt;p&gt;For the qxl driver, you really need a proper spice client.
+There&amp;rsquo;s an official .app these days, but I wasn&amp;rsquo;t able to get it to ingest the spice file that pve generated.
+Additionally, it wasn&amp;rsquo;t providing the .vv extension with the download, so I couldn&amp;rsquo;t associate it that way.
+I ended up installing virt-viewer via homebrew.
+I found &lt;a href=&#34;https://gist.github.com/tomdaley92/789688fc68e77477d468f7b9e59af51c&#34;&gt;this post&lt;/a&gt;, and decided to setup an automator.app to launch it directly, instead of feeding it the downloaded .vv file from pve.
+I ended up hardcoding the vmid, as this is (for now) the only vm on armitage using qxl.
+If there are any more in the future I&amp;rsquo;ll probably do the same, I like having direct shortcuts.&lt;/p&gt;
+&lt;h2 id=&#34;hammer-time-stop&#34; &gt;Hammer Time. Stop.
+&lt;span&gt;
+    &lt;a href=&#34;#hammer-time-stop&#34;&gt;
+        &lt;svg viewBox=&#34;0 0 28 23&#34; height=&#34;100%&#34; width=&#34;19&#34; xmlns=&#34;http://www.w3.org/2000/svg&#34;&gt;&lt;path d=&#34;M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71&#34; fill=&#34;none&#34; stroke-linecap=&#34;round&#34; stroke-miterlimit=&#34;10&#34; stroke-width=&#34;2&#34;/&gt;&lt;path d=&#34;M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71&#34; fill=&#34;none&#34; stroke-linecap=&#34;round&#34; stroke-miterlimit=&#34;10&#34; stroke-width=&#34;2&#34;/&gt;&lt;/svg&gt;
+    &lt;/a&gt;
+&lt;/span&gt;
+&lt;/h2&gt;&lt;p&gt;Now that I had a working vm, I needed hammer and friends. I download steam and do the thing, then I copy over hammer++ (which is now available for csgo!).
+Small problem though: The mouse in the 3d preview&amp;hellip; is kinda screwy.
+Even after dropping the sensitivity to the lowest, it&amp;rsquo;s still basically unusable.
+I feel like this would be resolved with a gpu and using vnc or rdp. It would also probably allow me to run csgo to quickly test maps.&lt;/p&gt;
+&lt;p&gt;Digging through the junk bins, I found two more gpus to try. A radeon 7570, and a nvidia gt1030.
+Given that the 1030 is several years newer than both the radeon and the quadro, I decided to try that first.
+The vm booted right up with nothing scary printed to host dmesg. That&amp;rsquo;s a good start.
+After removing the quadro drivers and installing consumer ones, the gpu started right up.&lt;/p&gt;
+&lt;p&gt;Hammer was much smoother and better behaved now.
+I could even play csgo at a good enough framerate for testing maps, if I could find a remote desktop setup that wasn&amp;rsquo;t so latent.&lt;/p&gt;
+&lt;h2 id=&#34;remote-desktop-that-doesnt-suck&#34; &gt;Remote Desktop that Doesn&amp;rsquo;t Suck
+&lt;span&gt;
+    &lt;a href=&#34;#remote-desktop-that-doesnt-suck&#34;&gt;
+        &lt;svg viewBox=&#34;0 0 28 23&#34; height=&#34;100%&#34; width=&#34;19&#34; xmlns=&#34;http://www.w3.org/2000/svg&#34;&gt;&lt;path d=&#34;M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71&#34; fill=&#34;none&#34; stroke-linecap=&#34;round&#34; stroke-miterlimit=&#34;10&#34; stroke-width=&#34;2&#34;/&gt;&lt;path d=&#34;M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71&#34; fill=&#34;none&#34; stroke-linecap=&#34;round&#34; stroke-miterlimit=&#34;10&#34; stroke-width=&#34;2&#34;/&gt;&lt;/svg&gt;
+    &lt;/a&gt;
+&lt;/span&gt;
+&lt;/h2&gt;&lt;p&gt;Up until this point I&amp;rsquo;ve been accessing the guest using vnc and rdp, both of which kinda suck for high-framerate things.
+Sadly, the GT1030 does &lt;em&gt;not&lt;/em&gt; have nvenc or hardware encode of any sort. That nixes Parsec and Moonlight.
+Rainway worked, but it captured the mouse HARD and didn&amp;rsquo;t let it go. That&amp;rsquo;s no bueno for a remote desktop.
+Time to try the radeon card. (spoiler alert: it didn&amp;rsquo;t work for parsec either).&lt;/p&gt;
+&lt;p&gt;Given that the 1030 had given me usable framerates in csgo, I decided to swap that back in.
+After editing /etc/modprobe.d/vfio.conf for the 10,000th time today, the vm was back up and running with the 1030.&lt;/p&gt;
+&lt;p&gt;I also tried out (and really liked) reemo for remote desktop. I think this is the winner.
+It has the option to switch between relative and absolute mouse modes, which I haven&amp;rsquo;t seen before.
+This completely fixes my 3d preview issues in hammer, which is really nice.&lt;/p&gt;
+&lt;p&gt;Now that I have hammer running in a dedicated environment, I feel motivated to work on maps again.
+I also have one less reason to ever reboot into my winderp install.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>The HP Revolve 810 G1</title>
+      <link>https://goos.blog/2022/04/revolve-810-g1/</link>
+      <pubDate>Wed, 13 Apr 2022 06:00:00 -0400</pubDate>
+      
+      <guid>https://goos.blog/2022/04/revolve-810-g1/</guid>
+      <description>&lt;h4 id=&#34;wow-thats-a-cute-laptop-too-bad-it-runs-windows&#34; &gt;&lt;em&gt;wow that&amp;rsquo;s a cute laptop, too bad it runs windows&lt;/em&gt;
+&lt;span&gt;
+    &lt;a href=&#34;#wow-thats-a-cute-laptop-too-bad-it-runs-windows&#34;&gt;
+        &lt;svg viewBox=&#34;0 0 28 23&#34; height=&#34;100%&#34; width=&#34;19&#34; xmlns=&#34;http://www.w3.org/2000/svg&#34;&gt;&lt;path d=&#34;M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71&#34; fill=&#34;none&#34; stroke-linecap=&#34;round&#34; stroke-miterlimit=&#34;10&#34; stroke-width=&#34;2&#34;/&gt;&lt;path d=&#34;M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71&#34; fill=&#34;none&#34; stroke-linecap=&#34;round&#34; stroke-miterlimit=&#34;10&#34; stroke-width=&#34;2&#34;/&gt;&lt;/svg&gt;
+    &lt;/a&gt;
+&lt;/span&gt;
+&lt;/h4&gt;&lt;p&gt;I was given this laptop with a dead battery and a keyboard sans Lshift.&lt;br&gt;
+It looks like a macbook, so lets turn it into one before fixing it!&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://goos.blog/2022/04/revolve-810-g1/revolve-810-g1.jpg&#34; alt=&#34;HP Revolve 810 Stock Photo&#34;&gt;&lt;/p&gt;
+&lt;h2 id=&#34;dont-panic&#34; &gt;Don&amp;rsquo;t Panic
+&lt;span&gt;
+    &lt;a href=&#34;#dont-panic&#34;&gt;
+        &lt;svg viewBox=&#34;0 0 28 23&#34; height=&#34;100%&#34; width=&#34;19&#34; xmlns=&#34;http://www.w3.org/2000/svg&#34;&gt;&lt;path d=&#34;M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71&#34; fill=&#34;none&#34; stroke-linecap=&#34;round&#34; stroke-miterlimit=&#34;10&#34; stroke-width=&#34;2&#34;/&gt;&lt;path d=&#34;M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71&#34; fill=&#34;none&#34; stroke-linecap=&#34;round&#34; stroke-miterlimit=&#34;10&#34; stroke-width=&#34;2&#34;/&gt;&lt;/svg&gt;
+    &lt;/a&gt;
+&lt;/span&gt;
+&lt;/h2&gt;&lt;p&gt;This hardware is older and more specialized, this won&amp;rsquo;t be nearly as straightforward as my desktop was.
+Because of this I&amp;rsquo;ll be going a bit more in depth on the weirder things. You can take that as a bad thing or a good thing, your choice.&lt;/p&gt;
+&lt;h3 id=&#34;the-setup&#34; &gt;The setup
+&lt;span&gt;
+    &lt;a href=&#34;#the-setup&#34;&gt;
+        &lt;svg viewBox=&#34;0 0 28 23&#34; height=&#34;100%&#34; width=&#34;19&#34; xmlns=&#34;http://www.w3.org/2000/svg&#34;&gt;&lt;path d=&#34;M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71&#34; fill=&#34;none&#34; stroke-linecap=&#34;round&#34; stroke-miterlimit=&#34;10&#34; stroke-width=&#34;2&#34;/&gt;&lt;path d=&#34;M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71&#34; fill=&#34;none&#34; stroke-linecap=&#34;round&#34; stroke-miterlimit=&#34;10&#34; stroke-width=&#34;2&#34;/&gt;&lt;/svg&gt;
+    &lt;/a&gt;
+&lt;/span&gt;
+&lt;/h3&gt;&lt;p&gt;Like before, we start with the installer.
+Spoiler ahead, I already tried this with Monterey and failed, so I&amp;rsquo;ll be typing this as I attempt it with Big Sur 11.6.5
+I&amp;rsquo;ll gloss over how to create the installer as dortania&amp;rsquo;s documentation is plenty.&lt;/p&gt;
+&lt;p&gt;Our first stop is into a linux livecd to collect some info on our hardware. The debian live+nonfree is in my urlbar history, so that&amp;rsquo;s what I grabbed for this.
+Anything with lspci and lshw will be fine.&lt;/p&gt;
+&lt;pre tabindex=&#34;0&#34;&gt;&lt;code class=&#34;language-none&#34; data-lang=&#34;none&#34;&gt;root@debian:~# grep -i &amp;#34;model name&amp;#34; /proc/cpuinfo 
+model name : Intel(R) Core(TM) i7-3687U CPU @ 2.10GHz
+model name : Intel(R) Core(TM) i7-3687U CPU @ 2.10GHz
+model name : Intel(R) Core(TM) i7-3687U CPU @ 2.10GHz
+model name : Intel(R) Core(TM) i7-3687U CPU @ 2.10GHz
+
+root@debian:~# lspci | grep -i vga
+00:02.0 VGA compatible controller: Intel Corporation 3rd Gen Core processor Graphics Controller (rev 09)
+
+root@debian:~# dmidecode -t baseboard
+# dmidecode 3.3
+Getting SMBIOS data from sysfs.
+SMBIOS 2.7 present.
+
+Handle 0x0002, DMI type 2, 16 bytes
+Base Board Information
+  Manufacturer: Hewlett-Packard
+  Product Name: 18F8
+  Version: KBC Version 51.27
+  Serial Number: PDMQT1A2F4J0SU
+  Asset Tag: Not Specified
+  Features:
+    Board is a hosting board
+    Board is replaceable
+  Location In Chassis:  
+  Chassis Handle: 0x0003
+  Type: Unknown
+  Contained Object Handles: 0
+
+Handle 0x0005, DMI type 10, 6 bytes
+On Board Device Information
+  Type: Video
+  Status: Enabled
+  Description: 64
+
+Handle 0x0006, DMI type 41, 11 bytes
+Onboard Device
+  Reference Designation: 64
+  Type: Video
+  Status: Enabled
+  Type Instance: 1
+  Bus Address: 0000:00:02.0
+
+Handle 0x0007, DMI type 41, 11 bytes
+Onboard Device
+  Reference Designation: WLAN
+  Type: Ethernet
+  Status: Enabled
+  Type Instance: 1
+  Bus Address: 0000:03:00.0
+
+root@debian:~# dmesg | grep -i input
+[    2.485380] input: AT Translated Set 2 keyboard as /devices/platform/i8042/serio0/input/input0
+[    2.762604] input: Sleep Button as /devices/LNXSYSTM:00/LNXSYBUS:00/PNP0C0E:00/input/input5
+[    2.762682] input: Lid Switch as /devices/LNXSYSTM:00/LNXSYBUS:00/PNP0C0D:00/input/input6
+[    2.762729] input: Power Button as /devices/LNXSYSTM:00/LNXPWRBN:00/input/input7
+[    3.003341] input: Video Bus as /devices/LNXSYSTM:00/LNXSYBUS:00/PNP0A08:00/LNXVIDEO:01/input/input12
+[    4.026364] input: Atmel Atmel maXTouch Digitizer Touchscreen as /devices/pci0000:00/0000:00:1a.0/usb1/1-1/1-1.1/1-1.1:1.0/0003:03EB:840B.0001/input/input13
+[    4.026449] input: Atmel Atmel maXTouch Digitizer as /devices/pci0000:00/0000:00:1a.0/usb1/1-1/1-1.1/1-1.1:1.0/0003:03EB:840B.0001/input/input14
+[    4.026553] hid-generic 0003:03EB:840B.0001: input,hiddev0,hidraw0: USB HID v1.11 Device [Atmel Atmel maXTouch Digitizer] on usb-0000:00:1a.0-1.1/input0
+[    4.026683] hid-generic 0003:03EB:840B.0002: hiddev1,hidraw1: USB HID v1.11 Device [Atmel Atmel maXTouch Digitizer] on usb-0000:00:1a.0-1.1/input1
+[    4.027623] hid-generic 0003:0483:91D1.0003: hiddev2,hidraw2: USB HID v1.10 Device [Љ Љ] on usb-0000:00:1d.0-1.6/input0
+[    4.287256] input: AlpsPS/2 ALPS GlidePoint as /devices/platform/i8042/serio4/input/input11
+[    9.390753] input: HP Wireless hotkeys as /devices/virtual/input/input15
+[    9.658174] input: PC Speaker as /devices/platform/pcspkr/input/input17
+[    9.668017] input: HP WMI hotkeys as /devices/virtual/input/input16
+[    9.769920] input: Atmel Atmel maXTouch Digitizer as /devices/pci0000:00/0000:00:1a.0/usb1/1-1/1-1.1/1-1.1:1.0/0003:03EB:840B.0001/input/input18
+[    9.772380] input: Atmel Atmel maXTouch Digitizer Stylus as /devices/pci0000:00/0000:00:1a.0/usb1/1-1/1-1.1/1-1.1:1.0/0003:03EB:840B.0001/input/input19
+[    9.772731] hid-multitouch 0003:03EB:840B.0001: input,hiddev0,hidraw0: USB HID v1.11 Device [Atmel Atmel maXTouch Digitizer] on usb-0000:00:1a.0-1.1/input0
+
+root@debian:~# lspci | grep -i network
+00:19.0 Ethernet controller: Intel Corporation 82579LM Gigabit Network Connection (Lewisville) (rev 04)
+03:00.0 Network controller: Intel Corporation Centrino Advanced-N 6235 (rev 24)
+root@debian:~# 
+&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;Now that we know what hardware we have we can gather up the stuff we need to boot into the installer (we&amp;rsquo;ll figure out the rest after).&lt;/p&gt;
+&lt;p&gt;First I run &lt;code&gt;installinstallmacos.py&lt;/code&gt; again, this time selecting Big Sur 11.6.5.
+It took quite a while to download:&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://goos.blog/2022/04/revolve-810-g1/hide_the_pain.png&#34; alt=&#34;Screenshot of wget&#34;&gt;&lt;/p&gt;
+&lt;p&gt;And even longer to flash. Maybe my usb3 ports&amp;hellip; aren&amp;rsquo;t usb3.&lt;/p&gt;
+&lt;p&gt;&lt;em&gt;hey siri, remind me tomorrow to look into usb mapping&lt;/em&gt;&lt;/p&gt;
+&lt;p&gt;I then took a quick run through the &amp;ldquo;gathering files&amp;rdquo; section of the opencore install guide.
+I felt pretty confident that I kinda knew what I was doing, so I speedran the kexts and acpi sections (this will bite me later, I&amp;rsquo;m sure).&lt;/p&gt;
+&lt;p&gt;At this point my efi looked like this:&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://goos.blog/2022/04/revolve-810-g1/efi_take1.png&#34; alt=&#34;Screenshot of EFI Folder&#34;&gt;&lt;/p&gt;
+&lt;p&gt;I plugged the drive in and attempted to boot. The boot menu came up, but after passing to the initramfs or whatever (how does macos boot work anyway?) the framebuffer was out of sync.
+Looked like the horizontal signal wasn&amp;rsquo;t quite right.&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://goos.blog/2022/04/revolve-810-g1/wut.jpg&#34; alt=&#34;Picture of screen tearing&#34;&gt;&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;I decided to let it cook.&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;After a few minutes, I was presented with the Big Sur recovery/installer screen&amp;hellip;. In Russian.&lt;/p&gt;
+&lt;p&gt;For some reason, OpenCore defaults to Russian for the locale. Probably because most of the big nerds in the hackintosh world are from over there.
+I was aware of this, and had flipped the necessary bits in my opencore config. For some reason though, this didn&amp;rsquo;t work on the wee laptop.&lt;/p&gt;
+&lt;p&gt;It was now the wrong side of 5am (again!). I went to sleep.&lt;/p&gt;
+&lt;h3 id=&#34;why-the-f-is-the-installer-still-in-russian&#34; &gt;Why the f*!$ is the installer still in russian?
+&lt;span&gt;
+    &lt;a href=&#34;#why-the-f-is-the-installer-still-in-russian&#34;&gt;
+        &lt;svg viewBox=&#34;0 0 28 23&#34; height=&#34;100%&#34; width=&#34;19&#34; xmlns=&#34;http://www.w3.org/2000/svg&#34;&gt;&lt;path d=&#34;M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71&#34; fill=&#34;none&#34; stroke-linecap=&#34;round&#34; stroke-miterlimit=&#34;10&#34; stroke-width=&#34;2&#34;/&gt;&lt;path d=&#34;M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71&#34; fill=&#34;none&#34; stroke-linecap=&#34;round&#34; stroke-miterlimit=&#34;10&#34; stroke-width=&#34;2&#34;/&gt;&lt;/svg&gt;
+    &lt;/a&gt;
+&lt;/span&gt;
+&lt;/h3&gt;&lt;p&gt;&lt;img src=&#34;https://goos.blog/2022/04/revolve-810-g1/best_friend.png&#34; alt=&#34;Screenshot of MountEFI application&#34;&gt;&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;Here I am again my old friend. Mounting an ESP to make yet another change to a &lt;code&gt;config.plist&lt;/code&gt;.&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;I fire up ProperTree for what must be the 200th time (they should add an hour meter), and confirmed what I knew last night: I had indeed changed the language entry.&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://goos.blog/2022/04/revolve-810-g1/if_this_doesnt_work.png&#34; alt=&#34;Screenshot of ProperTree application&#34;&gt;&lt;/p&gt;
+&lt;p&gt;Frustrated at that not working, I threw in an entry that would delete that parameter, forcing opencore to rebuild it.
+I think that&amp;rsquo;s what this does at least. Time to go back to the laptop and see if it boots.&lt;/p&gt;
+&lt;p&gt;After too long a time, I&amp;rsquo;m presented with the installer again. This time, it&amp;rsquo;s in english!
+I (try to) fire up terminal.app to see what&amp;rsquo;s what (does my disk show up?), but my trackpad doesn&amp;rsquo;t work.
+Sadface, but that&amp;rsquo;s on me for not pulling in the right kexts.
+We&amp;rsquo;ll fix that later, for now I plugged in a mouse into the other usb port. Trackpads suck anyway, trackpoint4lyfe.&lt;/p&gt;
+&lt;p&gt;Thankfully, the keyboard did work. A quick &lt;code&gt;diskutil list&lt;/code&gt; showed that indeed I did have a &lt;code&gt;/dev/disk0&lt;/code&gt; of the right size and shape. Time to install!&lt;/p&gt;
+&lt;p&gt;But first, I needed a partition name. After a few minutes of thinking, I decided to take the lazy out and just name it &lt;code&gt;macos-root&lt;/code&gt;.
+APFS is neat. It smells like LVM, and probably acts somewhat like it. I should learn more. Although to be fair I don&amp;rsquo;t know much about ntfs or ext4 either.
+I&amp;rsquo;m a ceph (and zfs) person, smol volumes have never mattered much to me.&lt;/p&gt;
+&lt;p&gt;I click through the installer and got comfy, this could take a while. I like how macos has the installer log right there.
+I also like how it&amp;rsquo;s basically just &lt;code&gt;dmesg -w&lt;/code&gt;, so if you turn up the verbosity you can see all the kernel output.
+Wait. 1 pm already? It was noon when I woke up, and I&amp;rsquo;ve done basically nothing today!&lt;/p&gt;
+&lt;p&gt;After about 20 minutes the first stage of the install was complete, and the laptop rebooted itself (as intended).
+It continued on, framebuffer still broken for kernel &lt;code&gt;-v&lt;/code&gt; output, but whatever. Another half hour or so and it should be done!&lt;/p&gt;
+&lt;p&gt;While waiting for that, I did a little online shopping - this time I was looking for a passthrough edid faker for my blikvm (more on that in a later post).
+The tl;dr there is that it refuses to capture video from everything I&amp;rsquo;ve tried - except for another raspi. Go figure.
+And yes, I&amp;rsquo;ve tried dozens of different edid settings on the csi capture card - no avail. The target just acts like there&amp;rsquo;s no cable connected.
+Any ideas? Shoot me an email (please).&lt;/p&gt;
+&lt;p&gt;Been at &lt;em&gt;About 7 minutes remaining&lt;/em&gt; for half an hour now&amp;hellip; How much longer will this take?&lt;/p&gt;
+&lt;p&gt;Oh. There it goes. &lt;del&gt;Four&lt;/del&gt; Five &lt;em&gt;long&lt;/em&gt; reboots later and I have the OOBE to click through.&lt;/p&gt;
+&lt;p&gt;After that, I land at the desktop. Woohoo!&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://goos.blog/2022/04/revolve-810-g1/great_success.png&#34; alt=&#34;Screenshot of Big Sur desktop&#34;&gt;&lt;/p&gt;
+&lt;p&gt;First things first, let&amp;rsquo;s dd our esp over so we don&amp;rsquo;t need the install usb anymore:&lt;br&gt;
+&lt;code&gt;dd if=/dev/disk2s1 of=/dev/disk0s1&lt;/code&gt;&lt;/p&gt;
+&lt;h2 id=&#34;making-all-the-things-work&#34; &gt;Making all the things work
+&lt;span&gt;
+    &lt;a href=&#34;#making-all-the-things-work&#34;&gt;
+        &lt;svg viewBox=&#34;0 0 28 23&#34; height=&#34;100%&#34; width=&#34;19&#34; xmlns=&#34;http://www.w3.org/2000/svg&#34;&gt;&lt;path d=&#34;M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71&#34; fill=&#34;none&#34; stroke-linecap=&#34;round&#34; stroke-miterlimit=&#34;10&#34; stroke-width=&#34;2&#34;/&gt;&lt;path d=&#34;M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71&#34; fill=&#34;none&#34; stroke-linecap=&#34;round&#34; stroke-miterlimit=&#34;10&#34; stroke-width=&#34;2&#34;/&gt;&lt;/svg&gt;
+    &lt;/a&gt;
+&lt;/span&gt;
+&lt;/h2&gt;&lt;p&gt;Let&amp;rsquo;s take inventory of what works and what doesn&amp;rsquo;t.&lt;/p&gt;
+&lt;h4 id=&#34;not-working&#34; &gt;Not working:
+&lt;span&gt;
+    &lt;a href=&#34;#not-working&#34;&gt;
+        &lt;svg viewBox=&#34;0 0 28 23&#34; height=&#34;100%&#34; width=&#34;19&#34; xmlns=&#34;http://www.w3.org/2000/svg&#34;&gt;&lt;path d=&#34;M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71&#34; fill=&#34;none&#34; stroke-linecap=&#34;round&#34; stroke-miterlimit=&#34;10&#34; stroke-width=&#34;2&#34;/&gt;&lt;path d=&#34;M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71&#34; fill=&#34;none&#34; stroke-linecap=&#34;round&#34; stroke-miterlimit=&#34;10&#34; stroke-width=&#34;2&#34;/&gt;&lt;/svg&gt;
+    &lt;/a&gt;
+&lt;/span&gt;
+&lt;/h4&gt;&lt;ul&gt;
+&lt;li&gt;Wifi (needs a kext)&lt;/li&gt;
+&lt;li&gt;Webcam&lt;/li&gt;
+&lt;li&gt;Audio (needs applealc + layout)&lt;/li&gt;
+&lt;li&gt;Trackpad multi touch (surprising that it works at all , as it didn&amp;rsquo;t work in the installer)&lt;/li&gt;
+&lt;li&gt;Lshift key (this is getting very annoying very fast)&lt;/li&gt;
+&lt;li&gt;Touchscreen&lt;/li&gt;
+&lt;li&gt;Battery info and other sensors&lt;/li&gt;
+&lt;li&gt;Volume keys&lt;/li&gt;
+&lt;li&gt;s3 sleep&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h4 id=&#34;working&#34; &gt;Working:
+&lt;span&gt;
+    &lt;a href=&#34;#working&#34;&gt;
+        &lt;svg viewBox=&#34;0 0 28 23&#34; height=&#34;100%&#34; width=&#34;19&#34; xmlns=&#34;http://www.w3.org/2000/svg&#34;&gt;&lt;path d=&#34;M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71&#34; fill=&#34;none&#34; stroke-linecap=&#34;round&#34; stroke-miterlimit=&#34;10&#34; stroke-width=&#34;2&#34;/&gt;&lt;path d=&#34;M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71&#34; fill=&#34;none&#34; stroke-linecap=&#34;round&#34; stroke-miterlimit=&#34;10&#34; stroke-width=&#34;2&#34;/&gt;&lt;/svg&gt;
+    &lt;/a&gt;
+&lt;/span&gt;
+&lt;/h4&gt;&lt;ul&gt;
+&lt;li&gt;Ethernet (took a minute to warm up but it did start working)&lt;/li&gt;
+&lt;li&gt;External displayport connector (suprising)&lt;/li&gt;
+&lt;li&gt;Bluetooth (without any kexts!)&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;I turned on screen sharing so I didn&amp;rsquo;t have to stare at a 11&amp;quot; screen. This is just vnc so it&amp;rsquo;s not very sekure.
+&lt;em&gt;hey siri, remind me to turn off vncd on lady3jane&lt;/em&gt;
+Yeah, I came up with a hostname cooler than what i use on my desktop. Do you know what book(s) I&amp;rsquo;m taking names from?&lt;/p&gt;
+&lt;p&gt;It didn&amp;rsquo;t take long to get the basics setup. Firefox (with &amp;ldquo;tree tabs&amp;rdquo; extension), xcode tools for git and friends, propertree, etc.&lt;/p&gt;
+&lt;p&gt;After some more reading and downloading, this is what my efi looked like:&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://goos.blog/2022/04/revolve-810-g1/efi_take2.png&#34; alt=&#34;Screenshot of efi directory&#34;&gt;&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;Note that I&amp;rsquo;ve replaced VoodooPS2Controller.kext with &lt;a href=&#34;https://github.com/BAndysc/VoodooPS2&#34;&gt;this fork&lt;/a&gt;, which gives me proper right-click behavior.&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;I added stuff for wifi, battery, and other sensors. I didn&amp;rsquo;t do audio yet because I don&amp;rsquo;t know my alc codec (yet).
+I reboot annnnd&amp;hellip; Boot device not found? Seems my boot entry has dropped off the firmware.
+No problem, HP is a bro and provides a &amp;ldquo;boot from efi file&amp;rdquo; option which gets me back into big sur.
+Battery info is still not displaying - I wonder if this is because it doesn&amp;rsquo;t detect the battery (linux showed no battery connected too), or if I have the wrong kext.
+Guess I&amp;rsquo;ll have to just buy a new one and hope it works.&lt;/p&gt;
+&lt;p&gt;But first. Benchmarks.&lt;/p&gt;
+&lt;p&gt;Let&amp;rsquo;s see what this old ivy bridge can do. Remember that we&amp;rsquo;re calling ourselves a MacBookAir6,1 but we actually have a i7-3687u under the hood.
+I&amp;rsquo;m not expecting much, but that&amp;rsquo;s not a bad thing.&lt;/p&gt;
+&lt;p&gt;While the benchmarks were running, I went looking for fixes for the little things. I had the trackpad working properly now, but that was about it.&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;https://github.com/scarymen1325/opencore_hp_810_g2/tree/BigSur/OC/Kexts&#34;&gt;This repo&lt;/a&gt; helped me find what kexts I might need (it&amp;rsquo;s for the gen2, but appears to be pretty close to the gen1)&lt;/p&gt;
+&lt;p&gt;Here&amp;rsquo;s the benchmark results. Better than what i was expecting:&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;https://browser.geekbench.com/v5/cpu/14297688&#34;&gt;cpu benchmark results&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;https://browser.geekbench.com/v5/compute/4659524&#34;&gt;opencl benchmark results&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;Now a quick trip into a linux liveusb to determine our audio layout. I have the 92hd91bxx in this system, which gives me a list of layouts to pick from.
+While I&amp;rsquo;m in here I should fix the bootloader firmware entry:&lt;/p&gt;
+&lt;p&gt;&lt;code&gt;efibootmgr -c -d /dev/sda -p 1 -L &amp;quot;MacOS&amp;quot; -l &#39;\efi\oc\opencore.efi&#39;&lt;/code&gt;&lt;/p&gt;
+&lt;p&gt;Except&amp;hellip; That didn&amp;rsquo;t work. Neither do my new kexts, the boot won&amp;rsquo;t progress past 50%.
+Part of determining that was to enable csm support - this allowed me to see the progress bar.
+Will it fix the text framebuffer of verbose mode as well?&lt;/p&gt;
+&lt;p&gt;Back into the liveusb we go to add &lt;code&gt;-v&lt;/code&gt; back to our boot args!&lt;/p&gt;
+&lt;p&gt;And hey, turning on csm did fix the text framebuffer! Some good news.&lt;/p&gt;
+&lt;p&gt;Oh. I remember now. You&amp;rsquo;re supposed to disable injection of one of the intel bluetooth kexts. Derp.
+Back into the liveusb. Again. I fire off the efibootmgr command again to no avail. Maybe I need to clear nvram again? I wonder if there&amp;rsquo;s any bios updates for this lil guy&amp;hellip;&lt;/p&gt;
+&lt;p&gt;There is a bios update available, I should apply that at some point.&lt;/p&gt;
+&lt;p&gt;Meanwhile, everything but audio and battery display is working! I think I can blame the battery display on the battery itself - linux was saying &amp;ldquo;bro no battery at all&amp;rdquo; as well.
+Audio though, that&amp;rsquo;s probably just the AppleALC layout&amp;hellip;&lt;/p&gt;
+&lt;p&gt;This last trip into the liveusb I found my coded, it&amp;rsquo;s a IDT92HD91BXX
+ALC Layout 3 no joy. Let&amp;rsquo;s try 84 (&lt;a href=&#34;https://github.com/acidanthera/AppleALC/blob/master/Resources/IDT92HD91BXX/Info.plist#L47&#34;&gt;why?&lt;/a&gt;) (spoiler alert: it didn&amp;rsquo;t work either)
+Neither 12, 13, or 33 worked either. Sadface. Now we have to boot into a liveusb again to run ssdttime and get a proper acpi mapping.&lt;/p&gt;
+&lt;p&gt;I really need to roll a custom liveusb with all these tools preinstalled&amp;hellip;&lt;/p&gt;
+&lt;p&gt;Back in the liveusb, I run ssdttime and generate all my ssdts and patches. For the 300th time, I open propertree and add them to my config.plist.
+The system boots afterwards, but none of my input devices work anymore. Grr. At least I don&amp;rsquo;t have to setup the liveusb with propertree and friends again.
+The culprit behind input devices failing was &lt;code&gt;SSDT-EC-LAPTOP.aml&lt;/code&gt;. I think. After reverting from the generated one back to the generic one inputs work again.
+Still no sound though.&lt;/p&gt;
+&lt;p&gt;After some messing around with ssdts, I have working audio!
+The issue was, I was including the entire DSDT.aml thinking that was da wae. After removing that, the system boots and has audio and input.
+I realize now that I did this on my desktop as well, and took a few minutes to fix that. I wonder if it&amp;rsquo;ll improve performance at all?&lt;/p&gt;
+&lt;p&gt;At this point the only things left to do are to sign in with my apple account and get s3 sleep working.
+S3 sleep is probably going to take some manual ssdt editing, which I &lt;em&gt;really&lt;/em&gt; don&amp;rsquo;t feel like doing right now.
+It only takes a few seconds to boot, so for now I can live without it.&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://goos.blog/2022/04/revolve-810-g1/greater_success.png&#34; alt=&#34;Screenshot of about this mac and neofetch&#34;&gt;&lt;/p&gt;
+&lt;p&gt;Next up: Getting it to run Monterey.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Armitage upgrades</title>
+      <link>https://goos.blog/2022/04/armitage-upgrades/</link>
+      <pubDate>Wed, 13 Apr 2022 05:38:14 -0400</pubDate>
+      
+      <guid>https://goos.blog/2022/04/armitage-upgrades/</guid>
+      <description>&lt;h4 id=&#34;the-armitage-personality-was-constructed-as-part-of-experimental-computer-mediated-psychotherapy&#34; &gt;&lt;em&gt;&amp;hellip;the &amp;ldquo;Armitage&amp;rdquo; personality was constructed as part of experimental &amp;ldquo;computer-mediated psychotherapy&amp;rdquo;&amp;hellip;&lt;/em&gt;
+&lt;span&gt;
+    &lt;a href=&#34;#the-armitage-personality-was-constructed-as-part-of-experimental-computer-mediated-psychotherapy&#34;&gt;
+        &lt;svg viewBox=&#34;0 0 28 23&#34; height=&#34;100%&#34; width=&#34;19&#34; xmlns=&#34;http://www.w3.org/2000/svg&#34;&gt;&lt;path d=&#34;M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71&#34; fill=&#34;none&#34; stroke-linecap=&#34;round&#34; stroke-miterlimit=&#34;10&#34; stroke-width=&#34;2&#34;/&gt;&lt;path d=&#34;M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71&#34; fill=&#34;none&#34; stroke-linecap=&#34;round&#34; stroke-miterlimit=&#34;10&#34; stroke-width=&#34;2&#34;/&gt;&lt;/svg&gt;
+    &lt;/a&gt;
+&lt;/span&gt;
+&lt;/h4&gt;&lt;p&gt;&lt;img src=&#34;https://goos.blog/2022/04/armitage_upgrades/monolith.jpg&#34; alt=&#34;Armitage front view&#34;&gt;
+This is armitage, my Dell t7910.&lt;br&gt;
+It runs all sorts of long-lived and short-lived vms.&lt;/p&gt;
+&lt;h3 id=&#34;current-specs&#34; &gt;Current specs
+&lt;span&gt;
+    &lt;a href=&#34;#current-specs&#34;&gt;
+        &lt;svg viewBox=&#34;0 0 28 23&#34; height=&#34;100%&#34; width=&#34;19&#34; xmlns=&#34;http://www.w3.org/2000/svg&#34;&gt;&lt;path d=&#34;M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71&#34; fill=&#34;none&#34; stroke-linecap=&#34;round&#34; stroke-miterlimit=&#34;10&#34; stroke-width=&#34;2&#34;/&gt;&lt;path d=&#34;M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71&#34; fill=&#34;none&#34; stroke-linecap=&#34;round&#34; stroke-miterlimit=&#34;10&#34; stroke-width=&#34;2&#34;/&gt;&lt;/svg&gt;
+    &lt;/a&gt;
+&lt;/span&gt;
+&lt;/h3&gt;&lt;ul&gt;
+&lt;li&gt;Two E5-2667v4&amp;rsquo;s&lt;/li&gt;
+&lt;li&gt;64gb of ram per socket&lt;/li&gt;
+&lt;li&gt;VM Storage: LSI SAS3008
+&lt;ul&gt;
+&lt;li&gt;4x Intel SSDSC2BB016T4 (1.6TB)&lt;/li&gt;
+&lt;li&gt;4x HGST HE10 (10TB Helium)&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;Boot Storage: Startech.com 2x mSata carrier card with Marvell chipset
+&lt;ul&gt;
+&lt;li&gt;2x 64gb Sandisk whatevers&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;Boot graphics: Old radeon 5450 or something&lt;/li&gt;
+&lt;li&gt;Workload graphics: Quadro K2000&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&#34;planned-upgrades&#34; &gt;Planned upgrades
+&lt;span&gt;
+    &lt;a href=&#34;#planned-upgrades&#34;&gt;
+        &lt;svg viewBox=&#34;0 0 28 23&#34; height=&#34;100%&#34; width=&#34;19&#34; xmlns=&#34;http://www.w3.org/2000/svg&#34;&gt;&lt;path d=&#34;M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71&#34; fill=&#34;none&#34; stroke-linecap=&#34;round&#34; stroke-miterlimit=&#34;10&#34; stroke-width=&#34;2&#34;/&gt;&lt;path d=&#34;M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71&#34; fill=&#34;none&#34; stroke-linecap=&#34;round&#34; stroke-miterlimit=&#34;10&#34; stroke-width=&#34;2&#34;/&gt;&lt;/svg&gt;
+    &lt;/a&gt;
+&lt;/span&gt;
+&lt;/h3&gt;&lt;p&gt;&lt;img src=&#34;https://goos.blog/2022/04/armitage_upgrades/goodbye_money.png&#34; alt=&#34;eBay purchase history&#34;&gt;&lt;/p&gt;
+&lt;p&gt;I&amp;rsquo;m going to double the amount of ram, add a modest gaming gpu, and spin up a new nvme storage pool - assuming the motherboard supports bifurcation like the internet says it does.&lt;/p&gt;
+&lt;p&gt;If reddit is right, I&amp;rsquo;ll order another of those dell cards for a total of 4x 1TB intel datacenter something nvme.&lt;/p&gt;
+&lt;p&gt;If not, I&amp;rsquo;ll have to get a card with a PLX switch. &lt;a href=&#34;https://www.amazon.com/Supermicro-AOC-SHG3-4M2P-Full-Height-Quad-Port/dp/B07PNR1YSG/&#34;&gt;One from supermicro runs around 200 bones.&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;On another note, I&amp;rsquo;m not the biggest fan of the msata carrier card for boot/root.
+I might get a &lt;a href=&#34;https://www.amazon.com/ICY-DOCK-Mobile-Comparable-Tray-less/dp/B01M0BIPYC/&#34;&gt;6-bay adapter&lt;/a&gt; for the ssds and move boot/root to 2.5&amp;quot; disks.
+Kinda spense tho.
+It would allow me to have two 2-slot gpus in the future though&amp;hellip; If I&amp;rsquo;m ever able to upgrade my desktop graphics I could have &lt;em&gt;&lt;strong&gt;two&lt;/strong&gt;&lt;/em&gt; rx580s in there.
+Which would play great into my gaming server plans.&lt;/p&gt;
+&lt;p&gt;Why have one when you can have two, amirite?&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Adventures with MacOS</title>
+      <link>https://goos.blog/2022/04/macos-adventures/</link>
+      <pubDate>Wed, 13 Apr 2022 00:00:01 -0400</pubDate>
+      
+      <guid>https://goos.blog/2022/04/macos-adventures/</guid>
+      <description>&lt;h4 id=&#34;why-not-just-install-linux-dude&#34; &gt;&lt;em&gt;why not just install linux dude?&lt;/em&gt;
+&lt;span&gt;
+    &lt;a href=&#34;#why-not-just-install-linux-dude&#34;&gt;
+        &lt;svg viewBox=&#34;0 0 28 23&#34; height=&#34;100%&#34; width=&#34;19&#34; xmlns=&#34;http://www.w3.org/2000/svg&#34;&gt;&lt;path d=&#34;M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71&#34; fill=&#34;none&#34; stroke-linecap=&#34;round&#34; stroke-miterlimit=&#34;10&#34; stroke-width=&#34;2&#34;/&gt;&lt;path d=&#34;M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71&#34; fill=&#34;none&#34; stroke-linecap=&#34;round&#34; stroke-miterlimit=&#34;10&#34; stroke-width=&#34;2&#34;/&gt;&lt;/svg&gt;
+    &lt;/a&gt;
+&lt;/span&gt;
+&lt;/h4&gt;&lt;p&gt;I&amp;rsquo;ve always liked &lt;del&gt;OSX&lt;/del&gt; MacOS, dating back to when we had iMac G1s (and later G4s) in our school computer lab.&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://goos.blog/2022/04/macos_adventures/imac-g4-imac-g3-comparison.jpg&#34; alt=&#34;iMac G1 in Aqua&#34;&gt;&lt;/p&gt;
+&lt;p&gt;Remember those? They were really nice. We should go back.&lt;/p&gt;
+&lt;p&gt;Back when I was in uni I used some suuuuper sketchy patched installers to run Mavericks (iirc) on my FX-4350 based system.
+Back then documentation was nonexistent, you had to read through scammy-looking forums for answers, etc etc etc bullshit.
+But you know what? It worked. It worked surprisingly well. I even played quite a bit of Team Fortress 2 on it.
+For whatever reason I eventually I switched to Arch+KDE4 (remember tabbing together arbitrary windows?), but I&amp;rsquo;ve always fondly remembered those osx days.&lt;/p&gt;
+&lt;p&gt;I&amp;rsquo;m not sure what inspired me to try running &lt;del&gt;OSX&lt;/del&gt; MacOS this time around, but I&amp;rsquo;m very happy to report that the situation has improved quite a bit.
+It&amp;rsquo;s like adults have taken over the whole ecosystem. Most things are documented, everything is on Github instead of totally-not-a-virus.com, etc.&lt;/p&gt;
+&lt;p&gt;My current build is a 5600x with an rx580 (wanna sell me something better at msrp?). I certainly didn&amp;rsquo;t plan this build for macos, but I&amp;rsquo;ll be damned if I can&amp;rsquo;t get it working.
+After all, if I could do it when I was dumb enough to go to uni, I should be able to do it now, right?&lt;/p&gt;
+&lt;h3 id=&#34;the-starting-lineup&#34; &gt;The Starting Lineup
+&lt;span&gt;
+    &lt;a href=&#34;#the-starting-lineup&#34;&gt;
+        &lt;svg viewBox=&#34;0 0 28 23&#34; height=&#34;100%&#34; width=&#34;19&#34; xmlns=&#34;http://www.w3.org/2000/svg&#34;&gt;&lt;path d=&#34;M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71&#34; fill=&#34;none&#34; stroke-linecap=&#34;round&#34; stroke-miterlimit=&#34;10&#34; stroke-width=&#34;2&#34;/&gt;&lt;path d=&#34;M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71&#34; fill=&#34;none&#34; stroke-linecap=&#34;round&#34; stroke-miterlimit=&#34;10&#34; stroke-width=&#34;2&#34;/&gt;&lt;/svg&gt;
+    &lt;/a&gt;
+&lt;/span&gt;
+&lt;/h3&gt;&lt;p&gt;First things first, take a careful inventory of your system, note down the exact hardware ids you have, blah blah blah.&lt;br&gt;
+Don&amp;rsquo;t forget to read all 50000 pages of the &lt;a href=&#34;https://dortania.github.io/OpenCore-Install-Guide/&#34;&gt;OpenCore Documentation&lt;/a&gt;.&lt;br&gt;
+After that you need to do this that and the other thing.&lt;/p&gt;
+&lt;p&gt;Screw that, lets dive right in.&lt;/p&gt;
+&lt;h3 id=&#34;the-plan-initially&#34; &gt;The Plan (initially)
+&lt;span&gt;
+    &lt;a href=&#34;#the-plan-initially&#34;&gt;
+        &lt;svg viewBox=&#34;0 0 28 23&#34; height=&#34;100%&#34; width=&#34;19&#34; xmlns=&#34;http://www.w3.org/2000/svg&#34;&gt;&lt;path d=&#34;M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71&#34; fill=&#34;none&#34; stroke-linecap=&#34;round&#34; stroke-miterlimit=&#34;10&#34; stroke-width=&#34;2&#34;/&gt;&lt;path d=&#34;M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71&#34; fill=&#34;none&#34; stroke-linecap=&#34;round&#34; stroke-miterlimit=&#34;10&#34; stroke-width=&#34;2&#34;/&gt;&lt;/svg&gt;
+    &lt;/a&gt;
+&lt;/span&gt;
+&lt;/h3&gt;&lt;p&gt;My plan at first was to install Monterey as a vm on &lt;a href=&#34;https://www.proxmox.com/en/proxmox-ve&#34;&gt;Proxmox VE&lt;/a&gt;.
+I&amp;rsquo;ve been using PVE for years both at work and on my personal iron, and I&amp;rsquo;m no stranger to PCI passthrough, so I figured this would be a cinch.
+&lt;a href=&#34;https://www.nicksherlock.com/2021/10/installing-macos-12-monterey-on-proxmox-7/&#34;&gt;This guide&lt;/a&gt; made it look pretty easy, and it was.&lt;/p&gt;
+&lt;p&gt;GPU passthrough was straightforward. Enable iommu, setup some vfio stuff, and you&amp;rsquo;re done.&lt;/p&gt;
+&lt;p&gt;Emboldened by the almost effortless gpu passthough, I passed through the usb3 controllers. &lt;em&gt;&amp;ldquo;There&amp;rsquo;s no way this works, right?&amp;rdquo;&lt;/em&gt;&lt;/p&gt;
+&lt;p&gt;It did. It literally justwerked™, no kexts or device-id changes required.&lt;/p&gt;
+&lt;p&gt;Apparently Apple likes AMD these days? Or maybe these usb3 controllers are uh, class compliant? Is that even a thing for things that live in the chipset?&lt;/p&gt;
+&lt;p&gt;In the past I&amp;rsquo;ve had good luck switching between different Windows and Linux vms, moving the gpu around in a digital game of hot potato.
+Knowing that I wouldn&amp;rsquo;t really be able to game on MacOS no matter how stronk my hardware, I had this workflow pictured:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Monterey, Windows, and Linux (possibly multiple, more below) vms on the same host&lt;/li&gt;
+&lt;li&gt;Suspend-to-disk the current vm&lt;/li&gt;
+&lt;li&gt;Switch to a different vm&lt;/li&gt;
+&lt;li&gt;The gpu gets released by the old vm and picked up by the new one&lt;/li&gt;
+&lt;li&gt;It all justwerks, I don&amp;rsquo;t have to do a full reboot, and because I&amp;rsquo;m suspending to disk, I don&amp;rsquo;t even have to re-open all my programs!&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Of course, it&amp;rsquo;s never quite as easy as you think it will be.
+In my case, it &lt;em&gt;almost&lt;/em&gt; completely worked.
+Going from MacOS -&amp;gt; (Linux, Windows) worked perfectly (after I installed the &lt;a href=&#34;https://github.com/gnif/vendor-reset&#34;&gt;Vendor Reset kernel module&lt;/a&gt;).&lt;/p&gt;
+&lt;p&gt;Going back to Monterey though&amp;hellip; Didn&amp;rsquo;t work. MacOS just wouldn&amp;rsquo;t pick up and reactivate the gpu. Sadface.&lt;/p&gt;
+&lt;p&gt;I was also faced with the vm not grabbing the gpu on first startup. I had to do this each time the host booted, and it was annoying:&lt;/p&gt;
+&lt;p&gt;&lt;code&gt;qm start 3001 &amp;amp;&amp;amp; sleep 5 &amp;amp;&amp;amp; qm stop 3001 &amp;amp;&amp;amp; sleep 5 &amp;amp;&amp;amp; qm start 3001&lt;/code&gt;&lt;/p&gt;
+&lt;p&gt;I&amp;rsquo;m sure someone could figure it all out, but I&amp;rsquo;m not a hardware hacker by any means (the last time I wrote C was pen on paper in CS101).&lt;/p&gt;
+&lt;p&gt;I had gotten a fresh taste of the MacOS life, and I wasn&amp;rsquo;t going to settle for Windows or Open Sores on my desktop.
+It was time for a different plan.&lt;/p&gt;
+&lt;h3 id=&#34;the-plan-reality-check&#34; &gt;The Plan (reality check)
+&lt;span&gt;
+    &lt;a href=&#34;#the-plan-reality-check&#34;&gt;
+        &lt;svg viewBox=&#34;0 0 28 23&#34; height=&#34;100%&#34; width=&#34;19&#34; xmlns=&#34;http://www.w3.org/2000/svg&#34;&gt;&lt;path d=&#34;M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71&#34; fill=&#34;none&#34; stroke-linecap=&#34;round&#34; stroke-miterlimit=&#34;10&#34; stroke-width=&#34;2&#34;/&gt;&lt;path d=&#34;M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71&#34; fill=&#34;none&#34; stroke-linecap=&#34;round&#34; stroke-miterlimit=&#34;10&#34; stroke-width=&#34;2&#34;/&gt;&lt;/svg&gt;
+    &lt;/a&gt;
+&lt;/span&gt;
+&lt;/h3&gt;&lt;p&gt;Knowing that I was getting pretty deep into the black magik voodoo tier of host/guest interaction, I decided to take a step back.&lt;/p&gt;
+&lt;p&gt;&lt;em&gt;&amp;ldquo;It isn&amp;rsquo;t that bad restarting programs, it&amp;rsquo;s really just a few terminal windows and discord, I guess we can do a true multi-boot&amp;hellip;
+Yeah performance inside the vm is okay, but I want native power management and stuff like that.
+Might as well install on iron.&lt;/em&gt;&lt;/p&gt;
+&lt;p&gt;Reality checked, I did a quick &lt;code&gt;zfs send | ssh root@maelcum zfs recv&lt;/code&gt; to save my Monterey vm on my nas just in case I had to go back, and started actually reading OpenCore&amp;rsquo;s documentation.&lt;/p&gt;
+&lt;p&gt;First things first, we need some install media for MacOS. The guide recommends starting with Big Sur or something old like that.
+Here at goos.blog, we don&amp;rsquo;t use old software, ever. Hardware, sure, that&amp;rsquo;s just cheaper. But all software is free (if you try hard enough), so why use old things?&lt;/p&gt;
+&lt;p&gt;Remembering how long it took the macos netinstall to run from a minimal boot usb, I created a full one.
+It took well over three hours (a good hour longer than the netinstall took on the vm) to download and flash to a reasonably good usb3 thumbdrive from inside the vm. Second sadface.
+That was the easy part.&lt;/p&gt;
+&lt;p&gt;Not that any of this was particularly hard, but that was the easy part.&lt;/p&gt;
+&lt;p&gt;I&amp;rsquo;ll spare you the boredom of going through the opencore configuration, if you&amp;rsquo;re trying to do this you should be reading the documentation, not a blog post.
+I ended up booting a livecd on my laptop to run ProperTree because I still cba to figure out how to mount an esp on Windows.
+It didn&amp;rsquo;t take much for me to get to a working installer, some kexts here, some patches there, about 10 roundtrips back into the vm to make edits, and here we go!
+Oh&amp;hellip; Wait&amp;hellip; Why aren&amp;rsquo;t any of my disks showing up?&lt;/p&gt;
+&lt;p&gt;Like always, I had forgotten something.
+This time around the &amp;ldquo;something&amp;rdquo; was an entire section of the documentation detailing how some sata controllers aren&amp;rsquo;t supported and need an additional kernel extension.
+Easy fix, just annoying that I had glazed over yet another thing.&lt;/p&gt;
+&lt;p&gt;At this point it was 5am (from the wrong direction). I went to bed.&lt;/p&gt;
+&lt;h3 id=&#34;the-aftermath&#34; &gt;The Aftermath
+&lt;span&gt;
+    &lt;a href=&#34;#the-aftermath&#34;&gt;
+        &lt;svg viewBox=&#34;0 0 28 23&#34; height=&#34;100%&#34; width=&#34;19&#34; xmlns=&#34;http://www.w3.org/2000/svg&#34;&gt;&lt;path d=&#34;M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71&#34; fill=&#34;none&#34; stroke-linecap=&#34;round&#34; stroke-miterlimit=&#34;10&#34; stroke-width=&#34;2&#34;/&gt;&lt;path d=&#34;M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71&#34; fill=&#34;none&#34; stroke-linecap=&#34;round&#34; stroke-miterlimit=&#34;10&#34; stroke-width=&#34;2&#34;/&gt;&lt;/svg&gt;
+    &lt;/a&gt;
+&lt;/span&gt;
+&lt;/h3&gt;&lt;p&gt;I awoke at noon, somewhat refreshed, still buzzing on the &amp;ldquo;did a cool thing&amp;rdquo; high.&lt;/p&gt;
+&lt;p&gt;Going into my office, I see that the desktop is in s3 sleep. &lt;em&gt;&amp;ldquo;Huh, didn&amp;rsquo;t think that&amp;rsquo;d work out of the box&amp;rdquo;&lt;/em&gt;&lt;/p&gt;
+&lt;p&gt;I tap ctrl a few times and to my delight the system wakes up and I&amp;rsquo;m presented with a login screen.&lt;/p&gt;
+&lt;p&gt;It didn&amp;rsquo;t take long to get things setup. Firefox, plex, vscode, my various email accounts (apple mail &amp;gt; outlook / thunderbird), and I&amp;rsquo;m good to go.
+I do most of my development and testing work in vms on armitage, my stronk dual socket system with lots of wam and ssd, so my actual dev envs are pretty portable.&lt;/p&gt;
+&lt;h3 id=&#34;the-current-state-of-things&#34; &gt;The Current State Of Things
+&lt;span&gt;
+    &lt;a href=&#34;#the-current-state-of-things&#34;&gt;
+        &lt;svg viewBox=&#34;0 0 28 23&#34; height=&#34;100%&#34; width=&#34;19&#34; xmlns=&#34;http://www.w3.org/2000/svg&#34;&gt;&lt;path d=&#34;M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71&#34; fill=&#34;none&#34; stroke-linecap=&#34;round&#34; stroke-miterlimit=&#34;10&#34; stroke-width=&#34;2&#34;/&gt;&lt;path d=&#34;M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71&#34; fill=&#34;none&#34; stroke-linecap=&#34;round&#34; stroke-miterlimit=&#34;10&#34; stroke-width=&#34;2&#34;/&gt;&lt;/svg&gt;
+    &lt;/a&gt;
+&lt;/span&gt;
+&lt;/h3&gt;&lt;p&gt;As I type this on the Monterey side of my desktop &lt;em&gt;&amp;hellip;tabs over to ebay tracking and hits refresh&amp;hellip;&lt;/em&gt;
+I&amp;rsquo;m waiting on another RX580 to come in the mail. This one is going to go into armitage (dell t7910) and is going to be used for a &lt;em&gt;&lt;strong&gt;GAMING SERVER&lt;/strong&gt;&lt;/em&gt;
+(I&amp;rsquo;ve been jealous of &lt;a href=&#34;https://lo.calho.st/posts/gaming-vm/&#34;&gt;tmick0&amp;rsquo;s setup&lt;/a&gt; ever since I pointed him in the right directions on it).
+Like him, I use a steam link on my teevee, and I&amp;rsquo;ll also be able to stream games to my desktop.
+Once that&amp;rsquo;s setup the only time I&amp;rsquo;ll have to leave macos is for playing CS:GO - it &lt;em&gt;runs&lt;/em&gt; on macos, but uh&amp;hellip; shittily.
+I have grand ideas for a boot-to-csgo linux install, we&amp;rsquo;ll see if I find a roundtuit for that project.&lt;/p&gt;
+&lt;p&gt;Was it all worth it?&lt;/p&gt;
+&lt;p&gt;Yes (even though I&amp;rsquo;ve spent $700 in the past two days on more wam and a gpu for armitage).&lt;/p&gt;
+&lt;p&gt;Could I have just stuck with winderp or installed a linux?&lt;/p&gt;
+&lt;p&gt;Sure. But where&amp;rsquo;s the fun in that?&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://goos.blog/2022/04/macos_adventures/great_success.png&#34; alt=&#34;Screenshot of &amp;amp;ldquo;About this Mac&amp;amp;rdquo; and &amp;amp;ldquo;Neofetch&amp;amp;rdquo;&#34;&gt;&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Initial Commit</title>
+      <link>https://goos.blog/2022/04/initial-commit/</link>
+      <pubDate>Tue, 12 Apr 2022 00:00:01 -0400</pubDate>
+      
+      <guid>https://goos.blog/2022/04/initial-commit/</guid>
+      <description>&lt;h4 id=&#34;you-should-start-a-nerd-blog-man---tmick0-2022&#34; &gt;&lt;em&gt;you should start a nerd blog man - tmick0, 2022&lt;/em&gt;
+&lt;span&gt;
+    &lt;a href=&#34;#you-should-start-a-nerd-blog-man---tmick0-2022&#34;&gt;
+        &lt;svg viewBox=&#34;0 0 28 23&#34; height=&#34;100%&#34; width=&#34;19&#34; xmlns=&#34;http://www.w3.org/2000/svg&#34;&gt;&lt;path d=&#34;M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71&#34; fill=&#34;none&#34; stroke-linecap=&#34;round&#34; stroke-miterlimit=&#34;10&#34; stroke-width=&#34;2&#34;/&gt;&lt;path d=&#34;M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71&#34; fill=&#34;none&#34; stroke-linecap=&#34;round&#34; stroke-miterlimit=&#34;10&#34; stroke-width=&#34;2&#34;/&gt;&lt;/svg&gt;
+    &lt;/a&gt;
+&lt;/span&gt;
+&lt;/h4&gt;&lt;p&gt;And so here we are. Furthering the pollution of the web with more nerd shit.&lt;/p&gt;
+&lt;p&gt;After about 5 minutes of searching I settled on &lt;a href=&#34;https://gohugo.io/&#34;&gt;Hugo&lt;/a&gt; with the &lt;a href=&#34;https://github.com/Mitrichius/hugo-theme-anubis&#34;&gt;Anubis&lt;/a&gt; theme.&lt;/p&gt;
+&lt;p&gt;I like that it takes markdown and renders it into static html, even if the output is a little gross.&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;brew install hugo
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;mkdir -p ~/Documents/repos/goos.blog
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;cd ~/Documents/repos/goos.blog
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;hugo new site hugo
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;hugo server -D &amp;amp;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;vscode .
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;Who am I? I&amp;rsquo;m just a dude, man. Doing my thing, typing my commands, sailing my boat.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>https://goos.blog/about/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://goos.blog/about/</guid>
+      <description>&lt;h1 id=&#34;honk&#34; &gt;HONK!
+&lt;span&gt;
+    &lt;a href=&#34;#honk&#34;&gt;
+        &lt;svg viewBox=&#34;0 0 28 23&#34; height=&#34;100%&#34; width=&#34;19&#34; xmlns=&#34;http://www.w3.org/2000/svg&#34;&gt;&lt;path d=&#34;M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71&#34; fill=&#34;none&#34; stroke-linecap=&#34;round&#34; stroke-miterlimit=&#34;10&#34; stroke-width=&#34;2&#34;/&gt;&lt;path d=&#34;M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71&#34; fill=&#34;none&#34; stroke-linecap=&#34;round&#34; stroke-miterlimit=&#34;10&#34; stroke-width=&#34;2&#34;/&gt;&lt;/svg&gt;
+    &lt;/a&gt;
+&lt;/span&gt;
+&lt;/h1&gt;&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;I&amp;#39;m a goose
+No not really
+I&amp;#39;m a people just like you
+&lt;/code&gt;&lt;/pre&gt;</description>
+    </item>
+    
+  </channel>
+</rss>

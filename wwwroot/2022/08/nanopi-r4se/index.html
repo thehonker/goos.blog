@@ -1,0 +1,572 @@
+<!DOCTYPE html>
+
+
+<html lang="en-us" data-theme="">
+<head>
+    
+        
+<meta charset="utf-8">
+<meta name="HandheldFriendly" content="True">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="referrer" content="no-referrer-when-downgrade">
+
+<title>NanoPi R4SE - goos.blog</title>
+
+<meta name="description" content="adorable. just. adorable. but also I hate you. About a month ago I ordered both the r4s and r5s from nanopi. Then a week or two after that they released the r4se, which is the same platform as the r4s but with 32gb of emmc onboard. I ordered two of those. This post is about openwrt on the r4se. I&rsquo;m also playing around with opnsense on the r4s, there&rsquo;ll be posts about that later.">
+
+
+
+
+
+<link rel="icon" type="image/x-icon" href="https://goos.blog/favicon.ico">
+<link rel="apple-touch-icon-precomposed" href="https://goos.blog/favicon.png">
+
+
+<style>
+  body {
+    visibility: hidden;
+    opacity: 0;
+  }
+</style>
+
+<noscript>
+  <style>
+    body {
+      visibility: visible;
+      opacity: 1;
+    }
+  </style>
+</noscript>
+
+
+
+    
+
+
+
+
+
+    
+    
+        
+    
+    
+
+    
+        <link rel="stylesheet" href="https://goos.blog/css/style.min.13e9ee87c57d784d14fb842506c3eade9de10150a7f653bd19dacda241d60e0d.css" integrity="sha256-E&#43;nuh8V9eE0U&#43;4QlBsPq3p3hAVCn9lO9GdrNokHWDg0=">
+    
+
+
+
+
+
+    
+
+    
+
+
+
+
+
+    
+    
+        
+    
+    
+
+    
+        <script src="https://goos.blog/js/script.min.74bf1a3fcf1af396efa4acf3e660e876b61a2153ab9cbe1893ac24ea6d4f94ee.js" type="text/javascript" charset="utf-8" integrity="sha256-dL8aP88a85bvpKzz5mDodrYaIVOrnL4Yk6wk6m1PlO4="></script>
+    
+
+
+
+
+
+
+
+<meta property="og:title" content="NanoPi R4SE" />
+<meta property="og:description" content="adorable. just. adorable. but also I hate you. About a month ago I ordered both the r4s and r5s from nanopi. Then a week or two after that they released the r4se, which is the same platform as the r4s but with 32gb of emmc onboard. I ordered two of those. This post is about openwrt on the r4se. I&rsquo;m also playing around with opnsense on the r4s, there&rsquo;ll be posts about that later." />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://goos.blog/2022/08/nanopi-r4se/" /><meta property="article:section" content="blog" />
+<meta property="article:published_time" content="2022-08-30T00:00:00-04:00" />
+<meta property="article:modified_time" content="2022-08-30T00:00:00-04:00" />
+
+<meta name="twitter:card" content="summary"/>
+<meta name="twitter:title" content="NanoPi R4SE"/>
+<meta name="twitter:description" content="adorable. just. adorable. but also I hate you. About a month ago I ordered both the r4s and r5s from nanopi. Then a week or two after that they released the r4se, which is the same platform as the r4s but with 32gb of emmc onboard. I ordered two of those. This post is about openwrt on the r4se. I&rsquo;m also playing around with opnsense on the r4s, there&rsquo;ll be posts about that later."/>
+
+
+
+
+
+
+
+
+
+
+
+    
+</head>
+<body>
+    <a class="skip-main" href="#main">Skip to main content</a>
+    <div class="container">
+        <header class="common-header"> 
+            
+                <div class="header-top">
+    <h1 class="site-title">
+    <a href="/">goos.blog</a>
+</h1>
+    <ul class="social-icons">
+
+
+    
+        
+        
+        <li>
+            <a href="https://github.com/g-o-o-s" title="Github" rel="me">
+            <span class="inline-svg" >
+
+
+
+
+    
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 496 512"><path fill="currentColor" d="M165.9 397.4c0 2-2.3 3.6-5.2 3.6-3.3.3-5.6-1.3-5.6-3.6 0-2 2.3-3.6 5.2-3.6 3-.3 5.6 1.3 5.6 3.6zm-31.1-4.5c-.7 2 1.3 4.3 4.3 4.9 2.6 1 5.6 0 6.2-2s-1.3-4.3-4.3-5.2c-2.6-.7-5.5.3-6.2 2.3zm44.2-1.7c-2.9.7-4.9 2.6-4.6 4.9.3 2 2.9 3.3 5.9 2.6 2.9-.7 4.9-2.6 4.6-4.6-.3-1.9-3-3.2-5.9-2.9zM244.8 8C106.1 8 0 113.3 0 252c0 110.9 69.8 205.8 169.5 239.2 12.8 2.3 17.3-5.6 17.3-12.1 0-6.2-.3-40.4-.3-61.4 0 0-70 15-84.7-29.8 0 0-11.4-29.1-27.8-36.6 0 0-22.9-15.7 1.6-15.4 0 0 24.9 2 38.6 25.8 21.9 38.6 58.6 27.5 72.9 20.9 2.3-16 8.8-27.1 16-33.7-55.9-6.2-112.3-14.3-112.3-110.5 0-27.5 7.6-41.3 23.6-58.9-2.6-6.5-11.1-33.3 2.6-67.9 20.9-6.5 69 27 69 27 20-5.6 41.5-8.5 62.8-8.5s42.8 2.9 62.8 8.5c0 0 48.1-33.6 69-27 13.7 34.7 5.2 61.4 2.6 67.9 16 17.7 25.8 31.5 25.8 58.9 0 96.5-58.9 104.2-114.8 110.5 9.2 7.9 17 22.9 17 46.4 0 33.7-.3 75.4-.3 83.6 0 6.5 4.6 14.4 17.3 12.1C428.2 457.8 496 362.9 496 252 496 113.3 383.5 8 244.8 8zM97.2 352.9c-1.3 1-1 3.3.7 5.2 1.6 1.6 3.9 2.3 5.2 1 1.3-1 1-3.3-.7-5.2-1.6-1.6-3.9-2.3-5.2-1zm-10.8-8.1c-.7 1.3.3 2.9 2.3 3.9 1.6 1 3.6.7 4.3-.7.7-1.3-.3-2.9-2.3-3.9-2-.6-3.6-.3-4.3.7zm32.4 35.6c-1.6 1.3-1 4.3 1.3 6.2 2.3 2.3 5.2 2.6 6.5 1 1.3-1.3.7-4.3-1.3-6.2-2.2-2.3-5.2-2.6-6.5-1zm-11.4-14.7c-1.6 1-1.6 3.6 0 5.9 1.6 2.3 4.3 3.3 5.6 2.3 1.6-1.3 1.6-3.9 0-6.2-1.4-2.3-4-3.3-5.6-2z"/></svg>
+
+</span>
+
+            </a>
+        </li>
+    
+
+
+
+    <li>
+            <a href="https://goos.blog/index.xml" title="RSS" rel="me">
+            <span class="inline-svg" >
+
+
+
+
+    
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><path fill="currentColor" d="M128.081 415.959c0 35.369-28.672 64.041-64.041 64.041S0 451.328 0 415.959s28.672-64.041 64.041-64.041 64.04 28.673 64.04 64.041zm175.66 47.25c-8.354-154.6-132.185-278.587-286.95-286.95C7.656 175.765 0 183.105 0 192.253v48.069c0 8.415 6.49 15.472 14.887 16.018 111.832 7.284 201.473 96.702 208.772 208.772.547 8.397 7.604 14.887 16.018 14.887h48.069c9.149.001 16.489-7.655 15.995-16.79zm144.249.288C439.596 229.677 251.465 40.445 16.503 32.01 7.473 31.686 0 38.981 0 48.016v48.068c0 8.625 6.835 15.645 15.453 15.999 191.179 7.839 344.627 161.316 352.465 352.465.353 8.618 7.373 15.453 15.999 15.453h48.068c9.034-.001 16.329-7.474 16.005-16.504z"/></svg>
+
+</span>
+
+            </a>
+        </li>
+    
+
+</ul>
+</div>
+
+    <nav></nav>
+
+
+
+
+            
+        </header>
+        <main id="main" tabindex="-1"> 
+            
+    
+
+    <article class="post h-entry">
+        <div class="post-header">
+            <header>
+                <h1 class="p-name post-title">NanoPi R4SE</h1>
+
+                
+            </header>
+        </div>
+        <div class="content e-content">
+            <h4 id="adorable-just-adorable-but-also-i-hate-you" ><em>adorable. just. adorable. but also I hate you.</em>
+<span>
+    <a href="#adorable-just-adorable-but-also-i-hate-you">
+        <svg viewBox="0 0 28 23" height="100%" width="19" xmlns="http://www.w3.org/2000/svg"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71" fill="none" stroke-linecap="round" stroke-miterlimit="10" stroke-width="2"/><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71" fill="none" stroke-linecap="round" stroke-miterlimit="10" stroke-width="2"/></svg>
+    </a>
+</span>
+</h4><p>About a month ago I ordered both the <a href="https://wiki.friendlyelec.com/wiki/index.php/NanoPi_R4S">r4s</a> and <a href="https://wiki.friendlyelec.com/wiki/index.php/NanoPi_R5S">r5s</a> from nanopi. <br>
+Then a week or two after that they released the <a href="https://wiki.friendlyelec.com/wiki/index.php/NanoPi_R4SE">r4se</a>, which is the same platform as the r4s but with 32gb of emmc onboard. <br>
+I ordered two of those. <br>
+This post is about openwrt on the r4se. I&rsquo;m also playing around with opnsense on the r4s, there&rsquo;ll be posts about that later.</p>
+<h2 id="initial-thoughts" >Initial thoughts
+<span>
+    <a href="#initial-thoughts">
+        <svg viewBox="0 0 28 23" height="100%" width="19" xmlns="http://www.w3.org/2000/svg"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71" fill="none" stroke-linecap="round" stroke-miterlimit="10" stroke-width="2"/><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71" fill="none" stroke-linecap="round" stroke-miterlimit="10" stroke-width="2"/></svg>
+    </a>
+</span>
+</h2><p><img src="/2022/08/nanopi-r4se/IMG_3343.jpg" alt="two nanopie r4se units"></p>
+<p>This thing is is heavy, chunky, and very solid feeling. Build quality is excellent, all the ports line up perfectly with their openings. <br>
+The silkscreened labels line up perfectly with their respective openings/lights. <br>
+Overall a very nice unit.</p>
+<p>The power supply they bundled isn&rsquo;t the best looking thing, but it doesn&rsquo;t get hot under load and it&rsquo;s rated for 4 amps (r4s rated draw is 3a), so I&rsquo;m happy with it.</p>
+<h2 id="the-firmware" >The Firmware
+<span>
+    <a href="#the-firmware">
+        <svg viewBox="0 0 28 23" height="100%" width="19" xmlns="http://www.w3.org/2000/svg"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71" fill="none" stroke-linecap="round" stroke-miterlimit="10" stroke-width="2"/><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71" fill="none" stroke-linecap="round" stroke-miterlimit="10" stroke-width="2"/></svg>
+    </a>
+</span>
+</h2><p>The newest official firmware from friendlyelec is based on openwrt 21.02. <br>
+That&rsquo;s a little old for my liking, thankfully they have a testing image based on 22.03. <br>
+Flashing the firmware to the emmc using rkdevtool took a bit of brain-ing to figure out, but I got there.</p>
+<p><img src="/2022/08/nanopi-r4se/rkdevtool.png" alt="rkdevtool"></p>
+<h2 id="setting-up" >Setting up
+<span>
+    <a href="#setting-up">
+        <svg viewBox="0 0 28 23" height="100%" width="19" xmlns="http://www.w3.org/2000/svg"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71" fill="none" stroke-linecap="round" stroke-miterlimit="10" stroke-width="2"/><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71" fill="none" stroke-linecap="round" stroke-miterlimit="10" stroke-width="2"/></svg>
+    </a>
+</span>
+</h2><p>First thing I did was add allow rules for tcp/80 and tcp/22 on the wan interface so I can access the DUT from my desktop. <br>
+After that I edited <code>/etc/hotplug.d/net/40-net-smp-affinity</code> to pin the rps for each interface to the fast a72 cores.</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>friendlyelec,nanopi-r4s<span style="color:#f92672">)</span>
+</span></span><span style="display:flex;"><span>        set_interface_core <span style="color:#ae81ff">10</span> <span style="color:#e6db74">&#34;eth0&#34;</span>
+</span></span><span style="display:flex;"><span>        echo <span style="color:#ae81ff">10</span> &gt; /sys/class/net/eth0/queues/rx-0/rps_cpus  <span style="color:#75715e"># was 3f</span>
+</span></span><span style="display:flex;"><span>        set_interface_core <span style="color:#ae81ff">20</span> <span style="color:#e6db74">&#34;eth1&#34;</span>
+</span></span><span style="display:flex;"><span>        echo <span style="color:#ae81ff">20</span> &gt; /sys/class/net/eth1/queues/rx-0/rps_cpus  <span style="color:#75715e"># was 3f</span>
+</span></span><span style="display:flex;"><span>        ;;
+</span></span></code></pre></div><p>For some reason they were spread across all cores by default, even though they were pinning the irqs to the a72&rsquo;s. <br>
+Finally I set the cpu gov. to performance in the webui. This only affected the a53 cores for some reason, so I put this in <code>/etc/rc.local</code> to force the cpu freq to max.</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>echo <span style="color:#ae81ff">1512000</span> &gt; /sys/devices/system/cpu/cpu0/cpufreq/scaling_min_freq
+</span></span><span style="display:flex;"><span>echo <span style="color:#ae81ff">1512000</span> &gt; /sys/devices/system/cpu/cpu1/cpufreq/scaling_min_freq
+</span></span><span style="display:flex;"><span>echo <span style="color:#ae81ff">1512000</span> &gt; /sys/devices/system/cpu/cpu2/cpufreq/scaling_min_freq
+</span></span><span style="display:flex;"><span>echo <span style="color:#ae81ff">1512000</span> &gt; /sys/devices/system/cpu/cpu3/cpufreq/scaling_min_freq
+</span></span><span style="display:flex;"><span>echo <span style="color:#ae81ff">2016000</span> &gt; /sys/devices/system/cpu/cpu4/cpufreq/scaling_min_freq
+</span></span><span style="display:flex;"><span>echo <span style="color:#ae81ff">2016000</span> &gt; /sys/devices/system/cpu/cpu5/cpufreq/scaling_min_freq
+</span></span></code></pre></div><p>Worth noting is that on the 21.x series, the max configurable frequency of the a72&rsquo;s is lower, 19xx-something vs 2016000 on 22.x.</p>
+<h2 id="wheres-my-eth1" >Where&rsquo;s my eth1?
+<span>
+    <a href="#wheres-my-eth1">
+        <svg viewBox="0 0 28 23" height="100%" width="19" xmlns="http://www.w3.org/2000/svg"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71" fill="none" stroke-linecap="round" stroke-miterlimit="10" stroke-width="2"/><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71" fill="none" stroke-linecap="round" stroke-miterlimit="10" stroke-width="2"/></svg>
+    </a>
+</span>
+</h2><p>After a soft retoot, eth1 had disappeared! Smells like typical realtek shit. I wish they had spent the extra 5 bucks on intel chipsets. <br>
+Makes me wanna design my own tiny router&hellip;. not that I&rsquo;ll ever do that. <br>
+A hard powercycle brought it back. :thonk: <br>
+I rebooted a bunch more times, and eth1 disappeared about 1/5 of the time. <br>
+That&rsquo;s acceptable for use at my home, but it means I wouldn&rsquo;t really trust it anywhere remote. <br>
+But yeah. Imagine like. A really fast arm cpu with a lot of ddr4 memory. Dual nvme slots so you can raid 1. Good intel nics, like the i350 for four ports. <br>
+Sure, such a thing would have to be a bit bigger. And more expensive. But still. It&rsquo;d be nice. <br>
+Maybe we&rsquo;ll start seeing arm thin clients with pcie slots. That&rsquo;d be almost perfect.</p>
+<h2 id="list-of-benchmarks-to-run" >List of benchmarks to run:
+<span>
+    <a href="#list-of-benchmarks-to-run">
+        <svg viewBox="0 0 28 23" height="100%" width="19" xmlns="http://www.w3.org/2000/svg"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71" fill="none" stroke-linecap="round" stroke-miterlimit="10" stroke-width="2"/><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71" fill="none" stroke-linecap="round" stroke-miterlimit="10" stroke-width="2"/></svg>
+    </a>
+</span>
+</h2><pre tabindex="0"><code class="language-none" data-lang="none">// Typical home network traffic
+lan &lt;-&gt; wan outbound nat
+
+// Inbound port forwards
+wan &lt;-&gt; lan inbound nat
+
+// LAN to the device itself - NAS, etc
+lan/wan &lt;-&gt; r4s
+
+// We&#39;ll run these later on (probably in a different post)
+// Openvpn
+wan (openvpn client) &lt;-&gt; lan
+
+// Wireguard
+wan (wireguard client) &lt;-&gt; lan
+</code></pre><h2 id="testing-methodology" >Testing methodology:
+<span>
+    <a href="#testing-methodology">
+        <svg viewBox="0 0 28 23" height="100%" width="19" xmlns="http://www.w3.org/2000/svg"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71" fill="none" stroke-linecap="round" stroke-miterlimit="10" stroke-width="2"/><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71" fill="none" stroke-linecap="round" stroke-miterlimit="10" stroke-width="2"/></svg>
+    </a>
+</span>
+</h2><p>We&rsquo;ll run our tests using iperf3 and T-Rex.</p>
+<p>If you&rsquo;ve been reading my posts about T-Rex, you already know about our traffic generator. <br>
+It&rsquo;s a dell optiplex 7040 with an i7 and a x710-DA2. <br>
+We already know that it can generate 10gig line rate at 64b on-frame, far more than our DUT can do.</p>
+<h2 id="cursory-speedtestnet-testing" >Cursory speedtest.net testing
+<span>
+    <a href="#cursory-speedtestnet-testing">
+        <svg viewBox="0 0 28 23" height="100%" width="19" xmlns="http://www.w3.org/2000/svg"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71" fill="none" stroke-linecap="round" stroke-miterlimit="10" stroke-width="2"/><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71" fill="none" stroke-linecap="round" stroke-miterlimit="10" stroke-width="2"/></svg>
+    </a>
+</span>
+</h2><p>speedtest-cli from my laptop on the lan port shows about 300/300, which is about what I get here (yay fios). <br>
+So we know the r4s can NAT at least that much.</p>
+<h2 id="benchmark-the-first-lan---wan-w-nat" >Benchmark the first: LAN &lt;-&gt; WAN w/ NAT
+<span>
+    <a href="#benchmark-the-first-lan---wan-w-nat">
+        <svg viewBox="0 0 28 23" height="100%" width="19" xmlns="http://www.w3.org/2000/svg"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71" fill="none" stroke-linecap="round" stroke-miterlimit="10" stroke-width="2"/><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71" fill="none" stroke-linecap="round" stroke-miterlimit="10" stroke-width="2"/></svg>
+    </a>
+</span>
+</h2><p>Some cursory benchmarking with T-Rex in stateless mode yielded some&hellip; Interesting results:</p>
+<p><img src="/2022/08/nanopi-r4se/mult1-dur80-2022-08-29T18-42-45.890Z-bits.png" alt="a graph showing odd traffic patterns"></p>
+<p>This was very repeatable with stateless profiles and scaled with load. I&rsquo;d get a few seconds of about 30% drop, and then it&rsquo;d go to near 100% drop.</p>
+<h2 id="why-you-do-that" >Why you do that?
+<span>
+    <a href="#why-you-do-that">
+        <svg viewBox="0 0 28 23" height="100%" width="19" xmlns="http://www.w3.org/2000/svg"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71" fill="none" stroke-linecap="round" stroke-miterlimit="10" stroke-width="2"/><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71" fill="none" stroke-linecap="round" stroke-miterlimit="10" stroke-width="2"/></svg>
+    </a>
+</span>
+</h2><p>I started by examining my test setup. My thought was that some weirdness was happening with buffers. <br>
+If not there then maybe something at layer4 or higher&hellip;</p>
+<p>First i looked at the network buffers and some other maximums on the DUT:</p>
+<pre tabindex="0"><code class="language-none" data-lang="none">root@FriendlyWrt:~# cat /proc/sys/net/netfilter/nf_conntrack_max
+65535
+
+root@FriendlyWrt:~# sysctl net.ipv4.tcp_rmem
+net.ipv4.tcp_rmem = 8192        262144  67108864
+
+root@FriendlyWrt:~#  sysctl net.ipv4.tcp_wmem
+net.ipv4.tcp_wmem = 8192        262144  67108864
+
+root@FriendlyWrt:~#  sysctl net.core.rmem_max
+net.core.rmem_max = 67108864
+
+root@FriendlyWrt:~#  sysctl net.core.wmem_max
+net.core.wmem_max = 67108864
+</code></pre><p>Those look reasonable to me. So why it do that?</p>
+<h2 id="wireshark-time" >Wireshark time
+<span>
+    <a href="#wireshark-time">
+        <svg viewBox="0 0 28 23" height="100%" width="19" xmlns="http://www.w3.org/2000/svg"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71" fill="none" stroke-linecap="round" stroke-miterlimit="10" stroke-width="2"/><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71" fill="none" stroke-linecap="round" stroke-miterlimit="10" stroke-width="2"/></svg>
+    </a>
+</span>
+</h2><p>Spoiler alert - this didn&rsquo;t tell me shit other than confirming that:</p>
+<ul>
+<li>my packets are the size on-wire that I thought they were (yay, no more math!)</li>
+<li>the DUT was properly doing nat</li>
+</ul>
+<p>Had I been a bit more observant here, I would have saved some time. But let&rsquo;s not spoil the surprise.</p>
+<p>This is getting into weird territory. I&rsquo;m going to get opnsense working on the r4s (non-emmc) and see how it handles these tests.</p>
+<p>But first&hellip;</p>
+<h2 id="lets-try-astf" >Let&rsquo;s try ASTF
+<span>
+    <a href="#lets-try-astf">
+        <svg viewBox="0 0 28 23" height="100%" width="19" xmlns="http://www.w3.org/2000/svg"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71" fill="none" stroke-linecap="round" stroke-miterlimit="10" stroke-width="2"/><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71" fill="none" stroke-linecap="round" stroke-miterlimit="10" stroke-width="2"/></svg>
+    </a>
+</span>
+</h2><p>I mean, that&rsquo;s what we&rsquo;re supposed to be using, given that this lil guy is doing NAT. <br>
+Here&rsquo;s a run of 64b on-wire frames. I think I&rsquo;m near the limits of what this DUT can handle at this packet size.</p>
+<p><img src="/2022/08/nanopi-r4se/mult100000-dur60-2022-08-30T12-07-32.043Z-bits.png" alt="bps graph of astf profile">
+<img src="/2022/08/nanopi-r4se/mult100000-dur60-2022-08-30T12-07-32.043Z-packets.png" alt="pps graph of astf profile"></p>
+<h2 id="its-always-dns-arp" >It&rsquo;s always <del>DNS</del> ARP
+<span>
+    <a href="#its-always-dns-arp">
+        <svg viewBox="0 0 28 23" height="100%" width="19" xmlns="http://www.w3.org/2000/svg"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71" fill="none" stroke-linecap="round" stroke-miterlimit="10" stroke-width="2"/><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71" fill="none" stroke-linecap="round" stroke-miterlimit="10" stroke-width="2"/></svg>
+    </a>
+</span>
+</h2><p>So with ASTF profiles looking normal-ish, let&rsquo;s go back to STL and see why that&rsquo;s doing what it does. <br>
+I started doing a google for anything network io cache or timeout related. <br>
+On a hunch, I started this on the DUT: <code>while true; do clear; ip neigh; sleep 0.5; done</code> , fired off a STL profile and waited.</p>
+<pre tabindex="0"><code class="language-none" data-lang="none">11.11.11.2 dev eth1 lladdr 3c:fd:fe:c6:06:10 STALE
+10.15.41.1 dev eth0 lladdr a0:36:9f:83:b5:58 REACHABLE
+12.12.12.2 dev eth0  INCOMPLETE
+</code></pre><h2 id="wait-what" >Wait, what?
+<span>
+    <a href="#wait-what">
+        <svg viewBox="0 0 28 23" height="100%" width="19" xmlns="http://www.w3.org/2000/svg"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71" fill="none" stroke-linecap="round" stroke-miterlimit="10" stroke-width="2"/><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71" fill="none" stroke-linecap="round" stroke-miterlimit="10" stroke-width="2"/></svg>
+    </a>
+</span>
+</h2><p>Our configuration for t-rex itself looks like this:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-yaml" data-lang="yaml"><span style="display:flex;"><span>- <span style="color:#f92672">version</span>: <span style="color:#ae81ff">2</span>
+</span></span><span style="display:flex;"><span>  <span style="color:#f92672">interfaces</span>: [<span style="color:#e6db74">&#39;01:00.0&#39;</span>, <span style="color:#e6db74">&#39;01:00.1&#39;</span>]
+</span></span><span style="display:flex;"><span>  <span style="color:#f92672">port_info</span>: <span style="color:#75715e"># 0 = client, right, 1 = server, left</span>
+</span></span><span style="display:flex;"><span>      - <span style="color:#f92672">ip</span>: <span style="color:#ae81ff">11.11.11.2</span> <span style="color:#75715e"># phy port 0, client subnet is routed through this address</span>
+</span></span><span style="display:flex;"><span>        <span style="color:#f92672">default_gw</span>: <span style="color:#ae81ff">11.11.11.1</span> <span style="color:#75715e"># r4s lan port</span>
+</span></span><span style="display:flex;"><span>      - <span style="color:#f92672">ip</span>: <span style="color:#ae81ff">12.12.12.2</span> <span style="color:#75715e"># phy port 1, server subnet is routed through this address</span>
+</span></span><span style="display:flex;"><span>        <span style="color:#f92672">default_gw</span>: <span style="color:#ae81ff">12.12.12.1</span> <span style="color:#75715e"># r4s wan port</span>
+</span></span></code></pre></div><p>On the DUT we have secondary addresses configured on &ldquo;WAN&rdquo; and &ldquo;LAN&rdquo; of 12.12.12.1/30 and 11.11.11.1/30 respectively. <br>
+Then we have routes:</p>
+<pre tabindex="0"><code class="language-none" data-lang="none">16.0.0.0/8 via 11.11.11.2
+48.0.0.0/8 via 12.12.12.2
+</code></pre><p>So when the stateless profile starts:</p>
+<ul>
+<li>t-rex sends out a garp for 11.11.11.2 and 12.12.12.2</li>
+<li>openwrt sees this and installs the neighbor entry</li>
+<li>traffic flows for a while</li>
+<li>t-rex hasn&rsquo;t sent another garp and isn&rsquo;t responding to arp</li>
+<li>openwrt ages out the arp entry</li>
+<li>traffic dies off</li>
+<li>goos is confused</li>
+</ul>
+<p>My googling brought me to many interesting pages including some functions in the python library that I can&rsquo;t figure out how to replicate, <br>
+including one <code>c.arp()</code> which appears to send a garp on demand.</p>
+<h2 id="so-how-do-we-fix-it" >So how do we fix it?
+<span>
+    <a href="#so-how-do-we-fix-it">
+        <svg viewBox="0 0 28 23" height="100%" width="19" xmlns="http://www.w3.org/2000/svg"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71" fill="none" stroke-linecap="round" stroke-miterlimit="10" stroke-width="2"/><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71" fill="none" stroke-linecap="round" stroke-miterlimit="10" stroke-width="2"/></svg>
+    </a>
+</span>
+</h2><p>We go back to the old ways and set static neighbor entries.</p>
+<pre tabindex="0"><code class="language-none" data-lang="none">ip neigh add 11.11.11.2 lladdr 3c:fd:fe:c6:06:10 dev eth1 nud permanent
+ip neigh add 12.12.12.2 lladdr 3c:fd:fe:c6:06:11 dev eth0 nud permanent
+</code></pre><p><img src="/2022/08/nanopi-r4se/mult1-dur60-2022-08-30T19-23-31.191Z-bits.png" alt="bps graph of stl profile">
+<img src="/2022/08/nanopi-r4se/mult1-dur60-2022-08-30T19-23-31.191Z-packets.png" alt="pps graph of stl profile"></p>
+<blockquote>
+<p>64b packets hurt, but it&rsquo;s like. working now.</p>
+</blockquote>
+<h2 id="still-reading" >Still reading?
+<span>
+    <a href="#still-reading">
+        <svg viewBox="0 0 28 23" height="100%" width="19" xmlns="http://www.w3.org/2000/svg"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71" fill="none" stroke-linecap="round" stroke-miterlimit="10" stroke-width="2"/><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71" fill="none" stroke-linecap="round" stroke-miterlimit="10" stroke-width="2"/></svg>
+    </a>
+</span>
+</h2><p>This is getting pretty long, and I haven&rsquo;t done 10% of what I wanted to. <br>
+I&rsquo;ll leave you with this: <br>
+Whenever you have connectivity problems. Check address resolution first. <br>
+If that&rsquo;s DNS, ARP, some service discovery like consul, whatever. <br>
+Check that things know where things are before doing a deep dive.</p>
+
+        </div>
+        
+
+    
+
+
+<div class="post-info">
+    
+        <div class="post-date dt-published">2022-08-30</div>
+    
+
+    <a class="post-hidden-url u-url" href="https://goos.blog/2022/08/nanopi-r4se/">https://goos.blog/2022/08/nanopi-r4se/</a>
+    <a href="https://goos.blog" class="p-name p-author post-hidden-author h-card" rel="me"></a>
+
+
+    <div class="post-taxonomies">
+        
+            
+    </div>
+</div>
+
+    </article>
+
+    
+        
+        
+    
+
+    
+
+    
+        
+
+
+
+
+
+
+
+    
+
+        </main>
+        
+            <footer class="common-footer">
+    
+    
+
+    <div class="common-footer-bottom">
+        
+        <div class="copyright">
+            <p>© 2023 <a href="mailto:honk@goos.blog">honk@goos.blog</a><br>
+            
+            </p>  
+        </div> 
+
+        
+
+    
+
+
+
+    <button class="theme-switcher">
+        Dark theme
+    </button>
+
+
+<script>
+const STORAGE_KEY = 'user-color-scheme'
+const defaultTheme = "dark"
+
+let currentTheme
+let switchButton
+let autoDefinedScheme = window.matchMedia('(prefers-color-scheme: dark)')
+
+const autoChangeScheme = e => {
+    currentTheme = e.matches ? 'dark' : 'light'
+    document.documentElement.setAttribute('data-theme', currentTheme)
+    changeButtonText()
+}
+
+document.addEventListener('DOMContentLoaded', function() {
+    switchButton = document.querySelector('.theme-switcher')
+    currentTheme = detectCurrentScheme()
+    if (currentTheme == 'dark') {
+        document.documentElement.setAttribute('data-theme', 'dark')
+    }
+    if (currentTheme == 'auto') {
+        autoChangeScheme(autoDefinedScheme);
+        autoDefinedScheme.addListener(autoChangeScheme);
+    }
+
+    if (switchButton) {
+        changeButtonText()
+        switchButton.addEventListener('click', switchTheme, false)
+    }
+  
+    showContent()
+})
+
+function detectCurrentScheme() {
+    if (localStorage.getItem(STORAGE_KEY)) {
+        return localStorage.getItem(STORAGE_KEY)
+    } 
+    if (defaultTheme) {
+        return defaultTheme
+    } 
+    if (!window.matchMedia) {
+        return 'light'
+    } 
+    if (window.matchMedia('(prefers-color-scheme: dark)').matches) {
+        return 'dark'
+    }
+    return 'light'
+}
+
+function changeButtonText()
+{   
+    if (switchButton) {
+        switchButton.textContent = currentTheme == 'dark' ?  "Light theme" : "Dark theme"
+    }
+}
+
+function switchTheme(e) {
+    if (currentTheme == 'dark') {
+        localStorage.setItem(STORAGE_KEY, 'light')
+        document.documentElement.setAttribute('data-theme', 'light')
+        currentTheme = 'light'
+    } else {
+        localStorage.setItem(STORAGE_KEY, 'dark')
+        document.documentElement.setAttribute('data-theme', 'dark')
+        currentTheme = 'dark'
+    }
+    changeButtonText()
+}
+
+function showContent() {
+    document.body.style.visibility = 'visible';
+    document.body.style.opacity = 1;
+}
+</script>   
+    </div>
+
+    <p class="h-card vcard">
+
+    <a href=https://goos.blog class="p-name u-url url fn" rel="me"></a> 
+
+     
+        /
+        <a class="p-email u-email email" rel="me" href="mailto:honk@goos.blog">honk@goos.blog</a>
+    
+
+    
+</p> 
+</footer>
+
+        
+    </div>
+</body>
+</html>
