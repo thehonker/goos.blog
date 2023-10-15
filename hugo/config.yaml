@@ -23,7 +23,7 @@ params:
 
   social:
   - id: github
-    name: g-o-o-s
+    name: thehonker
 
 markup:
   goldmark:

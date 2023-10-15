@@ -6,10 +6,159 @@
     <description>goos.blog (Blogs)</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Sun, 18 Jun 2023 00:00:00 -0400</lastBuildDate>
+    <lastBuildDate>Sat, 14 Oct 2023 00:00:00 -0400</lastBuildDate>
     
     <atom:link href="https://goos.blog/blog/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>The Chromebook `Kevin`</title>
+      <link>https://goos.blog/2023/10/chromebook-kevin/</link>
+      <pubDate>Sat, 14 Oct 2023 00:00:00 -0400</pubDate>
+      
+      <guid>https://goos.blog/2023/10/chromebook-kevin/</guid>
+      <description>&lt;h4 id=&#34;the-aarch64-obsession-continues&#34; &gt;&lt;em&gt;the aarch64 obsession continues&lt;/em&gt;
+&lt;span&gt;
+    &lt;a href=&#34;#the-aarch64-obsession-continues&#34;&gt;
+        &lt;svg viewBox=&#34;0 0 28 23&#34; height=&#34;100%&#34; width=&#34;19&#34; xmlns=&#34;http://www.w3.org/2000/svg&#34;&gt;&lt;path d=&#34;M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71&#34; fill=&#34;none&#34; stroke-linecap=&#34;round&#34; stroke-miterlimit=&#34;10&#34; stroke-width=&#34;2&#34;/&gt;&lt;path d=&#34;M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71&#34; fill=&#34;none&#34; stroke-linecap=&#34;round&#34; stroke-miterlimit=&#34;10&#34; stroke-width=&#34;2&#34;/&gt;&lt;/svg&gt;
+    &lt;/a&gt;
+&lt;/span&gt;
+&lt;/h4&gt;&lt;p&gt;&lt;em&gt;Disclaimer: I wrote most of this about a month after the fact, and am just finishing it up now several months after the initial draft. Details have been forgotten to prevent the innocent.&lt;/em&gt;&lt;/p&gt;
+&lt;p&gt;Almost a year ago I picked up a samsung chromebook plus v1 (or something like that), hardware codename &lt;code&gt;gru-kevin&lt;/code&gt;&lt;/p&gt;
+&lt;p&gt;It has a really nice highdpi square-ish screen, good battery life, usb-c&amp;hellip; what more do you need?&lt;/p&gt;
+&lt;p&gt;I gave chromeos a fair try, and it was kinda nice.&lt;/p&gt;
+&lt;p&gt;Fair number of complaints though:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Running a full ass vm just for a linux env is ugly and slow on the rk3399 inside &lt;code&gt;kevin&lt;/code&gt; &lt;br&gt;
+(that&amp;rsquo;s right, our old friend from rockchip is back)&lt;/li&gt;
+&lt;li&gt;The current state of chromebrew on aarch64 is kinda gross (on top of the existing grossness of chromebrew to begin with)&lt;/li&gt;
+&lt;li&gt;General google-ness of the device overall (probably the biggest yuck of them all)&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;goodbye-chromeos&#34; &gt;goodbye chromeos
+&lt;span&gt;
+    &lt;a href=&#34;#goodbye-chromeos&#34;&gt;
+        &lt;svg viewBox=&#34;0 0 28 23&#34; height=&#34;100%&#34; width=&#34;19&#34; xmlns=&#34;http://www.w3.org/2000/svg&#34;&gt;&lt;path d=&#34;M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71&#34; fill=&#34;none&#34; stroke-linecap=&#34;round&#34; stroke-miterlimit=&#34;10&#34; stroke-width=&#34;2&#34;/&gt;&lt;path d=&#34;M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71&#34; fill=&#34;none&#34; stroke-linecap=&#34;round&#34; stroke-miterlimit=&#34;10&#34; stroke-width=&#34;2&#34;/&gt;&lt;/svg&gt;
+    &lt;/a&gt;
+&lt;/span&gt;
+&lt;/h2&gt;&lt;p&gt;So, as I&amp;rsquo;m sure you guessed, I decided to put a normal linux on it. &lt;br&gt;
+A good amount of googling lead me to
+&lt;a href=&#34;https://github.com/Maccraft123/Cadmium&#34;&gt;Cadmium&lt;/a&gt;, a set of image building tools for aarch64 chromebooks. &lt;br&gt;
+Actual :shock:, kevin is on the support list!&lt;/p&gt;
+&lt;p&gt;I cloned the repo and started poking at it. &lt;br&gt;
+There hadn&amp;rsquo;t been a release in a few years, and autobuilds were broken.
+It didn&amp;rsquo;t look good but it was a starting point so I dove in.
+A few hours of pain later and I had an image of the right size and shape.&lt;/p&gt;
+&lt;p&gt;Would it boot? I dd&amp;rsquo;d it over to a thumbdrive, ready to give it a try.
+But first I had to enable developer mode in chromeos so I could boot from usb in the first place.&lt;/p&gt;
+&lt;p&gt;A few incantations later, my laptop was making a (very) loud BOOP BOOP at startup and showed a very scary looking warning screen saying the firmware was unlocked. I guess whatever I did worked.&lt;/p&gt;
+&lt;p&gt;A few attempts at catching the &lt;code&gt;^d&lt;/code&gt; usb boot trigger later and I&amp;rsquo;m at a login screen.&lt;/p&gt;
+&lt;p&gt;Some dd to copy the kernel and rootfs partitions from the thumbdrive to the emmc and I have a persistent ubuntu to boot to.&lt;/p&gt;
+&lt;p&gt;I installed the ubuntu-desktop metapackage, logged in, setup my stuff. It all worked, but it was pretty slow. Still though. ARM64 laptop!&lt;/p&gt;
+&lt;h2 id=&#34;please-make-it-stop&#34; &gt;please make it stop
+&lt;span&gt;
+    &lt;a href=&#34;#please-make-it-stop&#34;&gt;
+        &lt;svg viewBox=&#34;0 0 28 23&#34; height=&#34;100%&#34; width=&#34;19&#34; xmlns=&#34;http://www.w3.org/2000/svg&#34;&gt;&lt;path d=&#34;M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71&#34; fill=&#34;none&#34; stroke-linecap=&#34;round&#34; stroke-miterlimit=&#34;10&#34; stroke-width=&#34;2&#34;/&gt;&lt;path d=&#34;M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71&#34; fill=&#34;none&#34; stroke-linecap=&#34;round&#34; stroke-miterlimit=&#34;10&#34; stroke-width=&#34;2&#34;/&gt;&lt;/svg&gt;
+    &lt;/a&gt;
+&lt;/span&gt;
+&lt;/h2&gt;&lt;p&gt;There were a few annoyances though, listed here in descending order&amp;hellip;&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;That BOOP BOOP at startup. I cannot stress just how loud this was.&lt;/li&gt;
+&lt;li&gt;The fact that it still ran a google built firmware&lt;/li&gt;
+&lt;li&gt;The microsd card slot didn&amp;rsquo;t work (with chromebook firmware in dev mode it&amp;rsquo;s a jtag)&lt;/li&gt;
+&lt;li&gt;The weird A+B chromeos partition layout that I had to conform to&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;So. What can we do about that. The sdcard slot not working smells like a device tree issue. The rest of it I&amp;rsquo;m not yet sure if I can even address&amp;hellip;&lt;/p&gt;
+&lt;p&gt;First though. I&amp;rsquo;ve run through cadmium&amp;rsquo;s build process a few times now, and it&amp;rsquo;s&amp;hellip;. annoying. No offense. We all just like to do things our own way I guess.&lt;/p&gt;
+&lt;p&gt;So, naturally, I did. A medium amount of bash scripting later lead to the birth of &lt;a href=&#34;https://github.com/potassium-os/potassium&#34;&gt;Potassium-OS&lt;/a&gt;.
+This allowed me to break the build into better segmented stages.
+With this tooling in hand I was able to easily rebuild just the device tree and kernel, or just the rootfs, or both.&lt;/p&gt;
+&lt;p&gt;Some amount of messing with the device tree later and I didn&amp;rsquo;t have the sdcard slot working yet. Bummer, as I had visions of storing multiple different os builds on different sdcards, and switching between them at will. At some point I read a mailing list or commit message or something that mentioned that the sdcard slot on kevin is converted into a jtag of some sort when some bit is set in the eeprom. These feature bits are programmed by the firmware, and while I can read them from the os, trying to edit them doesn&amp;rsquo;t do anything.&lt;/p&gt;
+&lt;p&gt;I resigned myself to having a mostly-working aarch64 laptop.&lt;br&gt;
+Cool enough for me, right?&lt;/p&gt;
+&lt;h2 id=&#34;never-good-enough&#34; &gt;never good enough
+&lt;span&gt;
+    &lt;a href=&#34;#never-good-enough&#34;&gt;
+        &lt;svg viewBox=&#34;0 0 28 23&#34; height=&#34;100%&#34; width=&#34;19&#34; xmlns=&#34;http://www.w3.org/2000/svg&#34;&gt;&lt;path d=&#34;M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71&#34; fill=&#34;none&#34; stroke-linecap=&#34;round&#34; stroke-miterlimit=&#34;10&#34; stroke-width=&#34;2&#34;/&gt;&lt;path d=&#34;M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71&#34; fill=&#34;none&#34; stroke-linecap=&#34;round&#34; stroke-miterlimit=&#34;10&#34; stroke-width=&#34;2&#34;/&gt;&lt;/svg&gt;
+    &lt;/a&gt;
+&lt;/span&gt;
+&lt;/h2&gt;&lt;p&gt;Nah.&lt;/p&gt;
+&lt;p&gt;I wasn&amp;rsquo;t going to give up until at least item 1 from above was gone.
+Wasn&amp;rsquo;t sure how to approach this, I did load up the google firmware in a hex editor to see&amp;hellip;. nothing. I can&amp;rsquo;t really operate on that low a level.&lt;/p&gt;
+&lt;p&gt;Then I remembered that coreboot/libreboot/etc is a thing, especially for chromebooks. However all their attention in the past had been focused on x86 support, and I&amp;rsquo;m over here with a &amp;ldquo;rare&amp;rdquo; aarch64 device. &lt;br&gt;
+No chance libreboot is gonna support this.&lt;/p&gt;
+&lt;p&gt;Right?&lt;/p&gt;
+&lt;p&gt;It turns out that libreboot had &lt;em&gt;&lt;strong&gt;just&lt;/strong&gt;&lt;/em&gt; merged one of their forks back in. A fork that was focused on adding aarch64 support to libreboot. I can&amp;rsquo;t find the news post as of this writing, but it had happened like a week before I got the laptop and started on this adventure.&lt;/p&gt;
+&lt;p&gt;It was&amp;hellip; shockingly easy to get libreboot built for &lt;code&gt;gru-kevin&lt;/code&gt;. &lt;br&gt;
+The board configs were already there. I just tweaked a few small things to suit my preferences, typed make, and was given a binary blob to flash.&lt;/p&gt;
+&lt;h2 id=&#34;adventures-in-spi&#34; &gt;adventures in spi
+&lt;span&gt;
+    &lt;a href=&#34;#adventures-in-spi&#34;&gt;
+        &lt;svg viewBox=&#34;0 0 28 23&#34; height=&#34;100%&#34; width=&#34;19&#34; xmlns=&#34;http://www.w3.org/2000/svg&#34;&gt;&lt;path d=&#34;M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71&#34; fill=&#34;none&#34; stroke-linecap=&#34;round&#34; stroke-miterlimit=&#34;10&#34; stroke-width=&#34;2&#34;/&gt;&lt;path d=&#34;M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71&#34; fill=&#34;none&#34; stroke-linecap=&#34;round&#34; stroke-miterlimit=&#34;10&#34; stroke-width=&#34;2&#34;/&gt;&lt;/svg&gt;
+    &lt;/a&gt;
+&lt;/span&gt;
+&lt;/h2&gt;&lt;p&gt;Fun fact, (most) chromebooks have a firmware write protect screw. Remove the screw, and you can flash the firmware from inside the running os. Pretty cool, right?&lt;/p&gt;
+&lt;p&gt;Except&amp;hellip;. where is it? There&amp;rsquo;s no WP screw visible on the top side of the board, even though the actual flash chip is right there:&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://goos.blog/2023/10/chromebook-kevin/IMG_3759.jpeg&#34; alt=&#34;gru-kevin firmware spi flash&#34;&gt;&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;There it is, now if only I could write to it&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;A few dozen googles lead me to a mailing list thread where someone mentioned that the WP screw is &lt;em&gt;&lt;strong&gt;UNDER THE HEATSINK&lt;/strong&gt;&lt;/em&gt; on the gru-kevin mainboard.&lt;/p&gt;
+&lt;p&gt;Normally this would be acceptable. Except that on kevin, the heatsink is riveted in place. It&amp;rsquo;s not coming off without an amount of effort I&amp;rsquo;m not going to put into it.&lt;/p&gt;
+&lt;p&gt;So I looked into manually flashing the spi bios chip guy. It wasn&amp;rsquo;t actually that difficult or scary of a process, despite what the internet tells you. You&amp;rsquo;re just flashing a spi chip. That&amp;rsquo;s all.&lt;/p&gt;
+&lt;p&gt;First I read the firmware inband from inside the os. About 10 times. And I sha256&amp;rsquo;d each copy to make sure they were all the same. AND remembered to copy it elsewhere. Then I dug through the parts bin and found a chip clip for our soic-8 spi flash friend. &lt;br&gt;
+I thought about using an arduino as a flasher (I had in the past for a parallel access flash chip) until I remembered that raspberry pi&amp;rsquo;s are a thing and they have spi lanes and gpio as well. Way easier.&lt;/p&gt;
+&lt;p&gt;A quick check of the pinout and some soldering/crimping later and I had this kinda thing happening:&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://goos.blog/2023/10/chromebook-kevin/IMG_3811.jpeg&#34; alt=&#34;a raspberry pi setup as a spi flasher hooked up to a gru-kevin mainboard&#34;&gt;&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;Peep that brains:battery ratio tho&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;As of this writing I neither remember what software I used to flash or where that flasher assembly is, RIP. I feel like I wrote a small wrapper to set CS and WE on the spi chip properly before/after flashing.&lt;/p&gt;
+&lt;p&gt;The first flashing was exciting but uneventful. I read in the flash a few times, shasum&amp;rsquo;ed it against the blobs I had pulled from inband, they matched. I type the incantation to flash the chip, and it flashes. I read it back again, and it shasums to the same as my libreboot output.&lt;/p&gt;
+&lt;p&gt;Woohoo!&lt;/p&gt;
+&lt;p&gt;I plug the battery back in and hit the power button. &lt;br&gt;
+A few seconds pass and I see the kernel startup. &lt;br&gt;
+No BOOP BOOP this time! No scary big red box on the screen!&lt;/p&gt;
+&lt;h2 id=&#34;make-it-modern&#34; &gt;make it modern
+&lt;span&gt;
+    &lt;a href=&#34;#make-it-modern&#34;&gt;
+        &lt;svg viewBox=&#34;0 0 28 23&#34; height=&#34;100%&#34; width=&#34;19&#34; xmlns=&#34;http://www.w3.org/2000/svg&#34;&gt;&lt;path d=&#34;M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71&#34; fill=&#34;none&#34; stroke-linecap=&#34;round&#34; stroke-miterlimit=&#34;10&#34; stroke-width=&#34;2&#34;/&gt;&lt;path d=&#34;M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71&#34; fill=&#34;none&#34; stroke-linecap=&#34;round&#34; stroke-miterlimit=&#34;10&#34; stroke-width=&#34;2&#34;/&gt;&lt;/svg&gt;
+    &lt;/a&gt;
+&lt;/span&gt;
+&lt;/h2&gt;&lt;p&gt;That wasn&amp;rsquo;t enough though.&lt;/p&gt;
+&lt;p&gt;My sdcard slot still wasn&amp;rsquo;t working, and I still had to stick to the chromeos 2-kernel-1-rootfs layout.&lt;/p&gt;
+&lt;p&gt;Turns out that libreboot was shipping this sorta setup for my firmware:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;coreboot as 1st stage&lt;/li&gt;
+&lt;li&gt;uboot as a payload of coreboot&lt;/li&gt;
+&lt;li&gt;uboot was configured to boot a chromeos partition layout&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;So. It&amp;rsquo;s u-boot. I know how to configure that. &lt;br&gt;
+A few menuconfigs and flashes and &amp;ldquo;why u no boot&amp;rdquo;&amp;rsquo;s later, and I had u-boot providing a uefi enviroment that then booted an efi kernel stub (although I could have used grub2 or similar).&lt;/p&gt;
+&lt;p&gt;Somewhere in this the sdcard slot started working. Either right when I flashed libreboot the first time (which could have disabled the dev-mode that exposed jtag pins on that socket, as that was being enabled by chromeos firmware in dev mode), or somewhere in u-boot/coreboot configuration I saw the option to disable the jtag on it. Either way my sdcard slot was working.&lt;/p&gt;
+&lt;p&gt;At this point I had what equated to any other laptop with modern firmware.
+I didn&amp;rsquo;t have a boot menu yet as I hadn&amp;rsquo;t taken the time to set one up in u-boot. But I could boot from emmc, usb, sdcard, even usb nic pxe.&lt;/p&gt;
+&lt;h2 id=&#34;next-steps-further-annoyances&#34; &gt;next steps, further annoyances
+&lt;span&gt;
+    &lt;a href=&#34;#next-steps-further-annoyances&#34;&gt;
+        &lt;svg viewBox=&#34;0 0 28 23&#34; height=&#34;100%&#34; width=&#34;19&#34; xmlns=&#34;http://www.w3.org/2000/svg&#34;&gt;&lt;path d=&#34;M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71&#34; fill=&#34;none&#34; stroke-linecap=&#34;round&#34; stroke-miterlimit=&#34;10&#34; stroke-width=&#34;2&#34;/&gt;&lt;path d=&#34;M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71&#34; fill=&#34;none&#34; stroke-linecap=&#34;round&#34; stroke-miterlimit=&#34;10&#34; stroke-width=&#34;2&#34;/&gt;&lt;/svg&gt;
+    &lt;/a&gt;
+&lt;/span&gt;
+&lt;/h2&gt;&lt;p&gt;Now that we can boot reliably and in a modern way, let&amp;rsquo;s fix up some of the annoyances in lolbuntu. Wayland was remarkably stable, more stable than x11 on this hardware even! However, fractional scaling made the gpu hurt, bad. Anything graphically intensive ran at slideshow speeds. &lt;br&gt;
+This kinda sucked, as I had really hoped to use this as a notes-taking tablet most of the time. Another use case was tuning the megasquirt in my na6. While it has enough stronk to run tunerstudio, the update rate on the gauges and datalogging was horrible. Maybe 5 frames per second. Not nearly enough.&lt;/p&gt;
+&lt;p&gt;Kevin was plenty for light laptopping but not quite enough for what I wanted here.&lt;/p&gt;
+&lt;h2 id=&#34;can-you-close-for-me&#34; &gt;can you close for me
+&lt;span&gt;
+    &lt;a href=&#34;#can-you-close-for-me&#34;&gt;
+        &lt;svg viewBox=&#34;0 0 28 23&#34; height=&#34;100%&#34; width=&#34;19&#34; xmlns=&#34;http://www.w3.org/2000/svg&#34;&gt;&lt;path d=&#34;M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71&#34; fill=&#34;none&#34; stroke-linecap=&#34;round&#34; stroke-miterlimit=&#34;10&#34; stroke-width=&#34;2&#34;/&gt;&lt;path d=&#34;M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71&#34; fill=&#34;none&#34; stroke-linecap=&#34;round&#34; stroke-miterlimit=&#34;10&#34; stroke-width=&#34;2&#34;/&gt;&lt;/svg&gt;
+    &lt;/a&gt;
+&lt;/span&gt;
+&lt;/h2&gt;&lt;p&gt;I&amp;rsquo;ll be honest, &lt;code&gt;kevin&lt;/code&gt; has been turned back into a chromebook and given to my parents.&lt;/p&gt;
+&lt;p&gt;I ended up buying another aarch64 laptop (Samsung galaxy book go 5G), this one has a Qualcomm 8cx gen2 in it.&lt;/p&gt;
+&lt;p&gt;Quite a step up from the rk3399 in kevin. It&amp;rsquo;s still running samsung firmware (which does provide a uefi) and windows 11 (yuck), but that might change soon.&lt;/p&gt;
+&lt;p&gt;What will I do with Potassium now? I think I&amp;rsquo;ll clean up the repos, get my libreboot changes into a repo, fix up uboot to be more friendly, and then archive it all.&lt;/p&gt;
+&lt;p&gt;I think in the future I&amp;rsquo;ll use that org for other aarch64 things, so keep an eye on it for fun things to come.&lt;/p&gt;
+</description>
+    </item>
     
     <item>
       <title>I&#39;m doing Science and I&#39;m still alive</title>
@@ -1705,7 +1854,7 @@ I have grand ideas for a boot-to-csgo linux install, we&amp;rsquo;ll see if I fi
 &lt;p&gt;Yes (even though I&amp;rsquo;ve spent $700 in the past two days on more wam and a gpu for armitage).&lt;/p&gt;
 &lt;p&gt;Could I have just stuck with winderp or installed a linux?&lt;/p&gt;
 &lt;p&gt;Sure. But where&amp;rsquo;s the fun in that?&lt;/p&gt;
-&lt;p&gt;&lt;img src=&#34;https://goos.blog/2022/04/macos_adventures/great_success.png&#34; alt=&#34;Screenshot of &amp;amp;ldquo;About this Mac&amp;amp;rdquo; and &amp;amp;ldquo;Neofetch&amp;amp;rdquo;&#34;&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://goos.blog/2022/04/macos_adventures/great_success.png&#34; alt=&#34;Screenshot of &amp;ldquo;About this Mac&amp;rdquo; and &amp;ldquo;Neofetch&amp;rdquo;&#34;&gt;&lt;/p&gt;
 </description>
     </item>
     

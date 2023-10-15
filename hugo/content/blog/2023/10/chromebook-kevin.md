@@ -1,7 +1,7 @@
 ---
 title: "The Chromebook `Kevin`"
 date: 2023-10-14T00:00:00-04:00
-draft: true
+draft: false
 tagline: "10/10 on the cute scale"
 slug: chromebook-kevin
 ---
@@ -12,7 +12,7 @@ slug: chromebook-kevin
 
 Almost a year ago I picked up a samsung chromebook plus v1 (or something like that), hardware codename `gru-kevin`
 
-It has a really nice non-16x9 screen, good battery life, usb-c... what more do you need?
+It has a really nice highdpi square-ish screen, good battery life, usb-c... what more do you need?
 
 I gave chromeos a fair try, and it was kinda nice.
 
@@ -42,7 +42,7 @@ A few incantations later, my laptop was making a (very) loud BOOP BOOP at startu
 
 A few attempts at catching the `^d` usb boot trigger later and I'm at a login screen.
 
-Some dd to copy the thumbdrive's kernel and rootfs partitions to the emmc and I have a persistent ubuntu to boot to.
+Some dd to copy the kernel and rootfs partitions from the thumbdrive to the emmc and I have a persistent ubuntu to boot to.
 
 I installed the ubuntu-desktop metapackage, logged in, setup my stuff. It all worked, but it was pretty slow. Still though. ARM64 laptop!
 
@@ -80,7 +80,7 @@ No chance libreboot is gonna support this.
 
 Right?
 
-It turns out that libreboot had ***just*** merged one of their forks back in. A fork that was focused on adding aarch64 support to libreboot. I can't find the news post as of this writing, but it had happened like a week before I got the laptop.
+It turns out that libreboot had ***just*** merged one of their forks back in. A fork that was focused on adding aarch64 support to libreboot. I can't find the news post as of this writing, but it had happened like a week before I got the laptop and started on this adventure.
 
 It was... shockingly easy to get libreboot built for `gru-kevin`. \
 The board configs were already there. I just tweaked a few small things to suit my preferences, typed make, and was given a binary blob to flash.
@@ -142,7 +142,7 @@ I didn't have a boot menu yet as I hadn't taken the time to set one up in u-boot
 ## next steps, further annoyances
 
 Now that we can boot reliably and in a modern way, let's fix up some of the annoyances in lolbuntu. Wayland was remarkably stable, more stable than x11 on this hardware even! However, fractional scaling made the gpu hurt, bad. Anything graphically intensive ran at slideshow speeds. \
-This kinda sucked, as I had really hoped to use this as a notes-taking tablet most of the time. Another use case was tuning the megasquirt in my na6. While it has enough stronk to run tunerstudio (java is java after all), the update rate on the gauges and datalogging was horrible. Maybe 5 frames per second. Not nearly enough.
+This kinda sucked, as I had really hoped to use this as a notes-taking tablet most of the time. Another use case was tuning the megasquirt in my na6. While it has enough stronk to run tunerstudio, the update rate on the gauges and datalogging was horrible. Maybe 5 frames per second. Not nearly enough.
 
 Kevin was plenty for light laptopping but not quite enough for what I wanted here.
 
@@ -150,7 +150,9 @@ Kevin was plenty for light laptopping but not quite enough for what I wanted her
 
 I'll be honest, `kevin` has been turned back into a chromebook and given to my parents.
 
-I ended up buying another aarch64 laptop (Samsung galaxy book go 5G), this one has a Qualcomm 8cx gen2 though. Quite a step up from the rk3399 in kevin. It's still running samsung firmware (which does provide a uefi) and windows 11 (yuck), but that might change soon.
+I ended up buying another aarch64 laptop (Samsung galaxy book go 5G), this one has a Qualcomm 8cx gen2 in it.
+
+Quite a step up from the rk3399 in kevin. It's still running samsung firmware (which does provide a uefi) and windows 11 (yuck), but that might change soon.
 
 What will I do with Potassium now? I think I'll clean up the repos, get my libreboot changes into a repo, fix up uboot to be more friendly, and then archive it all.
 
