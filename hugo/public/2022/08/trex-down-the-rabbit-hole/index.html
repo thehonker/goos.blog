@@ -1,0 +1,486 @@
+<!DOCTYPE html>
+
+
+<html lang="en-us" data-theme="">
+<head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script>
+    
+        
+<meta charset="utf-8">
+<meta name="HandheldFriendly" content="True">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="referrer" content="no-referrer-when-downgrade">
+
+<title>Cisco T-Rex: Further down the rabbit hole... - goos.blog</title>
+
+<meta name="description" content="why not just learn python dude&hellip;. Because I can&rsquo;t stand it, that&rsquo;s why. Plus I really do like nodejs. Plus everything Cisco has provided is an absolute mess.
+I&rsquo;m already doing my graphing and analysis in js, and I&rsquo;m thinking now it&rsquo;d be Really Cool to have a webui of some sort in the future. The zmq rpc documetation is pretty accurate. There&rsquo;s a few gaps but nothing too horrible.">
+
+
+
+
+
+<link rel="icon" type="image/x-icon" href="http://localhost:1313/favicon.ico">
+<link rel="apple-touch-icon-precomposed" href="http://localhost:1313/favicon.png">
+
+
+<style>
+  body {
+    visibility: hidden;
+    opacity: 0;
+  }
+</style>
+
+<noscript>
+  <style>
+    body {
+      visibility: visible;
+      opacity: 1;
+    }
+  </style>
+</noscript>
+
+
+
+    
+
+
+
+
+
+    
+    
+    
+
+    
+        <link rel="stylesheet" href="http://localhost:1313/css/style.179bc32029f373a425c4c62b4bd0eed76fc85ce93c30e08cf1cd908a69e0ec9e.css" integrity="sha256-F5vDICnzc6QlxMYrS9Du12/IXOk8MOCM8c2Qimng7J4=">
+    
+
+
+
+
+
+    
+
+    
+
+
+
+
+
+    
+    
+    
+
+    
+        <script src="http://localhost:1313/js/script.32e751300d2d69e2cb56a98d2c9d964d54a53a8fb7281ccdbd80f055c88e8d86.js" type="text/javascript" charset="utf-8" integrity="sha256-MudRMA0taeLLVqmNLJ2WTVSlOo&#43;3KBzNvYDwVciOjYY="></script>
+    
+
+
+
+
+
+
+
+<meta property="og:url" content="http://localhost:1313/2022/08/trex-down-the-rabbit-hole/">
+  <meta property="og:site_name" content="goos.blog">
+  <meta property="og:title" content="Cisco T-Rex: Further down the rabbit hole...">
+  <meta property="og:description" content="why not just learn python dude…. Because I can’t stand it, that’s why. Plus I really do like nodejs. Plus everything Cisco has provided is an absolute mess.
+I’m already doing my graphing and analysis in js, and I’m thinking now it’d be Really Cool to have a webui of some sort in the future. The zmq rpc documetation is pretty accurate. There’s a few gaps but nothing too horrible.">
+  <meta property="og:locale" content="en-us">
+  <meta property="og:type" content="article">
+    <meta property="article:section" content="blog">
+    <meta property="article:published_time" content="2022-08-25T00:00:00-04:00">
+    <meta property="article:modified_time" content="2022-08-25T00:00:00-04:00">
+
+<meta name="twitter:card" content="summary"><meta name="twitter:title" content="Cisco T-Rex: Further down the rabbit hole...">
+<meta name="twitter:description" content="why not just learn python dude&hellip;. Because I can&rsquo;t stand it, that&rsquo;s why. Plus I really do like nodejs. Plus everything Cisco has provided is an absolute mess.
+I&rsquo;m already doing my graphing and analysis in js, and I&rsquo;m thinking now it&rsquo;d be Really Cool to have a webui of some sort in the future. The zmq rpc documetation is pretty accurate. There&rsquo;s a few gaps but nothing too horrible.">
+
+
+
+
+
+
+
+
+
+
+
+    
+</head>
+<body>
+    <a class="skip-main" href="#main">Skip to main content</a>
+    <div class="container">
+        <header class="common-header"> 
+            
+                <div class="header-top">
+    <h1 class="site-title">
+    <a href="/">goos.blog</a>
+</h1>
+    <ul class="social-icons">
+
+
+    
+        
+        
+        <li>
+            <a href="https://github.com/thehonker" title="Github" rel="me">
+            <span class="inline-svg" >
+
+
+
+
+    
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 496 512"><path fill="currentColor" d="M165.9 397.4c0 2-2.3 3.6-5.2 3.6-3.3.3-5.6-1.3-5.6-3.6 0-2 2.3-3.6 5.2-3.6 3-.3 5.6 1.3 5.6 3.6zm-31.1-4.5c-.7 2 1.3 4.3 4.3 4.9 2.6 1 5.6 0 6.2-2s-1.3-4.3-4.3-5.2c-2.6-.7-5.5.3-6.2 2.3zm44.2-1.7c-2.9.7-4.9 2.6-4.6 4.9.3 2 2.9 3.3 5.9 2.6 2.9-.7 4.9-2.6 4.6-4.6-.3-1.9-3-3.2-5.9-2.9zM244.8 8C106.1 8 0 113.3 0 252c0 110.9 69.8 205.8 169.5 239.2 12.8 2.3 17.3-5.6 17.3-12.1 0-6.2-.3-40.4-.3-61.4 0 0-70 15-84.7-29.8 0 0-11.4-29.1-27.8-36.6 0 0-22.9-15.7 1.6-15.4 0 0 24.9 2 38.6 25.8 21.9 38.6 58.6 27.5 72.9 20.9 2.3-16 8.8-27.1 16-33.7-55.9-6.2-112.3-14.3-112.3-110.5 0-27.5 7.6-41.3 23.6-58.9-2.6-6.5-11.1-33.3 2.6-67.9 20.9-6.5 69 27 69 27 20-5.6 41.5-8.5 62.8-8.5s42.8 2.9 62.8 8.5c0 0 48.1-33.6 69-27 13.7 34.7 5.2 61.4 2.6 67.9 16 17.7 25.8 31.5 25.8 58.9 0 96.5-58.9 104.2-114.8 110.5 9.2 7.9 17 22.9 17 46.4 0 33.7-.3 75.4-.3 83.6 0 6.5 4.6 14.4 17.3 12.1C428.2 457.8 496 362.9 496 252 496 113.3 383.5 8 244.8 8zM97.2 352.9c-1.3 1-1 3.3.7 5.2 1.6 1.6 3.9 2.3 5.2 1 1.3-1 1-3.3-.7-5.2-1.6-1.6-3.9-2.3-5.2-1zm-10.8-8.1c-.7 1.3.3 2.9 2.3 3.9 1.6 1 3.6.7 4.3-.7.7-1.3-.3-2.9-2.3-3.9-2-.6-3.6-.3-4.3.7zm32.4 35.6c-1.6 1.3-1 4.3 1.3 6.2 2.3 2.3 5.2 2.6 6.5 1 1.3-1.3.7-4.3-1.3-6.2-2.2-2.3-5.2-2.6-6.5-1zm-11.4-14.7c-1.6 1-1.6 3.6 0 5.9 1.6 2.3 4.3 3.3 5.6 2.3 1.6-1.3 1.6-3.9 0-6.2-1.4-2.3-4-3.3-5.6-2z"/></svg>
+
+</span>
+
+            </a>
+        </li>
+    
+
+
+
+    <li>
+            <a href="http://localhost:1313/index.xml" title="RSS" rel="me">
+            <span class="inline-svg" >
+
+
+
+
+    
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><path fill="currentColor" d="M128.081 415.959c0 35.369-28.672 64.041-64.041 64.041S0 451.328 0 415.959s28.672-64.041 64.041-64.041 64.04 28.673 64.04 64.041zm175.66 47.25c-8.354-154.6-132.185-278.587-286.95-286.95C7.656 175.765 0 183.105 0 192.253v48.069c0 8.415 6.49 15.472 14.887 16.018 111.832 7.284 201.473 96.702 208.772 208.772.547 8.397 7.604 14.887 16.018 14.887h48.069c9.149.001 16.489-7.655 15.995-16.79zm144.249.288C439.596 229.677 251.465 40.445 16.503 32.01 7.473 31.686 0 38.981 0 48.016v48.068c0 8.625 6.835 15.645 15.453 15.999 191.179 7.839 344.627 161.316 352.465 352.465.353 8.618 7.373 15.453 15.999 15.453h48.068c9.034-.001 16.329-7.474 16.005-16.504z"/></svg>
+
+</span>
+
+            </a>
+        </li>
+    
+
+</ul>
+</div>
+
+    <nav></nav>
+
+
+
+
+            
+        </header>
+        <main id="main" tabindex="-1"> 
+            
+    
+
+    <article class="post h-entry">
+        <div class="post-header">
+            <header>
+                <h1 class="p-name post-title">Cisco T-Rex: Further down the rabbit hole...</h1>
+
+                
+            </header>
+        </div>
+        <div class="content e-content">
+            <h4 id="why-not-just-learn-python-dude" ><em>why not just learn python dude&hellip;.</em>
+<span>
+    <a href="#why-not-just-learn-python-dude">
+        <svg viewBox="0 0 28 23" height="100%" width="19" xmlns="http://www.w3.org/2000/svg"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71" fill="none" stroke-linecap="round" stroke-miterlimit="10" stroke-width="2"/><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71" fill="none" stroke-linecap="round" stroke-miterlimit="10" stroke-width="2"/></svg>
+    </a>
+</span>
+</h4><p>Because I can&rsquo;t stand it, that&rsquo;s why. <br>
+Plus I really do like nodejs. <br>
+Plus everything Cisco has provided is an absolute mess.</p>
+<p>I&rsquo;m already doing my graphing and analysis in js, and I&rsquo;m thinking now it&rsquo;d be Really Cool to have a webui of some sort in the future. <br>
+<a href="https://trex-tgn.cisco.com/trex/doc/trex_rpc_server_spec.html">The zmq rpc documetation</a> is pretty accurate. There&rsquo;s a few gaps but nothing too horrible.</p>
+<h2 id="the-library" >the library
+<span>
+    <a href="#the-library">
+        <svg viewBox="0 0 28 23" height="100%" width="19" xmlns="http://www.w3.org/2000/svg"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71" fill="none" stroke-linecap="round" stroke-miterlimit="10" stroke-width="2"/><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71" fill="none" stroke-linecap="round" stroke-miterlimit="10" stroke-width="2"/></svg>
+    </a>
+</span>
+</h2><p><a href="https://github.com/velocipacktor/jsrex">https://github.com/velocipacktor/jsrex</a></p>
+<p>Here&rsquo;s the node lib for the t-rex zmq server. There&rsquo;s a few examples under the <code>examples/</code> directory, <br>
+I&rsquo;m going to move them into their own repo soon though (will updoot this post with a link).</p>
+<h2 id="the-conversion-tool" >the conversion tool
+<span>
+    <a href="#the-conversion-tool">
+        <svg viewBox="0 0 28 23" height="100%" width="19" xmlns="http://www.w3.org/2000/svg"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71" fill="none" stroke-linecap="round" stroke-miterlimit="10" stroke-width="2"/><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71" fill="none" stroke-linecap="round" stroke-miterlimit="10" stroke-width="2"/></svg>
+    </a>
+</span>
+</h2><p>All the sample ASTF profiles that Cisco provides are in python. This is great and all because the JSON format is pure aids to read, but I do need the profile in json format in order to run it with my js tooling.</p>
+<p>The python lib &ldquo;compiles&rdquo; the profile template into json before submitting it to the t-rex server. <br>
+The bad news here is that replicating the json conversion ourselves would be a Lot of work.</p>
+<p>Thankfully the <code>ASTFTemplate</code> class in the python lib actually exposes a <a href="https://github.com/cisco-system-traffic-generator/trex-core/blob/master/scripts/automation/trex_control_plane/interactive/trex/astf/trex_astf_profile.py#L1921">to_json_str()</a> function that we can just call.</p>
+<p>It took some googling and playing around but I was able to get it working in a reasonable amount of time.</p>
+<p>The resulting conversion ended up looking like this:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span>module <span style="color:#f92672">=</span> importlib<span style="color:#f92672">.</span>import_module(file, package<span style="color:#f92672">=</span><span style="color:#e6db74">&#39;./&#39;</span>)
+</span></span><span style="display:flex;"><span>profile <span style="color:#f92672">=</span> module<span style="color:#f92672">.</span>register()<span style="color:#f92672">.</span>get_profile(<span style="color:#e6db74">&#39;&#39;</span>)
+</span></span><span style="display:flex;"><span>profile<span style="color:#f92672">.</span>to_json_str()
+</span></span></code></pre></div><p>There&rsquo;s a howto in <a href="https://github.com/velocipacktor/pyastf-json-convertor">the repo</a></p>
+<h2 id="making-some-graphs" >making some graphs
+<span>
+    <a href="#making-some-graphs">
+        <svg viewBox="0 0 28 23" height="100%" width="19" xmlns="http://www.w3.org/2000/svg"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71" fill="none" stroke-linecap="round" stroke-miterlimit="10" stroke-width="2"/><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71" fill="none" stroke-linecap="round" stroke-miterlimit="10" stroke-width="2"/></svg>
+    </a>
+</span>
+</h2><p>It was easier to capture data now that everything was being done in one process. <br>
+I started to rewrite my benchmark sequencer to make use of jsrex. <br>
+I added the ability to load profile templates as es6 imports, native t-rex json, and as python templates. <br>
+That last one was important as there are a lot of sample templates provided by Cisco that I want to be able to easily use. <br>
+In the short/mid term it&rsquo;ll also be easier for me to cook my own profiles in python - the python lib has a lot of helper functions to build the profile.</p>
+<blockquote>
+<p><a href="https://github.com/velocipacktor/trex-benchmark-sequence/blob/main/profiles/stl/udp_linerate_4_streams.py">udp_linerate_4_streams.py</a>:</p>
+</blockquote>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span><span style="color:#f92672">from</span> trex_stl_lib.api <span style="color:#f92672">import</span> <span style="color:#f92672">*</span>
+</span></span><span style="display:flex;"><span><span style="color:#f92672">import</span> argparse
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">class</span> <span style="color:#a6e22e">STLS1</span>(object):
+</span></span><span style="display:flex;"><span>  <span style="color:#66d9ef">def</span> <span style="color:#a6e22e">create_stream</span> (self, src_addr, dst_addr, size, load):
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">return</span> STLStream(
+</span></span><span style="display:flex;"><span>      packet <span style="color:#f92672">=</span> 
+</span></span><span style="display:flex;"><span>          STLPktBuilder(
+</span></span><span style="display:flex;"><span>            pkt <span style="color:#f92672">=</span> Ether()<span style="color:#f92672">/</span>IP(src<span style="color:#f92672">=</span>src_addr,dst<span style="color:#f92672">=</span>dst_addr)<span style="color:#f92672">/</span>
+</span></span><span style="display:flex;"><span>                UDP(dport<span style="color:#f92672">=</span><span style="color:#ae81ff">12</span>,sport<span style="color:#f92672">=</span><span style="color:#ae81ff">1025</span>)<span style="color:#f92672">/</span>(size<span style="color:#f92672">*</span><span style="color:#e6db74">&#39;x&#39;</span>) <span style="color:#75715e"># build packets filled with &#39;size * x&#39; </span>
+</span></span><span style="display:flex;"><span>          ),
+</span></span><span style="display:flex;"><span>      <span style="color:#75715e"># fill the pipe</span>
+</span></span><span style="display:flex;"><span>       mode <span style="color:#f92672">=</span> STLTXCont( percentage <span style="color:#f92672">=</span> load <span style="color:#f92672">/</span> <span style="color:#ae81ff">4</span> ))
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>  <span style="color:#66d9ef">def</span> <span style="color:#a6e22e">get_streams</span> (self, tunables, <span style="color:#f92672">**</span>kwargs):
+</span></span><span style="display:flex;"><span>    parser <span style="color:#f92672">=</span> argparse<span style="color:#f92672">.</span>ArgumentParser(description<span style="color:#f92672">=</span><span style="color:#e6db74">&#39;Argparser for </span><span style="color:#e6db74">{}</span><span style="color:#e6db74">&#39;</span><span style="color:#f92672">.</span>format(os<span style="color:#f92672">.</span>path<span style="color:#f92672">.</span>basename(__file__)), 
+</span></span><span style="display:flex;"><span>                     formatter_class<span style="color:#f92672">=</span>argparse<span style="color:#f92672">.</span>ArgumentDefaultsHelpFormatter)
+</span></span><span style="display:flex;"><span>    parser<span style="color:#f92672">.</span>add_argument(<span style="color:#e6db74">&#39;--load&#39;</span>,
+</span></span><span style="display:flex;"><span>              type<span style="color:#f92672">=</span>int,
+</span></span><span style="display:flex;"><span>              default<span style="color:#f92672">=</span><span style="color:#ae81ff">64</span>,
+</span></span><span style="display:flex;"><span>              help<span style="color:#f92672">=</span><span style="color:#e6db74">&#34;&#34;&#34;define how much to load the link.&#34;&#34;&#34;</span>)
+</span></span><span style="display:flex;"><span>    parser<span style="color:#f92672">.</span>add_argument(<span style="color:#e6db74">&#39;--size&#39;</span>,
+</span></span><span style="display:flex;"><span>              type<span style="color:#f92672">=</span>int,
+</span></span><span style="display:flex;"><span>              default<span style="color:#f92672">=</span><span style="color:#ae81ff">64</span>,
+</span></span><span style="display:flex;"><span>              help<span style="color:#f92672">=</span><span style="color:#e6db74">&#34;&#34;&#34;define the packet&#39;s size in the stream.&#34;&#34;&#34;</span>)
+</span></span><span style="display:flex;"><span>    args <span style="color:#f92672">=</span> parser<span style="color:#f92672">.</span>parse_args(tunables)
+</span></span><span style="display:flex;"><span>    <span style="color:#75715e"># create 4 streams</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">return</span> [ 
+</span></span><span style="display:flex;"><span>      self<span style="color:#f92672">.</span>create_stream(<span style="color:#e6db74">&#34;16.0.0.1&#34;</span>, <span style="color:#e6db74">&#34;48.0.0.1&#34;</span>, args<span style="color:#f92672">.</span>size, args<span style="color:#f92672">.</span>load),
+</span></span><span style="display:flex;"><span>      self<span style="color:#f92672">.</span>create_stream(<span style="color:#e6db74">&#34;16.0.0.2&#34;</span>, <span style="color:#e6db74">&#34;48.0.0.2&#34;</span>, args<span style="color:#f92672">.</span>size, args<span style="color:#f92672">.</span>load),
+</span></span><span style="display:flex;"><span>      self<span style="color:#f92672">.</span>create_stream(<span style="color:#e6db74">&#34;16.0.0.3&#34;</span>, <span style="color:#e6db74">&#34;48.0.0.3&#34;</span>, args<span style="color:#f92672">.</span>size, args<span style="color:#f92672">.</span>load),
+</span></span><span style="display:flex;"><span>      self<span style="color:#f92672">.</span>create_stream(<span style="color:#e6db74">&#34;16.0.0.4&#34;</span>, <span style="color:#e6db74">&#34;48.0.0.4&#34;</span>, args<span style="color:#f92672">.</span>size, args<span style="color:#f92672">.</span>load),
+</span></span><span style="display:flex;"><span>    ]
+</span></span><span style="display:flex;"><span><span style="color:#75715e"># dynamic load - used for trex console or simulator</span>
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">def</span> <span style="color:#a6e22e">register</span>():
+</span></span><span style="display:flex;"><span>  <span style="color:#66d9ef">return</span> STLS1()
+</span></span></code></pre></div><h2 id="nice-documentation" >nice documentation
+<span>
+    <a href="#nice-documentation">
+        <svg viewBox="0 0 28 23" height="100%" width="19" xmlns="http://www.w3.org/2000/svg"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71" fill="none" stroke-linecap="round" stroke-miterlimit="10" stroke-width="2"/><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71" fill="none" stroke-linecap="round" stroke-miterlimit="10" stroke-width="2"/></svg>
+    </a>
+</span>
+</h2><p>I then discovered some documentation on how the simulation tools can just. Print the json for me. <br>
+<a href="https://trex-tgn.cisco.com/trex/doc/trex_astf.html">^f &ldquo;Adding &ndash;json displays the details of the JSON profile&rdquo;</a> <br>
+<a href="https://trex-tgn.cisco.com/trex/doc/trex_stateless.html">^f &ldquo;Adding &ndash;json displays the details of the JSON command for adding a stream&rdquo;</a></p>
+<p>So. Cool. Glad I found that just now. Glad I spent the time digging into the python api figuring out how to print the json from a py profile. <br>
+Guess I can archive the pyastf-json-convertor repo and just call those commands from my benchmarking tools. <br>
+Doing this proved somewhat problematic, I ended up needing to use <code>node-pty</code>&hellip; Might rewrite to pipe the convertor stdout to readline. <br>
+Keep an eye on <a href="https://github.com/velocipacktor/trex-benchmark-sequence">this repo</a>.</p>
+<h2 id="digging-myself-in-even-deeper" >digging myself in even deeper
+<span>
+    <a href="#digging-myself-in-even-deeper">
+        <svg viewBox="0 0 28 23" height="100%" width="19" xmlns="http://www.w3.org/2000/svg"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71" fill="none" stroke-linecap="round" stroke-miterlimit="10" stroke-width="2"/><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71" fill="none" stroke-linecap="round" stroke-miterlimit="10" stroke-width="2"/></svg>
+    </a>
+</span>
+</h2><p>The thought hit me - browsers can&rsquo;t zmq. So I need a http gateway to t-rex if I want a webui. Fun. <br>
+Enter stage left: <a href="https://github.com/velocipacktor/velocipacktor">velocipacktor</a>.</p>
+<p>What is it? Right now it&rsquo;s a very minimal http control interface for t-rex. <br>
+It can:</p>
+<ul>
+<li>Start t-rex in stl or astf mode</li>
+<li>Stop t-rex</li>
+<li>See if t-rex is running</li>
+</ul>
+<p>In the future, I hope it can:</p>
+<ul>
+<li>provide a feature complete api for the t-rex zmq api</li>
+<li>have websocket endpoints for streaming realtime stats</li>
+<li>expose a webui with live graphs</li>
+</ul>
+<p>Writing a http gateway does make sense though. It&rsquo;s easier to proxy and authenticate http/s than zmq, for one thing. <br>
+Dockerizing the whole stack and having a cute webui will lower the barrier to entry of t-rex (it&rsquo;s a good thing).</p>
+<h2 id="how-fast-is-fast-enough" >how fast is fast enough?
+<span>
+    <a href="#how-fast-is-fast-enough">
+        <svg viewBox="0 0 28 23" height="100%" width="19" xmlns="http://www.w3.org/2000/svg"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71" fill="none" stroke-linecap="round" stroke-miterlimit="10" stroke-width="2"/><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71" fill="none" stroke-linecap="round" stroke-miterlimit="10" stroke-width="2"/></svg>
+    </a>
+</span>
+</h2><p>I have a lot of work to do on velocipacktor still. But, in its current state, I can generate repeatable benchmarks and graphs and such. <br>
+I now need to see what my test bench hardware is capable of. <br>
+Hardware:</p>
+<pre tabindex="0"><code class="language-none" data-lang="none">- Chassis:    Dell Optiplex 7040
+- CPU:        Intel i7-6700k
+- RAM:        8GB DDR4 2133
+- NIC:        Intel X710-DA2 (yep, I got the one that goes to 11)
+- DUT:        6in twinax sfp+ DAC (loopback between the two ports)
+</code></pre><p>Using <a href="https://github.com/velocipacktor/trex-benchmark-sequence/blob/main/profiles/stl/udp_linerate_4_streams.py">udp_linerate_4_streams.py</a>, I am able to saturate the interface with ease at any packet size.</p>
+<p><a href="https://www.fmad.io/blog/what-is-10g-line-rate">This post</a> goes into detail on the math behind what &ldquo;line rate&rdquo; actually is. <br>
+I can say with some confidence that this card in this system is capable of doing line rate with 64b on-wire packets:</p>
+<p><img src="/2022/08/trex-down-the-rabbit-hole/mult1-dur30-2022-08-25T04-51-39.531Z-packets.png" alt="packets per second graph at 64byte packet size"></p>
+<p><img src="/2022/08/trex-down-the-rabbit-hole/mult1-dur30-2022-08-25T04-51-39.531Z-bits.png" alt="bits per second graph at 64byte packet size"></p>
+<p>Given that all my current DUTs are 1gig and 2.5gig that&rsquo;s more than good enough. <br>
+I haven&rsquo;t tested the rj45 sfp+ modules yet, but I don&rsquo;t forsee any issues with them.</p>
+<p>And that&rsquo;s where I&rsquo;ll leave this one off for now. <br>
+Stay tuned, there will be more.</p>
+
+        </div>
+        
+
+    
+
+
+<div class="post-info">
+    
+        <div class="post-date dt-published">2022-08-25</div>
+    
+
+    <a class="post-hidden-url u-url" href="http://localhost:1313/2022/08/trex-down-the-rabbit-hole/">http://localhost:1313/2022/08/trex-down-the-rabbit-hole/</a>
+    <a href="http://localhost:1313/" class="p-name p-author post-hidden-author h-card" rel="me"></a>
+
+
+    <div class="post-taxonomies">
+        
+            
+    </div>
+</div>
+
+    </article>
+
+    
+        
+        
+    
+
+    
+
+    
+        
+
+
+
+
+
+
+
+    
+
+        </main>
+        
+            <footer class="common-footer">
+    
+    
+
+    <div class="common-footer-bottom">
+        
+        <div class="copyright">
+            <p>© 2024 <a href="mailto:honk@goos.blog">honk@goos.blog</a><br>
+            
+            </p>  
+        </div> 
+
+        
+
+    
+
+
+
+    <button class="theme-switcher">
+        Dark theme
+    </button>
+
+
+<script>
+const STORAGE_KEY = 'user-color-scheme'
+const defaultTheme = "dark"
+
+let currentTheme
+let switchButton
+let autoDefinedScheme = window.matchMedia('(prefers-color-scheme: dark)')
+
+const autoChangeScheme = e => {
+    currentTheme = e.matches ? 'dark' : 'light'
+    document.documentElement.setAttribute('data-theme', currentTheme)
+    changeButtonText()
+}
+
+document.addEventListener('DOMContentLoaded', function() {
+    switchButton = document.querySelector('.theme-switcher')
+    currentTheme = detectCurrentScheme()
+    if (currentTheme == 'dark') {
+        document.documentElement.setAttribute('data-theme', 'dark')
+    }
+    if (currentTheme == 'auto') {
+        autoChangeScheme(autoDefinedScheme);
+        autoDefinedScheme.addListener(autoChangeScheme);
+    }
+
+    if (switchButton) {
+        changeButtonText()
+        switchButton.addEventListener('click', switchTheme, false)
+    }
+  
+    showContent()
+})
+
+function detectCurrentScheme() {
+    if (localStorage.getItem(STORAGE_KEY)) {
+        return localStorage.getItem(STORAGE_KEY)
+    } 
+    if (defaultTheme) {
+        return defaultTheme
+    } 
+    if (!window.matchMedia) {
+        return 'light'
+    } 
+    if (window.matchMedia('(prefers-color-scheme: dark)').matches) {
+        return 'dark'
+    }
+    return 'light'
+}
+
+function changeButtonText()
+{   
+    if (switchButton) {
+        switchButton.textContent = currentTheme == 'dark' ?  "Light theme" : "Dark theme"
+    }
+}
+
+function switchTheme(e) {
+    if (currentTheme == 'dark') {
+        localStorage.setItem(STORAGE_KEY, 'light')
+        document.documentElement.setAttribute('data-theme', 'light')
+        currentTheme = 'light'
+    } else {
+        localStorage.setItem(STORAGE_KEY, 'dark')
+        document.documentElement.setAttribute('data-theme', 'dark')
+        currentTheme = 'dark'
+    }
+    changeButtonText()
+}
+
+function showContent() {
+    document.body.style.visibility = 'visible';
+    document.body.style.opacity = 1;
+}
+</script>   
+    </div>
+
+    <p class="h-card vcard">
+
+    <a href=http://localhost:1313/ class="p-name u-url url fn" rel="me"></a> 
+
+     
+        /
+        <a class="p-email u-email email" rel="me" href="mailto:honk@goos.blog">honk@goos.blog</a>
+    
+
+    
+</p> 
+</footer>
+
+        
+    </div>
+</body>
+</html>

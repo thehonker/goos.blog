@@ -1,0 +1,485 @@
+<!DOCTYPE html>
+
+
+<html lang="en-us" data-theme="">
+<head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script>
+    
+        
+<meta charset="utf-8">
+<meta name="HandheldFriendly" content="True">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="referrer" content="no-referrer-when-downgrade">
+
+<title>The Chromebook `Kevin` - goos.blog</title>
+
+<meta name="description" content="the aarch64 obsession continues Disclaimer: I wrote most of this about a month after the fact, and am just finishing it up now several months after the initial draft. Details have been forgotten to prevent the innocent.
+Almost a year ago I picked up a samsung chromebook plus v1 (or something like that), hardware codename gru-kevin
+It has a really nice highdpi square-ish screen, good battery life, usb-c&hellip; what more do you need?">
+
+
+
+
+
+<link rel="icon" type="image/x-icon" href="http://localhost:1313/favicon.ico">
+<link rel="apple-touch-icon-precomposed" href="http://localhost:1313/favicon.png">
+
+
+<style>
+  body {
+    visibility: hidden;
+    opacity: 0;
+  }
+</style>
+
+<noscript>
+  <style>
+    body {
+      visibility: visible;
+      opacity: 1;
+    }
+  </style>
+</noscript>
+
+
+
+    
+
+
+
+
+
+    
+    
+    
+
+    
+        <link rel="stylesheet" href="http://localhost:1313/css/style.179bc32029f373a425c4c62b4bd0eed76fc85ce93c30e08cf1cd908a69e0ec9e.css" integrity="sha256-F5vDICnzc6QlxMYrS9Du12/IXOk8MOCM8c2Qimng7J4=">
+    
+
+
+
+
+
+    
+
+    
+
+
+
+
+
+    
+    
+    
+
+    
+        <script src="http://localhost:1313/js/script.32e751300d2d69e2cb56a98d2c9d964d54a53a8fb7281ccdbd80f055c88e8d86.js" type="text/javascript" charset="utf-8" integrity="sha256-MudRMA0taeLLVqmNLJ2WTVSlOo&#43;3KBzNvYDwVciOjYY="></script>
+    
+
+
+
+
+
+
+
+<meta property="og:url" content="http://localhost:1313/2023/10/chromebook-kevin/">
+  <meta property="og:site_name" content="goos.blog">
+  <meta property="og:title" content="The Chromebook `Kevin`">
+  <meta property="og:description" content="the aarch64 obsession continues Disclaimer: I wrote most of this about a month after the fact, and am just finishing it up now several months after the initial draft. Details have been forgotten to prevent the innocent.
+Almost a year ago I picked up a samsung chromebook plus v1 (or something like that), hardware codename gru-kevin
+It has a really nice highdpi square-ish screen, good battery life, usb-c… what more do you need?">
+  <meta property="og:locale" content="en-us">
+  <meta property="og:type" content="article">
+    <meta property="article:section" content="blog">
+    <meta property="article:published_time" content="2023-10-14T00:00:00-04:00">
+    <meta property="article:modified_time" content="2023-10-14T00:00:00-04:00">
+
+<meta name="twitter:card" content="summary"><meta name="twitter:title" content="The Chromebook `Kevin`">
+<meta name="twitter:description" content="the aarch64 obsession continues Disclaimer: I wrote most of this about a month after the fact, and am just finishing it up now several months after the initial draft. Details have been forgotten to prevent the innocent.
+Almost a year ago I picked up a samsung chromebook plus v1 (or something like that), hardware codename gru-kevin
+It has a really nice highdpi square-ish screen, good battery life, usb-c&hellip; what more do you need?">
+
+
+
+
+
+
+
+
+
+
+
+    
+</head>
+<body>
+    <a class="skip-main" href="#main">Skip to main content</a>
+    <div class="container">
+        <header class="common-header"> 
+            
+                <div class="header-top">
+    <h1 class="site-title">
+    <a href="/">goos.blog</a>
+</h1>
+    <ul class="social-icons">
+
+
+    
+        
+        
+        <li>
+            <a href="https://github.com/thehonker" title="Github" rel="me">
+            <span class="inline-svg" >
+
+
+
+
+    
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 496 512"><path fill="currentColor" d="M165.9 397.4c0 2-2.3 3.6-5.2 3.6-3.3.3-5.6-1.3-5.6-3.6 0-2 2.3-3.6 5.2-3.6 3-.3 5.6 1.3 5.6 3.6zm-31.1-4.5c-.7 2 1.3 4.3 4.3 4.9 2.6 1 5.6 0 6.2-2s-1.3-4.3-4.3-5.2c-2.6-.7-5.5.3-6.2 2.3zm44.2-1.7c-2.9.7-4.9 2.6-4.6 4.9.3 2 2.9 3.3 5.9 2.6 2.9-.7 4.9-2.6 4.6-4.6-.3-1.9-3-3.2-5.9-2.9zM244.8 8C106.1 8 0 113.3 0 252c0 110.9 69.8 205.8 169.5 239.2 12.8 2.3 17.3-5.6 17.3-12.1 0-6.2-.3-40.4-.3-61.4 0 0-70 15-84.7-29.8 0 0-11.4-29.1-27.8-36.6 0 0-22.9-15.7 1.6-15.4 0 0 24.9 2 38.6 25.8 21.9 38.6 58.6 27.5 72.9 20.9 2.3-16 8.8-27.1 16-33.7-55.9-6.2-112.3-14.3-112.3-110.5 0-27.5 7.6-41.3 23.6-58.9-2.6-6.5-11.1-33.3 2.6-67.9 20.9-6.5 69 27 69 27 20-5.6 41.5-8.5 62.8-8.5s42.8 2.9 62.8 8.5c0 0 48.1-33.6 69-27 13.7 34.7 5.2 61.4 2.6 67.9 16 17.7 25.8 31.5 25.8 58.9 0 96.5-58.9 104.2-114.8 110.5 9.2 7.9 17 22.9 17 46.4 0 33.7-.3 75.4-.3 83.6 0 6.5 4.6 14.4 17.3 12.1C428.2 457.8 496 362.9 496 252 496 113.3 383.5 8 244.8 8zM97.2 352.9c-1.3 1-1 3.3.7 5.2 1.6 1.6 3.9 2.3 5.2 1 1.3-1 1-3.3-.7-5.2-1.6-1.6-3.9-2.3-5.2-1zm-10.8-8.1c-.7 1.3.3 2.9 2.3 3.9 1.6 1 3.6.7 4.3-.7.7-1.3-.3-2.9-2.3-3.9-2-.6-3.6-.3-4.3.7zm32.4 35.6c-1.6 1.3-1 4.3 1.3 6.2 2.3 2.3 5.2 2.6 6.5 1 1.3-1.3.7-4.3-1.3-6.2-2.2-2.3-5.2-2.6-6.5-1zm-11.4-14.7c-1.6 1-1.6 3.6 0 5.9 1.6 2.3 4.3 3.3 5.6 2.3 1.6-1.3 1.6-3.9 0-6.2-1.4-2.3-4-3.3-5.6-2z"/></svg>
+
+</span>
+
+            </a>
+        </li>
+    
+
+
+
+    <li>
+            <a href="http://localhost:1313/index.xml" title="RSS" rel="me">
+            <span class="inline-svg" >
+
+
+
+
+    
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><path fill="currentColor" d="M128.081 415.959c0 35.369-28.672 64.041-64.041 64.041S0 451.328 0 415.959s28.672-64.041 64.041-64.041 64.04 28.673 64.04 64.041zm175.66 47.25c-8.354-154.6-132.185-278.587-286.95-286.95C7.656 175.765 0 183.105 0 192.253v48.069c0 8.415 6.49 15.472 14.887 16.018 111.832 7.284 201.473 96.702 208.772 208.772.547 8.397 7.604 14.887 16.018 14.887h48.069c9.149.001 16.489-7.655 15.995-16.79zm144.249.288C439.596 229.677 251.465 40.445 16.503 32.01 7.473 31.686 0 38.981 0 48.016v48.068c0 8.625 6.835 15.645 15.453 15.999 191.179 7.839 344.627 161.316 352.465 352.465.353 8.618 7.373 15.453 15.999 15.453h48.068c9.034-.001 16.329-7.474 16.005-16.504z"/></svg>
+
+</span>
+
+            </a>
+        </li>
+    
+
+</ul>
+</div>
+
+    <nav></nav>
+
+
+
+
+            
+        </header>
+        <main id="main" tabindex="-1"> 
+            
+    
+
+    <article class="post h-entry">
+        <div class="post-header">
+            <header>
+                <h1 class="p-name post-title">The Chromebook `Kevin`</h1>
+
+                
+            </header>
+        </div>
+        <div class="content e-content">
+            <h4 id="the-aarch64-obsession-continues" ><em>the aarch64 obsession continues</em>
+<span>
+    <a href="#the-aarch64-obsession-continues">
+        <svg viewBox="0 0 28 23" height="100%" width="19" xmlns="http://www.w3.org/2000/svg"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71" fill="none" stroke-linecap="round" stroke-miterlimit="10" stroke-width="2"/><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71" fill="none" stroke-linecap="round" stroke-miterlimit="10" stroke-width="2"/></svg>
+    </a>
+</span>
+</h4><p><em>Disclaimer: I wrote most of this about a month after the fact, and am just finishing it up now several months after the initial draft. Details have been forgotten to prevent the innocent.</em></p>
+<p>Almost a year ago I picked up a samsung chromebook plus v1 (or something like that), hardware codename <code>gru-kevin</code></p>
+<p>It has a really nice highdpi square-ish screen, good battery life, usb-c&hellip; what more do you need?</p>
+<p>I gave chromeos a fair try, and it was kinda nice.</p>
+<p>Fair number of complaints though:</p>
+<ul>
+<li>Running a full ass vm just for a linux env is ugly and slow on the rk3399 inside <code>kevin</code> <br>
+(that&rsquo;s right, our old friend from rockchip is back)</li>
+<li>The current state of chromebrew on aarch64 is kinda gross (on top of the existing grossness of chromebrew to begin with)</li>
+<li>General google-ness of the device overall (probably the biggest yuck of them all)</li>
+</ul>
+<h2 id="goodbye-chromeos" >goodbye chromeos
+<span>
+    <a href="#goodbye-chromeos">
+        <svg viewBox="0 0 28 23" height="100%" width="19" xmlns="http://www.w3.org/2000/svg"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71" fill="none" stroke-linecap="round" stroke-miterlimit="10" stroke-width="2"/><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71" fill="none" stroke-linecap="round" stroke-miterlimit="10" stroke-width="2"/></svg>
+    </a>
+</span>
+</h2><p>So, as I&rsquo;m sure you guessed, I decided to put a normal linux on it. <br>
+A good amount of googling lead me to
+<a href="https://github.com/Maccraft123/Cadmium">Cadmium</a>, a set of image building tools for aarch64 chromebooks. <br>
+Actual :shock:, kevin is on the support list!</p>
+<p>I cloned the repo and started poking at it. <br>
+There hadn&rsquo;t been a release in a few years, and autobuilds were broken.
+It didn&rsquo;t look good but it was a starting point so I dove in.
+A few hours of pain later and I had an image of the right size and shape.</p>
+<p>Would it boot? I dd&rsquo;d it over to a thumbdrive, ready to give it a try.
+But first I had to enable developer mode in chromeos so I could boot from usb in the first place.</p>
+<p>A few incantations later, my laptop was making a (very) loud BOOP BOOP at startup and showed a very scary looking warning screen saying the firmware was unlocked. I guess whatever I did worked.</p>
+<p>A few attempts at catching the <code>^d</code> usb boot trigger later and I&rsquo;m at a login screen.</p>
+<p>Some dd to copy the kernel and rootfs partitions from the thumbdrive to the emmc and I have a persistent ubuntu to boot to.</p>
+<p>I installed the ubuntu-desktop metapackage, logged in, setup my stuff. It all worked, but it was pretty slow. Still though. ARM64 laptop!</p>
+<h2 id="please-make-it-stop" >please make it stop
+<span>
+    <a href="#please-make-it-stop">
+        <svg viewBox="0 0 28 23" height="100%" width="19" xmlns="http://www.w3.org/2000/svg"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71" fill="none" stroke-linecap="round" stroke-miterlimit="10" stroke-width="2"/><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71" fill="none" stroke-linecap="round" stroke-miterlimit="10" stroke-width="2"/></svg>
+    </a>
+</span>
+</h2><p>There were a few annoyances though, listed here in descending order&hellip;</p>
+<ol>
+<li>That BOOP BOOP at startup. I cannot stress just how loud this was.</li>
+<li>The fact that it still ran a google built firmware</li>
+<li>The microsd card slot didn&rsquo;t work (with chromebook firmware in dev mode it&rsquo;s a jtag)</li>
+<li>The weird A+B chromeos partition layout that I had to conform to</li>
+</ol>
+<p>So. What can we do about that. The sdcard slot not working smells like a device tree issue. The rest of it I&rsquo;m not yet sure if I can even address&hellip;</p>
+<p>First though. I&rsquo;ve run through cadmium&rsquo;s build process a few times now, and it&rsquo;s&hellip;. annoying. No offense. We all just like to do things our own way I guess.</p>
+<p>So, naturally, I did. A medium amount of bash scripting later lead to the birth of <a href="https://github.com/potassium-os/potassium">Potassium-OS</a>.
+This allowed me to break the build into better segmented stages.
+With this tooling in hand I was able to easily rebuild just the device tree and kernel, or just the rootfs, or both.</p>
+<p>Some amount of messing with the device tree later and I didn&rsquo;t have the sdcard slot working yet. Bummer, as I had visions of storing multiple different os builds on different sdcards, and switching between them at will. At some point I read a mailing list or commit message or something that mentioned that the sdcard slot on kevin is converted into a jtag of some sort when some bit is set in the eeprom. These feature bits are programmed by the firmware, and while I can read them from the os, trying to edit them doesn&rsquo;t do anything.</p>
+<p>I resigned myself to having a mostly-working aarch64 laptop.<br>
+Cool enough for me, right?</p>
+<h2 id="never-good-enough" >never good enough
+<span>
+    <a href="#never-good-enough">
+        <svg viewBox="0 0 28 23" height="100%" width="19" xmlns="http://www.w3.org/2000/svg"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71" fill="none" stroke-linecap="round" stroke-miterlimit="10" stroke-width="2"/><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71" fill="none" stroke-linecap="round" stroke-miterlimit="10" stroke-width="2"/></svg>
+    </a>
+</span>
+</h2><p>Nah.</p>
+<p>I wasn&rsquo;t going to give up until at least item 1 from above was gone.
+Wasn&rsquo;t sure how to approach this, I did load up the google firmware in a hex editor to see&hellip;. nothing. I can&rsquo;t really operate on that low a level.</p>
+<p>Then I remembered that coreboot/libreboot/etc is a thing, especially for chromebooks. However all their attention in the past had been focused on x86 support, and I&rsquo;m over here with a &ldquo;rare&rdquo; aarch64 device. <br>
+No chance libreboot is gonna support this.</p>
+<p>Right?</p>
+<p>It turns out that libreboot had <em><strong>just</strong></em> merged one of their forks back in. A fork that was focused on adding aarch64 support to libreboot. I can&rsquo;t find the news post as of this writing, but it had happened like a week before I got the laptop and started on this adventure.</p>
+<p>It was&hellip; shockingly easy to get libreboot built for <code>gru-kevin</code>. <br>
+The board configs were already there. I just tweaked a few small things to suit my preferences, typed make, and was given a binary blob to flash.</p>
+<h2 id="adventures-in-spi" >adventures in spi
+<span>
+    <a href="#adventures-in-spi">
+        <svg viewBox="0 0 28 23" height="100%" width="19" xmlns="http://www.w3.org/2000/svg"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71" fill="none" stroke-linecap="round" stroke-miterlimit="10" stroke-width="2"/><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71" fill="none" stroke-linecap="round" stroke-miterlimit="10" stroke-width="2"/></svg>
+    </a>
+</span>
+</h2><p>Fun fact, (most) chromebooks have a firmware write protect screw. Remove the screw, and you can flash the firmware from inside the running os. Pretty cool, right?</p>
+<p>Except&hellip;. where is it? There&rsquo;s no WP screw visible on the top side of the board, even though the actual flash chip is right there:</p>
+<p><img src="/2023/10/chromebook-kevin/IMG_3759.jpeg" alt="gru-kevin firmware spi flash"></p>
+<blockquote>
+<p>There it is, now if only I could write to it</p>
+</blockquote>
+<p>A few dozen googles lead me to a mailing list thread where someone mentioned that the WP screw is <em><strong>UNDER THE HEATSINK</strong></em> on the gru-kevin mainboard.</p>
+<p>Normally this would be acceptable. Except that on kevin, the heatsink is riveted in place. It&rsquo;s not coming off without an amount of effort I&rsquo;m not going to put into it.</p>
+<p>So I looked into manually flashing the spi bios chip guy. It wasn&rsquo;t actually that difficult or scary of a process, despite what the internet tells you. You&rsquo;re just flashing a spi chip. That&rsquo;s all.</p>
+<p>First I read the firmware inband from inside the os. About 10 times. And I sha256&rsquo;d each copy to make sure they were all the same. AND remembered to copy it elsewhere. Then I dug through the parts bin and found a chip clip for our soic-8 spi flash friend. <br>
+I thought about using an arduino as a flasher (I had in the past for a parallel access flash chip) until I remembered that raspberry pi&rsquo;s are a thing and they have spi lanes and gpio as well. Way easier.</p>
+<p>A quick check of the pinout and some soldering/crimping later and I had this kinda thing happening:</p>
+<p><img src="/2023/10/chromebook-kevin/IMG_3811.jpeg" alt="a raspberry pi setup as a spi flasher hooked up to a gru-kevin mainboard"></p>
+<blockquote>
+<p>Peep that brains:battery ratio tho</p>
+</blockquote>
+<p>As of this writing I neither remember what software I used to flash or where that flasher assembly is, RIP. I feel like I wrote a small wrapper to set CS and WE on the spi chip properly before/after flashing.</p>
+<p>The first flashing was exciting but uneventful. I read in the flash a few times, shasum&rsquo;ed it against the blobs I had pulled from inband, they matched. I type the incantation to flash the chip, and it flashes. I read it back again, and it shasums to the same as my libreboot output.</p>
+<p>Woohoo!</p>
+<p>I plug the battery back in and hit the power button. <br>
+A few seconds pass and I see the kernel startup. <br>
+No BOOP BOOP this time! No scary big red box on the screen!</p>
+<h2 id="make-it-modern" >make it modern
+<span>
+    <a href="#make-it-modern">
+        <svg viewBox="0 0 28 23" height="100%" width="19" xmlns="http://www.w3.org/2000/svg"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71" fill="none" stroke-linecap="round" stroke-miterlimit="10" stroke-width="2"/><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71" fill="none" stroke-linecap="round" stroke-miterlimit="10" stroke-width="2"/></svg>
+    </a>
+</span>
+</h2><p>That wasn&rsquo;t enough though.</p>
+<p>My sdcard slot still wasn&rsquo;t working, and I still had to stick to the chromeos 2-kernel-1-rootfs layout.</p>
+<p>Turns out that libreboot was shipping this sorta setup for my firmware:</p>
+<ul>
+<li>coreboot as 1st stage</li>
+<li>uboot as a payload of coreboot</li>
+<li>uboot was configured to boot a chromeos partition layout</li>
+</ul>
+<p>So. It&rsquo;s u-boot. I know how to configure that. <br>
+A few menuconfigs and flashes and &ldquo;why u no boot&rdquo;&rsquo;s later, and I had u-boot providing a uefi enviroment that then booted an efi kernel stub (although I could have used grub2 or similar).</p>
+<p>Somewhere in this the sdcard slot started working. Either right when I flashed libreboot the first time (which could have disabled the dev-mode that exposed jtag pins on that socket, as that was being enabled by chromeos firmware in dev mode), or somewhere in u-boot/coreboot configuration I saw the option to disable the jtag on it. Either way my sdcard slot was working.</p>
+<p>At this point I had what equated to any other laptop with modern firmware.
+I didn&rsquo;t have a boot menu yet as I hadn&rsquo;t taken the time to set one up in u-boot. But I could boot from emmc, usb, sdcard, even usb nic pxe.</p>
+<h2 id="next-steps-further-annoyances" >next steps, further annoyances
+<span>
+    <a href="#next-steps-further-annoyances">
+        <svg viewBox="0 0 28 23" height="100%" width="19" xmlns="http://www.w3.org/2000/svg"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71" fill="none" stroke-linecap="round" stroke-miterlimit="10" stroke-width="2"/><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71" fill="none" stroke-linecap="round" stroke-miterlimit="10" stroke-width="2"/></svg>
+    </a>
+</span>
+</h2><p>Now that we can boot reliably and in a modern way, let&rsquo;s fix up some of the annoyances in lolbuntu. Wayland was remarkably stable, more stable than x11 on this hardware even! However, fractional scaling made the gpu hurt, bad. Anything graphically intensive ran at slideshow speeds. <br>
+This kinda sucked, as I had really hoped to use this as a notes-taking tablet most of the time. Another use case was tuning the megasquirt in my na6. While it has enough stronk to run tunerstudio, the update rate on the gauges and datalogging was horrible. Maybe 5 frames per second. Not nearly enough.</p>
+<p>Kevin was plenty for light laptopping but not quite enough for what I wanted here.</p>
+<h2 id="can-you-close-for-me" >can you close for me
+<span>
+    <a href="#can-you-close-for-me">
+        <svg viewBox="0 0 28 23" height="100%" width="19" xmlns="http://www.w3.org/2000/svg"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71" fill="none" stroke-linecap="round" stroke-miterlimit="10" stroke-width="2"/><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71" fill="none" stroke-linecap="round" stroke-miterlimit="10" stroke-width="2"/></svg>
+    </a>
+</span>
+</h2><p>I&rsquo;ll be honest, <code>kevin</code> has been turned back into a chromebook and given to my parents.</p>
+<p>I ended up buying another aarch64 laptop (Samsung galaxy book go 5G), this one has a Qualcomm 8cx gen2 in it.</p>
+<p>Quite a step up from the rk3399 in kevin. It&rsquo;s still running samsung firmware (which does provide a uefi) and windows 11 (yuck), but that might change soon.</p>
+<p>What will I do with Potassium now? I think I&rsquo;ll clean up the repos, get my libreboot changes into a repo, fix up uboot to be more friendly, and then archive it all.</p>
+<p>I think in the future I&rsquo;ll use that org for other aarch64 things, so keep an eye on it for fun things to come.</p>
+
+        </div>
+        
+
+    
+
+
+<div class="post-info">
+    
+        <div class="post-date dt-published">2023-10-14</div>
+    
+
+    <a class="post-hidden-url u-url" href="http://localhost:1313/2023/10/chromebook-kevin/">http://localhost:1313/2023/10/chromebook-kevin/</a>
+    <a href="http://localhost:1313/" class="p-name p-author post-hidden-author h-card" rel="me"></a>
+
+
+    <div class="post-taxonomies">
+        
+            
+    </div>
+</div>
+
+    </article>
+
+    
+        
+        
+    
+
+    
+
+    
+        
+
+
+
+
+
+
+
+    
+
+        </main>
+        
+            <footer class="common-footer">
+    
+    
+
+    <div class="common-footer-bottom">
+        
+        <div class="copyright">
+            <p>© 2024 <a href="mailto:honk@goos.blog">honk@goos.blog</a><br>
+            
+            </p>  
+        </div> 
+
+        
+
+    
+
+
+
+    <button class="theme-switcher">
+        Dark theme
+    </button>
+
+
+<script>
+const STORAGE_KEY = 'user-color-scheme'
+const defaultTheme = "dark"
+
+let currentTheme
+let switchButton
+let autoDefinedScheme = window.matchMedia('(prefers-color-scheme: dark)')
+
+const autoChangeScheme = e => {
+    currentTheme = e.matches ? 'dark' : 'light'
+    document.documentElement.setAttribute('data-theme', currentTheme)
+    changeButtonText()
+}
+
+document.addEventListener('DOMContentLoaded', function() {
+    switchButton = document.querySelector('.theme-switcher')
+    currentTheme = detectCurrentScheme()
+    if (currentTheme == 'dark') {
+        document.documentElement.setAttribute('data-theme', 'dark')
+    }
+    if (currentTheme == 'auto') {
+        autoChangeScheme(autoDefinedScheme);
+        autoDefinedScheme.addListener(autoChangeScheme);
+    }
+
+    if (switchButton) {
+        changeButtonText()
+        switchButton.addEventListener('click', switchTheme, false)
+    }
+  
+    showContent()
+})
+
+function detectCurrentScheme() {
+    if (localStorage.getItem(STORAGE_KEY)) {
+        return localStorage.getItem(STORAGE_KEY)
+    } 
+    if (defaultTheme) {
+        return defaultTheme
+    } 
+    if (!window.matchMedia) {
+        return 'light'
+    } 
+    if (window.matchMedia('(prefers-color-scheme: dark)').matches) {
+        return 'dark'
+    }
+    return 'light'
+}
+
+function changeButtonText()
+{   
+    if (switchButton) {
+        switchButton.textContent = currentTheme == 'dark' ?  "Light theme" : "Dark theme"
+    }
+}
+
+function switchTheme(e) {
+    if (currentTheme == 'dark') {
+        localStorage.setItem(STORAGE_KEY, 'light')
+        document.documentElement.setAttribute('data-theme', 'light')
+        currentTheme = 'light'
+    } else {
+        localStorage.setItem(STORAGE_KEY, 'dark')
+        document.documentElement.setAttribute('data-theme', 'dark')
+        currentTheme = 'dark'
+    }
+    changeButtonText()
+}
+
+function showContent() {
+    document.body.style.visibility = 'visible';
+    document.body.style.opacity = 1;
+}
+</script>   
+    </div>
+
+    <p class="h-card vcard">
+
+    <a href=http://localhost:1313/ class="p-name u-url url fn" rel="me"></a> 
+
+     
+        /
+        <a class="p-email u-email email" rel="me" href="mailto:honk@goos.blog">honk@goos.blog</a>
+    
+
+    
+</p> 
+</footer>
+
+        
+    </div>
+</body>
+</html>

@@ -1,6 +1,6 @@
 ---
 title: "Goos gets a new computer"
-date: 2023-10-14T00:00:00-04:00
+date: 2024-04-27T00:00:00-04:00
 draft: true
 tagline: "the things I'll do"
 slug: new-workstation

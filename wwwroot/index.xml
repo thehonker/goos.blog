@@ -6,10 +6,32 @@
     <description>goos.blog</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Sat, 14 Oct 2023 00:00:00 -0400</lastBuildDate>
+    <lastBuildDate>Sun, 05 May 2024 00:00:00 -0400</lastBuildDate>
     
     <atom:link href="https://goos.blog/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Starting over</title>
+      <link>https://goos.blog/2024/05/telinit-6/</link>
+      <pubDate>Sun, 05 May 2024 00:00:00 -0400</pubDate>
+      
+      <guid>https://goos.blog/2024/05/telinit-6/</guid>
+      <description>&lt;h4 id=&#34;i-got-a-job&#34; &gt;&lt;em&gt;I got a job!&lt;/em&gt;
+&lt;span&gt;
+    &lt;a href=&#34;#i-got-a-job&#34;&gt;
+        &lt;svg viewBox=&#34;0 0 28 23&#34; height=&#34;100%&#34; width=&#34;19&#34; xmlns=&#34;http://www.w3.org/2000/svg&#34;&gt;&lt;path d=&#34;M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71&#34; fill=&#34;none&#34; stroke-linecap=&#34;round&#34; stroke-miterlimit=&#34;10&#34; stroke-width=&#34;2&#34;/&gt;&lt;path d=&#34;M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71&#34; fill=&#34;none&#34; stroke-linecap=&#34;round&#34; stroke-miterlimit=&#34;10&#34; stroke-width=&#34;2&#34;/&gt;&lt;/svg&gt;
+    &lt;/a&gt;
+&lt;/span&gt;
+&lt;/h4&gt;&lt;p&gt;Hello loyal readers. I haven&amp;rsquo;t been writing much here lately,
+but then to be fair I haven&amp;rsquo;t been doing any cool nerd shit lately.&lt;/p&gt;
+&lt;p&gt;Back in August of &amp;lsquo;23 I finally got a new job, for a staffing agency, working for a big name cloud provider.
+In November they converted me into a real boy, and I haven&amp;rsquo;t looked back.&lt;/p&gt;
+&lt;p&gt;Getting back into the swing of things took a while. But here I am again.&lt;/p&gt;
+&lt;p&gt;I&amp;rsquo;m doing nerd shit again. I&amp;rsquo;m planning a complete overhaul of my home network and all services I provide out of my closet.&lt;/p&gt;
+&lt;p&gt;Expect a bunch of posts about that. I ordered a trio of Lenovo P330 Tiny boxen, and I&amp;rsquo;m planning on some wacky things with k8s, kubevirt, and opnsense (maybe involving sr-iov). Stay tuned.&lt;/p&gt;
+</description>
+    </item>
     
     <item>
       <title>The Chromebook `Kevin`</title>

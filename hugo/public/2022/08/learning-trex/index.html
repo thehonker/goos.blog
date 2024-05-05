@@ -1,0 +1,473 @@
+<!DOCTYPE html>
+
+
+<html lang="en-us" data-theme="">
+<head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script>
+    
+        
+<meta charset="utf-8">
+<meta name="HandheldFriendly" content="True">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="referrer" content="no-referrer-when-downgrade">
+
+<title>Cisco T-Rex - goos.blog</title>
+
+<meta name="description" content="yet another wonderful cisco product I kid. T-Rex is actually pretty cool.
+I&rsquo;m writing a post right now about the NanoPi R5S. All the other reviews / benchmarks (including those from friendlyelec) I&rsquo;ve seen on these have been uh&hellip; Kinda useless (no offense to those authors). They&rsquo;re routers, we care about how much traffic they can pass, not how much they can ingest/generate.
+Anyway, getting off topic, back to t-rex itself.">
+
+
+
+
+
+<link rel="icon" type="image/x-icon" href="http://localhost:1313/favicon.ico">
+<link rel="apple-touch-icon-precomposed" href="http://localhost:1313/favicon.png">
+
+
+<style>
+  body {
+    visibility: hidden;
+    opacity: 0;
+  }
+</style>
+
+<noscript>
+  <style>
+    body {
+      visibility: visible;
+      opacity: 1;
+    }
+  </style>
+</noscript>
+
+
+
+    
+
+
+
+
+
+    
+    
+    
+
+    
+        <link rel="stylesheet" href="http://localhost:1313/css/style.179bc32029f373a425c4c62b4bd0eed76fc85ce93c30e08cf1cd908a69e0ec9e.css" integrity="sha256-F5vDICnzc6QlxMYrS9Du12/IXOk8MOCM8c2Qimng7J4=">
+    
+
+
+
+
+
+    
+
+    
+
+
+
+
+
+    
+    
+    
+
+    
+        <script src="http://localhost:1313/js/script.32e751300d2d69e2cb56a98d2c9d964d54a53a8fb7281ccdbd80f055c88e8d86.js" type="text/javascript" charset="utf-8" integrity="sha256-MudRMA0taeLLVqmNLJ2WTVSlOo&#43;3KBzNvYDwVciOjYY="></script>
+    
+
+
+
+
+
+
+
+<meta property="og:url" content="http://localhost:1313/2022/08/learning-trex/">
+  <meta property="og:site_name" content="goos.blog">
+  <meta property="og:title" content="Cisco T-Rex">
+  <meta property="og:description" content="yet another wonderful cisco product I kid. T-Rex is actually pretty cool.
+I’m writing a post right now about the NanoPi R5S. All the other reviews / benchmarks (including those from friendlyelec) I’ve seen on these have been uh… Kinda useless (no offense to those authors). They’re routers, we care about how much traffic they can pass, not how much they can ingest/generate.
+Anyway, getting off topic, back to t-rex itself.">
+  <meta property="og:locale" content="en-us">
+  <meta property="og:type" content="article">
+    <meta property="article:section" content="blog">
+    <meta property="article:published_time" content="2022-08-10T00:00:00-04:00">
+    <meta property="article:modified_time" content="2022-08-10T00:00:00-04:00">
+
+<meta name="twitter:card" content="summary"><meta name="twitter:title" content="Cisco T-Rex">
+<meta name="twitter:description" content="yet another wonderful cisco product I kid. T-Rex is actually pretty cool.
+I&rsquo;m writing a post right now about the NanoPi R5S. All the other reviews / benchmarks (including those from friendlyelec) I&rsquo;ve seen on these have been uh&hellip; Kinda useless (no offense to those authors). They&rsquo;re routers, we care about how much traffic they can pass, not how much they can ingest/generate.
+Anyway, getting off topic, back to t-rex itself.">
+
+
+
+
+
+
+
+
+
+
+
+    
+</head>
+<body>
+    <a class="skip-main" href="#main">Skip to main content</a>
+    <div class="container">
+        <header class="common-header"> 
+            
+                <div class="header-top">
+    <h1 class="site-title">
+    <a href="/">goos.blog</a>
+</h1>
+    <ul class="social-icons">
+
+
+    
+        
+        
+        <li>
+            <a href="https://github.com/thehonker" title="Github" rel="me">
+            <span class="inline-svg" >
+
+
+
+
+    
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 496 512"><path fill="currentColor" d="M165.9 397.4c0 2-2.3 3.6-5.2 3.6-3.3.3-5.6-1.3-5.6-3.6 0-2 2.3-3.6 5.2-3.6 3-.3 5.6 1.3 5.6 3.6zm-31.1-4.5c-.7 2 1.3 4.3 4.3 4.9 2.6 1 5.6 0 6.2-2s-1.3-4.3-4.3-5.2c-2.6-.7-5.5.3-6.2 2.3zm44.2-1.7c-2.9.7-4.9 2.6-4.6 4.9.3 2 2.9 3.3 5.9 2.6 2.9-.7 4.9-2.6 4.6-4.6-.3-1.9-3-3.2-5.9-2.9zM244.8 8C106.1 8 0 113.3 0 252c0 110.9 69.8 205.8 169.5 239.2 12.8 2.3 17.3-5.6 17.3-12.1 0-6.2-.3-40.4-.3-61.4 0 0-70 15-84.7-29.8 0 0-11.4-29.1-27.8-36.6 0 0-22.9-15.7 1.6-15.4 0 0 24.9 2 38.6 25.8 21.9 38.6 58.6 27.5 72.9 20.9 2.3-16 8.8-27.1 16-33.7-55.9-6.2-112.3-14.3-112.3-110.5 0-27.5 7.6-41.3 23.6-58.9-2.6-6.5-11.1-33.3 2.6-67.9 20.9-6.5 69 27 69 27 20-5.6 41.5-8.5 62.8-8.5s42.8 2.9 62.8 8.5c0 0 48.1-33.6 69-27 13.7 34.7 5.2 61.4 2.6 67.9 16 17.7 25.8 31.5 25.8 58.9 0 96.5-58.9 104.2-114.8 110.5 9.2 7.9 17 22.9 17 46.4 0 33.7-.3 75.4-.3 83.6 0 6.5 4.6 14.4 17.3 12.1C428.2 457.8 496 362.9 496 252 496 113.3 383.5 8 244.8 8zM97.2 352.9c-1.3 1-1 3.3.7 5.2 1.6 1.6 3.9 2.3 5.2 1 1.3-1 1-3.3-.7-5.2-1.6-1.6-3.9-2.3-5.2-1zm-10.8-8.1c-.7 1.3.3 2.9 2.3 3.9 1.6 1 3.6.7 4.3-.7.7-1.3-.3-2.9-2.3-3.9-2-.6-3.6-.3-4.3.7zm32.4 35.6c-1.6 1.3-1 4.3 1.3 6.2 2.3 2.3 5.2 2.6 6.5 1 1.3-1.3.7-4.3-1.3-6.2-2.2-2.3-5.2-2.6-6.5-1zm-11.4-14.7c-1.6 1-1.6 3.6 0 5.9 1.6 2.3 4.3 3.3 5.6 2.3 1.6-1.3 1.6-3.9 0-6.2-1.4-2.3-4-3.3-5.6-2z"/></svg>
+
+</span>
+
+            </a>
+        </li>
+    
+
+
+
+    <li>
+            <a href="http://localhost:1313/index.xml" title="RSS" rel="me">
+            <span class="inline-svg" >
+
+
+
+
+    
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><path fill="currentColor" d="M128.081 415.959c0 35.369-28.672 64.041-64.041 64.041S0 451.328 0 415.959s28.672-64.041 64.041-64.041 64.04 28.673 64.04 64.041zm175.66 47.25c-8.354-154.6-132.185-278.587-286.95-286.95C7.656 175.765 0 183.105 0 192.253v48.069c0 8.415 6.49 15.472 14.887 16.018 111.832 7.284 201.473 96.702 208.772 208.772.547 8.397 7.604 14.887 16.018 14.887h48.069c9.149.001 16.489-7.655 15.995-16.79zm144.249.288C439.596 229.677 251.465 40.445 16.503 32.01 7.473 31.686 0 38.981 0 48.016v48.068c0 8.625 6.835 15.645 15.453 15.999 191.179 7.839 344.627 161.316 352.465 352.465.353 8.618 7.373 15.453 15.999 15.453h48.068c9.034-.001 16.329-7.474 16.005-16.504z"/></svg>
+
+</span>
+
+            </a>
+        </li>
+    
+
+</ul>
+</div>
+
+    <nav></nav>
+
+
+
+
+            
+        </header>
+        <main id="main" tabindex="-1"> 
+            
+    
+
+    <article class="post h-entry">
+        <div class="post-header">
+            <header>
+                <h1 class="p-name post-title">Cisco T-Rex</h1>
+
+                
+            </header>
+        </div>
+        <div class="content e-content">
+            <h4 id="yet-another-wonderful-cisco-product" ><em>yet another wonderful cisco product</em>
+<span>
+    <a href="#yet-another-wonderful-cisco-product">
+        <svg viewBox="0 0 28 23" height="100%" width="19" xmlns="http://www.w3.org/2000/svg"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71" fill="none" stroke-linecap="round" stroke-miterlimit="10" stroke-width="2"/><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71" fill="none" stroke-linecap="round" stroke-miterlimit="10" stroke-width="2"/></svg>
+    </a>
+</span>
+</h4><p>I kid. <a href="https://trex-tgn.cisco.com/">T-Rex</a> is actually pretty cool.</p>
+<p>I&rsquo;m writing a post right now about the <a href="https://wiki.friendlyelec.com/wiki/index.php/NanoPi_R5S">NanoPi R5S</a>.
+All the other reviews / benchmarks (including those from friendlyelec) I&rsquo;ve seen on these have been uh&hellip; Kinda useless (no offense to those authors). <br>
+They&rsquo;re routers, we care about how much traffic they can <em><strong>pass</strong></em>, not how much they can ingest/generate.</p>
+<p>Anyway, getting off topic, back to t-rex itself.</p>
+<p><img src="/2022/08/learning-trex/trex-logo.png" alt="trex logo"></p>
+<p>So. T-Rex is a pretty cool suite.
+Out of the box it has several traffic profiles which cover most of what I want to test on these little guys. <br>
+I might cook some profiles of my own, cs:go gameserver traffic would be interesting to test. <br>
+Profiles are basically pcaps to replay and a yaml to define how they&rsquo;re replayed. Pretty simple.</p>
+<h2 id="dpdk-pain" >dpdk pain
+<span>
+    <a href="#dpdk-pain">
+        <svg viewBox="0 0 28 23" height="100%" width="19" xmlns="http://www.w3.org/2000/svg"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71" fill="none" stroke-linecap="round" stroke-miterlimit="10" stroke-width="2"/><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71" fill="none" stroke-linecap="round" stroke-miterlimit="10" stroke-width="2"/></svg>
+    </a>
+</span>
+</h2><p>My hardware is an Optiplex 7040 with a 4-port Intel i350 card.
+The chipset is listed on the supported list for t-rex, so I thought it&rsquo;d all be good.
+I load up derpbian, download the thing, install the deps, and try to run it&hellip;. <br>
+Only&hellip; no traffic is actually passed over the loopback&hellip; dmesg is flooded with dmar errors&hellip; <em>sigh</em> <br>
+I tried a few iommu kernel params that had resolved dmar errors in the past without much luck. It looked like this was a versioning problem with dpdk stuff. RIP me.</p>
+<h2 id="striking-a-deal-with-the-devil" >striking a deal with the devil
+<span>
+    <a href="#striking-a-deal-with-the-devil">
+        <svg viewBox="0 0 28 23" height="100%" width="19" xmlns="http://www.w3.org/2000/svg"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71" fill="none" stroke-linecap="round" stroke-miterlimit="10" stroke-width="2"/><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71" fill="none" stroke-linecap="round" stroke-miterlimit="10" stroke-width="2"/></svg>
+    </a>
+</span>
+</h2><p>Centos it is. I find a 7.6 iso at vault.centos.org and install that. <br>
+Now it works, and I spent some time messing around with the many parameters of trex. <br>
+At this point I&rsquo;m working with a hardware loopback (port 0 is connected to port 2 with a short patch cable).</p>
+<p><img src="/2022/08/learning-trex/trex-screenshot-01.png" alt="trex-screenshot-01"></p>
+<blockquote>
+<p><code>./t-rex-64 -f cap2/https.yaml -m 1000 -d 30</code> <br>
+I think I&rsquo;m doing this right&hellip;</p>
+</blockquote>
+<h2 id="must-go-faster" >must. go. faster.
+<span>
+    <a href="#must-go-faster">
+        <svg viewBox="0 0 28 23" height="100%" width="19" xmlns="http://www.w3.org/2000/svg"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71" fill="none" stroke-linecap="round" stroke-miterlimit="10" stroke-width="2"/><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71" fill="none" stroke-linecap="round" stroke-miterlimit="10" stroke-width="2"/></svg>
+    </a>
+</span>
+</h2><p>I am able to run a number of tests that saturate the phy bandwidth, but some others are cpu bottlenecked (smol packets, lots of simulated client/servers, etc). <br>
+Given that this box has some i5 in it with 4c/4t, a cpu upgrade felt natural. <br>
+Some googling told me that the i7-6700K would work on my 7040. It has 4c/8t at 4.0 ~ 4.2ghz. <br>
+Not bad. <br>
+While I wait for that to show up let&rsquo;s play with trex more and see if I can get some graphable output from it.</p>
+<p>It was at this point I discovered that &ldquo;stateful&rdquo; mode was basically deprech, and I should be using &ldquo;ASTF&rdquo; mode instead. <br>
+ASTF is basically stateful but instead of yaml and local running, you run a daemon in astf mode and connect to it over zmq. <br>
+There&rsquo;s only one library to make this sane&hellip; And it&rsquo;s in python. <br>
+This however turned out to be not too horrible in the end.</p>
+<p><img src="/2022/08/learning-trex/trex-screenshot-02.png" alt="trex-screenshot-02"></p>
+<blockquote>
+<p>trex-console has a cute tui mode</p>
+</blockquote>
+<h2 id="down-the-rabbit-hole-we-go" >down the rabbit hole we go
+<span>
+    <a href="#down-the-rabbit-hole-we-go">
+        <svg viewBox="0 0 28 23" height="100%" width="19" xmlns="http://www.w3.org/2000/svg"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71" fill="none" stroke-linecap="round" stroke-miterlimit="10" stroke-width="2"/><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71" fill="none" stroke-linecap="round" stroke-miterlimit="10" stroke-width="2"/></svg>
+    </a>
+</span>
+</h2><p>Bit more googling lead me to this:
+<a href="https://github.com/cisco-system-traffic-generator/trex-core/blob/master/scripts/automation/trex_control_plane/interactive/trex/examples/astf/astf_example.py">astf_example.py</a></p>
+<p>I can kinda work with this.
+If I can get those stats on some interval&hellip;</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span><span style="color:#66d9ef">while</span> c<span style="color:#f92672">.</span>is_traffic_active():
+</span></span><span style="display:flex;"><span>      stats <span style="color:#f92672">=</span> c<span style="color:#f92672">.</span>get_stats()
+</span></span><span style="display:flex;"><span>      timestamp <span style="color:#f92672">=</span> time<span style="color:#f92672">.</span>mktime(datetime<span style="color:#f92672">.</span>datetime<span style="color:#f92672">.</span>now()<span style="color:#f92672">.</span>timetuple()) <span style="color:#f92672">*</span> <span style="color:#ae81ff">1000</span>
+</span></span><span style="display:flex;"><span>      statsArray<span style="color:#f92672">.</span>append(JsonOutput(timestamp, stats))
+</span></span><span style="display:flex;"><span>      time<span style="color:#f92672">.</span>sleep(<span style="color:#ae81ff">0.5</span>)
+</span></span><span style="display:flex;"><span>outputFile <span style="color:#f92672">=</span> open(outputPath, <span style="color:#e6db74">&#34;w&#34;</span>)
+</span></span><span style="display:flex;"><span>outputFile<span style="color:#f92672">.</span>write(json<span style="color:#f92672">.</span>dumps(statsArray, default<span style="color:#f92672">=</span>vars))
+</span></span></code></pre></div><blockquote>
+<p>:neat: <br>
+Don&rsquo;t judge my dogshit python abilities <br>
+I <em>think</em> I got the math right when I modified that function&hellip; <br>
+It ain&rsquo;t matter though b/c that&rsquo;s just for my human-readable while the test is running</p>
+</blockquote>
+<h2 id="time-to-make-it-clean" >time to make it clean
+<span>
+    <a href="#time-to-make-it-clean">
+        <svg viewBox="0 0 28 23" height="100%" width="19" xmlns="http://www.w3.org/2000/svg"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71" fill="none" stroke-linecap="round" stroke-miterlimit="10" stroke-width="2"/><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71" fill="none" stroke-linecap="round" stroke-miterlimit="10" stroke-width="2"/></svg>
+    </a>
+</span>
+</h2><p>Before making graphs I wanted to isolate and repo-ize my work so far. <br>
+This ended up being a lot harder than it should have been. <br>
+I&rsquo;m probably violating licenses, but whatever, this is nonprofit.</p>
+<h2 id="graphs-glorious-graphs" >graphs, glorious graphs
+<span>
+    <a href="#graphs-glorious-graphs">
+        <svg viewBox="0 0 28 23" height="100%" width="19" xmlns="http://www.w3.org/2000/svg"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71" fill="none" stroke-linecap="round" stroke-miterlimit="10" stroke-width="2"/><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71" fill="none" stroke-linecap="round" stroke-miterlimit="10" stroke-width="2"/></svg>
+    </a>
+</span>
+</h2><p>Now to figure out how to make pretty graphs with all this data. <br>
+It didn&rsquo;t take too long to get something with chart.js and canvas working.</p>
+<p><img src="/2022/08/learning-trex/trex-test-graph-01.png" alt="trex-test-graph-01"></p>
+<blockquote>
+<p>Ugly, for now.</p>
+</blockquote>
+<p>After a fair amount of farting around with graph params and other small things, I had myself a lil nodejs (yes, js. yes, the actual api is in python. no I will not be answering your questions at this time.) blob that would take a hjson file of profiles and settings to run and generate graphs for, and like, run it. <br>
+The way I ended up doing it was gross at every step. But. It works. <br>
+Feelsgood.</p>
+<p><img src="/2022/08/learning-trex/emix2-mult_400-dur_600-1660148778698.png" alt="prettier trex graph"></p>
+<blockquote>
+<p>The <a href="https://github.com/cisco-system-traffic-generator/trex-core/blob/master/scripts/astf/emix2.py">emix2 profile</a>
+is killer. <br>
+<a href="/2022/08/learning-trex/json/emix2-mult_400-dur_600-1660148778698.json">full json stats here</a></p>
+</blockquote>
+<p>As you can see (I&rsquo;m assuming you clicked the json link), there&rsquo;s plenty of stats that I&rsquo;m not even looking at yet.</p>
+<h2 id="next-steps" >next steps
+<span>
+    <a href="#next-steps">
+        <svg viewBox="0 0 28 23" height="100%" width="19" xmlns="http://www.w3.org/2000/svg"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71" fill="none" stroke-linecap="round" stroke-miterlimit="10" stroke-width="2"/><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71" fill="none" stroke-linecap="round" stroke-miterlimit="10" stroke-width="2"/></svg>
+    </a>
+</span>
+</h2><p>I&rsquo;ve bundled up all the code used in this post <a href="https://github.com/velocipacktor/trex-benchmark-sequence">in this repo</a>. <br>
+Do with it what you will. I only ask that if you use this in a commercial product, you give me a free copy. Otherwise I&rsquo;m going to pirate it.</p>
+<p>I still need to run a suite of profiles through loopback to determine the &ldquo;best&rdquo; parameters for each given my test hardware. <br>
+After that I can actually run some repeatable tests on a real device!</p>
+<p>It&rsquo;d be neat to add a realtime graph in the cli, test duration progress bars, etc. <br>
+Maybe I&rsquo;ll do that later today&hellip; Keep an eye on that repo for changes.</p>
+<p>Oh, and I have that new cpu on the way! <br>
+I&rsquo;ll probably do a part 2 with finalized benchmark sets when that comes in.</p>
+
+        </div>
+        
+
+    
+
+
+<div class="post-info">
+    
+        <div class="post-date dt-published">2022-08-10</div>
+    
+
+    <a class="post-hidden-url u-url" href="http://localhost:1313/2022/08/learning-trex/">http://localhost:1313/2022/08/learning-trex/</a>
+    <a href="http://localhost:1313/" class="p-name p-author post-hidden-author h-card" rel="me"></a>
+
+
+    <div class="post-taxonomies">
+        
+            
+    </div>
+</div>
+
+    </article>
+
+    
+        
+        
+    
+
+    
+
+    
+        
+
+
+
+
+
+
+
+    
+
+        </main>
+        
+            <footer class="common-footer">
+    
+    
+
+    <div class="common-footer-bottom">
+        
+        <div class="copyright">
+            <p>© 2024 <a href="mailto:honk@goos.blog">honk@goos.blog</a><br>
+            
+            </p>  
+        </div> 
+
+        
+
+    
+
+
+
+    <button class="theme-switcher">
+        Dark theme
+    </button>
+
+
+<script>
+const STORAGE_KEY = 'user-color-scheme'
+const defaultTheme = "dark"
+
+let currentTheme
+let switchButton
+let autoDefinedScheme = window.matchMedia('(prefers-color-scheme: dark)')
+
+const autoChangeScheme = e => {
+    currentTheme = e.matches ? 'dark' : 'light'
+    document.documentElement.setAttribute('data-theme', currentTheme)
+    changeButtonText()
+}
+
+document.addEventListener('DOMContentLoaded', function() {
+    switchButton = document.querySelector('.theme-switcher')
+    currentTheme = detectCurrentScheme()
+    if (currentTheme == 'dark') {
+        document.documentElement.setAttribute('data-theme', 'dark')
+    }
+    if (currentTheme == 'auto') {
+        autoChangeScheme(autoDefinedScheme);
+        autoDefinedScheme.addListener(autoChangeScheme);
+    }
+
+    if (switchButton) {
+        changeButtonText()
+        switchButton.addEventListener('click', switchTheme, false)
+    }
+  
+    showContent()
+})
+
+function detectCurrentScheme() {
+    if (localStorage.getItem(STORAGE_KEY)) {
+        return localStorage.getItem(STORAGE_KEY)
+    } 
+    if (defaultTheme) {
+        return defaultTheme
+    } 
+    if (!window.matchMedia) {
+        return 'light'
+    } 
+    if (window.matchMedia('(prefers-color-scheme: dark)').matches) {
+        return 'dark'
+    }
+    return 'light'
+}
+
+function changeButtonText()
+{   
+    if (switchButton) {
+        switchButton.textContent = currentTheme == 'dark' ?  "Light theme" : "Dark theme"
+    }
+}
+
+function switchTheme(e) {
+    if (currentTheme == 'dark') {
+        localStorage.setItem(STORAGE_KEY, 'light')
+        document.documentElement.setAttribute('data-theme', 'light')
+        currentTheme = 'light'
+    } else {
+        localStorage.setItem(STORAGE_KEY, 'dark')
+        document.documentElement.setAttribute('data-theme', 'dark')
+        currentTheme = 'dark'
+    }
+    changeButtonText()
+}
+
+function showContent() {
+    document.body.style.visibility = 'visible';
+    document.body.style.opacity = 1;
+}
+</script>   
+    </div>
+
+    <p class="h-card vcard">
+
+    <a href=http://localhost:1313/ class="p-name u-url url fn" rel="me"></a> 
+
+     
+        /
+        <a class="p-email u-email email" rel="me" href="mailto:honk@goos.blog">honk@goos.blog</a>
+    
+
+    
+</p> 
+</footer>
+
+        
+    </div>
+</body>
+</html>

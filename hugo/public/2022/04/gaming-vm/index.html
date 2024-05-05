@@ -1,0 +1,448 @@
+<!DOCTYPE html>
+
+
+<html lang="en-us" data-theme="">
+<head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script>
+    
+        
+<meta charset="utf-8">
+<meta name="HandheldFriendly" content="True">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="referrer" content="no-referrer-when-downgrade">
+
+<title>The gaming server - goos.blog</title>
+
+<meta name="description" content="a somewhat elegant solution to a nonexistant problem MacOS is nice. Really nice. Really good. At most things&hellip;
+Gaming, not so much. Windows still leads that pack (duh), with linux trailing closely behind these days. So what does a man with a hackintosh on the desktop and some big iron in the closet do? Slap a gpu in the iron and stream all the games to both the desktop and a steam link on the teevee!">
+
+
+
+
+
+<link rel="icon" type="image/x-icon" href="http://localhost:1313/favicon.ico">
+<link rel="apple-touch-icon-precomposed" href="http://localhost:1313/favicon.png">
+
+
+<style>
+  body {
+    visibility: hidden;
+    opacity: 0;
+  }
+</style>
+
+<noscript>
+  <style>
+    body {
+      visibility: visible;
+      opacity: 1;
+    }
+  </style>
+</noscript>
+
+
+
+    
+
+
+
+
+
+    
+    
+    
+
+    
+        <link rel="stylesheet" href="http://localhost:1313/css/style.179bc32029f373a425c4c62b4bd0eed76fc85ce93c30e08cf1cd908a69e0ec9e.css" integrity="sha256-F5vDICnzc6QlxMYrS9Du12/IXOk8MOCM8c2Qimng7J4=">
+    
+
+
+
+
+
+    
+
+    
+
+
+
+
+
+    
+    
+    
+
+    
+        <script src="http://localhost:1313/js/script.32e751300d2d69e2cb56a98d2c9d964d54a53a8fb7281ccdbd80f055c88e8d86.js" type="text/javascript" charset="utf-8" integrity="sha256-MudRMA0taeLLVqmNLJ2WTVSlOo&#43;3KBzNvYDwVciOjYY="></script>
+    
+
+
+
+
+
+
+
+<meta property="og:url" content="http://localhost:1313/2022/04/gaming-vm/">
+  <meta property="og:site_name" content="goos.blog">
+  <meta property="og:title" content="The gaming server">
+  <meta property="og:description" content="a somewhat elegant solution to a nonexistant problem MacOS is nice. Really nice. Really good. At most things…
+Gaming, not so much. Windows still leads that pack (duh), with linux trailing closely behind these days. So what does a man with a hackintosh on the desktop and some big iron in the closet do? Slap a gpu in the iron and stream all the games to both the desktop and a steam link on the teevee!">
+  <meta property="og:locale" content="en-us">
+  <meta property="og:type" content="article">
+    <meta property="article:section" content="blog">
+    <meta property="article:published_time" content="2022-04-18T11:24:00-04:00">
+    <meta property="article:modified_time" content="2022-04-18T11:24:00-04:00">
+
+<meta name="twitter:card" content="summary"><meta name="twitter:title" content="The gaming server">
+<meta name="twitter:description" content="a somewhat elegant solution to a nonexistant problem MacOS is nice. Really nice. Really good. At most things&hellip;
+Gaming, not so much. Windows still leads that pack (duh), with linux trailing closely behind these days. So what does a man with a hackintosh on the desktop and some big iron in the closet do? Slap a gpu in the iron and stream all the games to both the desktop and a steam link on the teevee!">
+
+
+
+
+
+
+
+
+
+
+
+    
+</head>
+<body>
+    <a class="skip-main" href="#main">Skip to main content</a>
+    <div class="container">
+        <header class="common-header"> 
+            
+                <div class="header-top">
+    <h1 class="site-title">
+    <a href="/">goos.blog</a>
+</h1>
+    <ul class="social-icons">
+
+
+    
+        
+        
+        <li>
+            <a href="https://github.com/thehonker" title="Github" rel="me">
+            <span class="inline-svg" >
+
+
+
+
+    
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 496 512"><path fill="currentColor" d="M165.9 397.4c0 2-2.3 3.6-5.2 3.6-3.3.3-5.6-1.3-5.6-3.6 0-2 2.3-3.6 5.2-3.6 3-.3 5.6 1.3 5.6 3.6zm-31.1-4.5c-.7 2 1.3 4.3 4.3 4.9 2.6 1 5.6 0 6.2-2s-1.3-4.3-4.3-5.2c-2.6-.7-5.5.3-6.2 2.3zm44.2-1.7c-2.9.7-4.9 2.6-4.6 4.9.3 2 2.9 3.3 5.9 2.6 2.9-.7 4.9-2.6 4.6-4.6-.3-1.9-3-3.2-5.9-2.9zM244.8 8C106.1 8 0 113.3 0 252c0 110.9 69.8 205.8 169.5 239.2 12.8 2.3 17.3-5.6 17.3-12.1 0-6.2-.3-40.4-.3-61.4 0 0-70 15-84.7-29.8 0 0-11.4-29.1-27.8-36.6 0 0-22.9-15.7 1.6-15.4 0 0 24.9 2 38.6 25.8 21.9 38.6 58.6 27.5 72.9 20.9 2.3-16 8.8-27.1 16-33.7-55.9-6.2-112.3-14.3-112.3-110.5 0-27.5 7.6-41.3 23.6-58.9-2.6-6.5-11.1-33.3 2.6-67.9 20.9-6.5 69 27 69 27 20-5.6 41.5-8.5 62.8-8.5s42.8 2.9 62.8 8.5c0 0 48.1-33.6 69-27 13.7 34.7 5.2 61.4 2.6 67.9 16 17.7 25.8 31.5 25.8 58.9 0 96.5-58.9 104.2-114.8 110.5 9.2 7.9 17 22.9 17 46.4 0 33.7-.3 75.4-.3 83.6 0 6.5 4.6 14.4 17.3 12.1C428.2 457.8 496 362.9 496 252 496 113.3 383.5 8 244.8 8zM97.2 352.9c-1.3 1-1 3.3.7 5.2 1.6 1.6 3.9 2.3 5.2 1 1.3-1 1-3.3-.7-5.2-1.6-1.6-3.9-2.3-5.2-1zm-10.8-8.1c-.7 1.3.3 2.9 2.3 3.9 1.6 1 3.6.7 4.3-.7.7-1.3-.3-2.9-2.3-3.9-2-.6-3.6-.3-4.3.7zm32.4 35.6c-1.6 1.3-1 4.3 1.3 6.2 2.3 2.3 5.2 2.6 6.5 1 1.3-1.3.7-4.3-1.3-6.2-2.2-2.3-5.2-2.6-6.5-1zm-11.4-14.7c-1.6 1-1.6 3.6 0 5.9 1.6 2.3 4.3 3.3 5.6 2.3 1.6-1.3 1.6-3.9 0-6.2-1.4-2.3-4-3.3-5.6-2z"/></svg>
+
+</span>
+
+            </a>
+        </li>
+    
+
+
+
+    <li>
+            <a href="http://localhost:1313/index.xml" title="RSS" rel="me">
+            <span class="inline-svg" >
+
+
+
+
+    
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><path fill="currentColor" d="M128.081 415.959c0 35.369-28.672 64.041-64.041 64.041S0 451.328 0 415.959s28.672-64.041 64.041-64.041 64.04 28.673 64.04 64.041zm175.66 47.25c-8.354-154.6-132.185-278.587-286.95-286.95C7.656 175.765 0 183.105 0 192.253v48.069c0 8.415 6.49 15.472 14.887 16.018 111.832 7.284 201.473 96.702 208.772 208.772.547 8.397 7.604 14.887 16.018 14.887h48.069c9.149.001 16.489-7.655 15.995-16.79zm144.249.288C439.596 229.677 251.465 40.445 16.503 32.01 7.473 31.686 0 38.981 0 48.016v48.068c0 8.625 6.835 15.645 15.453 15.999 191.179 7.839 344.627 161.316 352.465 352.465.353 8.618 7.373 15.453 15.999 15.453h48.068c9.034-.001 16.329-7.474 16.005-16.504z"/></svg>
+
+</span>
+
+            </a>
+        </li>
+    
+
+</ul>
+</div>
+
+    <nav></nav>
+
+
+
+
+            
+        </header>
+        <main id="main" tabindex="-1"> 
+            
+    
+
+    <article class="post h-entry">
+        <div class="post-header">
+            <header>
+                <h1 class="p-name post-title">The gaming server</h1>
+
+                
+            </header>
+        </div>
+        <div class="content e-content">
+            <h3 id="a-somewhat-elegant-solution-to-a-nonexistant-problem" ><em>a somewhat elegant solution to a nonexistant problem</em>
+<span>
+    <a href="#a-somewhat-elegant-solution-to-a-nonexistant-problem">
+        <svg viewBox="0 0 28 23" height="100%" width="19" xmlns="http://www.w3.org/2000/svg"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71" fill="none" stroke-linecap="round" stroke-miterlimit="10" stroke-width="2"/><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71" fill="none" stroke-linecap="round" stroke-miterlimit="10" stroke-width="2"/></svg>
+    </a>
+</span>
+</h3><p>MacOS is nice. Really nice. Really good. At most things&hellip;</p>
+<p>Gaming, not so much. Windows still leads that pack (duh), with linux trailing closely behind these days.
+So what does a man with a hackintosh on the desktop and some big iron in the closet do?
+Slap a gpu in the iron and stream all the games to both the desktop and a steam link on the teevee!</p>
+<h3 id="so-many-games-so-little-time" >so many games, so little time
+<span>
+    <a href="#so-many-games-so-little-time">
+        <svg viewBox="0 0 28 23" height="100%" width="19" xmlns="http://www.w3.org/2000/svg"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71" fill="none" stroke-linecap="round" stroke-miterlimit="10" stroke-width="2"/><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71" fill="none" stroke-linecap="round" stroke-miterlimit="10" stroke-width="2"/></svg>
+    </a>
+</span>
+</h3><p>After the rx580 came in and was installed last night, I was ready to setup the vm that would consume it.
+First I isolate the vm with vfio. tl;dr <code>vfio-pci.ids=1002:67df,1002:aaf0</code> is all you need on modern kernels.
+Then a standard winderp install, q35, omvf, etc. Fight my way through the horrible oobe and I&rsquo;m finally at the desktop.
+Attach the gpu, detach the qemu display, and I&rsquo;m done&hellip; Kinda.</p>
+<p>This gpu has hardware encode (unlike my 1030), so I could use parsec for remote desktop while setting it up.
+It&rsquo;s a bit nicer than reemo overall. I like the h265 support and 2fa.
+I don&rsquo;t really like how it signed me out of the client between last night and today.
+I get steam setup and click install on a bunch of games in my &ldquo;play eventually&rdquo; collection.</p>
+<h3 id="a-mostly-uneventful-process" >a mostly uneventful process
+<span>
+    <a href="#a-mostly-uneventful-process">
+        <svg viewBox="0 0 28 23" height="100%" width="19" xmlns="http://www.w3.org/2000/svg"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71" fill="none" stroke-linecap="round" stroke-miterlimit="10" stroke-width="2"/><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71" fill="none" stroke-linecap="round" stroke-miterlimit="10" stroke-width="2"/></svg>
+    </a>
+</span>
+</h3><p>After a few games finished downloading on the vm, I fired up steam on my desktop for a quick test.
+I plug in my dualshock3, run <a href="https://github.com/libsdl-org/SDL/issues/4923#issuecomment-966722634">ds3activate</a> (thanks apple for dropping support for it in Monterey&hellip;), and launch one of my favorite kill-5-minutes games, The Ramp.
+Unsurprisingly, it fires right up and justwerks. Thanks valve!</p>
+<h3 id="what-about-that-300gb-of-emulator-games-tho" >what about that 300gb of emulator games tho?
+<span>
+    <a href="#what-about-that-300gb-of-emulator-games-tho">
+        <svg viewBox="0 0 28 23" height="100%" width="19" xmlns="http://www.w3.org/2000/svg"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71" fill="none" stroke-linecap="round" stroke-miterlimit="10" stroke-width="2"/><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71" fill="none" stroke-linecap="round" stroke-miterlimit="10" stroke-width="2"/></svg>
+    </a>
+</span>
+</h3><p>Over time I&rsquo;ve built up quite a few emulator games. Sure, 200 of that 300gb is taken up by like four ps3 games, but there&rsquo;s quite a few retro, ngc, wii, etc games as well.</p>
+<p><a href="https://github.com/SteamGridDB/steam-rom-manager">Steam-rom-manager</a> helps a <em><strong>lot</strong></em> with managing that.</p>
+<p>It needs some manual overrides and massaging, but in the end I get a nice list of steam custom shortcuts for all my emul games.</p>
+<p>&ldquo;Ready to play&rdquo; was looking pretty gross at this point:</p>
+<p><img src="/2022/04/gaming-vm/so_many_games.png" alt="steam game list"></p>
+<blockquote>
+<p>I think I&rsquo;m going to remove a lot of these roms that I don&rsquo;t actually play.</p>
+</blockquote>
+<p>I&rsquo;m considering trying to make a collection manager, so I can have a collection that&rsquo;s <code>not emulated</code>.
+Or, valve could add the NOT operator to dynamic collections. That&rsquo;d be cool too.</p>
+<p>Another annoyance - categories for non-steam applications don&rsquo;t carry between computers&hellip; Although they do show up on the steam link (as you&rsquo;d expect).</p>
+<p>So instead of having this nice organization structure, I have this mess:</p>
+<p><img src="/2022/04/gaming-vm/collections.png" alt="steam filters"></p>
+<blockquote>
+<p>vm on left, desktop on right (I rm&rsquo;d some of the roms I was never going to play)</p>
+</blockquote>
+<p>From what I&rsquo;ve read online, collections are stored <em><strong>in the cloud</strong></em>, not a local vdf file like shortcuts.
+Probably have to interact with the api to copy them, but a quick search on valvo&rsquo;s documentation page didn&rsquo;t show any publicly documented endpoints.
+Oh well. At least I have search on my desktop.</p>
+<p>A thought - what if there was a desktop steam link client?</p>
+<p><img src="/2022/04/gaming-vm/ouchie.png" alt="steam message"></p>
+<blockquote>
+<p><a href="https://store.steampowered.com/app/353380/Steam_Link/">Turns out there is&hellip; Rather was</a>&hellip; <a href="https://steamcommunity.com/app/353380/discussions/9/3108017414028756807/">But maybe there&rsquo;s hope?</a></p>
+</blockquote>
+<p>With apple dropping i386 support back in catalina, I&rsquo;m SOL. Again. Woo.</p>
+<p>Yeah yeah I can just remote in with parsec and browse/play that way - and I might end up with that workflow.
+I&rsquo;ll try both and see how it goes.</p>
+<h3 id="a-new-hope" >a new hope
+<span>
+    <a href="#a-new-hope">
+        <svg viewBox="0 0 28 23" height="100%" width="19" xmlns="http://www.w3.org/2000/svg"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71" fill="none" stroke-linecap="round" stroke-miterlimit="10" stroke-width="2"/><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71" fill="none" stroke-linecap="round" stroke-miterlimit="10" stroke-width="2"/></svg>
+    </a>
+</span>
+</h3><p>Some time passes. I cook dinner, feed the cats, take out the trash.</p>
+<p>Then I think <em>&ldquo;I never checked the actual apple app store, did I?&rdquo;</em></p>
+<p>Sure enough:
+<img src="/2022/04/gaming-vm/oh_look.png" alt="apple app store"></p>
+<blockquote>
+<p>There it is!</p>
+</blockquote>
+<p>This is perfect for my needs. Thanks valve!</p>
+<h3 id="cpu--node-pinning" >cpu / node pinning
+<span>
+    <a href="#cpu--node-pinning">
+        <svg viewBox="0 0 28 23" height="100%" width="19" xmlns="http://www.w3.org/2000/svg"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71" fill="none" stroke-linecap="round" stroke-miterlimit="10" stroke-width="2"/><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71" fill="none" stroke-linecap="round" stroke-miterlimit="10" stroke-width="2"/></svg>
+    </a>
+</span>
+</h3><p>I should probably pin this vm to cpu0/node0.</p>
+<p>A few <code>numactl</code> commands to see how my iron is laid out and I&rsquo;m ready to ^c^v his hook script and config entries.
+As I turn my dev vms back on, I&rsquo;ll want to pin them to cpu1, so i create both a <code>pin-numa0.sh</code> and <code>pin-numa1.sh</code></p>
+<p>This didn&rsquo;t quite work though.
+The cpu pinning script was working (albeit with one failure call to taskset failing, not sure why yet), but the memory pinning wasn&rsquo;t.
+Additionally, the <code>qm start</code> command was timing out every now and then. There is a <code>--timeout</code> flag, but it&rsquo;d be nice if this was in the vm config instead so the webui would reflect this too.</p>
+<p>Tossing this in the hookscript fixed the memory pinning. Yeah, kinda gross to flush page cache every time I start a pinned vm, but whatever:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span><span style="color:#66d9ef">if</span> <span style="color:#f92672">[[</span> <span style="color:#e6db74">&#34;</span>$2<span style="color:#e6db74">&#34;</span> <span style="color:#f92672">==</span> <span style="color:#e6db74">&#34;pre-start&#34;</span> <span style="color:#f92672">]]</span>; <span style="color:#66d9ef">then</span>
+</span></span><span style="display:flex;"><span>  echo <span style="color:#ae81ff">1</span> &gt; /proc/sys/vm/drop_caches
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">fi</span>
+</span></span></code></pre></div><h3 id="final-thoughts" >final thoughts
+<span>
+    <a href="#final-thoughts">
+        <svg viewBox="0 0 28 23" height="100%" width="19" xmlns="http://www.w3.org/2000/svg"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71" fill="none" stroke-linecap="round" stroke-miterlimit="10" stroke-width="2"/><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71" fill="none" stroke-linecap="round" stroke-miterlimit="10" stroke-width="2"/></svg>
+    </a>
+</span>
+</h3><p>Should you do something like this? Well, maybe.
+If you have the extra hardware and the use case, go for it.
+It&rsquo;s not that hard anymore, and the bennies are pretty nice.
+I don&rsquo;t have to tie up a desktop for the steam link anymore, and I don&rsquo;t need to boot to windows for casual gaming.</p>
+
+        </div>
+        
+
+    
+
+
+<div class="post-info">
+    
+        <div class="post-date dt-published">2022-04-18</div>
+    
+
+    <a class="post-hidden-url u-url" href="http://localhost:1313/2022/04/gaming-vm/">http://localhost:1313/2022/04/gaming-vm/</a>
+    <a href="http://localhost:1313/" class="p-name p-author post-hidden-author h-card" rel="me"></a>
+
+
+    <div class="post-taxonomies">
+        
+            
+    </div>
+</div>
+
+    </article>
+
+    
+        
+        
+    
+
+    
+
+    
+        
+
+
+
+
+
+
+
+    
+
+        </main>
+        
+            <footer class="common-footer">
+    
+    
+
+    <div class="common-footer-bottom">
+        
+        <div class="copyright">
+            <p>© 2024 <a href="mailto:honk@goos.blog">honk@goos.blog</a><br>
+            
+            </p>  
+        </div> 
+
+        
+
+    
+
+
+
+    <button class="theme-switcher">
+        Dark theme
+    </button>
+
+
+<script>
+const STORAGE_KEY = 'user-color-scheme'
+const defaultTheme = "dark"
+
+let currentTheme
+let switchButton
+let autoDefinedScheme = window.matchMedia('(prefers-color-scheme: dark)')
+
+const autoChangeScheme = e => {
+    currentTheme = e.matches ? 'dark' : 'light'
+    document.documentElement.setAttribute('data-theme', currentTheme)
+    changeButtonText()
+}
+
+document.addEventListener('DOMContentLoaded', function() {
+    switchButton = document.querySelector('.theme-switcher')
+    currentTheme = detectCurrentScheme()
+    if (currentTheme == 'dark') {
+        document.documentElement.setAttribute('data-theme', 'dark')
+    }
+    if (currentTheme == 'auto') {
+        autoChangeScheme(autoDefinedScheme);
+        autoDefinedScheme.addListener(autoChangeScheme);
+    }
+
+    if (switchButton) {
+        changeButtonText()
+        switchButton.addEventListener('click', switchTheme, false)
+    }
+  
+    showContent()
+})
+
+function detectCurrentScheme() {
+    if (localStorage.getItem(STORAGE_KEY)) {
+        return localStorage.getItem(STORAGE_KEY)
+    } 
+    if (defaultTheme) {
+        return defaultTheme
+    } 
+    if (!window.matchMedia) {
+        return 'light'
+    } 
+    if (window.matchMedia('(prefers-color-scheme: dark)').matches) {
+        return 'dark'
+    }
+    return 'light'
+}
+
+function changeButtonText()
+{   
+    if (switchButton) {
+        switchButton.textContent = currentTheme == 'dark' ?  "Light theme" : "Dark theme"
+    }
+}
+
+function switchTheme(e) {
+    if (currentTheme == 'dark') {
+        localStorage.setItem(STORAGE_KEY, 'light')
+        document.documentElement.setAttribute('data-theme', 'light')
+        currentTheme = 'light'
+    } else {
+        localStorage.setItem(STORAGE_KEY, 'dark')
+        document.documentElement.setAttribute('data-theme', 'dark')
+        currentTheme = 'dark'
+    }
+    changeButtonText()
+}
+
+function showContent() {
+    document.body.style.visibility = 'visible';
+    document.body.style.opacity = 1;
+}
+</script>   
+    </div>
+
+    <p class="h-card vcard">
+
+    <a href=http://localhost:1313/ class="p-name u-url url fn" rel="me"></a> 
+
+     
+        /
+        <a class="p-email u-email email" rel="me" href="mailto:honk@goos.blog">honk@goos.blog</a>
+    
+
+    
+</p> 
+</footer>
+
+        
+    </div>
+</body>
+</html>
