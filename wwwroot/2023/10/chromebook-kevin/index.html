@@ -92,16 +92,18 @@ It has a really nice highdpi square-ish screen, good battery life, usb-c&hellip;
   <meta property="og:description" content="the aarch64 obsession continues Disclaimer: I wrote most of this about a month after the fact, and am just finishing it up now several months after the initial draft. Details have been forgotten to prevent the innocent.
 Almost a year ago I picked up a samsung chromebook plus v1 (or something like that), hardware codename gru-kevin
 It has a really nice highdpi square-ish screen, good battery life, usb-c… what more do you need?">
-  <meta property="og:locale" content="en-us">
+  <meta property="og:locale" content="en_us">
   <meta property="og:type" content="article">
     <meta property="article:section" content="blog">
     <meta property="article:published_time" content="2023-10-14T00:00:00-04:00">
     <meta property="article:modified_time" content="2023-10-14T00:00:00-04:00">
 
-<meta name="twitter:card" content="summary"><meta name="twitter:title" content="The Chromebook `Kevin`">
-<meta name="twitter:description" content="the aarch64 obsession continues Disclaimer: I wrote most of this about a month after the fact, and am just finishing it up now several months after the initial draft. Details have been forgotten to prevent the innocent.
+
+  <meta name="twitter:card" content="summary">
+  <meta name="twitter:title" content="The Chromebook `Kevin`">
+  <meta name="twitter:description" content="the aarch64 obsession continues Disclaimer: I wrote most of this about a month after the fact, and am just finishing it up now several months after the initial draft. Details have been forgotten to prevent the innocent.
 Almost a year ago I picked up a samsung chromebook plus v1 (or something like that), hardware codename gru-kevin
-It has a really nice highdpi square-ish screen, good battery life, usb-c&hellip; what more do you need?">
+It has a really nice highdpi square-ish screen, good battery life, usb-c… what more do you need?">
 
 
 
@@ -274,6 +276,12 @@ The board configs were already there. I just tweaked a few small things to suit 
 </blockquote>
 <p>A few dozen googles lead me to a mailing list thread where someone mentioned that the WP screw is <em><strong>UNDER THE HEATSINK</strong></em> on the gru-kevin mainboard.</p>
 <p>Normally this would be acceptable. Except that on kevin, the heatsink is riveted in place. It&rsquo;s not coming off without an amount of effort I&rsquo;m not going to put into it.</p>
+<blockquote>
+<blockquote>
+<p>EDIT 2024.07.03: a more adventurous reader pulled the board out of their kevin,
+and discovered that the heatsink is in fact screwed on from the other side, making it easy to remove.</p>
+</blockquote>
+</blockquote>
 <p>So I looked into manually flashing the spi bios chip guy. It wasn&rsquo;t actually that difficult or scary of a process, despite what the internet tells you. You&rsquo;re just flashing a spi chip. That&rsquo;s all.</p>
 <p>First I read the firmware inband from inside the os. About 10 times. And I sha256&rsquo;d each copy to make sure they were all the same. AND remembered to copy it elsewhere. Then I dug through the parts bin and found a chip clip for our soic-8 spi flash friend. <br>
 I thought about using an arduino as a flasher (I had in the past for a parallel access flash chip) until I remembered that raspberry pi&rsquo;s are a thing and they have spi lanes and gpio as well. Way easier.</p>

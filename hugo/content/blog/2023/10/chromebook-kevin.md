@@ -98,6 +98,9 @@ A few dozen googles lead me to a mailing list thread where someone mentioned tha
 
 Normally this would be acceptable. Except that on kevin, the heatsink is riveted in place. It's not coming off without an amount of effort I'm not going to put into it.
 
+>> EDIT 2024.07.03: a more adventurous reader pulled the board out of their kevin,
+>> and discovered that the heatsink is in fact screwed on from the other side, making it easy to remove.
+
 So I looked into manually flashing the spi bios chip guy. It wasn't actually that difficult or scary of a process, despite what the internet tells you. You're just flashing a spi chip. That's all.
 
 First I read the firmware inband from inside the os. About 10 times. And I sha256'd each copy to make sure they were all the same. AND remembered to copy it elsewhere. Then I dug through the parts bin and found a chip clip for our soic-8 spi flash friend. \

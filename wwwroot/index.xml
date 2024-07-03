@@ -126,6 +126,12 @@ The board configs were already there. I just tweaked a few small things to suit 
 &lt;/blockquote&gt;
 &lt;p&gt;A few dozen googles lead me to a mailing list thread where someone mentioned that the WP screw is &lt;em&gt;&lt;strong&gt;UNDER THE HEATSINK&lt;/strong&gt;&lt;/em&gt; on the gru-kevin mainboard.&lt;/p&gt;
 &lt;p&gt;Normally this would be acceptable. Except that on kevin, the heatsink is riveted in place. It&amp;rsquo;s not coming off without an amount of effort I&amp;rsquo;m not going to put into it.&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;blockquote&gt;
+&lt;p&gt;EDIT 2024.07.03: a more adventurous reader pulled the board out of their kevin,
+and discovered that the heatsink is in fact screwed on from the other side, making it easy to remove.&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;/blockquote&gt;
 &lt;p&gt;So I looked into manually flashing the spi bios chip guy. It wasn&amp;rsquo;t actually that difficult or scary of a process, despite what the internet tells you. You&amp;rsquo;re just flashing a spi chip. That&amp;rsquo;s all.&lt;/p&gt;
 &lt;p&gt;First I read the firmware inband from inside the os. About 10 times. And I sha256&amp;rsquo;d each copy to make sure they were all the same. AND remembered to copy it elsewhere. Then I dug through the parts bin and found a chip clip for our soic-8 spi flash friend. &lt;br&gt;
 I thought about using an arduino as a flasher (I had in the past for a parallel access flash chip) until I remembered that raspberry pi&amp;rsquo;s are a thing and they have spi lanes and gpio as well. Way easier.&lt;/p&gt;
